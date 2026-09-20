@@ -1025,7 +1025,7 @@ function App() {
               <div className="video-modal-bar">
                 <strong>{videoPlayer.local ? videoPlayer.items[videoPlayer.index].title : videoPlayer.text}</strong>
                 <div>
-                  <a href={videoPlayer.href} target="_blank">Open on YouTube</a>
+                  <a href={videoPlayer.href} target="_blank">{videoPlayer.local && videoPlayer.items[videoPlayer.index].uploader ? `@${videoPlayer.items[videoPlayer.index].uploader.replace(/^@/, '')} on YouTube` : 'Open on YouTube'}</a>
                   <button type="button" onClick={() => setVideoPlayer(null)} aria-label="Close video"><i className="fas fa-times"></i></button>
                 </div>
               </div>
