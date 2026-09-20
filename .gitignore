@@ -7,3 +7,7 @@ suite/
 gbible/
 gs2emu/
 server.js
+/build/
+/assets/videos/*.info.json
+/assets/videos/downloaded.txt
+/assets/videos/*.mp4

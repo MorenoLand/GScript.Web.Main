@@ -340,14 +340,6 @@ const data = {
   ],
   graphics: [
     { icon: 'fas fa-file-image', text: 'Templates (Rice, old)', href: 'https://gscript.dev/Rice2kTemplates.zip' },
-    {
-      icon: 'fas fa-file-image',
-      text: 'Templates (Coco)',
-      submenu: [
-        { icon: 'fas fa-download', text: 'Download', href: 'https://gscript.dev/CocoTemplates.zip' },
-        { icon: 'fas fa-external-link-alt', text: 'Mirror (Imgur)', href: 'https://imgur.com/a/gtW4S' }
-      ]
-    },
     { icon: 'fas fa-file-image', text: 'Templates (iClassic)', href: 'https://gscript.dev/PlayerSubmissionTemplates.zip' },
     { icon: 'fas fa-book', text: 'Graphics Indexing Guides (Gimp / PS)', href: '/?indexing' }
   ]
@@ -662,50 +654,62 @@ function App() {
   const [transitioning, setTransitioning] = React.useState(false), [filteredServer, setFilteredServer] = React.useState(null), changesCache = React.useRef({});
   const [resizingColumn, setResizingColumn] = React.useState(null), [guidePosition, setGuidePosition] = React.useState(null);
   const [discordHidden, setDiscordHidden] = React.useState(true);
+  const [videoManifest, setVideoManifest] = React.useState(null);
   const [videoPlayer, setVideoPlayer] = React.useState(null);
   const ytPlayerRef = React.useRef(null);
 
   const videoLinks = [
     { text: 'GS2 Tutorial', href: 'https://www.youtube.com/playlist?list=PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4' },
     { text: 'GS2 Intro', href: 'https://youtu.be/nOA0iOOaeQA' },
-    { text: 'GS2 Basics', href: 'https://www.youtube.com/playlist?list=PLj7V7gCaCF2u-MrVyTn1c3ZN01BHKGq2m' },
-    { text: 'Graal Developers', href: 'https://www.youtube.com/@graalonlinedevelopers1547/videos', externalOnly: true },
-    { text: 'iMagic', href: 'https://www.youtube.com/@iMagicIAm/videos', externalOnly: true },
-    { text: 'BiTzSAM', href: 'https://www.youtube.com/@D34dlyI3rute/videos', externalOnly: true },
-    { text: 'Syahrul', href: 'https://www.youtube.com/@syahrulzahwan/videos', externalOnly: true },
+    { text: 'GS2 Basics', href: 'https://www.youtube.com/watch?v=oAkymBNAABw&list=PLj7V7gCaCF2u-MrVyTn1c3ZN01BHKGq2m' },
     { text: 'Gani Intro', href: 'https://www.youtube.com/playlist?list=PLtDohBs99GZeZgYIX97nFtj_ik4zbM845' },
     { text: 'Gani Frames', href: 'https://www.youtube.com/watch?v=MdUGHXZAAMY' },
     { text: 'Gani Action', href: 'https://www.youtube.com/watch?v=T5xOwGuymBw' },
-    { text: 'Gani Melee', href: 'https://www.youtube.com/@swiggerswogger8818', externalOnly: true },
     { text: 'Gani Gun', href: 'https://www.youtube.com/watch?v=6vrXDhQ-d5k' },
     { text: 'GIMP Drawing', href: 'https://www.youtube.com/watch?v=LlXa5FyrIb8' },
     { text: 'GIMP Recoloring', href: 'https://www.youtube.com/watch?v=9Ku6R8tzEj0' },
     { text: 'GIMP GIFs', href: 'https://www.youtube.com/watch?v=2QShpdhsnLE' },
     { text: 'Pixel Studio', href: 'https://www.youtube.com/watch?v=ry8q8srzpIc' },
-    { text: 'Coco', href: 'https://www.youtube.com/playlist?list=PLkJnsgy7P_5pxaHAYDXYIAPMwmrRCjVn8' },
-    { text: 'Leah', href: 'https://www.youtube.com/@LeahLikesToDraw/videos' },
-    { text: 'Graal Modders', href: 'https://www.youtube.com/@TheGraalModders', externalOnly: true },
     { text: 'Localization RU', href: 'https://www.youtube.com/watch?v=qAn9yHqbAsY' },
+  ];
+
+  const channelLinks = [
+    { text: '8TheKat', href: 'https://www.youtube.com/channel/UCIaI1RrSsX9VTj1dFvIK7og' },
+    { text: 'CaptainNoob', href: 'https://www.youtube.com/channel/UCeV71NuvHbo9w5SBkSwQ_6Q' },
+    { text: 'Graal Developers', href: 'https://www.youtube.com/@graalonlinedevelopers1547/videos' },
+    { text: 'iMagic', href: 'https://www.youtube.com/@iMagicIAm/videos' },
+    { text: 'BiTzSAM', href: 'https://www.youtube.com/@D34dlyI3rute/videos' },
+    { text: 'Syahrul', href: 'https://www.youtube.com/@syahrulzahwan/videos' },
+    { text: 'Gani Melee', href: 'https://www.youtube.com/@swiggerswogger8818' },
+    { text: 'Leah', href: 'https://www.youtube.com/@LeahLikesToDraw/videos' },
+    { text: 'Graal Modders', href: 'https://www.youtube.com/@TheGraalModders' },
     { text: 'Kuroneko', href: 'https://www.youtube.com/@cky2013/videos' },
     { text: 'Robg', href: 'https://www.youtube.com/@RobG-videos/videos' },
-    { text: 'Classic Graal', href: 'https://www.youtube.com/@classicgraal', externalOnly: true },
+    { text: 'Classic Graal', href: 'https://www.youtube.com/@classicgraal' },
     { text: 'NYN', href: 'https://www.youtube.com/@newyorkernick/videos' }
   ];
 
-  const getYouTubePlayerConfig = (href) => {
+  useEffect(() => {
+    fetch('/assets/videos/manifest.json').then(r => r.ok ? r.json() : null).then(setVideoManifest).catch(() => {});
+  }, []);
+
+  const getYouTubeTarget = (href) => {
     try {
       const url = new URL(href);
-      const list = url.searchParams.get('list');
-      if (list) return { list };
-      if (url.hostname === 'youtu.be') {
-        const videoId = url.pathname.replace(/^\/+/, '').split('/')[0];
-        return videoId ? { videoId } : null;
-      }
-      const videoId = url.searchParams.get('v');
-      return videoId ? { videoId } : null;
+      const listId = url.searchParams.get('list');
+      const videoId = url.hostname === 'youtu.be' ? url.pathname.replace(/^\/+/, '').split('/')[0] : url.searchParams.get('v');
+      return { videoId, listId };
     } catch {
-      return null;
+      return { videoId: null, listId: null };
     }
+  };
+
+  const getYouTubePlayerConfig = (href) => { const { videoId, listId } = getYouTubeTarget(href); return !listId && videoId ? { videoId } : null; };
+  const getLocalVideoSelection = (href) => {
+    if (!videoManifest || !Array.isArray(videoManifest.videos)) return null;
+    const { videoId, listId } = getYouTubeTarget(href);
+    const items = listId ? videoManifest.videos.filter(video => video.playlistId === listId) : videoId ? videoManifest.videos.filter(video => video.id === videoId) : [];
+    return items.length ? { items, index: 0 } : null;
   };
 
   const playVideoLink = (link) => {
@@ -713,9 +717,10 @@ function App() {
     if (!config) return;
     setVideoPlayer({ ...link, ...config });
   };
+  const playLocalVideoLink = (link, selection) => setVideoPlayer({ ...link, local: true, ...selection });
 
   useEffect(() => {
-    if (!videoPlayer) return;
+    if (!videoPlayer || videoPlayer.local) return;
     let disposed = false;
     const ensureYouTubeApi = () => new Promise(resolve => {
       if (window.YT && window.YT.Player) {
@@ -896,10 +901,9 @@ function App() {
             <a href="https://wiki.gscript.dev/Creation/Dev/GScript" target="_blank"><i className="fas fa-book-open"></i><span>Wiki</span></a>
             <a href="/?formats"><i className="fas fa-file-lines"></i><span>File Formats</span></a>
             <a href="https://docs.gscript.dev" target="_blank"><i className="fas fa-file-code"></i><span>GScript Documentation</span></a>
-            <a href="https://showcase.gscript.dev/" target="_blank"><i className="fas fa-images"></i><span>GScript Showcase</span></a>
             <a href="https://gscript.dev/ruandoc" target="_blank"><i className="fas fa-scroll"></i><span>Ruan's GS2 Docs</span></a>
             <a href="https://stats.gscript.dev/" target="_blank"><i className="fas fa-chart-line"></i><span>Server Statistics</span></a>
-            <a href="https://forums.gscript.dev/" target="_blank"><i className="fas fa-box-archive"></i><span>OGCC Archive</span></a>
+            <a href="/?indexing"><i className="fas fa-list-check"></i><span>Graphics Indexing Guides (Gimp / PS)</span></a>
           </div>
           <div className="home-board-group">
             <h2><i className="fas fa-tools"></i> Web Tools</h2>
@@ -913,19 +917,23 @@ function App() {
           </div>
           <div className="home-board-group">
             <h2><i className="fas fa-palette"></i> Assets / Links</h2>
+            <a href="https://forums.gscript.dev/" target="_blank"><i className="fas fa-box-archive"></i><span>OGCC Archive</span></a>
+            <a href="https://showcase.gscript.dev/" target="_blank"><i className="fas fa-images"></i><span>GScript Showcase</span></a>
             <a href="https://gscript.dev/PlayerSubmissionTemplates.zip"><i className="fas fa-file-image"></i><span>Player Templates</span></a>
-            <a href="https://github.com/fungsiyan/assets/tree/main/templates/player-param1" target="_blank"><i className="fab fa-github"></i><span>player-param1 Templates</span></a>
-            <a href="https://gscript.dev/CocoTemplates.zip"><i className="fas fa-file-archive"></i><span>Coco Templates</span></a>
-            <a href="https://github.com/fungsiyan/assets" target="_blank"><i className="fab fa-github"></i><span>fungsiyan Assets</span></a>
+            <a href="https://github.com/fungsiyan/gschema" target="_blank"><i className="fab fa-github"></i><span>fungsiyan Assets</span></a>
             <a href="https://api.gscript.dev/" target="_blank"><i className="fas fa-database"></i><span>GScript LSP Data</span></a>
-            <a href="https://fungsiyan.github.io/index/" target="_blank"><i className="fas fa-box-open"></i><span>fungsiyan Resource List</span></a>
-            <a href="/?indexing"><i className="fas fa-list-check"></i><span>Graphics Indexing Guides (Gimp / PS)</span></a>
+            <a href="https://forums.gscript.dev/showthread.php?t=79601" target="_blank"><i className="fas fa-star"></i><span>Featured Scripts</span></a>
           </div>
           <div className="home-board-group home-board-videos">
             <h2><i className="fas fa-video"></i> Videos</h2>
             {videoLinks.map(link => {
+              const localSelection = getLocalVideoSelection(link.href);
               const playable = getYouTubePlayerConfig(link.href);
-              return playable ? (
+              return localSelection ? (
+                <button key={link.text} type="button" className="home-video-link" onClick={() => playLocalVideoLink(link, localSelection)}>
+                  <i className="fas fa-play-circle"></i><span>{link.text}</span>
+                </button>
+              ) : playable ? (
                 <button key={link.text} type="button" className="home-video-link" onClick={() => playVideoLink(link)}>
                   <i className="fab fa-youtube"></i><span>{link.text}</span>
                 </button>
@@ -935,6 +943,10 @@ function App() {
                 </a>
               );
             })}
+          </div>
+          <div className="home-board-group home-board-channels">
+            <h2><i className="fab fa-youtube"></i> Channels</h2>
+            {channelLinks.map(link => <a key={link.text} href={link.href} target="_blank"><i className="fab fa-youtube"></i><span>{link.text}</span></a>)}
           </div>
           <div className="home-board-group home-board-downloads">
             <h2><i className="fas fa-download"></i> Downloads / Sources</h2>
@@ -1011,14 +1023,24 @@ function App() {
           <div className="video-modal" role="dialog" aria-modal="true" aria-label={videoPlayer.text} onClick={() => setVideoPlayer(null)}>
             <div className="video-modal-panel" onClick={(e) => e.stopPropagation()}>
               <div className="video-modal-bar">
-                <strong>{videoPlayer.text}</strong>
+                <strong>{videoPlayer.local ? videoPlayer.items[videoPlayer.index].title : videoPlayer.text}</strong>
                 <div>
                   <a href={videoPlayer.href} target="_blank">Open on YouTube</a>
                   <button type="button" onClick={() => setVideoPlayer(null)} aria-label="Close video"><i className="fas fa-times"></i></button>
                 </div>
               </div>
-              <div className="video-player-shell">
-                <div id="youtube-player"></div>
+              <div className={`video-player-layout${videoPlayer.local && videoPlayer.items.length > 1 ? ' has-playlist' : ''}`}>
+                <div className="video-player-shell">
+                  {videoPlayer.local ? <video key={videoPlayer.items[videoPlayer.index].id} src={videoPlayer.items[videoPlayer.index].path} poster={`https://i.ytimg.com/vi/${videoPlayer.items[videoPlayer.index].id}/hqdefault.jpg`} controls autoPlay playsInline preload="auto" /> : <div id="youtube-player"></div>}
+                </div>
+                {videoPlayer.local && videoPlayer.items.length > 1 && (
+                  <aside className="video-playlist" aria-label="Playlist videos">
+                    <div className="video-playlist-title">{videoPlayer.text}</div>
+                    <div className="video-playlist-items">
+                      {videoPlayer.items.map((item, index) => <button key={item.id} type="button" className={index === videoPlayer.index ? 'active' : ''} onClick={() => setVideoPlayer(current => ({ ...current, index }))}>{index + 1}. {item.title}</button>)}
+                    </div>
+                  </aside>
+                )}
               </div>
             </div>
           </div>
