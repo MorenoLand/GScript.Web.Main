@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.359 --> 00:06.640
+hello and welcome to the 11th tutorial
+
+00:03.240 --> 00:09.240
+on how to program in G script 2 so let's
+
+00:06.640 --> 00:11.840
+open our level editor and I'm going to
+
+00:09.240 --> 00:15.440
+show you one last variable it's the
+
+00:11.840 --> 00:17.920
+level do variable so let's make a level
+
+00:15.440 --> 00:20.720
+do variable called boat and make it
+
+00:17.920 --> 00:25.599
+equal to Yellow just so yellow doesn't
+
+00:20.720 --> 00:27.800
+feel left out now level. variables are
+
+00:25.599 --> 00:30.000
+variables that are attached to the level
+
+00:27.800 --> 00:32.320
+and all the NPCs in the level will be
+
+00:30.000 --> 00:35.160
+affected by it these variables can be
+
+00:32.320 --> 00:36.719
+changed client side or server
+
+00:35.160 --> 00:40.160
+side
+
+00:36.719 --> 00:41.800
+now it's sort of like client variables
+
+00:40.160 --> 00:44.399
+and client R variables are attached to
+
+00:41.800 --> 00:46.120
+the player and server R variables are
+
+00:44.399 --> 00:48.600
+attached to the server and these
+
+00:46.120 --> 00:50.719
+variables are attached to the
+
+00:48.600 --> 00:55.199
+level
+
+00:50.719 --> 00:55.840
+and this this. variables are attached to
+
+00:55.199 --> 00:58.280
+the
+
+00:55.840 --> 01:01.800
+NPC so all the variables are sort of
+
+00:58.280 --> 01:03.760
+attached to something so except for like
+
+01:01.800 --> 01:07.040
+temp which is just no temp is attached
+
+01:03.760 --> 01:08.920
+to the function but anyway this is
+
+01:07.040 --> 01:13.080
+level. Bo is equal the
+
+01:08.920 --> 01:13.080
+yellow let's create a new NPC
+
+01:20.320 --> 01:23.320
+here
+
+01:28.840 --> 01:31.840
+oh
+
+01:40.799 --> 01:45.439
+so basically this level that variable is
+
+01:43.880 --> 01:48.600
+going to be created
+
+01:45.439 --> 01:52.240
+here and then this NPC as soon as you
+
+01:48.600 --> 01:57.240
+say something it's going to say the
+
+01:52.240 --> 01:58.840
+level that boat variable which is yellow
+
+01:57.240 --> 02:01.840
+so let's upload
+
+01:58.840 --> 02:01.840
+that
+
+02:01.960 --> 02:07.079
+hi now the invisible NPC says
+
+02:04.960 --> 02:10.039
+yellow now there's one more thing I want
+
+02:07.079 --> 02:13.440
+to cover before this tutorial ends that
+
+02:10.039 --> 02:15.239
+is that there are some variables that
+
+02:13.440 --> 02:17.560
+are
+
+02:15.239 --> 02:20.040
+pre-made and by that I mean variables
+
+02:17.560 --> 02:21.680
+that you can't use for anything else
+
+02:20.040 --> 02:24.239
+other than what they're made for
+
+02:21.680 --> 02:27.840
+examples of this are this do
+
+02:24.239 --> 02:30.160
+chat this. chat is the is a variable is
+
+02:27.840 --> 02:32.599
+a variable it is a variable of of the
+
+02:30.160 --> 02:34.879
+players chat or an NPC's
+
+02:32.599 --> 02:37.400
+chat or
+
+02:34.879 --> 02:41.120
+text
+
+02:37.400 --> 02:44.080
+also like something like this do green
+
+02:41.120 --> 02:45.800
+this do red or this
+
+02:44.080 --> 02:50.159
+do uh
+
+02:45.800 --> 02:52.599
+blue blue uh blue would not be allowed
+
+02:50.159 --> 02:56.360
+you would not be able to create them
+
+02:52.599 --> 02:56.360
+because these are pre-made
+
+02:56.720 --> 03:01.680
+variables so anyway there's a few other
+
+02:59.920 --> 03:04.760
+variables that are already pre that are
+
+03:01.680 --> 03:07.000
+also pre-made so if you ever create a
+
+03:04.760 --> 03:09.560
+variable and it doesn't seem to work
+
+03:07.000 --> 03:11.599
+just try to try to rename the variable
+
+03:09.560 --> 03:14.120
+because it's possible that that variable
+
+03:11.599 --> 03:18.200
+is pre-made and it won't let
+
+03:14.120 --> 03:20.599
+you use it for anything else but what
+
+03:18.200 --> 03:23.879
+it's used for so that concludes this
+
+03:20.599 --> 03:26.840
+tutorial and I'll see you guys next time
+
+03:23.879 --> 03:26.840
+uh bye

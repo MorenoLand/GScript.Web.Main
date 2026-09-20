@@ -1,0 +1,1016 @@
+1
+00:00:00,320 --> 00:00:05,120
+yo how's it going everybody welcome back
+
+2
+00:00:02,240 --> 00:00:07,919
+to another gs2 tutorial
+
+3
+00:00:05,120 --> 00:00:09,920
+so today well i mean this is the third
+
+4
+00:00:07,919 --> 00:00:11,440
+video i've made today so
+
+5
+00:00:09,920 --> 00:00:14,240
+today again
+
+6
+00:00:11,440 --> 00:00:15,120
+let's talk about client flags
+
+7
+00:00:14,240 --> 00:00:17,760
+and
+
+8
+00:00:15,120 --> 00:00:19,439
+uh it's triggering server side so
+
+9
+00:00:17,760 --> 00:00:20,720
+as we've mentioned before there's a
+
+10
+00:00:19,439 --> 00:00:23,199
+client side and a server side the
+
+11
+00:00:20,720 --> 00:00:24,720
+clients happening on your system here
+
+12
+00:00:23,199 --> 00:00:27,119
+and the server side is happening through
+
+13
+00:00:24,720 --> 00:00:29,760
+the actual server itself so i think it's
+
+14
+00:00:27,119 --> 00:00:32,399
+important that you know how to access
+
+15
+00:00:29,760 --> 00:00:34,719
+the server side so that you can actually
+
+16
+00:00:32,399 --> 00:00:37,440
+implement flags and you know security
+
+17
+00:00:34,719 --> 00:00:40,480
+measures when programming in general
+
+18
+00:00:37,440 --> 00:00:43,520
+so flags are used to store data on a
+
+19
+00:00:40,480 --> 00:00:46,160
+player or even the server so let me open
+
+20
+00:00:43,520 --> 00:00:48,160
+up my fights real quick slash open flags
+
+21
+00:00:46,160 --> 00:00:49,520
+as a staff member you can see that
+
+22
+00:00:48,160 --> 00:00:51,039
+here's a couple flags that i have
+
+23
+00:00:49,520 --> 00:00:52,960
+already created
+
+24
+00:00:51,039 --> 00:00:54,160
+um you know they could really hold a lot
+
+25
+00:00:52,960 --> 00:00:56,000
+of different things like if you're a
+
+26
+00:00:54,160 --> 00:00:57,840
+staff member this should be client bar
+
+27
+00:00:56,000 --> 00:01:00,160
+though there's two different there's a
+
+28
+00:00:57,840 --> 00:01:01,359
+couple different types of flags um the
+
+29
+00:01:00,160 --> 00:01:03,520
+two we're going to be talking about is
+
+30
+00:01:01,359 --> 00:01:06,799
+client and client r
+
+31
+00:01:03,520 --> 00:01:10,240
+so client r can only be changed and
+
+32
+00:01:06,799 --> 00:01:12,799
+modified and read on server side and
+
+33
+00:01:10,240 --> 00:01:13,920
+client can be read and changed on your
+
+34
+00:01:12,799 --> 00:01:16,240
+own client
+
+35
+00:01:13,920 --> 00:01:18,400
+so it's important that you are using
+
+36
+00:01:16,240 --> 00:01:20,560
+these appropriately because you don't
+
+37
+00:01:18,400 --> 00:01:23,200
+want somebody using cheat engine or some
+
+38
+00:01:20,560 --> 00:01:26,080
+sort of memory manipulation to actually
+
+39
+00:01:23,200 --> 00:01:28,080
+change these flags in some sort of way
+
+40
+00:01:26,080 --> 00:01:29,119
+so for the video for the purposes of
+
+41
+00:01:28,080 --> 00:01:31,360
+this video we're going to be using
+
+42
+00:01:29,119 --> 00:01:34,720
+client r on the player
+
+43
+00:01:31,360 --> 00:01:35,680
+so that they they can only access this
+
+44
+00:01:34,720 --> 00:01:37,280
+flag
+
+45
+00:01:35,680 --> 00:01:39,759
+by a server side
+
+46
+00:01:37,280 --> 00:01:42,399
+so we just keep it nice and safe so
+
+47
+00:01:39,759 --> 00:01:43,520
+let's let's start off by placing an npc
+
+48
+00:01:42,399 --> 00:01:44,399
+or
+
+49
+00:01:43,520 --> 00:01:46,720
+um
+
+50
+00:01:44,399 --> 00:01:48,079
+just a block basically so
+
+51
+00:01:46,720 --> 00:01:49,759
+um i'm going to be change i'm going to
+
+52
+00:01:48,079 --> 00:01:51,600
+create a class so that we can actually
+
+53
+00:01:49,759 --> 00:01:52,960
+use it on these little test dummies
+
+54
+00:01:51,600 --> 00:01:54,479
+we're going to just be basically
+
+55
+00:01:52,960 --> 00:01:56,320
+claiming a block
+
+56
+00:01:54,479 --> 00:01:58,560
+um and we're going to do it server side
+
+57
+00:01:56,320 --> 00:02:00,799
+so let's create a new class or you can
+
+58
+00:01:58,560 --> 00:02:03,119
+just script directly in an npc that's up
+
+59
+00:02:00,799 --> 00:02:06,719
+to you let's just call this
+
+60
+00:02:03,119 --> 00:02:08,800
+block underscore clay
+
+61
+00:02:06,719 --> 00:02:10,319
+let's call it block claim okay so now we
+
+62
+00:02:08,800 --> 00:02:11,280
+have a new class that we can use on all
+
+63
+00:02:10,319 --> 00:02:13,280
+these so
+
+64
+00:02:11,280 --> 00:02:14,800
+let's just save this real quick let's
+
+65
+00:02:13,280 --> 00:02:16,239
+copy
+
+66
+00:02:14,800 --> 00:02:18,319
+this
+
+67
+00:02:16,239 --> 00:02:23,200
+and then let's go in here and actually
+
+68
+00:02:18,319 --> 00:02:24,560
+change these so that it uses that okay
+
+69
+00:02:23,200 --> 00:02:26,160
+so i'm just going to duplicate it a
+
+70
+00:02:24,560 --> 00:02:28,239
+couple times
+
+71
+00:02:26,160 --> 00:02:31,360
+save it okay so now they're all these
+
+72
+00:02:28,239 --> 00:02:33,360
+are using our new script now
+
+73
+00:02:31,360 --> 00:02:36,640
+so we already know how to do this let's
+
+74
+00:02:33,360 --> 00:02:37,920
+call our client side tag here client
+
+75
+00:02:36,640 --> 00:02:39,519
+side
+
+76
+00:02:37,920 --> 00:02:41,519
+so let's start off by creating some
+
+77
+00:02:39,519 --> 00:02:44,400
+client-side stuff so
+
+78
+00:02:41,519 --> 00:02:45,519
+when it's created
+
+79
+00:02:44,400 --> 00:02:47,440
+let's
+
+80
+00:02:45,519 --> 00:02:49,680
+so this is a built-in function uncreated
+
+81
+00:02:47,440 --> 00:02:54,319
+so basically right when this is rendered
+
+82
+00:02:49,680 --> 00:02:56,000
+let's just do this dot chat is equal to
+
+83
+00:02:54,319 --> 00:02:57,200
+unclaimed
+
+84
+00:02:56,000 --> 00:02:59,440
+so now
+
+85
+00:02:57,200 --> 00:03:01,280
+we should see oh let me get a semicolon
+
+86
+00:02:59,440 --> 00:03:04,000
+in here
+
+87
+00:03:01,280 --> 00:03:06,640
+so now if we update the level you'll see
+
+88
+00:03:04,000 --> 00:03:09,360
+that they're all unclaimed okay
+
+89
+00:03:06,640 --> 00:03:11,360
+so now what else do we want to do
+
+90
+00:03:09,360 --> 00:03:14,159
+we want them to touch it to claim it so
+
+91
+00:03:11,360 --> 00:03:15,040
+let's do function on
+
+92
+00:03:14,159 --> 00:03:16,640
+layer
+
+93
+00:03:15,040 --> 00:03:18,879
+touches
+
+94
+00:03:16,640 --> 00:03:19,920
+okay
+
+95
+00:03:18,879 --> 00:03:21,920
+and then
+
+96
+00:03:19,920 --> 00:03:24,000
+now here's where it gets tricky what
+
+97
+00:03:21,920 --> 00:03:25,360
+we're going to want to do is trigger
+
+98
+00:03:24,000 --> 00:03:27,200
+action so now we're going to be
+
+99
+00:03:25,360 --> 00:03:31,120
+triggering the server side
+
+100
+00:03:27,200 --> 00:03:33,280
+and for now just put x y
+
+101
+00:03:31,120 --> 00:03:35,599
+and then here this parameter let's let's
+
+102
+00:03:33,280 --> 00:03:37,760
+do claim this is really important right
+
+103
+00:03:35,599 --> 00:03:39,599
+here because this is this is how we're
+
+104
+00:03:37,760 --> 00:03:41,840
+going to be actually knowing that when
+
+105
+00:03:39,599 --> 00:03:43,840
+you touch it it's triggering
+
+106
+00:03:41,840 --> 00:03:46,159
+you know the specific function
+
+107
+00:03:43,840 --> 00:03:48,480
+so now how do we actually go above the
+
+108
+00:03:46,159 --> 00:03:49,519
+server side and do this one and trigger
+
+109
+00:03:48,480 --> 00:03:51,120
+that
+
+110
+00:03:49,519 --> 00:03:52,640
+so you just create any old function and
+
+111
+00:03:51,120 --> 00:03:55,439
+it's always going to start like this
+
+112
+00:03:52,640 --> 00:03:57,280
+it's going to always start on action
+
+113
+00:03:55,439 --> 00:03:59,599
+and then this next part is
+
+114
+00:03:57,280 --> 00:04:01,760
+has to be exactly the same
+
+115
+00:03:59,599 --> 00:04:03,120
+so claim claim
+
+116
+00:04:01,760 --> 00:04:04,640
+when they touch it it should trigger the
+
+117
+00:04:03,120 --> 00:04:06,239
+server side
+
+118
+00:04:04,640 --> 00:04:08,879
+and run this function and this is
+
+119
+00:04:06,239 --> 00:04:11,680
+completely server-side so that means we
+
+120
+00:04:08,879 --> 00:04:13,040
+have access to client rnl we can modify
+
+121
+00:04:11,680 --> 00:04:16,720
+and read it
+
+122
+00:04:13,040 --> 00:04:18,400
+so when they touch it let's do client r
+
+123
+00:04:16,720 --> 00:04:20,239
+dot
+
+124
+00:04:18,400 --> 00:04:22,720
+interacting
+
+125
+00:04:20,239 --> 00:04:25,199
+w which is to interacting with is equal
+
+126
+00:04:22,720 --> 00:04:28,000
+to this dot id
+
+127
+00:04:25,199 --> 00:04:31,040
+so this refers to whatever npc it's on
+
+128
+00:04:28,000 --> 00:04:33,919
+right and the id is a
+
+129
+00:04:31,040 --> 00:04:36,240
+built-in game engine id per mpc
+
+130
+00:04:33,919 --> 00:04:37,919
+so this one might be one two three it's
+
+131
+00:04:36,240 --> 00:04:39,919
+a good way because no npc will have the
+
+132
+00:04:37,919 --> 00:04:41,759
+same id when they're created so we'll
+
+133
+00:04:39,919 --> 00:04:42,639
+know exactly will trigger the server
+
+134
+00:04:41,759 --> 00:04:45,120
+side
+
+135
+00:04:42,639 --> 00:04:47,040
+and we'll save to the player who touched
+
+136
+00:04:45,120 --> 00:04:49,280
+it this id
+
+137
+00:04:47,040 --> 00:04:52,720
+so now let's see if it worked let's do
+
+138
+00:04:49,280 --> 00:04:57,240
+let's make the npc this dot
+
+139
+00:04:52,720 --> 00:04:57,240
+chat it's equal to
+
+140
+00:04:58,000 --> 00:05:00,240
+um
+
+141
+00:04:58,960 --> 00:05:01,919
+we'll say
+
+142
+00:05:00,240 --> 00:05:04,160
+claimed
+
+143
+00:05:01,919 --> 00:05:08,280
+by
+
+144
+00:05:04,160 --> 00:05:08,280
+and then we'll concatenate with this
+
+145
+00:05:10,720 --> 00:05:13,759
+okay
+
+146
+00:05:11,520 --> 00:05:16,479
+so now let me just update the level
+
+147
+00:05:13,759 --> 00:05:18,720
+again if we touch one
+
+148
+00:05:16,479 --> 00:05:20,240
+it says it was claimed by me and this is
+
+149
+00:05:18,720 --> 00:05:21,919
+server side
+
+150
+00:05:20,240 --> 00:05:23,600
+so everyone should be able to see this
+
+151
+00:05:21,919 --> 00:05:25,600
+and we just saved what you just
+
+152
+00:05:23,600 --> 00:05:27,360
+interacted with so we can
+
+153
+00:05:25,600 --> 00:05:30,080
+so we can use that so let's open our
+
+154
+00:05:27,360 --> 00:05:31,360
+flags and check this out
+
+155
+00:05:30,080 --> 00:05:34,000
+so you'll see
+
+156
+00:05:31,360 --> 00:05:36,000
+right here i've done some testing before
+
+157
+00:05:34,000 --> 00:05:37,600
+so let me get rid of that right here
+
+158
+00:05:36,000 --> 00:05:39,199
+this is what we just created and pumped
+
+159
+00:05:37,600 --> 00:05:42,080
+into the player
+
+160
+00:05:39,199 --> 00:05:44,400
+so now we have access to save this flag
+
+161
+00:05:42,080 --> 00:05:46,880
+and use it in any other script anywhere
+
+162
+00:05:44,400 --> 00:05:48,080
+anyway so things like graylits things
+
+163
+00:05:46,880 --> 00:05:49,759
+like money
+
+164
+00:05:48,080 --> 00:05:52,639
+things like health
+
+165
+00:05:49,759 --> 00:05:54,479
+something like client art
+
+166
+00:05:52,639 --> 00:05:58,080
+let's just say health
+
+167
+00:05:54,479 --> 00:06:01,360
+it's equal to 100 so something like that
+
+168
+00:05:58,080 --> 00:06:03,120
+but let's get rid of that so now
+
+169
+00:06:01,360 --> 00:06:05,039
+just like that we have access to
+
+170
+00:06:03,120 --> 00:06:07,039
+something like this so maybe we just
+
+171
+00:06:05,039 --> 00:06:08,400
+sleep for
+
+172
+00:06:07,039 --> 00:06:09,840
+one second
+
+173
+00:06:08,400 --> 00:06:11,919
+and then we do
+
+174
+00:06:09,840 --> 00:06:13,600
+this
+
+175
+00:06:11,919 --> 00:06:15,919
+that chat is
+
+176
+00:06:13,600 --> 00:06:17,360
+equal to an empty string
+
+177
+00:06:15,919 --> 00:06:18,880
+let's save that
+
+178
+00:06:17,360 --> 00:06:21,680
+touch it again
+
+179
+00:06:18,880 --> 00:06:22,919
+and you see it goes away
+
+180
+00:06:21,680 --> 00:06:25,360
+let's just do
+
+181
+00:06:22,919 --> 00:06:26,720
+unclaimed let's just go back to what it
+
+182
+00:06:25,360 --> 00:06:29,199
+was before
+
+183
+00:06:26,720 --> 00:06:31,120
+so we claimed it unclaimed claimed
+
+184
+00:06:29,199 --> 00:06:32,639
+unclaimed
+
+185
+00:06:31,120 --> 00:06:35,520
+just like that
+
+186
+00:06:32,639 --> 00:06:37,520
+so you can see how easy it is to
+
+187
+00:06:35,520 --> 00:06:39,280
+trigger the server side which
+
+188
+00:06:37,520 --> 00:06:41,280
+is very useful
+
+189
+00:06:39,280 --> 00:06:43,520
+for securing your data and
+
+190
+00:06:41,280 --> 00:06:45,840
+you know it's just makes it easier so
+
+191
+00:06:43,520 --> 00:06:47,759
+you can access this kind of information
+
+192
+00:06:45,840 --> 00:06:49,680
+elsewhere in other scripts
+
+193
+00:06:47,759 --> 00:06:51,120
+so you can
+
+194
+00:06:49,680 --> 00:06:52,880
+fully claim this let's say you don't
+
+195
+00:06:51,120 --> 00:06:55,599
+want another person to
+
+196
+00:06:52,880 --> 00:06:57,280
+actually claim it we can set this npc to
+
+197
+00:06:55,599 --> 00:06:58,639
+be claimed
+
+198
+00:06:57,280 --> 00:07:02,880
+something like
+
+199
+00:06:58,639 --> 00:07:06,160
+temp dot claim equals false
+
+200
+00:07:02,880 --> 00:07:06,160
+and then if they touch it
+
+201
+00:07:08,240 --> 00:07:11,199
+if it's true
+
+202
+00:07:11,360 --> 00:07:15,360
+this that chat is
+
+203
+00:07:13,520 --> 00:07:17,759
+equal to
+
+204
+00:07:15,360 --> 00:07:17,759
+tamp
+
+205
+00:07:21,199 --> 00:07:24,880
+let's just copy that
+
+206
+00:07:25,520 --> 00:07:30,120
+and
+
+207
+00:07:26,800 --> 00:07:30,120
+copy that
+
+208
+00:07:30,400 --> 00:07:35,360
+so now it's claimed
+
+209
+00:07:32,000 --> 00:07:35,360
+and if i got rid of this
+
+210
+00:07:35,840 --> 00:07:40,240
+maybe if it might be set maybe it needs
+
+211
+00:07:37,840 --> 00:07:41,520
+to update the level so zero
+
+212
+00:07:40,240 --> 00:07:43,520
+false
+
+213
+00:07:41,520 --> 00:07:44,879
+this block is not claimed no one's
+
+214
+00:07:43,520 --> 00:07:46,400
+touched it
+
+215
+00:07:44,879 --> 00:07:48,560
+so now when you touch it it's going to
+
+216
+00:07:46,400 --> 00:07:50,080
+trigger the service side
+
+217
+00:07:48,560 --> 00:07:52,240
+trigger the server side it was claimed
+
+218
+00:07:50,080 --> 00:07:54,080
+by me and now it's one so it's claimed
+
+219
+00:07:52,240 --> 00:07:55,360
+so you can you know further implement
+
+220
+00:07:54,080 --> 00:07:58,560
+your script to make sure that other
+
+221
+00:07:55,360 --> 00:08:00,000
+people can't claim it so like let's say
+
+222
+00:07:58,560 --> 00:08:02,160
+you know it's like a little farming item
+
+223
+00:08:00,000 --> 00:08:03,440
+or whatever you want it to be
+
+224
+00:08:02,160 --> 00:08:06,000
+uh you can really think outside the
+
+225
+00:08:03,440 --> 00:08:07,680
+block so now they're all claimed
+
+226
+00:08:06,000 --> 00:08:08,879
+and you know that's you know they're
+
+227
+00:08:07,680 --> 00:08:10,720
+really useful and i'm gonna be going
+
+228
+00:08:08,879 --> 00:08:12,080
+into depth with other tutorials when i
+
+229
+00:08:10,720 --> 00:08:14,479
+actually teach you how to do like a
+
+230
+00:08:12,080 --> 00:08:16,400
+specific thing so to create a specific
+
+231
+00:08:14,479 --> 00:08:19,919
+weapon to create a specific
+
+232
+00:08:16,400 --> 00:08:22,960
+staff tool to create a panel text system
+
+233
+00:08:19,919 --> 00:08:23,840
+um any any sort of that kind of a thing
+
+234
+00:08:22,960 --> 00:08:25,280
+so
+
+235
+00:08:23,840 --> 00:08:27,120
+flags are super important make sure
+
+236
+00:08:25,280 --> 00:08:28,319
+you're using them they're super helpful
+
+237
+00:08:27,120 --> 00:08:31,199
+to
+
+238
+00:08:28,319 --> 00:08:33,519
+save data to the player um
+
+239
+00:08:31,199 --> 00:08:35,440
+perfect so thanks for watching and make
+
+240
+00:08:33,519 --> 00:08:36,800
+sure to subscribe and watch the rest of
+
+241
+00:08:35,440 --> 00:08:38,560
+the videos that are on the playlist
+
+242
+00:08:36,800 --> 00:08:40,719
+because i'm going to continue to be
+
+243
+00:08:38,560 --> 00:08:42,880
+uploading to
+
+244
+00:08:40,719 --> 00:08:44,720
+these gs2 tutorials
+
+245
+00:08:42,880 --> 00:08:46,240
+to hopefully help those who can't really
+
+246
+00:08:44,720 --> 00:08:48,080
+read the wiki because the wiki is kind
+
+247
+00:08:46,240 --> 00:08:49,600
+of a mess so you know hopefully these
+
+248
+00:08:48,080 --> 00:08:50,880
+are helpful and i'm going to keep going
+
+249
+00:08:49,600 --> 00:08:52,560
+make sure to comment what you want to
+
+250
+00:08:50,880 --> 00:08:55,519
+see next otherwise i'm just going to
+
+251
+00:08:52,560 --> 00:08:56,800
+keep going off random things until
+
+252
+00:08:55,519 --> 00:08:58,880
+you know we get some more comments going
+
+253
+00:08:56,800 --> 00:09:02,200
+so thanks for watching and
+
+254
+00:08:58,880 --> 00:09:02,200
+good luck scripting
+

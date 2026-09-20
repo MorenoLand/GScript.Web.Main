@@ -1,0 +1,532 @@
+WEBVTT
+
+00:00.199 --> 00:06.919
+hello and welcome to the 17th tutorial
+
+00:03.080 --> 00:08.160
+on how to program a gript 2 so in this
+
+00:06.919 --> 00:11.639
+tutorial I'm going to show you about
+
+00:08.160 --> 00:14.879
+uploading images and using them for NPCs
+
+00:11.639 --> 00:17.279
+and other things so for this I created a
+
+00:14.879 --> 00:21.560
+little image called awesome
+
+00:17.279 --> 00:24.279
+flower and it's 32x 32 pixels and it's a
+
+00:21.560 --> 00:25.359
+PNG file it can also be a GF file if I
+
+00:24.279 --> 00:28.240
+wanted it
+
+00:25.359 --> 00:31.679
+to so the first thing I want to tell you
+
+00:28.240 --> 00:35.399
+is that images and G in grow do not
+
+00:31.679 --> 00:38.440
+allow total black and total white like
+
+00:35.399 --> 00:41.000
+look at this this background looks black
+
+00:38.440 --> 00:45.320
+but when you go into it it's actually
+
+00:41.000 --> 00:48.280
+very close to Black it's slightly wider
+
+00:45.320 --> 00:49.879
+than black like look it's not it's just
+
+00:48.280 --> 00:51.840
+not totally black which is why it's
+
+00:49.879 --> 00:53.359
+going to be allowed but using anything
+
+00:51.840 --> 00:54.680
+totally white or totally black isn't
+
+00:53.359 --> 00:57.079
+going to
+
+00:54.680 --> 00:59.519
+work we can also use
+
+00:57.079 --> 01:01.440
+transparents in our images that'll work
+
+00:59.519 --> 01:03.320
+but doesn't really allow
+
+01:01.440 --> 01:06.280
+transparencies so anyway I'm going to
+
+01:03.320 --> 01:08.720
+close that then I'm going to go into
+
+01:06.280 --> 01:11.200
+RC and click this little plus Square
+
+01:08.720 --> 01:13.200
+next to the levels folder and go to
+
+01:11.200 --> 01:15.119
+images then I'm going to upload an image
+
+01:13.200 --> 01:18.200
+I'm going to right click anywhere I want
+
+01:15.119 --> 01:22.520
+and upload the
+
+01:18.200 --> 01:26.600
+image you'll see here say uploaded the
+
+01:22.520 --> 01:28.159
+file images awesome flower.png so now
+
+01:26.600 --> 01:31.240
+it's
+
+01:28.159 --> 01:32.439
+there let's go into level editor and
+
+01:31.240 --> 01:36.119
+double click on
+
+01:32.439 --> 01:38.479
+NPC and put
+
+01:36.119 --> 01:44.520
+set set
+
+01:38.479 --> 01:44.520
+image awesome flower.png in
+
+01:44.560 --> 01:48.479
+quotes if we take out these quotes it'll
+
+01:46.840 --> 01:51.240
+think we're using a
+
+01:48.479 --> 01:53.719
+variable we just want the name of the
+
+01:51.240 --> 01:57.360
+image we don't want to use a variable so
+
+01:53.719 --> 01:57.360
+we'll close that
+
+02:01.880 --> 02:06.079
+oh I don't want to upload the level into
+
+02:03.320 --> 02:08.600
+the images folder I want to upload into
+
+02:06.079 --> 02:08.600
+the levels
+
+02:10.039 --> 02:16.000
+folder so I can see here we have a
+
+02:13.160 --> 02:17.920
+little image here and with the Collision
+
+02:16.000 --> 02:20.360
+is automatically set to the size of the
+
+02:17.920 --> 02:22.519
+image so a cheater or someone who wants
+
+02:20.360 --> 02:24.720
+to cheat and go through the image can go
+
+02:22.519 --> 02:28.680
+into the grow folder change the size of
+
+02:24.720 --> 02:30.560
+the image to like z z and then well they
+
+02:28.680 --> 02:32.680
+would be able to walk through it
+
+02:30.560 --> 02:37.080
+the way to make it so that can't happen
+
+02:32.680 --> 02:40.800
+is go into the script and put set shape
+
+02:37.080 --> 02:44.560
+one comma 32 comma
+
+02:40.800 --> 02:49.599
+32 this will change the size of the
+
+02:44.560 --> 02:53.000
+image to 32 pixels by 32 pixels so X and
+
+02:49.599 --> 02:55.239
+Y the first um number the first in the
+
+02:53.000 --> 02:56.840
+first parameter doesn't really do
+
+02:55.239 --> 03:00.519
+anything that I know of and you can just
+
+02:56.840 --> 03:03.159
+set it to one which is what I always do
+
+03:00.519 --> 03:05.280
+and this is how many pixels one tile is
+
+03:03.159 --> 03:07.080
+16 pixels so if you do the math this
+
+03:05.280 --> 03:10.959
+will be two tiles by two
+
+03:07.080 --> 03:14.280
+tiles now another thing is every NPC the
+
+03:10.959 --> 03:18.680
+0 comma 0 coordinate in them is the top
+
+03:14.280 --> 03:20.599
+left corner so if we made it 32x 32
+
+03:18.680 --> 03:24.239
+it'll go 32
+
+03:20.599 --> 03:30.239
+pixels across then 32 pixels
+
+03:24.239 --> 03:30.239
+down which is going to be like that
+
+03:31.480 --> 03:39.400
+didn't really do anything but it wasn't
+
+03:33.840 --> 03:43.920
+supposed to if we change to 64x
+
+03:39.400 --> 03:46.519
+64 the image will become four tiles of
+
+03:43.920 --> 03:50.959
+length and 30 tiles of
+
+03:46.519 --> 03:50.959
+width as you can not
+
+03:51.720 --> 04:01.040
+see maybe we should suppos to put it
+
+03:56.000 --> 04:01.040
+afterwards or maybe we didn't save it
+
+04:01.400 --> 04:07.480
+huh you how it's working now and you can
+
+04:05.079 --> 04:11.680
+see we can't walk through
+
+04:07.480 --> 04:14.040
+this 4x4 area we can also just make it
+
+04:11.680 --> 04:16.840
+so it has no image and then it'll just
+
+04:14.040 --> 04:18.280
+be an invisible wall which can which can
+
+04:16.840 --> 04:21.959
+be good for allowing players to not
+
+04:18.280 --> 04:21.959
+enter anything or enter past
+
+04:22.880 --> 04:27.360
+something now let's
+
+04:25.240 --> 04:32.199
+say well actually there's another way to
+
+04:27.360 --> 04:32.199
+show images it's called show
+
+04:32.280 --> 04:35.880
+image
+
+04:34.080 --> 04:40.000
+um actually now I'm going to show you
+
+04:35.880 --> 04:40.000
+one more thing if we put set
+
+04:41.600 --> 04:47.840
+image it'll have a collision we can do
+
+04:44.919 --> 04:51.479
+don't block to get rid of the Collision
+
+04:47.840 --> 04:51.479
+so then you can walk through the
+
+04:51.840 --> 04:58.759
+NPC or wherever the
+
+04:54.800 --> 05:00.960
+images we can also put block again
+
+04:58.759 --> 05:03.000
+afterwards to make it block again but by
+
+05:00.960 --> 05:05.880
+default it's already
+
+05:03.000 --> 05:10.600
+blocking
+
+05:05.880 --> 05:15.919
+anyway let's put type show image 300
+
+05:10.600 --> 05:18.520
+then awesome flower.png and quotes then
+
+05:15.919 --> 05:20.560
+um player
+
+05:18.520 --> 05:24.039
+x.x player
+
+05:20.560 --> 05:26.280
+doy now this command this command can be
+
+05:24.039 --> 05:29.120
+used in NPCs
+
+05:26.280 --> 05:32.120
+or weapons and what it does is it
+
+05:29.120 --> 05:34.039
+creates a image at the coordinates of
+
+05:32.120 --> 05:35.960
+wherever you want and mine I'm going to
+
+05:34.039 --> 05:38.680
+put it on the
+
+05:35.960 --> 05:41.039
+player and this beginning this beginning
+
+05:38.680 --> 05:42.639
+number is the ID of the image and I'll
+
+05:41.039 --> 05:46.080
+show you what that does in a second
+
+05:42.639 --> 05:47.759
+after I do this so you can see an image
+
+05:46.080 --> 05:50.120
+appears over me but it's not going to
+
+05:47.759 --> 05:52.800
+move anywhere when I move because it
+
+05:50.120 --> 05:57.160
+doesn't Loop through it if we made a
+
+05:52.800 --> 05:57.160
+loop like let's say for Loop
+
+06:00.080 --> 06:07.400
+then it would constantly update the
+
+06:01.680 --> 06:09.599
+position of the NPC or the image oops
+
+06:07.400 --> 06:13.039
+the for Loop broke very quickly we want
+
+06:09.599 --> 06:16.280
+to put
+
+06:13.039 --> 06:19.360
+sleep one or else the for Loop is going
+
+06:16.280 --> 06:22.240
+to break itself cuz there's a limit to
+
+06:19.360 --> 06:24.280
+four Loops so anyway now it's following
+
+06:22.240 --> 06:25.800
+me if you're going to be doing something
+
+06:24.280 --> 06:27.880
+like this you usually want to use a
+
+06:25.800 --> 06:31.560
+function
+
+06:27.880 --> 06:31.560
+Loop like
+
+06:34.639 --> 06:40.520
+this so we're just going to do that now
+
+06:37.680 --> 06:40.520
+here's something else you can
+
+06:40.759 --> 06:45.520
+do actually no I'm going to tell you
+
+06:42.680 --> 06:47.360
+what the ID does the ID is the ID of the
+
+06:45.520 --> 06:50.479
+image if
+
+06:47.360 --> 06:54.039
+we waited a few
+
+06:50.479 --> 06:57.160
+seconds then called the image Again by
+
+06:54.039 --> 07:00.560
+the same ID number it would update the
+
+06:57.160 --> 07:03.759
+position or the image of of whatever we
+
+07:00.560 --> 07:06.479
+put so it's updated right there then it
+
+07:03.759 --> 07:08.479
+waits 2 seconds and updates right there
+
+07:06.479 --> 07:10.879
+if we change the ID to something like
+
+07:08.479 --> 07:13.080
+301 or a number different than the
+
+07:10.879 --> 07:14.800
+original one it's going to create a
+
+07:13.080 --> 07:16.680
+different image so there's going to be
+
+07:14.800 --> 07:19.160
+two flowery
+
+07:16.680 --> 07:21.680
+images see two of
+
+07:19.160 --> 07:24.759
+them we can also use this to delete the
+
+07:21.680 --> 07:29.240
+image by making it the same ID then just
+
+07:24.759 --> 07:32.639
+taking out the file and just put nothing
+
+07:29.240 --> 07:35.680
+if we if we make the ID lower than 200
+
+07:32.639 --> 07:37.879
+like 150 the image will be shown
+
+07:35.680 --> 07:40.160
+throughout for everyone in the entire
+
+07:37.879 --> 07:41.840
+level even though it's under client side
+
+07:40.160 --> 07:45.400
+show image is just a very special
+
+07:41.840 --> 07:49.919
+command or it can be shown server side
+
+07:45.400 --> 07:52.720
+too so anything over 200 like
+
+07:49.919 --> 07:55.039
+250 or 300 is going to be shown for just
+
+07:52.720 --> 07:56.240
+the player but it's going to be a lot
+
+07:55.039 --> 07:58.639
+smoother
+
+07:56.240 --> 08:01.440
+looking like by smoother I mean if we
+
+07:58.639 --> 08:01.440
+put
+
+08:02.240 --> 08:08.720
+0.5 under under an ID of over two I mean
+
+08:06.159 --> 08:12.720
+with an ID of over 200 it would work
+
+08:08.720 --> 08:15.560
+here like this but with an ID of under
+
+08:12.720 --> 08:18.599
+200 it would be rounded down to the
+
+08:15.560 --> 08:24.360
+nearest tile and so if it was if I was
+
+08:18.599 --> 08:27.280
+on tile um like 3 30.5 it'll get rounded
+
+08:24.360 --> 08:30.039
+down to 30 which is why using this to
+
+08:27.280 --> 08:32.719
+make smooth kind of images isn't a very
+
+08:30.039 --> 08:34.640
+good idea but it still works
+
+08:32.719 --> 08:36.320
+nevertheless and I guess that ends this
+
+08:34.640 --> 08:38.800
+tutorial
+
+08:36.320 --> 08:41.760
+on this ends this tutorial on how to
+
+08:38.800 --> 08:44.080
+program gript 2 so I'll see you next
+
+08:41.760 --> 08:47.399
+time and I think you have a better
+
+08:44.080 --> 08:52.600
+understanding on how to call images and
+
+08:47.399 --> 08:52.600
+use them so anyway uh bye

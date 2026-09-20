@@ -1,0 +1,409 @@
+WEBVTT
+
+00:00.359 --> 00:06.680
+hello and welcome to the 22nd tutorial
+
+00:03.280 --> 00:09.400
+on how to program in gript 2 let's make
+
+00:06.680 --> 00:11.040
+a new weapon and call it whatever you
+
+00:09.400 --> 00:14.200
+want I already have this weapon added to
+
+00:11.040 --> 00:18.480
+me so whatever I already have that done
+
+00:14.200 --> 00:23.320
+so add client side and do function
+
+00:18.480 --> 00:26.199
+Onkey pressed parenthesis brackets Now
+
+00:23.320 --> 00:27.720
+function Onkey press is a pre-built
+
+00:26.199 --> 00:30.800
+function like a lot of the other ones
+
+00:27.720 --> 00:33.280
+we've learned and what it does is
+
+00:30.800 --> 00:36.000
+it will when you press a key it'll do
+
+00:33.280 --> 00:40.160
+stuff now there are three parameters in
+
+00:36.000 --> 00:42.079
+Onkey pressed one comma 2 comma 3 we'll
+
+00:40.160 --> 00:45.160
+name them anything we want but let's
+
+00:42.079 --> 00:49.039
+name the first one key
+
+00:45.160 --> 00:50.520
+code second one key name the third one
+
+00:49.039 --> 00:53.800
+scan
+
+00:50.520 --> 00:56.280
+code the first parentheses which in our
+
+00:53.800 --> 00:58.879
+condition is named key code stands for
+
+00:56.280 --> 01:01.440
+the number of the button you're pressing
+
+00:58.879 --> 01:06.439
+such as a would be
+
+01:01.440 --> 01:09.600
+65 shift would be 160 and so on every
+
+01:06.439 --> 01:11.280
+number or button on your keyboard has a
+
+01:09.600 --> 01:17.520
+number to
+
+01:11.280 --> 01:20.960
+it now key name is just the name of the
+
+01:17.520 --> 01:23.000
+key such as a would be a b would be B J
+
+01:20.960 --> 01:24.840
+would be J shift wouldn't have one and
+
+01:23.000 --> 01:27.320
+so wouldn't control so you can't use
+
+01:24.840 --> 01:30.000
+those two buttons when using key name
+
+01:27.320 --> 01:32.840
+scan code is very similar to key code
+
+01:30.000 --> 01:35.920
+because all the numbers have a I mean
+
+01:32.840 --> 01:38.399
+all the buttons have a number however it
+
+01:35.920 --> 01:42.079
+is based on the position of the key keys
+
+01:38.399 --> 01:44.280
+and have and if you have a keyboard that
+
+01:42.079 --> 01:45.360
+like a weird keyboard that has keys in
+
+01:44.280 --> 01:48.000
+different
+
+01:45.360 --> 01:49.399
+positions then it's going to get things
+
+01:48.000 --> 01:51.719
+done differently so you would just want
+
+01:49.399 --> 01:56.320
+to use key code instead of scan
+
+01:51.719 --> 02:02.399
+code okay now in the in the thing let's
+
+01:56.320 --> 02:06.280
+add if key code is equal to
+
+02:02.399 --> 02:08.520
+65 then put player. chat equal to key
+
+02:06.280 --> 02:11.000
+code oh never
+
+02:08.520 --> 02:15.480
+mind um what is equal
+
+02:11.000 --> 02:19.440
+to you have pressed
+
+02:15.480 --> 02:22.040
+a apply it when we press a it says you
+
+02:19.440 --> 02:24.920
+have pressed a now let's say we don't
+
+02:22.040 --> 02:29.319
+know the value of a certain key like
+
+02:24.920 --> 02:34.239
+control or or F3 or something like that
+
+02:29.319 --> 02:38.040
+well what we can do is put player do
+
+02:34.239 --> 02:40.440
+chat is equal to key
+
+02:38.040 --> 02:44.519
+code click apply when we press a it's
+
+02:40.440 --> 02:48.280
+going to say 65 shift will say 160
+
+02:44.519 --> 02:51.200
+control say 162 F3 will open up
+
+02:48.280 --> 02:54.519
+something and it'll say
+
+02:51.200 --> 02:57.360
+114 so that's what key code does we can
+
+02:54.519 --> 02:59.599
+also replace this with key name or scan
+
+02:57.360 --> 03:01.519
+code which are just the which or
+
+02:59.599 --> 03:02.799
+whatever whatever you have named those
+
+03:01.519 --> 03:07.560
+three
+
+03:02.799 --> 03:08.840
+variables C apply and key name will work
+
+03:07.560 --> 03:12.280
+except for shift and control and
+
+03:08.840 --> 03:12.280
+everything else that doesn't have a key
+
+03:12.560 --> 03:17.879
+name so that concludes the tutorial on
+
+03:15.840 --> 03:19.680
+on key pressed and there's one more
+
+03:17.879 --> 03:20.519
+thing I want to show you let's make a
+
+03:19.680 --> 03:22.200
+new
+
+03:20.519 --> 03:25.200
+function
+
+03:22.200 --> 03:28.799
+on go to you can name this anything you
+
+03:25.200 --> 03:30.720
+want I'm just naming it go to you don't
+
+03:28.799 --> 03:32.439
+even have to
+
+03:30.720 --> 03:35.159
+name it that just name it whatever you
+
+03:32.439 --> 03:40.159
+want but let's go here in the first
+
+03:35.159 --> 03:42.640
+function Onkey pressed and add go to
+
+03:40.159 --> 03:44.080
+then parenthesis and semicolon so you
+
+03:42.640 --> 03:45.560
+can guess what this is going to do
+
+03:44.080 --> 03:47.599
+whenever you press any key on the
+
+03:45.560 --> 03:50.120
+keyboard no matter what you press it's
+
+03:47.599 --> 03:53.079
+going to run this command and go to this
+
+03:50.120 --> 03:55.079
+function and do absolutely nothing but
+
+03:53.079 --> 03:57.560
+we're going to change that let's say you
+
+03:55.079 --> 04:01.519
+want to send over a variable to this
+
+03:57.560 --> 04:05.200
+function like you have a variable called
+
+04:01.519 --> 04:07.239
+temp. high and it's equal
+
+04:05.200 --> 04:09.560
+to
+
+04:07.239 --> 04:11.280
+something well we can send that over
+
+04:09.560 --> 04:15.799
+just put just put in the name of the
+
+04:11.280 --> 04:17.199
+variable into the parentheses on the fun
+
+04:15.799 --> 04:19.840
+command that's going to go to the
+
+04:17.199 --> 04:23.000
+function and in the function in these
+
+04:19.840 --> 04:25.240
+parentheses add any the variable of
+
+04:23.000 --> 04:29.160
+anything you want like
+
+04:25.240 --> 04:31.440
+temp. Hello it can be anything because
+
+04:29.160 --> 04:34.919
+it's not going to to be it doesn't have
+
+04:31.440 --> 04:39.080
+to be the name of what you're
+
+04:34.919 --> 04:44.000
+sending and then let's put player. chat
+
+04:39.080 --> 04:46.479
+equals temp. hello oh or just hello
+
+04:44.000 --> 04:49.199
+because it's temp. variable so what this
+
+04:46.479 --> 04:51.479
+is doing is we're creating a temp.
+
+04:49.199 --> 04:53.120
+variable and because we know it's going
+
+04:51.479 --> 04:55.080
+to be deleted as soon as the function
+
+04:53.120 --> 04:57.840
+ends we want to send it over to a
+
+04:55.080 --> 05:00.160
+different function so we're going to
+
+04:57.840 --> 05:02.160
+create a command that's going to go to a
+
+05:00.160 --> 05:06.919
+different function and we're bringing
+
+05:02.160 --> 05:10.160
+along this variable too over here as
+
+05:06.919 --> 05:12.840
+soon as it goes over here it's going to
+
+05:10.160 --> 05:15.080
+replace the name of the variable with
+
+05:12.840 --> 05:17.880
+this name it's going to keep the same
+
+05:15.080 --> 05:20.680
+value so H high is going to so hello is
+
+05:17.880 --> 05:22.039
+still going to be equal to something but
+
+05:20.680 --> 05:24.440
+it's going to have a different
+
+05:22.039 --> 05:27.440
+name and that's why when we it's going
+
+05:24.440 --> 05:29.880
+to that's why when we say when it says
+
+05:27.440 --> 05:32.639
+player. chat equal to hello it's making
+
+05:29.880 --> 05:33.960
+equal to temp. high so I hope you
+
+05:32.639 --> 05:37.560
+understand
+
+05:33.960 --> 05:39.560
+that we can also do this we can delete
+
+05:37.560 --> 05:43.000
+this and put
+
+05:39.560 --> 05:43.000
+in key
+
+05:43.360 --> 05:48.280
+code and it's going to send over
+
+05:45.759 --> 05:50.919
+whatever we
+
+05:48.280 --> 05:53.759
+press remember this will only work with
+
+05:50.919 --> 05:55.759
+temp. variables because this. variables
+
+05:53.759 --> 05:58.600
+are don't get deleted as the function
+
+05:55.759 --> 06:01.240
+ends so there's no need to move them
+
+05:58.600 --> 06:02.840
+over to a different function now let's
+
+06:01.240 --> 06:05.280
+say you want to move over the this.
+
+06:02.840 --> 06:08.120
+variables to a different NPC well in
+
+06:05.280 --> 06:09.599
+that case then well we're not going to
+
+06:08.120 --> 06:12.680
+get into it yet but in that case this
+
+06:09.599 --> 06:15.000
+will work so anyway that concludes this
+
+06:12.680 --> 06:17.520
+tutorial and I hope you understand how
+
+06:15.000 --> 06:20.759
+to use enke pressed and understand how
+
+06:17.520 --> 06:24.720
+to send over variables to other
+
+06:20.759 --> 06:24.720
+functions so bye

@@ -1031,7 +1031,11 @@ function App() {
               </div>
               <div className={`video-player-layout${videoPlayer.local && videoPlayer.items.length > 1 ? ' has-playlist' : ''}`}>
                 <div className="video-player-shell">
-                  {videoPlayer.local ? <video key={videoPlayer.items[videoPlayer.index].id} src={videoPlayer.items[videoPlayer.index].path} poster={`https://i.ytimg.com/vi/${videoPlayer.items[videoPlayer.index].id}/hqdefault.jpg`} controls autoPlay playsInline preload="auto" /> : <div id="youtube-player"></div>}
+                  {videoPlayer.local ? (
+                    <video key={videoPlayer.items[videoPlayer.index].id} src={videoPlayer.items[videoPlayer.index].path} poster={`https://i.ytimg.com/vi/${videoPlayer.items[videoPlayer.index].id}/hqdefault.jpg`} controls autoPlay playsInline preload="auto">
+                      {videoPlayer.items[videoPlayer.index].captions && <track kind="captions" src={videoPlayer.items[videoPlayer.index].captions} srcLang="en" label="English" />}
+                    </video>
+                  ) : <div id="youtube-player"></div>}
                 </div>
                 {videoPlayer.local && videoPlayer.items.length > 1 && (
                   <aside className="video-playlist" aria-label="Playlist videos">

@@ -1,0 +1,763 @@
+WEBVTT
+
+00:00.320 --> 00:05.120
+yo how's it going everybody welcome back
+
+00:02.240 --> 00:07.919
+to another gs2 tutorial
+
+00:05.120 --> 00:09.920
+so today well i mean this is the third
+
+00:07.919 --> 00:11.440
+video i've made today so
+
+00:09.920 --> 00:14.240
+today again
+
+00:11.440 --> 00:15.120
+let's talk about client flags
+
+00:14.240 --> 00:17.760
+and
+
+00:15.120 --> 00:19.439
+uh it's triggering server side so
+
+00:17.760 --> 00:20.720
+as we've mentioned before there's a
+
+00:19.439 --> 00:23.199
+client side and a server side the
+
+00:20.720 --> 00:24.720
+clients happening on your system here
+
+00:23.199 --> 00:27.119
+and the server side is happening through
+
+00:24.720 --> 00:29.760
+the actual server itself so i think it's
+
+00:27.119 --> 00:32.399
+important that you know how to access
+
+00:29.760 --> 00:34.719
+the server side so that you can actually
+
+00:32.399 --> 00:37.440
+implement flags and you know security
+
+00:34.719 --> 00:40.480
+measures when programming in general
+
+00:37.440 --> 00:43.520
+so flags are used to store data on a
+
+00:40.480 --> 00:46.160
+player or even the server so let me open
+
+00:43.520 --> 00:48.160
+up my fights real quick slash open flags
+
+00:46.160 --> 00:49.520
+as a staff member you can see that
+
+00:48.160 --> 00:51.039
+here's a couple flags that i have
+
+00:49.520 --> 00:52.960
+already created
+
+00:51.039 --> 00:54.160
+um you know they could really hold a lot
+
+00:52.960 --> 00:56.000
+of different things like if you're a
+
+00:54.160 --> 00:57.840
+staff member this should be client bar
+
+00:56.000 --> 01:00.160
+though there's two different there's a
+
+00:57.840 --> 01:01.359
+couple different types of flags um the
+
+01:00.160 --> 01:03.520
+two we're going to be talking about is
+
+01:01.359 --> 01:06.799
+client and client r
+
+01:03.520 --> 01:10.240
+so client r can only be changed and
+
+01:06.799 --> 01:12.799
+modified and read on server side and
+
+01:10.240 --> 01:13.920
+client can be read and changed on your
+
+01:12.799 --> 01:16.240
+own client
+
+01:13.920 --> 01:18.400
+so it's important that you are using
+
+01:16.240 --> 01:20.560
+these appropriately because you don't
+
+01:18.400 --> 01:23.200
+want somebody using cheat engine or some
+
+01:20.560 --> 01:26.080
+sort of memory manipulation to actually
+
+01:23.200 --> 01:28.080
+change these flags in some sort of way
+
+01:26.080 --> 01:29.119
+so for the video for the purposes of
+
+01:28.080 --> 01:31.360
+this video we're going to be using
+
+01:29.119 --> 01:34.720
+client r on the player
+
+01:31.360 --> 01:35.680
+so that they they can only access this
+
+01:34.720 --> 01:37.280
+flag
+
+01:35.680 --> 01:39.759
+by a server side
+
+01:37.280 --> 01:42.399
+so we just keep it nice and safe so
+
+01:39.759 --> 01:43.520
+let's let's start off by placing an npc
+
+01:42.399 --> 01:44.399
+or
+
+01:43.520 --> 01:46.720
+um
+
+01:44.399 --> 01:48.079
+just a block basically so
+
+01:46.720 --> 01:49.759
+um i'm going to be change i'm going to
+
+01:48.079 --> 01:51.600
+create a class so that we can actually
+
+01:49.759 --> 01:52.960
+use it on these little test dummies
+
+01:51.600 --> 01:54.479
+we're going to just be basically
+
+01:52.960 --> 01:56.320
+claiming a block
+
+01:54.479 --> 01:58.560
+um and we're going to do it server side
+
+01:56.320 --> 02:00.799
+so let's create a new class or you can
+
+01:58.560 --> 02:03.119
+just script directly in an npc that's up
+
+02:00.799 --> 02:06.719
+to you let's just call this
+
+02:03.119 --> 02:08.800
+block underscore clay
+
+02:06.719 --> 02:10.319
+let's call it block claim okay so now we
+
+02:08.800 --> 02:11.280
+have a new class that we can use on all
+
+02:10.319 --> 02:13.280
+these so
+
+02:11.280 --> 02:14.800
+let's just save this real quick let's
+
+02:13.280 --> 02:16.239
+copy
+
+02:14.800 --> 02:18.319
+this
+
+02:16.239 --> 02:23.200
+and then let's go in here and actually
+
+02:18.319 --> 02:24.560
+change these so that it uses that okay
+
+02:23.200 --> 02:26.160
+so i'm just going to duplicate it a
+
+02:24.560 --> 02:28.239
+couple times
+
+02:26.160 --> 02:31.360
+save it okay so now they're all these
+
+02:28.239 --> 02:33.360
+are using our new script now
+
+02:31.360 --> 02:36.640
+so we already know how to do this let's
+
+02:33.360 --> 02:37.920
+call our client side tag here client
+
+02:36.640 --> 02:39.519
+side
+
+02:37.920 --> 02:41.519
+so let's start off by creating some
+
+02:39.519 --> 02:44.400
+client-side stuff so
+
+02:41.519 --> 02:45.519
+when it's created
+
+02:44.400 --> 02:47.440
+let's
+
+02:45.519 --> 02:49.680
+so this is a built-in function uncreated
+
+02:47.440 --> 02:54.319
+so basically right when this is rendered
+
+02:49.680 --> 02:56.000
+let's just do this dot chat is equal to
+
+02:54.319 --> 02:57.200
+unclaimed
+
+02:56.000 --> 02:59.440
+so now
+
+02:57.200 --> 03:01.280
+we should see oh let me get a semicolon
+
+02:59.440 --> 03:04.000
+in here
+
+03:01.280 --> 03:06.640
+so now if we update the level you'll see
+
+03:04.000 --> 03:09.360
+that they're all unclaimed okay
+
+03:06.640 --> 03:11.360
+so now what else do we want to do
+
+03:09.360 --> 03:14.159
+we want them to touch it to claim it so
+
+03:11.360 --> 03:15.040
+let's do function on
+
+03:14.159 --> 03:16.640
+layer
+
+03:15.040 --> 03:18.879
+touches
+
+03:16.640 --> 03:19.920
+okay
+
+03:18.879 --> 03:21.920
+and then
+
+03:19.920 --> 03:24.000
+now here's where it gets tricky what
+
+03:21.920 --> 03:25.360
+we're going to want to do is trigger
+
+03:24.000 --> 03:27.200
+action so now we're going to be
+
+03:25.360 --> 03:31.120
+triggering the server side
+
+03:27.200 --> 03:33.280
+and for now just put x y
+
+03:31.120 --> 03:35.599
+and then here this parameter let's let's
+
+03:33.280 --> 03:37.760
+do claim this is really important right
+
+03:35.599 --> 03:39.599
+here because this is this is how we're
+
+03:37.760 --> 03:41.840
+going to be actually knowing that when
+
+03:39.599 --> 03:43.840
+you touch it it's triggering
+
+03:41.840 --> 03:46.159
+you know the specific function
+
+03:43.840 --> 03:48.480
+so now how do we actually go above the
+
+03:46.159 --> 03:49.519
+server side and do this one and trigger
+
+03:48.480 --> 03:51.120
+that
+
+03:49.519 --> 03:52.640
+so you just create any old function and
+
+03:51.120 --> 03:55.439
+it's always going to start like this
+
+03:52.640 --> 03:57.280
+it's going to always start on action
+
+03:55.439 --> 03:59.599
+and then this next part is
+
+03:57.280 --> 04:01.760
+has to be exactly the same
+
+03:59.599 --> 04:03.120
+so claim claim
+
+04:01.760 --> 04:04.640
+when they touch it it should trigger the
+
+04:03.120 --> 04:06.239
+server side
+
+04:04.640 --> 04:08.879
+and run this function and this is
+
+04:06.239 --> 04:11.680
+completely server-side so that means we
+
+04:08.879 --> 04:13.040
+have access to client rnl we can modify
+
+04:11.680 --> 04:16.720
+and read it
+
+04:13.040 --> 04:18.400
+so when they touch it let's do client r
+
+04:16.720 --> 04:20.239
+dot
+
+04:18.400 --> 04:22.720
+interacting
+
+04:20.239 --> 04:25.199
+w which is to interacting with is equal
+
+04:22.720 --> 04:28.000
+to this dot id
+
+04:25.199 --> 04:31.040
+so this refers to whatever npc it's on
+
+04:28.000 --> 04:33.919
+right and the id is a
+
+04:31.040 --> 04:36.240
+built-in game engine id per mpc
+
+04:33.919 --> 04:37.919
+so this one might be one two three it's
+
+04:36.240 --> 04:39.919
+a good way because no npc will have the
+
+04:37.919 --> 04:41.759
+same id when they're created so we'll
+
+04:39.919 --> 04:42.639
+know exactly will trigger the server
+
+04:41.759 --> 04:45.120
+side
+
+04:42.639 --> 04:47.040
+and we'll save to the player who touched
+
+04:45.120 --> 04:49.280
+it this id
+
+04:47.040 --> 04:52.720
+so now let's see if it worked let's do
+
+04:49.280 --> 04:57.240
+let's make the npc this dot
+
+04:52.720 --> 04:57.240
+chat it's equal to
+
+04:58.000 --> 05:00.240
+um
+
+04:58.960 --> 05:01.919
+we'll say
+
+05:00.240 --> 05:04.160
+claimed
+
+05:01.919 --> 05:08.280
+by
+
+05:04.160 --> 05:08.280
+and then we'll concatenate with this
+
+05:10.720 --> 05:13.759
+okay
+
+05:11.520 --> 05:16.479
+so now let me just update the level
+
+05:13.759 --> 05:18.720
+again if we touch one
+
+05:16.479 --> 05:20.240
+it says it was claimed by me and this is
+
+05:18.720 --> 05:21.919
+server side
+
+05:20.240 --> 05:23.600
+so everyone should be able to see this
+
+05:21.919 --> 05:25.600
+and we just saved what you just
+
+05:23.600 --> 05:27.360
+interacted with so we can
+
+05:25.600 --> 05:30.080
+so we can use that so let's open our
+
+05:27.360 --> 05:31.360
+flags and check this out
+
+05:30.080 --> 05:34.000
+so you'll see
+
+05:31.360 --> 05:36.000
+right here i've done some testing before
+
+05:34.000 --> 05:37.600
+so let me get rid of that right here
+
+05:36.000 --> 05:39.199
+this is what we just created and pumped
+
+05:37.600 --> 05:42.080
+into the player
+
+05:39.199 --> 05:44.400
+so now we have access to save this flag
+
+05:42.080 --> 05:46.880
+and use it in any other script anywhere
+
+05:44.400 --> 05:48.080
+anyway so things like graylits things
+
+05:46.880 --> 05:49.759
+like money
+
+05:48.080 --> 05:52.639
+things like health
+
+05:49.759 --> 05:54.479
+something like client art
+
+05:52.639 --> 05:58.080
+let's just say health
+
+05:54.479 --> 06:01.360
+it's equal to 100 so something like that
+
+05:58.080 --> 06:03.120
+but let's get rid of that so now
+
+06:01.360 --> 06:05.039
+just like that we have access to
+
+06:03.120 --> 06:07.039
+something like this so maybe we just
+
+06:05.039 --> 06:08.400
+sleep for
+
+06:07.039 --> 06:09.840
+one second
+
+06:08.400 --> 06:11.919
+and then we do
+
+06:09.840 --> 06:13.600
+this
+
+06:11.919 --> 06:15.919
+that chat is
+
+06:13.600 --> 06:17.360
+equal to an empty string
+
+06:15.919 --> 06:18.880
+let's save that
+
+06:17.360 --> 06:21.680
+touch it again
+
+06:18.880 --> 06:22.919
+and you see it goes away
+
+06:21.680 --> 06:25.360
+let's just do
+
+06:22.919 --> 06:26.720
+unclaimed let's just go back to what it
+
+06:25.360 --> 06:29.199
+was before
+
+06:26.720 --> 06:31.120
+so we claimed it unclaimed claimed
+
+06:29.199 --> 06:32.639
+unclaimed
+
+06:31.120 --> 06:35.520
+just like that
+
+06:32.639 --> 06:37.520
+so you can see how easy it is to
+
+06:35.520 --> 06:39.280
+trigger the server side which
+
+06:37.520 --> 06:41.280
+is very useful
+
+06:39.280 --> 06:43.520
+for securing your data and
+
+06:41.280 --> 06:45.840
+you know it's just makes it easier so
+
+06:43.520 --> 06:47.759
+you can access this kind of information
+
+06:45.840 --> 06:49.680
+elsewhere in other scripts
+
+06:47.759 --> 06:51.120
+so you can
+
+06:49.680 --> 06:52.880
+fully claim this let's say you don't
+
+06:51.120 --> 06:55.599
+want another person to
+
+06:52.880 --> 06:57.280
+actually claim it we can set this npc to
+
+06:55.599 --> 06:58.639
+be claimed
+
+06:57.280 --> 07:02.880
+something like
+
+06:58.639 --> 07:06.160
+temp dot claim equals false
+
+07:02.880 --> 07:06.160
+and then if they touch it
+
+07:08.240 --> 07:11.199
+if it's true
+
+07:11.360 --> 07:15.360
+this that chat is
+
+07:13.520 --> 07:17.759
+equal to
+
+07:15.360 --> 07:17.759
+tamp
+
+07:21.199 --> 07:24.880
+let's just copy that
+
+07:25.520 --> 07:30.120
+and
+
+07:26.800 --> 07:30.120
+copy that
+
+07:30.400 --> 07:35.360
+so now it's claimed
+
+07:32.000 --> 07:35.360
+and if i got rid of this
+
+07:35.840 --> 07:40.240
+maybe if it might be set maybe it needs
+
+07:37.840 --> 07:41.520
+to update the level so zero
+
+07:40.240 --> 07:43.520
+false
+
+07:41.520 --> 07:44.879
+this block is not claimed no one's
+
+07:43.520 --> 07:46.400
+touched it
+
+07:44.879 --> 07:48.560
+so now when you touch it it's going to
+
+07:46.400 --> 07:50.080
+trigger the service side
+
+07:48.560 --> 07:52.240
+trigger the server side it was claimed
+
+07:50.080 --> 07:54.080
+by me and now it's one so it's claimed
+
+07:52.240 --> 07:55.360
+so you can you know further implement
+
+07:54.080 --> 07:58.560
+your script to make sure that other
+
+07:55.360 --> 08:00.000
+people can't claim it so like let's say
+
+07:58.560 --> 08:02.160
+you know it's like a little farming item
+
+08:00.000 --> 08:03.440
+or whatever you want it to be
+
+08:02.160 --> 08:06.000
+uh you can really think outside the
+
+08:03.440 --> 08:07.680
+block so now they're all claimed
+
+08:06.000 --> 08:08.879
+and you know that's you know they're
+
+08:07.680 --> 08:10.720
+really useful and i'm gonna be going
+
+08:08.879 --> 08:12.080
+into depth with other tutorials when i
+
+08:10.720 --> 08:14.479
+actually teach you how to do like a
+
+08:12.080 --> 08:16.400
+specific thing so to create a specific
+
+08:14.479 --> 08:19.919
+weapon to create a specific
+
+08:16.400 --> 08:22.960
+staff tool to create a panel text system
+
+08:19.919 --> 08:23.840
+um any any sort of that kind of a thing
+
+08:22.960 --> 08:25.280
+so
+
+08:23.840 --> 08:27.120
+flags are super important make sure
+
+08:25.280 --> 08:28.319
+you're using them they're super helpful
+
+08:27.120 --> 08:31.199
+to
+
+08:28.319 --> 08:33.519
+save data to the player um
+
+08:31.199 --> 08:35.440
+perfect so thanks for watching and make
+
+08:33.519 --> 08:36.800
+sure to subscribe and watch the rest of
+
+08:35.440 --> 08:38.560
+the videos that are on the playlist
+
+08:36.800 --> 08:40.719
+because i'm going to continue to be
+
+08:38.560 --> 08:42.880
+uploading to
+
+08:40.719 --> 08:44.720
+these gs2 tutorials
+
+08:42.880 --> 08:46.240
+to hopefully help those who can't really
+
+08:44.720 --> 08:48.080
+read the wiki because the wiki is kind
+
+08:46.240 --> 08:49.600
+of a mess so you know hopefully these
+
+08:48.080 --> 08:50.880
+are helpful and i'm going to keep going
+
+08:49.600 --> 08:52.560
+make sure to comment what you want to
+
+08:50.880 --> 08:55.519
+see next otherwise i'm just going to
+
+08:52.560 --> 08:56.800
+keep going off random things until
+
+08:55.519 --> 08:58.880
+you know we get some more comments going
+
+08:56.800 --> 09:02.200
+so thanks for watching and
+
+08:58.880 --> 09:02.200
+good luck scripting

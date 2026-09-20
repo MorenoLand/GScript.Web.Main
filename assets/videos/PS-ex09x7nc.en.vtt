@@ -1,0 +1,367 @@
+WEBVTT
+
+00:00.440 --> 00:05.200
+hello and welcome to the 15th tutorial
+
+00:02.639 --> 00:07.680
+on how to program and gript 2 so let's
+
+00:05.200 --> 00:10.599
+open our NPC and scroll down to the
+
+00:07.680 --> 00:13.400
+bottom of the for Loop now let's make
+
+00:10.599 --> 00:15.279
+the NPC run a bit faster and smoother
+
+00:13.400 --> 00:19.119
+let's change this to
+
+00:15.279 --> 00:21.920
+0.5 the loop will Loop faster because
+
+00:19.119 --> 00:26.080
+the the delay in it is lower which will
+
+00:21.920 --> 00:28.119
+make the NPC run faster and smoother so
+
+00:26.080 --> 00:30.880
+anyway let's take this out in the
+
+00:28.119 --> 00:33.480
+beginning to change the Oni
+
+00:30.880 --> 00:36.440
+and add it into
+
+00:33.480 --> 00:38.600
+the for Loop it doesn't matter if we add
+
+00:36.440 --> 00:41.440
+it into it or outside of it since we're
+
+00:38.600 --> 00:43.320
+only beginning calling it once but I'm
+
+00:41.440 --> 00:45.520
+just going to add it
+
+00:43.320 --> 00:48.920
+inside also inside the for Loop I'm
+
+00:45.520 --> 00:51.640
+going to add this doer is equal to three
+
+00:48.920 --> 00:53.079
+this will change the direction to right
+
+00:51.640 --> 00:55.079
+the same with this we can also add it
+
+00:53.079 --> 00:56.760
+outside the for before it but we're just
+
+00:55.079 --> 01:01.680
+going to add it
+
+00:56.760 --> 01:01.680
+inside so Watch What Happens now
+
+01:02.680 --> 01:08.080
+the NPC runs to the right it's very
+
+01:05.119 --> 01:11.799
+smooth and then it just stops and still
+
+01:08.080 --> 01:14.439
+running in place let's open the NPC and
+
+01:11.799 --> 01:14.439
+after the for
+
+01:14.600 --> 01:21.479
+Loop let's add some code to make it stop
+
+01:19.240 --> 01:24.479
+running let's make it let's change the
+
+01:21.479 --> 01:24.479
+Oni to
+
+01:27.320 --> 01:34.399
+idle then go here
+
+01:30.560 --> 01:38.360
+sleep 1 second glay a
+
+01:34.399 --> 01:42.399
+second then change the direction to two
+
+01:38.360 --> 01:42.399
+so when we save this and
+
+01:44.320 --> 01:50.920
+upload moves to the
+
+01:47.439 --> 01:54.119
+right looks down Waits a second then
+
+01:50.920 --> 01:54.119
+looks down then it just
+
+01:54.520 --> 02:01.840
+stops let's say we want to move
+
+01:57.240 --> 02:01.840
+backwards well we just copy the for Loop
+
+02:02.840 --> 02:07.640
+and we take out the first parameter that
+
+02:04.520 --> 02:11.039
+changes the N value here's the thing in
+
+02:07.640 --> 02:14.239
+the first for Loop the we created an N
+
+02:11.039 --> 02:16.879
+value called an N variable called I mean
+
+02:14.239 --> 02:20.280
+called n i mean a temp variable called
+
+02:16.879 --> 02:22.959
+an made it four then once it was 20 it
+
+02:20.280 --> 02:25.840
+broke the L broke the loop currently
+
+02:22.959 --> 02:30.080
+it's 20 now here we can just take this
+
+02:25.840 --> 02:32.879
+out n is is 20 right now
+
+02:30.080 --> 02:34.760
+it doesn't just and the the variable
+
+02:32.879 --> 02:37.560
+doesn't just stop once the for Loop is
+
+02:34.760 --> 02:39.680
+over temp variables only get deleted
+
+02:37.560 --> 02:42.040
+when the function is over so it's
+
+02:39.680 --> 02:44.879
+currently still 20 here we can just get
+
+02:42.040 --> 02:47.840
+rid of the first parameter or add null
+
+02:44.879 --> 02:51.599
+I'll just put nothing there then change
+
+02:47.840 --> 02:55.400
+this line to is greater than four this
+
+02:51.599 --> 02:57.360
+is going to make it so as long as the x
+
+02:55.400 --> 02:59.840
+value is greater than four it's going to
+
+02:57.360 --> 03:02.280
+walk it's going to do whatever is here
+
+02:59.840 --> 03:06.159
+then let's change this last parameter to
+
+03:02.280 --> 03:07.680
+minus 0.2 so it's going to go back it's
+
+03:06.159 --> 03:10.200
+going to go to the
+
+03:07.680 --> 03:12.879
+left it's going to subtract the x-axis
+
+03:10.200 --> 03:15.200
+make it go left until it reaches four
+
+03:12.879 --> 03:17.319
+then it's going to break the loop and we
+
+03:15.200 --> 03:18.360
+can change direction to one to make it
+
+03:17.319 --> 03:21.120
+face
+
+03:18.360 --> 03:24.440
+left then just copy this code
+
+03:21.120 --> 03:27.599
+here and put it under the for
+
+03:24.440 --> 03:30.200
+Loop oh and add a sleep here so there's
+
+03:27.599 --> 03:33.200
+a delay between the running and the
+
+03:30.200 --> 03:36.400
+waiting same here even though it doesn't
+
+03:33.200 --> 03:41.080
+matter right now but we'll get we'll see
+
+03:36.400 --> 03:41.080
+what we'll add later so let's save
+
+03:41.360 --> 03:48.400
+it upload it's going to run to the
+
+03:45.480 --> 03:50.799
+right and stop wait a second look down
+
+03:48.400 --> 03:54.280
+wait a second then go back to the
+
+03:50.799 --> 03:55.680
+left it's going to look to the left wait
+
+03:54.280 --> 03:58.360
+a second look down then wait a second
+
+03:55.680 --> 04:00.680
+and do nothing now let's say we want it
+
+03:58.360 --> 04:02.200
+to look go back and forth over and over
+
+04:00.680 --> 04:04.480
+and over and
+
+04:02.200 --> 04:07.200
+over
+
+04:04.480 --> 04:09.360
+infinitely what we would do is make it
+
+04:07.200 --> 04:13.680
+as I like to call a function
+
+04:09.360 --> 04:18.079
+Loop what this is is you
+
+04:13.680 --> 04:21.520
+put on player enters the name of the
+
+04:18.079 --> 04:25.000
+current function which is on player
+
+04:21.520 --> 04:28.080
+enters and semicolon this pretty much
+
+04:25.000 --> 04:30.120
+calls a function it's going to jump it's
+
+04:28.080 --> 04:32.800
+going to read this line and jump
+
+04:30.120 --> 04:35.080
+straight to whatever function is being
+
+04:32.800 --> 04:37.880
+called which is currently the function
+
+04:35.080 --> 04:40.160
+it's in so it's going to read this and
+
+04:37.880 --> 04:42.919
+jump way back up to here and go back
+
+04:40.160 --> 04:45.520
+down this code do it over and over and
+
+04:42.919 --> 04:47.320
+over again and over and over and over
+
+04:45.520 --> 04:49.039
+again it's just going to keep going back
+
+04:47.320 --> 04:50.479
+down back to here then going back up and
+
+04:49.039 --> 04:51.960
+then back down and then back up it's
+
+04:50.479 --> 04:54.080
+going to keep going left and right o
+
+04:51.960 --> 04:57.080
+forever really There's No Limit how many
+
+04:54.080 --> 04:59.800
+times you can Loop a function in fact if
+
+04:57.080 --> 05:01.919
+we wanted to we could change this to on
+
+04:59.800 --> 05:04.560
+created instead it would jump to
+
+05:01.919 --> 05:06.240
+oncreated and run this function again
+
+05:04.560 --> 05:07.600
+but then nothing would happen so we want
+
+05:06.240 --> 05:11.080
+to just do
+
+05:07.600 --> 05:13.919
+on player enters it's going to jump back
+
+05:11.080 --> 05:16.039
+to this function run it
+
+05:13.919 --> 05:18.680
+again so let's
+
+05:16.039 --> 05:20.199
+upload as you can see the NPC is running
+
+05:18.680 --> 05:25.360
+to the
+
+05:20.199 --> 05:25.360
+right running waiting running to the
+
+05:25.440 --> 05:32.039
+left waiting then running back to the
+
+05:28.720 --> 05:32.039
+right and it'll do that forever
+
+05:32.120 --> 05:38.840
+now so anyway that's it for this
+
+05:34.319 --> 05:42.360
+tutorial I taught you a bit about how to
+
+05:38.840 --> 05:44.520
+Loop a function and how to call other
+
+05:42.360 --> 05:46.440
+functions too and jump to other
+
+05:44.520 --> 05:51.120
+functions and that concludes this
+
+05:46.440 --> 05:51.120
+tutorial and I'll see you later bye

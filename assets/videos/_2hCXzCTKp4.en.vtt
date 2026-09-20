@@ -1,0 +1,586 @@
+WEBVTT
+
+00:00.440 --> 00:06.640
+hello and welcome to the 23rd tutorial
+
+00:02.879 --> 00:10.000
+on how to program NG script 2 so I can't
+
+00:06.640 --> 00:11.880
+actually enter my server anymore because
+
+00:10.000 --> 00:14.719
+I'm not sure why probably because maybe
+
+00:11.880 --> 00:17.199
+the subscription ended well I just can't
+
+00:14.719 --> 00:19.439
+enter it anymore it's not there it's
+
+00:17.199 --> 00:21.439
+gone and that's not a good thing because
+
+00:19.439 --> 00:23.560
+I can't program NG script 2 unless I go
+
+00:21.439 --> 00:26.039
+to another server and all the things on
+
+00:23.560 --> 00:27.800
+that server are gone well I kind of got
+
+00:26.039 --> 00:30.160
+rid of a lot of things when I started
+
+00:27.800 --> 00:32.279
+this series but all of it's always back
+
+00:30.160 --> 00:36.719
+on my computer anyway but all the things
+
+00:32.279 --> 00:39.960
+that I made during the tutorials was um
+
+00:36.719 --> 00:42.840
+is now gone but I think that's the
+
+00:39.960 --> 00:45.440
+problem with gript too is that you know
+
+00:42.840 --> 00:48.559
+you're kind of forced to have a server
+
+00:45.440 --> 00:51.079
+or or get hired on a server to program
+
+00:48.559 --> 00:53.800
+it and you can't like there's no level
+
+00:51.079 --> 00:57.120
+editor like there is for gript 1 I don't
+
+00:53.800 --> 00:59.640
+like that I wish um Stefan or whoever
+
+00:57.120 --> 01:01.960
+does all that would make a level level
+
+00:59.640 --> 01:03.199
+editor for gript 2 but I don't think
+
+01:01.960 --> 01:07.520
+it's going to
+
+01:03.199 --> 01:09.759
+happen so it's not a good thing because
+
+01:07.520 --> 01:13.200
+for one to learn gript 2 you're going to
+
+01:09.759 --> 01:15.240
+need to join a server or buy a server
+
+01:13.200 --> 01:16.560
+because you need to practice to learn it
+
+01:15.240 --> 01:20.040
+and no one's going to hire you unless
+
+01:16.560 --> 01:22.680
+you know it is that right so unless you
+
+01:20.040 --> 01:26.240
+join some very new server who that's
+
+01:22.680 --> 01:28.600
+desperate for everyone to come I don't
+
+01:26.240 --> 01:30.600
+think it's possible to really learn it
+
+01:28.600 --> 01:32.640
+unless you buy it and I don't want to
+
+01:30.600 --> 01:37.000
+pay I don't want to pay that much money
+
+01:32.640 --> 01:39.000
+to have a server again so yeah I'm gonna
+
+01:37.000 --> 01:40.759
+make make this tutorial in the gript one
+
+01:39.000 --> 01:44.200
+level editor and I won't be able to run
+
+01:40.759 --> 01:47.320
+it but I'm going to explain through it
+
+01:44.200 --> 01:52.159
+and hopefully you understand it okay so
+
+01:47.320 --> 01:54.560
+this is in a level MPC in a level now at
+
+01:52.159 --> 01:57.600
+the top I have function oncreated and I
+
+01:54.560 --> 02:01.039
+put the set shape this is needed in an
+
+01:57.600 --> 02:04.280
+NPC if you want to use Trigger action on
+
+02:01.039 --> 02:06.960
+the NPC this is not needed for
+
+02:04.280 --> 02:09.959
+weapons Trigger action is a
+
+02:06.960 --> 02:14.239
+new command I'm going to teach you now
+
+02:09.959 --> 02:17.080
+just ignore this part right now okay so
+
+02:14.239 --> 02:21.040
+under client side I have a function
+
+02:17.080 --> 02:23.400
+function on was hit where if I slash the
+
+02:21.040 --> 02:25.920
+MPC then whatever is in these brackets
+
+02:23.400 --> 02:30.440
+will run okay so Trigger
+
+02:25.920 --> 02:35.000
+action trigger action is a command
+
+02:30.440 --> 02:37.760
+that allows variables or something to on
+
+02:35.000 --> 02:40.360
+client side to be sent over to server
+
+02:37.760 --> 02:43.280
+side and this is very useful you can
+
+02:40.360 --> 02:44.440
+also send over variables and all that
+
+02:43.280 --> 02:46.239
+you probably will understand the
+
+02:44.440 --> 02:47.680
+usefulness of it in this tutorial since
+
+02:46.239 --> 02:52.599
+I won't be able to show it but I'll try
+
+02:47.680 --> 02:57.000
+to explain now trigger Trigger action
+
+02:52.599 --> 02:59.319
+is is for NPCs trigger well I guess can
+
+02:57.000 --> 03:00.280
+also be used in weapons but trigger
+
+02:59.319 --> 03:02.480
+server
+
+03:00.280 --> 03:04.519
+is a different command and it is used in
+
+03:02.480 --> 03:07.319
+weapons if you want to look that up on
+
+03:04.519 --> 03:09.200
+the girl all Wiki or actually that's the
+
+03:07.319 --> 03:10.360
+best place to look it up then I would do
+
+03:09.200 --> 03:12.080
+that if you want to learn it because
+
+03:10.360 --> 03:14.000
+it's very useful but I'm going to use
+
+03:12.080 --> 03:15.640
+Trigger action which is pretty much the
+
+03:14.000 --> 03:19.040
+same thing as trigger server and it does
+
+03:15.640 --> 03:22.120
+the same thing okay so on the first two
+
+03:19.040 --> 03:23.239
+variables I specify the position it
+
+03:22.120 --> 03:24.760
+doesn't really matter since we're just
+
+03:23.239 --> 03:27.440
+going to be sending over
+
+03:24.760 --> 03:29.760
+nothing we're just going to have it go
+
+03:27.440 --> 03:30.959
+to this line to this function and run it
+
+03:29.760 --> 03:32.680
+we don't really want to send anything
+
+03:30.959 --> 03:35.920
+anything over if we want to send
+
+03:32.680 --> 03:39.720
+something over we have to put it after
+
+03:35.920 --> 03:41.640
+the name the name is important kind of
+
+03:39.720 --> 03:44.959
+on the function that you want to send it
+
+03:41.640 --> 03:46.400
+to you have to have on action set level
+
+03:44.959 --> 03:48.480
+which I have here this is called set
+
+03:46.400 --> 03:51.959
+level and this function is called set
+
+03:48.480 --> 03:53.799
+level so anyway the fourth parameter
+
+03:51.959 --> 03:56.439
+here is what gets sent over to this
+
+03:53.799 --> 04:00.400
+function right here which you can stop
+
+03:56.439 --> 04:03.280
+ignoring now um if we put
+
+04:00.400 --> 04:06.640
+something like temp. high we would have
+
+04:03.280 --> 04:09.480
+to have it here temp. High equal
+
+04:06.640 --> 04:11.760
+5 then if we want to send that over we
+
+04:09.480 --> 04:13.519
+can just put any variable name here VAR
+
+04:11.760 --> 04:16.079
+and then it's here just like sending
+
+04:13.519 --> 04:18.639
+over variables to any other
+
+04:16.079 --> 04:20.479
+function okay but I'm going to put null
+
+04:18.639 --> 04:24.199
+which is the same thing as putting
+
+04:20.479 --> 04:27.800
+nothing okay so I'm just going to go to
+
+04:24.199 --> 04:30.400
+this function here after this is run ran
+
+04:27.800 --> 04:33.280
+or whatever it goes to this function
+
+04:30.400 --> 04:35.400
+and it runs what's in these parentheses
+
+04:33.280 --> 04:37.360
+you can put anything there you can put
+
+04:35.400 --> 04:38.600
+player that chat equals whatever but
+
+04:37.360 --> 04:40.120
+it's always going to it's going to be on
+
+04:38.600 --> 04:42.360
+server side and everybody on the server
+
+04:40.120 --> 04:45.160
+is going to see it or at least in that's
+
+04:42.360 --> 04:46.759
+around the player so they can see it
+
+04:45.160 --> 04:48.120
+okay and this is the second part of the
+
+04:46.759 --> 04:51.600
+tutorial I'm going to
+
+04:48.120 --> 04:53.479
+teach this is a for special for
+
+04:51.600 --> 04:57.400
+Loop
+
+04:53.479 --> 05:01.199
+four actually I'm going to write it out
+
+04:57.400 --> 05:05.120
+again four
+
+05:01.199 --> 05:11.080
+temp. PL or whatever variable we want
+
+05:05.120 --> 05:14.680
+VAR um 7 let's just put PL then we put a
+
+05:11.080 --> 05:18.800
+colon the two dots with the two dots and
+
+05:14.680 --> 05:21.479
+we put a an an array let's put all
+
+05:18.800 --> 05:24.600
+players all players is a special type of
+
+05:21.479 --> 05:27.919
+of array that holds all the
+
+05:24.600 --> 05:29.800
+players on the server and I'll show you
+
+05:27.919 --> 05:31.000
+what that will do in a second you don't
+
+05:29.800 --> 05:35.440
+really you don't have to have these
+
+05:31.000 --> 05:35.440
+after it it's possible but we don't need
+
+05:35.600 --> 05:40.800
+that let's put
+
+05:38.440 --> 05:43.120
+some
+
+05:40.800 --> 05:45.520
+brackets now so what this is going to do
+
+05:43.120 --> 05:47.039
+is it's going to Loop through all of the
+
+05:45.520 --> 05:49.720
+players on the
+
+05:47.039 --> 05:51.039
+server and it's and nothing's going to
+
+05:49.720 --> 05:53.520
+happen it's going to quit the for Loop
+
+05:51.039 --> 05:55.160
+and then continue on into
+
+05:53.520 --> 05:58.000
+nothingness
+
+05:55.160 --> 06:00.400
+okay so what we're going to do here is
+
+05:58.000 --> 06:02.680
+we're going to put PL
+
+06:00.400 --> 06:08.639
+which is the variable
+
+06:02.680 --> 06:08.639
+here then put dot chat is equal
+
+06:08.960 --> 06:13.720
+to
+
+06:11.319 --> 06:15.840
+hello okay this is may be a bit
+
+06:13.720 --> 06:17.120
+confusing to understand so what this is
+
+06:15.840 --> 06:19.440
+doing is it's looping through all the
+
+06:17.120 --> 06:23.080
+players on the server and specifying
+
+06:19.440 --> 06:25.039
+them with this temp dot variable now
+
+06:23.080 --> 06:26.680
+when it finds a player on the server
+
+06:25.039 --> 06:29.960
+which is going to be pretty much every
+
+06:26.680 --> 06:32.440
+person here it's G to
+
+06:29.960 --> 06:35.319
+run this command once what's going to
+
+06:32.440 --> 06:38.039
+run the command for everyone and it's
+
+06:35.319 --> 06:40.639
+making everybody on the server say
+
+06:38.039 --> 06:45.919
+hello and we're doing this by putting
+
+06:40.639 --> 06:49.280
+PL which is here and is a variable for
+
+06:45.919 --> 06:51.840
+the player the specific player. chat is
+
+06:49.280 --> 06:55.400
+equal to hello you may not understand
+
+06:51.840 --> 06:57.120
+this but if you try it you'll get it so
+
+06:55.400 --> 07:01.080
+it's making everybody on the server say
+
+06:57.120 --> 07:02.720
+hello including you we can also put this
+
+07:01.080 --> 07:07.680
+if
+
+07:02.720 --> 07:10.120
+player do um Nick is equal
+
+07:07.680 --> 07:15.720
+to
+
+07:10.120 --> 07:17.120
+um killer it's a manly name then pl.
+
+07:15.720 --> 07:18.680
+chat is equal to hello so it's going to
+
+07:17.120 --> 07:21.039
+Loop through everybody on the server and
+
+07:18.680 --> 07:23.919
+if it finds someone oh I don't want to
+
+07:21.039 --> 07:26.400
+put player I want to put PL I'm sorry
+
+07:23.919 --> 07:28.800
+and if it finds someone there whose name
+
+07:26.400 --> 07:29.960
+is killer it's going to make them say
+
+07:28.800 --> 07:32.840
+hello
+
+07:29.960 --> 07:34.639
+we can also do this
+
+07:32.840 --> 07:38.039
+PL
+
+07:34.639 --> 07:41.479
+dot dur is equal to one this will make
+
+07:38.039 --> 07:43.440
+everybody on the server face to the left
+
+07:41.479 --> 07:45.680
+we can put anything we want we can make
+
+07:43.440 --> 07:48.800
+it so everybody warps to a level on the
+
+07:45.680 --> 07:50.759
+server we can make it so
+
+07:48.800 --> 07:52.800
+that yeah we can do a lot of things and
+
+07:50.759 --> 07:55.039
+we don't have to just put on all players
+
+07:52.800 --> 07:57.000
+we can put some other stuff anyway that
+
+07:55.039 --> 07:58.639
+concludes this tutorial which may be the
+
+07:57.000 --> 08:00.960
+final tutorial I'm ever going to make on
+
+07:58.639 --> 08:02.520
+gript 2
+
+08:00.960 --> 08:06.159
+and I hope you understand those two
+
+08:02.520 --> 08:08.280
+things Trigger action and these special
+
+08:06.159 --> 08:10.120
+for loops and how to Loop through
+
+08:08.280 --> 08:12.000
+everybody on the server and there and
+
+08:10.120 --> 08:14.440
+you can also do trigger server which is
+
+08:12.000 --> 08:16.720
+for like weapons but you can look up go
+
+08:14.440 --> 08:18.879
+to the grow Wiki and look at that
+
+08:16.720 --> 08:20.479
+because I can't show you anymore because
+
+08:18.879 --> 08:23.960
+my server is not up anymore and I don't
+
+08:20.479 --> 08:26.360
+want to pay for it so by and I hope I
+
+08:23.960 --> 08:28.560
+taught you a lot about gript 2 and you
+
+08:26.360 --> 08:30.440
+can use it because it's a really fun
+
+08:28.560 --> 08:34.519
+language I just wish it was a bit more
+
+08:30.440 --> 08:38.479
+accessible to new people and people who
+
+08:34.519 --> 08:38.479
+want it for free

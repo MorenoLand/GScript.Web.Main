@@ -1,0 +1,408 @@
+1
+00:00:00,399 --> 00:00:05,120
+hello and welcome to the 13th tutorial
+
+2
+00:00:02,520 --> 00:00:06,560
+on how to program NG script 2 so in the
+
+3
+00:00:05,120 --> 00:00:08,400
+last tutorial I taught you about four
+
+4
+00:00:06,560 --> 00:00:10,160
+Loops well in this tutorial I'm going to
+
+5
+00:00:08,400 --> 00:00:12,719
+teach you about while
+
+6
+00:00:10,160 --> 00:00:15,280
+Loops so just type this and I'm going to
+
+7
+00:00:12,719 --> 00:00:17,600
+show you what they do while Loops are
+
+8
+00:00:15,280 --> 00:00:20,000
+very similar to four Loops except in the
+
+9
+00:00:17,600 --> 00:00:22,480
+parentheses they only have one parameter
+
+10
+00:00:20,000 --> 00:00:25,800
+like a four Loop would had three one two
+
+11
+00:00:22,480 --> 00:00:30,960
+three but a while loop only has
+
+12
+00:00:25,800 --> 00:00:34,280
+one and that one is if whatever is true
+
+13
+00:00:30,960 --> 00:00:36,440
+then run whatever is in the wild Loop so
+
+14
+00:00:34,280 --> 00:00:40,480
+let's do
+
+15
+00:00:36,440 --> 00:00:45,000
+this this dobat is equal
+
+16
+00:00:40,480 --> 00:00:52,399
+to one now in the wild Loop we
+
+17
+00:00:45,000 --> 00:00:54,559
+put if this dobo is less than 10 then it
+
+18
+00:00:52,399 --> 00:00:56,719
+will do whatever is in the W in the
+
+19
+00:00:54,559 --> 00:01:01,640
+parenthesis if it's not it's going to
+
+20
+00:00:56,719 --> 00:01:06,159
+just break the break the loop and Contin
+
+21
+00:01:01,640 --> 00:01:09,159
+onward so let's add here this dobo
+
+22
+00:01:06,159 --> 00:01:13,600
+equals this dobo plus plus so add it by
+
+23
+00:01:09,159 --> 00:01:16,640
+one oh I mean plus plus is what I meant
+
+24
+00:01:13,600 --> 00:01:19,119
+and we'll add this. chat is equal to
+
+25
+00:01:16,640 --> 00:01:24,240
+this. boo so we can see as the variable
+
+26
+00:01:19,119 --> 00:01:29,280
+changes then outside of the loop let's
+
+27
+00:01:24,240 --> 00:01:31,920
+add this. chat is equal to the loop
+
+28
+00:01:29,280 --> 00:01:31,920
+broke
+
+29
+00:01:33,240 --> 00:01:37,079
+and let's add a delay here so it doesn't
+
+30
+00:01:35,479 --> 00:01:41,399
+go too
+
+31
+00:01:37,079 --> 00:01:43,159
+quickly oh I mean sleep is what I
+
+32
+00:01:41,399 --> 00:01:45,159
+meant
+
+33
+00:01:43,159 --> 00:01:49,719
+sleep
+
+34
+00:01:45,159 --> 00:01:49,719
+0.1 so let's close it and
+
+35
+00:01:50,880 --> 00:01:54,280
+save so it's going to get to 10 then it
+
+36
+00:01:53,159 --> 00:01:56,640
+says Loop is
+
+37
+00:01:54,280 --> 00:01:58,439
+broken so that's pretty much what a
+
+38
+00:01:56,640 --> 00:02:00,439
+while loop is it's very similar to a
+
+39
+00:01:58,439 --> 00:02:02,920
+four Loop except it only has
+
+40
+00:02:00,439 --> 00:02:07,640
+one parameter manually I'm going to be
+
+41
+00:02:02,920 --> 00:02:09,399
+using four Loops so just know that so
+
+42
+00:02:07,640 --> 00:02:11,160
+right now I'm going to show you
+
+43
+00:02:09,399 --> 00:02:14,599
+something you can do with
+
+44
+00:02:11,160 --> 00:02:18,360
+loops okay so let's let's say we want to
+
+45
+00:02:14,599 --> 00:02:22,040
+animate this NPC to move this
+
+46
+00:02:18,360 --> 00:02:24,280
+way then go back to here and move back
+
+47
+00:02:22,040 --> 00:02:25,200
+this way again so it's sort of walking
+
+48
+00:02:24,280 --> 00:02:29,519
+to the
+
+49
+00:02:25,200 --> 00:02:30,640
+side well to that we would go here
+
+50
+00:02:29,519 --> 00:02:33,280
+actually
+
+51
+00:02:30,640 --> 00:02:36,680
+let's go and drag a new NPC
+
+52
+00:02:33,280 --> 00:02:40,239
+in a predefined one cuz we're too lazy
+
+53
+00:02:36,680 --> 00:02:40,239
+to add in it
+
+54
+00:02:42,280 --> 00:02:46,959
+ourselves whenever you're using gript
+
+55
+00:02:44,480 --> 00:02:50,080
+one you usually want to to make it
+
+56
+00:02:46,959 --> 00:02:54,080
+client side if you ever are going to be
+
+57
+00:02:50,080 --> 00:02:56,080
+using it let's down here let's add
+
+58
+00:02:54,080 --> 00:02:58,400
+function
+
+59
+00:02:56,080 --> 00:03:01,400
+on let's change this
+
+60
+00:02:58,400 --> 00:03:05,400
+to function fun on
+
+61
+00:03:01,400 --> 00:03:07,799
+created and here let's add function on
+
+62
+00:03:05,400 --> 00:03:09,840
+player
+
+63
+00:03:07,799 --> 00:03:12,239
+enters now what we're going to do is add
+
+64
+00:03:09,840 --> 00:03:12,239
+a for
+
+65
+00:03:13,159 --> 00:03:21,959
+Loop and add a variable called
+
+66
+00:03:16,920 --> 00:03:27,680
+temp. n zero then add
+
+67
+00:03:21,959 --> 00:03:31,239
+temp. n actually let's make it four
+
+68
+00:03:27,680 --> 00:03:32,599
+let's temp. n as long as it's less than
+
+69
+00:03:31,239 --> 00:03:37,159
+or equal
+
+70
+00:03:32,599 --> 00:03:40,640
+to 20 and over here let's add temp.
+
+71
+00:03:37,159 --> 00:03:43,239
+n equals temp. n +
+
+72
+00:03:40,640 --> 00:03:45,680
+0
+
+73
+00:03:43,239 --> 00:03:49,120
+0.2
+
+74
+00:03:45,680 --> 00:03:53,120
+now let's in the for Loop let's add
+
+75
+00:03:49,120 --> 00:03:58,159
+this.x is equal to temp.
+
+76
+00:03:53,120 --> 00:04:01,959
+n the x is is also a predefined variable
+
+77
+00:03:58,159 --> 00:04:03,000
+the x is what tile the NPC or players on
+
+78
+00:04:01,959 --> 00:04:07,400
+in the
+
+79
+00:04:03,000 --> 00:04:11,400
+level in the top in the top um in the
+
+80
+00:04:07,400 --> 00:04:15,680
+top left corner it would be 0 0 and the
+
+81
+00:04:11,400 --> 00:04:19,759
+bottom right corner it would be
+
+82
+00:04:15,680 --> 00:04:23,240
+6464 it's like as it as this the y- axis
+
+83
+00:04:19,759 --> 00:04:27,320
+goes down and the x-axis goes sideways
+
+84
+00:04:23,240 --> 00:04:30,600
+we'll go into more about that later but
+
+85
+00:04:27,320 --> 00:04:35,160
+just have a faint idea about it
+
+86
+00:04:30,600 --> 00:04:39,199
+so where is that okay here it is so the
+
+87
+00:04:35,160 --> 00:04:41,360
+NPC's X position is equal to temp. n at
+
+88
+00:04:39,199 --> 00:04:42,759
+first it's going to be four then it's
+
+89
+00:04:41,360 --> 00:04:46,080
+going to increase by
+
+90
+00:04:42,759 --> 00:04:46,080
+0.2 every
+
+91
+00:04:47,160 --> 00:04:51,880
+single 10th of a
+
+92
+00:04:49,440 --> 00:04:53,080
+second and once it gets 20 it'll break
+
+93
+00:04:51,880 --> 00:04:56,880
+the
+
+94
+00:04:53,080 --> 00:05:00,600
+loop so let's just close
+
+95
+00:04:56,880 --> 00:05:04,479
+this save it and upload you can see an
+
+96
+00:05:00,600 --> 00:05:07,880
+NPC that's the NPC and it's moving
+
+97
+00:05:04,479 --> 00:05:10,440
+sideways once the x value gets to 20
+
+98
+00:05:07,880 --> 00:05:13,919
+it'll stop there's 20 that means it's
+
+99
+00:05:10,440 --> 00:05:16,360
+gotten 20 tiles to the right from the
+
+100
+00:05:13,919 --> 00:05:18,639
+very edge of the level so that's it for
+
+101
+00:05:16,360 --> 00:05:24,919
+this tutorial we'll be adding a bit more
+
+102
+00:05:18,639 --> 00:05:24,919
+to our animated NPC later so anyway bye
+

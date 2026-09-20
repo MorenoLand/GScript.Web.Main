@@ -1,0 +1,313 @@
+WEBVTT
+
+00:00.560 --> 00:07.240
+hello and welcome to the fourth tutorial
+
+00:03.560 --> 00:09.960
+on how to program in gript 2 in this
+
+00:07.240 --> 00:13.960
+tutorial I'm going to teach you a bit
+
+00:09.960 --> 00:15.759
+about you know actual programming now so
+
+00:13.960 --> 00:20.760
+let's open level editor and here's our
+
+00:15.759 --> 00:23.160
+little level let's drag a level NPC in
+
+00:20.760 --> 00:25.800
+NPCs aren't
+
+00:23.160 --> 00:28.800
+just characters like people they can
+
+00:25.800 --> 00:31.840
+also be lights or doors and things like
+
+00:28.800 --> 00:34.640
+that and they only run when the player
+
+00:31.840 --> 00:36.520
+is in the level so let's double click it
+
+00:34.640 --> 00:41.800
+and you see all this gript one junk and
+
+00:36.520 --> 00:45.800
+we can take that out let's type client
+
+00:41.800 --> 00:48.600
+side client side everything under client
+
+00:45.800 --> 00:50.800
+side will run for just the player
+
+00:48.600 --> 00:52.840
+everything above it will run for all the
+
+00:50.800 --> 00:55.440
+players in the level I'll show you
+
+00:52.840 --> 00:58.800
+examples later and probably in the next
+
+00:55.440 --> 01:01.920
+tutorial but anyway let's type function
+
+00:58.800 --> 01:05.400
+on create
+
+01:01.920 --> 01:08.960
+now functions everything in gript is run
+
+01:05.400 --> 01:12.640
+in ran in functions
+
+01:08.960 --> 01:15.360
+functions do stuff okay like function
+
+01:12.640 --> 01:17.200
+uncreated every time the player enters a
+
+01:15.360 --> 01:19.880
+level for the very first
+
+01:17.200 --> 01:22.560
+time everything in here will run let's
+
+01:19.880 --> 01:23.880
+say the player enters a level it runs
+
+01:22.560 --> 01:25.920
+then the player leaves the level and
+
+01:23.880 --> 01:28.600
+comes back it won't run but if the
+
+01:25.920 --> 01:32.320
+player joins the Ser like reconnects the
+
+01:28.600 --> 01:35.640
+server then it'll run again fun let's do
+
+01:32.320 --> 01:39.399
+function on player
+
+01:35.640 --> 01:42.119
+enters it's similar to on created
+
+01:39.399 --> 01:44.680
+except it's going to run every time the
+
+01:42.119 --> 01:47.640
+player enters the
+
+01:44.680 --> 01:50.719
+level now these parentheses are needed
+
+01:47.640 --> 01:52.200
+for one well I'll probably go over them
+
+01:50.719 --> 01:56.200
+later since we don't really need to
+
+01:52.200 --> 01:58.799
+right now these brackets are what is ran
+
+01:56.200 --> 02:01.960
+everything in the brackets is ran the
+
+01:58.799 --> 02:03.719
+brackets can be like like this or it can
+
+02:01.960 --> 02:06.200
+be anywhere you want but I like to put
+
+02:03.719 --> 02:07.800
+them like this let's double space here
+
+02:06.200 --> 02:12.840
+and
+
+02:07.800 --> 02:15.120
+type player. chat is equal to high semic
+
+02:12.840 --> 02:17.440
+column now as soon as the player enters
+
+02:15.120 --> 02:19.360
+the level for the VAR SE time it'll run
+
+02:17.440 --> 02:21.640
+this this what's in the
+
+02:19.360 --> 02:24.519
+brackets player. chat this is the
+
+02:21.640 --> 02:29.480
+player's chat this is the
+
+02:24.519 --> 02:30.920
+player and this is his chat is equal to
+
+02:29.480 --> 02:34.599
+oh
+
+02:30.920 --> 02:36.760
+is equal to the text high if you take
+
+02:34.599 --> 02:39.640
+out the quotes it's something completely
+
+02:36.760 --> 02:41.760
+different but we'll go over that later
+
+02:39.640 --> 02:44.560
+cuz you know it's made well it's just
+
+02:41.760 --> 02:47.319
+we'll go over it later you'll know soon
+
+02:44.560 --> 02:52.560
+probably in a later tutorial but anyway
+
+02:47.319 --> 02:55.400
+we'll close the program save it and
+
+02:52.560 --> 02:57.920
+upload I say hi
+
+02:55.400 --> 03:01.480
+now now let's go back into the program
+
+02:57.920 --> 03:04.360
+and change it to
+
+03:01.480 --> 03:08.200
+this do Shad equals high
+
+03:04.360 --> 03:10.480
+this is the MPC and this. chat is the
+
+03:08.200 --> 03:13.360
+same as the player's chat so the play
+
+03:10.480 --> 03:15.360
+the NPC is going to say hi as soon as
+
+03:13.360 --> 03:16.360
+the player enters the level for the very
+
+03:15.360 --> 03:19.799
+first
+
+03:16.360 --> 03:23.720
+time oh no that I do it right no that I
+
+03:19.799 --> 03:27.560
+save I did save
+
+03:23.720 --> 03:30.000
+it upload there there's the NPC now it's
+
+03:27.560 --> 03:32.480
+saying hi so anyway that's it for this
+
+03:30.000 --> 03:34.879
+tutorial and oh no never mind I have one
+
+03:32.480 --> 03:39.080
+more thing to show
+
+03:34.879 --> 03:39.080
+sleep like here here's an example of
+
+03:42.840 --> 03:50.720
+it I have these two
+
+03:45.439 --> 03:54.879
+text things as soon as I save save it
+
+03:50.720 --> 03:57.439
+and upload it it's going to say bye
+
+03:54.879 --> 03:59.840
+but it said hello here it should be
+
+03:57.439 --> 04:03.200
+saying hello then it'll say bye well
+
+03:59.840 --> 04:05.120
+well it it does say hello but instantly
+
+04:03.200 --> 04:07.200
+after it says hello it's going to run
+
+04:05.120 --> 04:11.760
+this and say bye but let's say we want
+
+04:07.200 --> 04:13.680
+to delay between them so we put sleep in
+
+04:11.760 --> 04:16.720
+parenthesis the amount of seconds we
+
+04:13.680 --> 04:18.239
+want semicolon oh I almost forgot semic
+
+04:16.720 --> 04:19.880
+colum here if you don't put a semic
+
+04:18.239 --> 04:21.919
+colum it's not going to
+
+04:19.880 --> 04:23.840
+work
+
+04:21.919 --> 04:27.479
+so we'll put
+
+04:23.840 --> 04:28.600
+sleep three that will wait 3 seconds now
+
+04:27.479 --> 04:30.520
+we
+
+04:28.600 --> 04:34.240
+save
+
+04:30.520 --> 04:38.919
+upload it says hello Waits 3 seconds
+
+04:34.240 --> 04:40.400
+says bye and again if we take this out
+
+04:38.919 --> 04:42.320
+for example we can just take it out like
+
+04:40.400 --> 04:43.600
+this by adding two slashes that'll make
+
+04:42.320 --> 04:46.400
+this a comment and it will not affect
+
+04:43.600 --> 04:49.919
+the program we
+
+04:46.400 --> 04:51.479
+close and upload it'll just say bye it
+
+04:49.919 --> 04:53.800
+won't say hello because there's no delay
+
+04:51.479 --> 04:56.960
+between them anyway that's it for this
+
+04:53.800 --> 05:00.800
+tutorial I'll see you in the next
+
+04:56.960 --> 05:00.800
+tutorial uh so bye

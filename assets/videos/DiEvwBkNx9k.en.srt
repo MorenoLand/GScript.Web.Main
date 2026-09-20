@@ -1,0 +1,276 @@
+1
+00:00:00,560 --> 00:00:05,520
+hello and welcome to the eighth tutorial
+
+2
+00:00:02,960 --> 00:00:07,359
+on how to program in g-script two
+
+3
+00:00:05,520 --> 00:00:09,760
+now in the past
+
+4
+00:00:07,359 --> 00:00:12,559
+all my tutorials
+
+5
+00:00:09,760 --> 00:00:14,719
+anytime i'd make a variable it always
+
+6
+00:00:12,559 --> 00:00:17,520
+just be the name of the variable and
+
+7
+00:00:14,719 --> 00:00:18,960
+then what it's equal to well you usually
+
+8
+00:00:17,520 --> 00:00:20,480
+don't want to do that
+
+9
+00:00:18,960 --> 00:00:23,119
+usually you're going to want to define
+
+10
+00:00:20,480 --> 00:00:24,640
+what type of variable your variable is
+
+11
+00:00:23,119 --> 00:00:26,480
+to do this
+
+12
+00:00:24,640 --> 00:00:29,519
+you type in whatever you want the value
+
+13
+00:00:26,480 --> 00:00:31,920
+to be then dot and then yellow or
+
+14
+00:00:29,519 --> 00:00:34,160
+whatever the name of your variable is
+
+15
+00:00:31,920 --> 00:00:35,200
+basically what this means
+
+16
+00:00:34,160 --> 00:00:36,559
+is that
+
+17
+00:00:35,200 --> 00:00:39,920
+this variable
+
+18
+00:00:36,559 --> 00:00:42,879
+is kind of attached to the npc
+
+19
+00:00:39,920 --> 00:00:46,480
+so in all the functions
+
+20
+00:00:42,879 --> 00:00:46,480
+all the kind of functions there are
+
+21
+00:00:47,280 --> 00:00:53,160
+yellow will always be the same
+
+22
+00:00:49,600 --> 00:00:53,160
+so here's an example
+
+23
+00:01:01,199 --> 00:01:04,559
+you always want to
+
+24
+00:01:02,640 --> 00:01:06,479
+show what type of variable it is in the
+
+25
+00:01:04,559 --> 00:01:08,080
+beginning it when you first define it
+
+26
+00:01:06,479 --> 00:01:09,200
+like that
+
+27
+00:01:08,080 --> 00:01:12,920
+so
+
+28
+00:01:09,200 --> 00:01:12,920
+i'm going to save now
+
+29
+00:01:13,119 --> 00:01:15,840
+and upload it
+
+30
+00:01:20,960 --> 00:01:25,520
+now when i say something hi it'll say
+
+31
+00:01:23,600 --> 00:01:29,360
+five
+
+32
+00:01:25,520 --> 00:01:29,360
+now now the second variable is
+
+33
+00:01:29,439 --> 00:01:33,600
+well that's it for the this dot variable
+
+34
+00:01:32,240 --> 00:01:36,159
+and now the next year i'm going to show
+
+35
+00:01:33,600 --> 00:01:39,119
+you is the temp dot variable
+
+36
+00:01:36,159 --> 00:01:42,159
+this variable will delete itself once
+
+37
+00:01:39,119 --> 00:01:44,640
+the function is has finished running
+
+38
+00:01:42,159 --> 00:01:46,880
+so for example
+
+39
+00:01:44,640 --> 00:01:48,320
+um
+
+40
+00:01:46,880 --> 00:01:50,720
+equals
+
+41
+00:01:48,320 --> 00:01:52,159
+temp dot yellow
+
+42
+00:01:50,720 --> 00:01:52,960
+this
+
+43
+00:01:52,159 --> 00:01:55,759
+will
+
+44
+00:01:52,960 --> 00:01:58,159
+work for anything
+
+45
+00:01:55,759 --> 00:02:00,560
+in the current function
+
+46
+00:01:58,159 --> 00:02:03,280
+but if i you if i try to try it in a
+
+47
+00:02:00,560 --> 00:02:03,280
+different function
+
+48
+00:02:04,079 --> 00:02:08,560
+like this
+
+49
+00:02:05,600 --> 00:02:10,879
+and i put this dot chat is equal to
+
+50
+00:02:08,560 --> 00:02:12,160
+temp dot yellow
+
+51
+00:02:10,879 --> 00:02:13,760
+then
+
+52
+00:02:12,160 --> 00:02:15,680
+it just won't work because it doesn't
+
+53
+00:02:13,760 --> 00:02:17,680
+know what yellow is because the yellow
+
+54
+00:02:15,680 --> 00:02:21,599
+has deleted itself
+
+55
+00:02:17,680 --> 00:02:24,560
+once it finished this function
+
+56
+00:02:21,599 --> 00:02:24,560
+so i'm going to save it
+
+57
+00:02:24,959 --> 00:02:28,080
+i'm going to say hi
+
+58
+00:02:26,560 --> 00:02:29,920
+and it'll just say zero because it
+
+59
+00:02:28,080 --> 00:02:31,360
+doesn't know what else to put
+
+60
+00:02:29,920 --> 00:02:33,040
+because
+
+61
+00:02:31,360 --> 00:02:37,280
+yellow doesn't really equal anything
+
+62
+00:02:33,040 --> 00:02:39,760
+here but if i have to call it again
+
+63
+00:02:37,280 --> 00:02:39,760
+like this
+
+64
+00:02:44,959 --> 00:02:49,120
+hi
+
+65
+00:02:46,720 --> 00:02:50,800
+so i think that's it for this tutorial
+
+66
+00:02:49,120 --> 00:02:52,800
+i'm going to get into
+
+67
+00:02:50,800 --> 00:02:54,959
+more detail on the other variables next
+
+68
+00:02:52,800 --> 00:02:59,879
+tutorial but these are two really simple
+
+69
+00:02:54,959 --> 00:02:59,879
+ones right now so anyway bye
+

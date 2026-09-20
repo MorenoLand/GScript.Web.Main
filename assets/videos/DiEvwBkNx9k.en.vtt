@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00.560 --> 00:05.520
+hello and welcome to the eighth tutorial
+
+00:02.960 --> 00:07.359
+on how to program in g-script two
+
+00:05.520 --> 00:09.760
+now in the past
+
+00:07.359 --> 00:12.559
+all my tutorials
+
+00:09.760 --> 00:14.719
+anytime i'd make a variable it always
+
+00:12.559 --> 00:17.520
+just be the name of the variable and
+
+00:14.719 --> 00:18.960
+then what it's equal to well you usually
+
+00:17.520 --> 00:20.480
+don't want to do that
+
+00:18.960 --> 00:23.119
+usually you're going to want to define
+
+00:20.480 --> 00:24.640
+what type of variable your variable is
+
+00:23.119 --> 00:26.480
+to do this
+
+00:24.640 --> 00:29.519
+you type in whatever you want the value
+
+00:26.480 --> 00:31.920
+to be then dot and then yellow or
+
+00:29.519 --> 00:34.160
+whatever the name of your variable is
+
+00:31.920 --> 00:35.200
+basically what this means
+
+00:34.160 --> 00:36.559
+is that
+
+00:35.200 --> 00:39.920
+this variable
+
+00:36.559 --> 00:42.879
+is kind of attached to the npc
+
+00:39.920 --> 00:46.480
+so in all the functions
+
+00:42.879 --> 00:46.480
+all the kind of functions there are
+
+00:47.280 --> 00:53.160
+yellow will always be the same
+
+00:49.600 --> 00:53.160
+so here's an example
+
+01:01.199 --> 01:04.559
+you always want to
+
+01:02.640 --> 01:06.479
+show what type of variable it is in the
+
+01:04.559 --> 01:08.080
+beginning it when you first define it
+
+01:06.479 --> 01:09.200
+like that
+
+01:08.080 --> 01:12.920
+so
+
+01:09.200 --> 01:12.920
+i'm going to save now
+
+01:13.119 --> 01:15.840
+and upload it
+
+01:20.960 --> 01:25.520
+now when i say something hi it'll say
+
+01:23.600 --> 01:29.360
+five
+
+01:25.520 --> 01:29.360
+now now the second variable is
+
+01:29.439 --> 01:33.600
+well that's it for the this dot variable
+
+01:32.240 --> 01:36.159
+and now the next year i'm going to show
+
+01:33.600 --> 01:39.119
+you is the temp dot variable
+
+01:36.159 --> 01:42.159
+this variable will delete itself once
+
+01:39.119 --> 01:44.640
+the function is has finished running
+
+01:42.159 --> 01:46.880
+so for example
+
+01:44.640 --> 01:48.320
+um
+
+01:46.880 --> 01:50.720
+equals
+
+01:48.320 --> 01:52.159
+temp dot yellow
+
+01:50.720 --> 01:52.960
+this
+
+01:52.159 --> 01:55.759
+will
+
+01:52.960 --> 01:58.159
+work for anything
+
+01:55.759 --> 02:00.560
+in the current function
+
+01:58.159 --> 02:03.280
+but if i you if i try to try it in a
+
+02:00.560 --> 02:03.280
+different function
+
+02:04.079 --> 02:08.560
+like this
+
+02:05.600 --> 02:10.879
+and i put this dot chat is equal to
+
+02:08.560 --> 02:12.160
+temp dot yellow
+
+02:10.879 --> 02:13.760
+then
+
+02:12.160 --> 02:15.680
+it just won't work because it doesn't
+
+02:13.760 --> 02:17.680
+know what yellow is because the yellow
+
+02:15.680 --> 02:21.599
+has deleted itself
+
+02:17.680 --> 02:24.560
+once it finished this function
+
+02:21.599 --> 02:24.560
+so i'm going to save it
+
+02:24.959 --> 02:28.080
+i'm going to say hi
+
+02:26.560 --> 02:29.920
+and it'll just say zero because it
+
+02:28.080 --> 02:31.360
+doesn't know what else to put
+
+02:29.920 --> 02:33.040
+because
+
+02:31.360 --> 02:37.280
+yellow doesn't really equal anything
+
+02:33.040 --> 02:39.760
+here but if i have to call it again
+
+02:37.280 --> 02:39.760
+like this
+
+02:44.959 --> 02:49.120
+hi
+
+02:46.720 --> 02:50.800
+so i think that's it for this tutorial
+
+02:49.120 --> 02:52.800
+i'm going to get into
+
+02:50.800 --> 02:54.959
+more detail on the other variables next
+
+02:52.800 --> 02:59.879
+tutorial but these are two really simple
+
+02:54.959 --> 02:59.879
+ones right now so anyway bye

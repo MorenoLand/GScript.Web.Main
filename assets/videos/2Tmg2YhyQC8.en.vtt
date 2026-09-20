@@ -1,0 +1,469 @@
+WEBVTT
+
+00:01.520 --> 00:06.240
+hello and welcome to the 24th tutorial
+
+00:03.919 --> 00:07.200
+on how to program a g-script 2.
+
+00:06.240 --> 00:09.679
+so
+
+00:07.200 --> 00:11.200
+i have my server back and i'm not sure
+
+00:09.679 --> 00:13.519
+why it came back well it came back a
+
+00:11.200 --> 00:16.000
+while ago i just never felt i need to
+
+00:13.519 --> 00:18.080
+create any more descriptive tutorials
+
+00:16.000 --> 00:19.760
+but now i feel like i
+
+00:18.080 --> 00:22.160
+like i should so i'm going to start
+
+00:19.760 --> 00:23.680
+making these again
+
+00:22.160 --> 00:26.320
+now
+
+00:23.680 --> 00:28.000
+i'm not sure why my server
+
+00:26.320 --> 00:30.800
+was even gone in the first place and i'm
+
+00:28.000 --> 00:32.800
+not sure why it came back but you know
+
+00:30.800 --> 00:35.360
+whatever
+
+00:32.800 --> 00:37.200
+let's start this tutorial now
+
+00:35.360 --> 00:38.719
+as you know level editor does not work
+
+00:37.200 --> 00:39.920
+on a mac unless you're using like an
+
+00:38.719 --> 00:41.360
+emulator
+
+00:39.920 --> 00:43.280
+for windows
+
+00:41.360 --> 00:46.399
+and in this tutorial i want to explain
+
+00:43.280 --> 00:48.399
+how to edit levels with amac
+
+00:46.399 --> 00:50.320
+and does not inc or if you don't want to
+
+00:48.399 --> 00:51.840
+use level editor so as you can see this
+
+00:50.320 --> 00:53.760
+is level letter i created a level called
+
+00:51.840 --> 00:55.840
+testing with a single npc that says
+
+00:53.760 --> 00:58.239
+hello
+
+00:55.840 --> 01:00.399
+and this is how you would usually upload
+
+00:58.239 --> 01:02.640
+levels you would save it
+
+01:00.399 --> 01:04.159
+click start remote control
+
+01:02.640 --> 01:05.680
+levels
+
+01:04.159 --> 01:07.439
+right click anything
+
+01:05.680 --> 01:10.080
+then double click the level that's how i
+
+01:07.439 --> 01:10.080
+usually do it
+
+01:10.479 --> 01:15.280
+and how you would do it if you
+
+01:13.520 --> 01:17.600
+have level editor but there's another
+
+01:15.280 --> 01:20.400
+way to do it actually
+
+01:17.600 --> 01:20.400
+what you have to do
+
+01:20.799 --> 01:24.560
+is you have to
+
+01:22.479 --> 01:27.799
+go into your folder wherever you can
+
+01:24.560 --> 01:27.799
+have your
+
+01:28.720 --> 01:32.000
+your your levels and you right click the
+
+01:31.119 --> 01:33.920
+file
+
+01:32.000 --> 01:36.640
+and do open with
+
+01:33.920 --> 01:38.840
+and click notepad
+
+01:36.640 --> 01:42.000
+notepad will allow you to see the entire
+
+01:38.840 --> 01:44.240
+level in text
+
+01:42.000 --> 01:45.920
+and you can edit it however you want
+
+01:44.240 --> 01:48.399
+but here's the problem with notepad you
+
+01:45.920 --> 01:50.079
+see it all clumped up like this
+
+01:48.399 --> 01:52.880
+it's very hard to tell what's happening
+
+01:50.079 --> 01:55.920
+by the way all these this entire clump
+
+01:52.880 --> 01:58.560
+is actually the tiles of the level and
+
+01:55.920 --> 01:59.920
+it's very hard to edit it in an actual
+
+01:58.560 --> 02:01.600
+text document
+
+01:59.920 --> 02:03.280
+so if you're going to be editing tiles i
+
+02:01.600 --> 02:04.719
+recommend you do it on a server and then
+
+02:03.280 --> 02:06.640
+download the level
+
+02:04.719 --> 02:09.599
+or if you have a level that a level
+
+02:06.640 --> 02:12.080
+editor to led on level editor
+
+02:09.599 --> 02:14.720
+but anyway
+
+02:12.080 --> 02:16.959
+this part is the actual npcs
+
+02:14.720 --> 02:18.959
+and as you can see it's not very
+
+02:16.959 --> 02:21.040
+easy to see what's happening around here
+
+02:18.959 --> 02:22.879
+it's all sort of
+
+02:21.040 --> 02:25.120
+clumped up but here's how you can make
+
+02:22.879 --> 02:26.560
+it not clumped up or and edit things on
+
+02:25.120 --> 02:28.720
+a server
+
+02:26.560 --> 02:31.680
+so let's close that
+
+02:28.720 --> 02:33.519
+and we'll open our out game rc
+
+02:31.680 --> 02:36.560
+it can't be the in-game one and what we
+
+02:33.519 --> 02:38.640
+do is we go here to the wrench
+
+02:36.560 --> 02:39.519
+and we go to download folder
+
+02:38.640 --> 02:41.920
+here
+
+02:39.519 --> 02:43.360
+browse a folder i already have one so i
+
+02:41.920 --> 02:45.200
+press ok
+
+02:43.360 --> 02:48.480
+and this is where my levels are going to
+
+02:45.200 --> 02:51.040
+be downloaded when i edit them
+
+02:48.480 --> 02:53.040
+or choose to download them now
+
+02:51.040 --> 02:56.480
+next we go two levels
+
+02:53.040 --> 02:58.959
+and let's find our testing level testing
+
+02:56.480 --> 03:00.879
+where is it there here it is what we
+
+02:58.959 --> 03:03.440
+have to do is we right click it and we
+
+03:00.879 --> 03:06.400
+do edit as text
+
+03:03.440 --> 03:07.920
+then we'll see all the text in
+
+03:06.400 --> 03:09.360
+a nice little
+
+03:07.920 --> 03:11.680
+text document
+
+03:09.360 --> 03:14.640
+here is the npc's at the bottom and over
+
+03:11.680 --> 03:16.400
+here this big giant
+
+03:14.640 --> 03:17.519
+block is the
+
+03:16.400 --> 03:18.959
+tiles
+
+03:17.519 --> 03:20.560
+it's very hard to edit the tiles like
+
+03:18.959 --> 03:22.959
+this and i recommend you use a level
+
+03:20.560 --> 03:25.599
+editor or if your server has a online
+
+03:22.959 --> 03:27.599
+level letter to use that but here's how
+
+03:25.599 --> 03:29.920
+you can edit
+
+03:27.599 --> 03:32.080
+the npc's
+
+03:29.920 --> 03:35.200
+see mpc is when you want to create an
+
+03:32.080 --> 03:37.840
+npc an npc end ends the mpc whatever is
+
+03:35.200 --> 03:41.040
+in between here is just like any other
+
+03:37.840 --> 03:41.040
+npc would be used
+
+03:42.560 --> 03:46.400
+this here is the coordinates of where
+
+03:44.400 --> 03:48.480
+the npc is created
+
+03:46.400 --> 03:49.920
+with 10 15. so let's create an npc that
+
+03:48.480 --> 03:52.319
+does something
+
+03:49.920 --> 03:54.080
+npc
+
+03:52.319 --> 03:56.080
+we'll make it 15 right next to the other
+
+03:54.080 --> 03:58.640
+npc 18
+
+03:56.080 --> 04:00.560
+and npc end
+
+03:58.640 --> 04:03.360
+we're going to go in here
+
+04:00.560 --> 04:04.799
+client side
+
+04:03.360 --> 04:05.920
+client side
+
+04:04.799 --> 04:07.519
+function
+
+04:05.920 --> 04:08.959
+on created
+
+04:07.519 --> 04:10.720
+so as soon as it's created it's going to
+
+04:08.959 --> 04:12.720
+do whatever in the brackets
+
+04:10.720 --> 04:14.799
+then put show image
+
+04:12.720 --> 04:16.880
+200
+
+04:14.799 --> 04:19.120
+201
+
+04:16.880 --> 04:19.120
+uh
+
+04:19.799 --> 04:24.320
+block.png
+
+04:21.440 --> 04:26.240
+comma this.x comma this.y
+
+04:24.320 --> 04:28.720
+okay i can end that
+
+04:26.240 --> 04:30.800
+and oh a space there i don't know if it
+
+04:28.720 --> 04:32.400
+matters but whatever now if we click
+
+04:30.800 --> 04:34.400
+apply
+
+04:32.400 --> 04:36.720
+and we look online
+
+04:34.400 --> 04:38.639
+we'll see that a block has been created
+
+04:36.720 --> 04:40.639
+we just created this mpc on the server
+
+04:38.639 --> 04:43.360
+and it gets updated automatically you
+
+04:40.639 --> 04:46.479
+don't even have to upload the file
+
+04:43.360 --> 04:47.759
+and if we check our
+
+04:46.479 --> 04:48.560
+uh
+
+04:47.759 --> 04:50.400
+our
+
+04:48.560 --> 04:52.560
+folder where the file is and we double
+
+04:50.400 --> 04:53.600
+click it we'll see that it has also been
+
+04:52.560 --> 04:57.199
+updated
+
+04:53.600 --> 04:58.320
+this is the mpc we just added
+
+04:57.199 --> 05:00.080
+okay
+
+04:58.320 --> 05:02.720
+and now if we have a level up level
+
+05:00.080 --> 05:03.919
+editor open we just close the old level
+
+05:02.720 --> 05:05.280
+and open
+
+05:03.919 --> 05:09.120
+open the new one
+
+05:05.280 --> 05:10.639
+and we'll see that it has been updated
+
+05:09.120 --> 05:12.479
+as such
+
+05:10.639 --> 05:15.840
+so anyway that concludes this tutorial
+
+05:12.479 --> 05:17.680
+you can now edit levels on a server
+
+05:15.840 --> 05:18.960
+and if you don't have a mac this is very
+
+05:17.680 --> 05:21.199
+useful because it doesn't means you
+
+05:18.960 --> 05:23.039
+don't need a level editor
+
+05:21.199 --> 05:25.600
+if you're working totally offline you
+
+05:23.039 --> 05:26.960
+just need an online level editor and
+
+05:25.600 --> 05:29.199
+to do this
+
+05:26.960 --> 05:30.880
+and you're good so anyway
+
+05:29.199 --> 05:34.840
+that concludes this tutorial and i'll
+
+05:30.880 --> 05:34.840
+see you next time

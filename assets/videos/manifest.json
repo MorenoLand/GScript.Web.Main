@@ -8,7 +8,9 @@
       "uploader": "Raine",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "T5xOwGuymBw",
@@ -18,7 +20,9 @@
       "uploader": "Jahola Graal",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "9Ku6R8tzEj0",
@@ -28,7 +32,9 @@
       "uploader": "Fp Vergo",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "2QShpdhsnLE",
@@ -38,7 +44,9 @@
       "uploader": "Deborah Graal",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "MdUGHXZAAMY",
@@ -48,7 +56,9 @@
       "uploader": "VeriApplez Graal",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "ry8q8srzpIc",
@@ -58,7 +68,9 @@
       "uploader": "kaden otaku",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": "/assets/videos/ry8q8srzpIc.en.vtt",
+      "captionsSrt": "/assets/videos/ry8q8srzpIc.en.srt"
     },
     {
       "id": "nOA0iOOaeQA",
@@ -68,7 +80,9 @@
       "uploader": "CaptainNoob",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": "/assets/videos/nOA0iOOaeQA.en.vtt",
+      "captionsSrt": "/assets/videos/nOA0iOOaeQA.en.srt"
     },
     {
       "id": "LlXa5FyrIb8",
@@ -78,7 +92,9 @@
       "uploader": "Chipper538",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "qAn9yHqbAsY",
@@ -88,7 +104,9 @@
       "uploader": "Xeenor",
       "playlistId": null,
       "playlistTitle": null,
-      "playlistIndex": 0
+      "playlistIndex": 0,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "XA4UMUcBQgg",
@@ -98,7 +116,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 1
+      "playlistIndex": 1,
+      "captions": "/assets/videos/XA4UMUcBQgg.en.vtt",
+      "captionsSrt": "/assets/videos/XA4UMUcBQgg.en.srt"
     },
     {
       "id": "6-SoP8CK3lA",
@@ -108,7 +128,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 2
+      "playlistIndex": 2,
+      "captions": "/assets/videos/6-SoP8CK3lA.en.vtt",
+      "captionsSrt": "/assets/videos/6-SoP8CK3lA.en.srt"
     },
     {
       "id": "k2VfqWUpjfM",
@@ -118,7 +140,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 3
+      "playlistIndex": 3,
+      "captions": "/assets/videos/k2VfqWUpjfM.en.vtt",
+      "captionsSrt": "/assets/videos/k2VfqWUpjfM.en.srt"
     },
     {
       "id": "0JKGCo8hw4o",
@@ -128,7 +152,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 4
+      "playlistIndex": 4,
+      "captions": "/assets/videos/0JKGCo8hw4o.en.vtt",
+      "captionsSrt": "/assets/videos/0JKGCo8hw4o.en.srt"
     },
     {
       "id": "t4BfMJE7URg",
@@ -138,7 +164,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 5
+      "playlistIndex": 5,
+      "captions": "/assets/videos/t4BfMJE7URg.en.vtt",
+      "captionsSrt": "/assets/videos/t4BfMJE7URg.en.srt"
     },
     {
       "id": "qGkzErj_Chk",
@@ -148,7 +176,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 6
+      "playlistIndex": 6,
+      "captions": "/assets/videos/qGkzErj_Chk.en.vtt",
+      "captionsSrt": "/assets/videos/qGkzErj_Chk.en.srt"
     },
     {
       "id": "8cr3l11GlX8",
@@ -158,7 +188,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 7
+      "playlistIndex": 7,
+      "captions": "/assets/videos/8cr3l11GlX8.en.vtt",
+      "captionsSrt": "/assets/videos/8cr3l11GlX8.en.srt"
     },
     {
       "id": "DiEvwBkNx9k",
@@ -168,7 +200,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 8
+      "playlistIndex": 8,
+      "captions": "/assets/videos/DiEvwBkNx9k.en.vtt",
+      "captionsSrt": "/assets/videos/DiEvwBkNx9k.en.srt"
     },
     {
       "id": "7igKGKO650U",
@@ -178,7 +212,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 9
+      "playlistIndex": 9,
+      "captions": "/assets/videos/7igKGKO650U.en.vtt",
+      "captionsSrt": "/assets/videos/7igKGKO650U.en.srt"
     },
     {
       "id": "doCLA4KSNq8",
@@ -188,7 +224,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 10
+      "playlistIndex": 10,
+      "captions": "/assets/videos/doCLA4KSNq8.en.vtt",
+      "captionsSrt": "/assets/videos/doCLA4KSNq8.en.srt"
     },
     {
       "id": "-nXlPhhC_mY",
@@ -198,7 +236,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 11
+      "playlistIndex": 11,
+      "captions": "/assets/videos/-nXlPhhC_mY.en.vtt",
+      "captionsSrt": "/assets/videos/-nXlPhhC_mY.en.srt"
     },
     {
       "id": "WPNwXCynd8c",
@@ -208,7 +248,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 12
+      "playlistIndex": 12,
+      "captions": "/assets/videos/WPNwXCynd8c.en.vtt",
+      "captionsSrt": "/assets/videos/WPNwXCynd8c.en.srt"
     },
     {
       "id": "CN0IvBmWrkk",
@@ -218,7 +260,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 13
+      "playlistIndex": 13,
+      "captions": "/assets/videos/CN0IvBmWrkk.en.vtt",
+      "captionsSrt": "/assets/videos/CN0IvBmWrkk.en.srt"
     },
     {
       "id": "v08IzF2sRPg",
@@ -228,7 +272,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 14
+      "playlistIndex": 14,
+      "captions": "/assets/videos/v08IzF2sRPg.en.vtt",
+      "captionsSrt": "/assets/videos/v08IzF2sRPg.en.srt"
     },
     {
       "id": "PS-ex09x7nc",
@@ -238,7 +284,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 15
+      "playlistIndex": 15,
+      "captions": "/assets/videos/PS-ex09x7nc.en.vtt",
+      "captionsSrt": "/assets/videos/PS-ex09x7nc.en.srt"
     },
     {
       "id": "dtgfsSo-gjA",
@@ -248,7 +296,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 16
+      "playlistIndex": 16,
+      "captions": "/assets/videos/dtgfsSo-gjA.en.vtt",
+      "captionsSrt": "/assets/videos/dtgfsSo-gjA.en.srt"
     },
     {
       "id": "WweNIrmFMS4",
@@ -258,7 +308,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 17
+      "playlistIndex": 17,
+      "captions": "/assets/videos/WweNIrmFMS4.en.vtt",
+      "captionsSrt": "/assets/videos/WweNIrmFMS4.en.srt"
     },
     {
       "id": "480aLwO7kc4",
@@ -268,7 +320,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 18
+      "playlistIndex": 18,
+      "captions": "/assets/videos/480aLwO7kc4.en.vtt",
+      "captionsSrt": "/assets/videos/480aLwO7kc4.en.srt"
     },
     {
       "id": "Vys2tbTs8Pg",
@@ -278,7 +332,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 19
+      "playlistIndex": 19,
+      "captions": "/assets/videos/Vys2tbTs8Pg.en.vtt",
+      "captionsSrt": "/assets/videos/Vys2tbTs8Pg.en.srt"
     },
     {
       "id": "ksedZE21r5A",
@@ -288,7 +344,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 20
+      "playlistIndex": 20,
+      "captions": "/assets/videos/ksedZE21r5A.en.vtt",
+      "captionsSrt": "/assets/videos/ksedZE21r5A.en.srt"
     },
     {
       "id": "zSHsaRgYTcQ",
@@ -298,7 +356,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 21
+      "playlistIndex": 21,
+      "captions": "/assets/videos/zSHsaRgYTcQ.en.vtt",
+      "captionsSrt": "/assets/videos/zSHsaRgYTcQ.en.srt"
     },
     {
       "id": "C40yLtOazRw",
@@ -308,7 +368,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 22
+      "playlistIndex": 22,
+      "captions": "/assets/videos/C40yLtOazRw.en.vtt",
+      "captionsSrt": "/assets/videos/C40yLtOazRw.en.srt"
     },
     {
       "id": "_2hCXzCTKp4",
@@ -318,7 +380,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 23
+      "playlistIndex": 23,
+      "captions": "/assets/videos/_2hCXzCTKp4.en.vtt",
+      "captionsSrt": "/assets/videos/_2hCXzCTKp4.en.srt"
     },
     {
       "id": "2Tmg2YhyQC8",
@@ -328,7 +392,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 24
+      "playlistIndex": 24,
+      "captions": "/assets/videos/2Tmg2YhyQC8.en.vtt",
+      "captionsSrt": "/assets/videos/2Tmg2YhyQC8.en.srt"
     },
     {
       "id": "FBnV_Jb3lmw",
@@ -338,7 +404,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 25
+      "playlistIndex": 25,
+      "captions": "/assets/videos/FBnV_Jb3lmw.en.vtt",
+      "captionsSrt": "/assets/videos/FBnV_Jb3lmw.en.srt"
     },
     {
       "id": "jSC6FmntjRU",
@@ -348,7 +416,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 26
+      "playlistIndex": 26,
+      "captions": "/assets/videos/jSC6FmntjRU.en.vtt",
+      "captionsSrt": "/assets/videos/jSC6FmntjRU.en.srt"
     },
     {
       "id": "ryla-5i9VSc",
@@ -358,7 +428,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 27
+      "playlistIndex": 27,
+      "captions": "/assets/videos/ryla-5i9VSc.en.vtt",
+      "captionsSrt": "/assets/videos/ryla-5i9VSc.en.srt"
     },
     {
       "id": "Gnp7zWM3x7w",
@@ -368,7 +440,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 28
+      "playlistIndex": 28,
+      "captions": "/assets/videos/Gnp7zWM3x7w.en.vtt",
+      "captionsSrt": "/assets/videos/Gnp7zWM3x7w.en.srt"
     },
     {
       "id": "-LyuCHJPoSw",
@@ -378,7 +452,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 29
+      "playlistIndex": 29,
+      "captions": "/assets/videos/-LyuCHJPoSw.en.vtt",
+      "captionsSrt": "/assets/videos/-LyuCHJPoSw.en.srt"
     },
     {
       "id": "8VE5zvuNCf4",
@@ -388,7 +464,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 30
+      "playlistIndex": 30,
+      "captions": "/assets/videos/8VE5zvuNCf4.en.vtt",
+      "captionsSrt": "/assets/videos/8VE5zvuNCf4.en.srt"
     },
     {
       "id": "MDdEX6slhns",
@@ -398,7 +476,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 31
+      "playlistIndex": 31,
+      "captions": "/assets/videos/MDdEX6slhns.en.vtt",
+      "captionsSrt": "/assets/videos/MDdEX6slhns.en.srt"
     },
     {
       "id": "uPwgbZJFB1w",
@@ -408,7 +488,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 32
+      "playlistIndex": 32,
+      "captions": "/assets/videos/uPwgbZJFB1w.en.vtt",
+      "captionsSrt": "/assets/videos/uPwgbZJFB1w.en.srt"
     },
     {
       "id": "y9bcCFW3v3k",
@@ -418,7 +500,9 @@
       "uploader": "Gscript2Tutorials",
       "playlistId": "PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4",
       "playlistTitle": "Graal Era Script 2",
-      "playlistIndex": 33
+      "playlistIndex": 33,
+      "captions": "/assets/videos/y9bcCFW3v3k.en.vtt",
+      "captionsSrt": "/assets/videos/y9bcCFW3v3k.en.srt"
     },
     {
       "id": "oAkymBNAABw",
@@ -428,7 +512,9 @@
       "uploader": "CaptainNoob",
       "playlistId": "PLj7V7gCaCF2u-MrVyTn1c3ZN01BHKGq2m",
       "playlistTitle": "GS2 Tutorials",
-      "playlistIndex": 1
+      "playlistIndex": 1,
+      "captions": "/assets/videos/oAkymBNAABw.en.vtt",
+      "captionsSrt": "/assets/videos/oAkymBNAABw.en.srt"
     },
     {
       "id": "VrMYQkgn77Y",
@@ -438,7 +524,9 @@
       "uploader": "CaptainNoob",
       "playlistId": "PLj7V7gCaCF2u-MrVyTn1c3ZN01BHKGq2m",
       "playlistTitle": "GS2 Tutorials",
-      "playlistIndex": 2
+      "playlistIndex": 2,
+      "captions": "/assets/videos/VrMYQkgn77Y.en.vtt",
+      "captionsSrt": "/assets/videos/VrMYQkgn77Y.en.srt"
     },
     {
       "id": "hAXsd9D2fkM",
@@ -448,7 +536,9 @@
       "uploader": "CaptainNoob",
       "playlistId": "PLj7V7gCaCF2u-MrVyTn1c3ZN01BHKGq2m",
       "playlistTitle": "GS2 Tutorials",
-      "playlistIndex": 3
+      "playlistIndex": 3,
+      "captions": "/assets/videos/hAXsd9D2fkM.en.vtt",
+      "captionsSrt": "/assets/videos/hAXsd9D2fkM.en.srt"
     },
     {
       "id": "X6YTpvJkR5A",
@@ -458,7 +548,9 @@
       "uploader": "Trakan Holst",
       "playlistId": "PLtDohBs99GZeZgYIX97nFtj_ik4zbM845",
       "playlistTitle": "GraalOnline",
-      "playlistIndex": 8
+      "playlistIndex": 8,
+      "captions": null,
+      "captionsSrt": null
     },
     {
       "id": "ZhkdM0YKzoE",
@@ -468,7 +560,9 @@
       "uploader": "Trakan Holst",
       "playlistId": "PLtDohBs99GZeZgYIX97nFtj_ik4zbM845",
       "playlistTitle": "GraalOnline",
-      "playlistIndex": 9
+      "playlistIndex": 9,
+      "captions": null,
+      "captionsSrt": null
     }
   ]
 }

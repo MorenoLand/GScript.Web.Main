@@ -1,0 +1,488 @@
+1
+00:00:00,440 --> 00:00:05,200
+hello and welcome to the 15th tutorial
+
+2
+00:00:02,639 --> 00:00:07,680
+on how to program and gript 2 so let's
+
+3
+00:00:05,200 --> 00:00:10,599
+open our NPC and scroll down to the
+
+4
+00:00:07,680 --> 00:00:13,400
+bottom of the for Loop now let's make
+
+5
+00:00:10,599 --> 00:00:15,279
+the NPC run a bit faster and smoother
+
+6
+00:00:13,400 --> 00:00:19,119
+let's change this to
+
+7
+00:00:15,279 --> 00:00:21,920
+0.5 the loop will Loop faster because
+
+8
+00:00:19,119 --> 00:00:26,080
+the the delay in it is lower which will
+
+9
+00:00:21,920 --> 00:00:28,119
+make the NPC run faster and smoother so
+
+10
+00:00:26,080 --> 00:00:30,880
+anyway let's take this out in the
+
+11
+00:00:28,119 --> 00:00:33,480
+beginning to change the Oni
+
+12
+00:00:30,880 --> 00:00:36,440
+and add it into
+
+13
+00:00:33,480 --> 00:00:38,600
+the for Loop it doesn't matter if we add
+
+14
+00:00:36,440 --> 00:00:41,440
+it into it or outside of it since we're
+
+15
+00:00:38,600 --> 00:00:43,320
+only beginning calling it once but I'm
+
+16
+00:00:41,440 --> 00:00:45,520
+just going to add it
+
+17
+00:00:43,320 --> 00:00:48,920
+inside also inside the for Loop I'm
+
+18
+00:00:45,520 --> 00:00:51,640
+going to add this doer is equal to three
+
+19
+00:00:48,920 --> 00:00:53,079
+this will change the direction to right
+
+20
+00:00:51,640 --> 00:00:55,079
+the same with this we can also add it
+
+21
+00:00:53,079 --> 00:00:56,760
+outside the for before it but we're just
+
+22
+00:00:55,079 --> 00:01:01,680
+going to add it
+
+23
+00:00:56,760 --> 00:01:01,680
+inside so Watch What Happens now
+
+24
+00:01:02,680 --> 00:01:08,080
+the NPC runs to the right it's very
+
+25
+00:01:05,119 --> 00:01:11,799
+smooth and then it just stops and still
+
+26
+00:01:08,080 --> 00:01:14,439
+running in place let's open the NPC and
+
+27
+00:01:11,799 --> 00:01:14,439
+after the for
+
+28
+00:01:14,600 --> 00:01:21,479
+Loop let's add some code to make it stop
+
+29
+00:01:19,240 --> 00:01:24,479
+running let's make it let's change the
+
+30
+00:01:21,479 --> 00:01:24,479
+Oni to
+
+31
+00:01:27,320 --> 00:01:34,399
+idle then go here
+
+32
+00:01:30,560 --> 00:01:38,360
+sleep 1 second glay a
+
+33
+00:01:34,399 --> 00:01:42,399
+second then change the direction to two
+
+34
+00:01:38,360 --> 00:01:42,399
+so when we save this and
+
+35
+00:01:44,320 --> 00:01:50,920
+upload moves to the
+
+36
+00:01:47,439 --> 00:01:54,119
+right looks down Waits a second then
+
+37
+00:01:50,920 --> 00:01:54,119
+looks down then it just
+
+38
+00:01:54,520 --> 00:02:01,840
+stops let's say we want to move
+
+39
+00:01:57,240 --> 00:02:01,840
+backwards well we just copy the for Loop
+
+40
+00:02:02,840 --> 00:02:07,640
+and we take out the first parameter that
+
+41
+00:02:04,520 --> 00:02:11,039
+changes the N value here's the thing in
+
+42
+00:02:07,640 --> 00:02:14,239
+the first for Loop the we created an N
+
+43
+00:02:11,039 --> 00:02:16,879
+value called an N variable called I mean
+
+44
+00:02:14,239 --> 00:02:20,280
+called n i mean a temp variable called
+
+45
+00:02:16,879 --> 00:02:22,959
+an made it four then once it was 20 it
+
+46
+00:02:20,280 --> 00:02:25,840
+broke the L broke the loop currently
+
+47
+00:02:22,959 --> 00:02:30,080
+it's 20 now here we can just take this
+
+48
+00:02:25,840 --> 00:02:32,879
+out n is is 20 right now
+
+49
+00:02:30,080 --> 00:02:34,760
+it doesn't just and the the variable
+
+50
+00:02:32,879 --> 00:02:37,560
+doesn't just stop once the for Loop is
+
+51
+00:02:34,760 --> 00:02:39,680
+over temp variables only get deleted
+
+52
+00:02:37,560 --> 00:02:42,040
+when the function is over so it's
+
+53
+00:02:39,680 --> 00:02:44,879
+currently still 20 here we can just get
+
+54
+00:02:42,040 --> 00:02:47,840
+rid of the first parameter or add null
+
+55
+00:02:44,879 --> 00:02:51,599
+I'll just put nothing there then change
+
+56
+00:02:47,840 --> 00:02:55,400
+this line to is greater than four this
+
+57
+00:02:51,599 --> 00:02:57,360
+is going to make it so as long as the x
+
+58
+00:02:55,400 --> 00:02:59,840
+value is greater than four it's going to
+
+59
+00:02:57,360 --> 00:03:02,280
+walk it's going to do whatever is here
+
+60
+00:02:59,840 --> 00:03:06,159
+then let's change this last parameter to
+
+61
+00:03:02,280 --> 00:03:07,680
+minus 0.2 so it's going to go back it's
+
+62
+00:03:06,159 --> 00:03:10,200
+going to go to the
+
+63
+00:03:07,680 --> 00:03:12,879
+left it's going to subtract the x-axis
+
+64
+00:03:10,200 --> 00:03:15,200
+make it go left until it reaches four
+
+65
+00:03:12,879 --> 00:03:17,319
+then it's going to break the loop and we
+
+66
+00:03:15,200 --> 00:03:18,360
+can change direction to one to make it
+
+67
+00:03:17,319 --> 00:03:21,120
+face
+
+68
+00:03:18,360 --> 00:03:24,440
+left then just copy this code
+
+69
+00:03:21,120 --> 00:03:27,599
+here and put it under the for
+
+70
+00:03:24,440 --> 00:03:30,200
+Loop oh and add a sleep here so there's
+
+71
+00:03:27,599 --> 00:03:33,200
+a delay between the running and the
+
+72
+00:03:30,200 --> 00:03:36,400
+waiting same here even though it doesn't
+
+73
+00:03:33,200 --> 00:03:41,080
+matter right now but we'll get we'll see
+
+74
+00:03:36,400 --> 00:03:41,080
+what we'll add later so let's save
+
+75
+00:03:41,360 --> 00:03:48,400
+it upload it's going to run to the
+
+76
+00:03:45,480 --> 00:03:50,799
+right and stop wait a second look down
+
+77
+00:03:48,400 --> 00:03:54,280
+wait a second then go back to the
+
+78
+00:03:50,799 --> 00:03:55,680
+left it's going to look to the left wait
+
+79
+00:03:54,280 --> 00:03:58,360
+a second look down then wait a second
+
+80
+00:03:55,680 --> 00:04:00,680
+and do nothing now let's say we want it
+
+81
+00:03:58,360 --> 00:04:02,200
+to look go back and forth over and over
+
+82
+00:04:00,680 --> 00:04:04,480
+and over and
+
+83
+00:04:02,200 --> 00:04:07,200
+over
+
+84
+00:04:04,480 --> 00:04:09,360
+infinitely what we would do is make it
+
+85
+00:04:07,200 --> 00:04:13,680
+as I like to call a function
+
+86
+00:04:09,360 --> 00:04:18,079
+Loop what this is is you
+
+87
+00:04:13,680 --> 00:04:21,520
+put on player enters the name of the
+
+88
+00:04:18,079 --> 00:04:25,000
+current function which is on player
+
+89
+00:04:21,520 --> 00:04:28,080
+enters and semicolon this pretty much
+
+90
+00:04:25,000 --> 00:04:30,120
+calls a function it's going to jump it's
+
+91
+00:04:28,080 --> 00:04:32,800
+going to read this line and jump
+
+92
+00:04:30,120 --> 00:04:35,080
+straight to whatever function is being
+
+93
+00:04:32,800 --> 00:04:37,880
+called which is currently the function
+
+94
+00:04:35,080 --> 00:04:40,160
+it's in so it's going to read this and
+
+95
+00:04:37,880 --> 00:04:42,919
+jump way back up to here and go back
+
+96
+00:04:40,160 --> 00:04:45,520
+down this code do it over and over and
+
+97
+00:04:42,919 --> 00:04:47,320
+over again and over and over and over
+
+98
+00:04:45,520 --> 00:04:49,039
+again it's just going to keep going back
+
+99
+00:04:47,320 --> 00:04:50,479
+down back to here then going back up and
+
+100
+00:04:49,039 --> 00:04:51,960
+then back down and then back up it's
+
+101
+00:04:50,479 --> 00:04:54,080
+going to keep going left and right o
+
+102
+00:04:51,960 --> 00:04:57,080
+forever really There's No Limit how many
+
+103
+00:04:54,080 --> 00:04:59,800
+times you can Loop a function in fact if
+
+104
+00:04:57,080 --> 00:05:01,919
+we wanted to we could change this to on
+
+105
+00:04:59,800 --> 00:05:04,560
+created instead it would jump to
+
+106
+00:05:01,919 --> 00:05:06,240
+oncreated and run this function again
+
+107
+00:05:04,560 --> 00:05:07,600
+but then nothing would happen so we want
+
+108
+00:05:06,240 --> 00:05:11,080
+to just do
+
+109
+00:05:07,600 --> 00:05:13,919
+on player enters it's going to jump back
+
+110
+00:05:11,080 --> 00:05:16,039
+to this function run it
+
+111
+00:05:13,919 --> 00:05:18,680
+again so let's
+
+112
+00:05:16,039 --> 00:05:20,199
+upload as you can see the NPC is running
+
+113
+00:05:18,680 --> 00:05:25,360
+to the
+
+114
+00:05:20,199 --> 00:05:25,360
+right running waiting running to the
+
+115
+00:05:25,440 --> 00:05:32,039
+left waiting then running back to the
+
+116
+00:05:28,720 --> 00:05:32,039
+right and it'll do that forever
+
+117
+00:05:32,120 --> 00:05:38,840
+now so anyway that's it for this
+
+118
+00:05:34,319 --> 00:05:42,360
+tutorial I taught you a bit about how to
+
+119
+00:05:38,840 --> 00:05:44,520
+Loop a function and how to call other
+
+120
+00:05:42,360 --> 00:05:46,440
+functions too and jump to other
+
+121
+00:05:44,520 --> 00:05:51,120
+functions and that concludes this
+
+122
+00:05:46,440 --> 00:05:51,120
+tutorial and I'll see you later bye
+

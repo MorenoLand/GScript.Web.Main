@@ -1,0 +1,476 @@
+1
+00:00:00,680 --> 00:00:05,759
+hello and welcome to the 18th tutorial
+
+2
+00:00:02,840 --> 00:00:06,879
+on how to program a gript 2 in this
+
+3
+00:00:05,759 --> 00:00:09,480
+tutorial I'm going to show you about a
+
+4
+00:00:06,879 --> 00:00:12,120
+new command called on
+
+5
+00:00:09,480 --> 00:00:13,599
+wall so in this tutorial I'm going to be
+
+6
+00:00:12,120 --> 00:00:16,559
+using a weapon but you can also use this
+
+7
+00:00:13,599 --> 00:00:16,559
+command in a
+
+8
+00:00:17,840 --> 00:00:22,600
+NPC so let's add client side
+
+9
+00:00:26,039 --> 00:00:31,960
+and function on player
+
+10
+00:00:28,960 --> 00:00:31,960
+chats
+
+11
+00:00:34,520 --> 00:00:40,840
+if the player says the word Mouse then
+
+12
+00:00:38,160 --> 00:00:40,840
+this is what's going to
+
+13
+00:00:41,640 --> 00:00:45,480
+happen it's going to go to the function
+
+14
+00:00:43,960 --> 00:00:47,680
+called on timeouts which we're going to
+
+15
+00:00:45,480 --> 00:00:47,680
+add
+
+16
+00:00:49,719 --> 00:00:58,719
+here and at the bottom we can add sleep
+
+17
+00:00:55,079 --> 00:01:00,160
+0.1 on timeout if we want to Loop it or
+
+18
+00:00:58,719 --> 00:01:01,280
+because it's an on timeout function we
+
+19
+00:01:00,160 --> 00:01:05,280
+can just
+
+20
+00:01:01,280 --> 00:01:07,360
+add set timer 0.1 set timer will always
+
+21
+00:01:05,280 --> 00:01:10,000
+go to on time the function on timeout if
+
+22
+00:01:07,360 --> 00:01:16,080
+it exists after how many seconds is in
+
+23
+00:01:10,000 --> 00:01:19,479
+here okay so in it let's add
+
+24
+00:01:16,080 --> 00:01:19,479
+if on
+
+25
+00:01:19,720 --> 00:01:25,840
+wall on wall Mouse X Mouse
+
+26
+00:01:28,320 --> 00:01:31,920
+y then
+
+27
+00:01:32,600 --> 00:01:37,759
+do
+
+28
+00:01:34,000 --> 00:01:43,520
+this player. chat is equal
+
+29
+00:01:37,759 --> 00:01:43,520
+to on a blocking
+
+30
+00:01:48,320 --> 00:01:55,799
+tile
+
+31
+00:01:51,000 --> 00:01:58,600
+else player. chat is equal to not on a
+
+32
+00:01:55,799 --> 00:01:58,600
+blocking
+
+33
+00:01:58,680 --> 00:02:04,320
+tile oh okay so I'm going to save this
+
+34
+00:02:02,880 --> 00:02:06,719
+now since I have the weapon already I'm
+
+35
+00:02:04,320 --> 00:02:09,160
+just going to type
+
+36
+00:02:06,719 --> 00:02:11,400
+Mouse and it's just keep going to say
+
+37
+00:02:09,160 --> 00:02:14,480
+not on a blocking tile but I'm going
+
+38
+00:02:11,400 --> 00:02:17,680
+to add a title in a
+
+39
+00:02:14,480 --> 00:02:20,760
+second like let's say a
+
+40
+00:02:17,680 --> 00:02:22,640
+bush bush is block right so when I put
+
+41
+00:02:20,760 --> 00:02:25,200
+my mouse on it it's going to say on a
+
+42
+00:02:22,640 --> 00:02:27,840
+blocking tile and when I take it off
+
+43
+00:02:25,200 --> 00:02:29,239
+it's not on a blocking tile blocking
+
+44
+00:02:27,840 --> 00:02:33,440
+tiles are tiles that you can't walk
+
+45
+00:02:29,239 --> 00:02:33,440
+through on whatever tille set you're
+
+46
+00:02:33,920 --> 00:02:38,720
+using so that's pretty useful because
+
+47
+00:02:36,120 --> 00:02:40,400
+you can do things like make NPCs that
+
+48
+00:02:38,720 --> 00:02:42,440
+don't walk through walls like let's say
+
+49
+00:02:40,400 --> 00:02:45,159
+you want to make an AI that doesn't walk
+
+50
+00:02:42,440 --> 00:02:49,239
+through walls you can do that with that
+
+51
+00:02:45,159 --> 00:02:52,599
+now the mouse X is the x value that your
+
+52
+00:02:49,239 --> 00:02:56,280
+mouse is on this is by tiles and the
+
+53
+00:02:52,599 --> 00:03:00,760
+mouse Y is going down the Y AIS that
+
+54
+00:02:56,280 --> 00:03:02,680
+your mouse is on so Mouse X which is the
+
+55
+00:03:00,760 --> 00:03:03,560
+first parameter is the X and the second
+
+56
+00:03:02,680 --> 00:03:06,200
+is the
+
+57
+00:03:03,560 --> 00:03:09,120
+Y so we can put any variable here like
+
+58
+00:03:06,200 --> 00:03:11,400
+we could put one if we wanted to that's
+
+59
+00:03:09,120 --> 00:03:16,040
+not a variable but it's a number so now
+
+60
+00:03:11,400 --> 00:03:18,920
+if if the tiles um 5 comma 5 are
+
+61
+00:03:16,040 --> 00:03:20,519
+blocking then it's going to say that or
+
+62
+00:03:18,920 --> 00:03:22,599
+if it's not then it's going to say this
+
+63
+00:03:20,519 --> 00:03:25,080
+but since we know that it's not blocking
+
+64
+00:03:22,599 --> 00:03:26,840
+it's just going to say that anyway we're
+
+65
+00:03:25,080 --> 00:03:28,159
+just going to put Mouse we can oh yeah
+
+66
+00:03:26,840 --> 00:03:31,439
+we can also put something like this
+
+67
+00:03:28,159 --> 00:03:34,879
+player X comma player
+
+68
+00:03:31,439 --> 00:03:37,720
+doy that'll work we can put this.x
+
+69
+00:03:34,879 --> 00:03:41,640
+this.y anything like
+
+70
+00:03:37,720 --> 00:03:44,840
+that let's have to say mouse first and
+
+71
+00:03:41,640 --> 00:03:47,360
+since you know the players X and Y is
+
+72
+00:03:44,840 --> 00:03:49,840
+actually at the top left corner of them
+
+73
+00:03:47,360 --> 00:03:51,599
+so technically you're on the tile if we
+
+74
+00:03:49,840 --> 00:03:53,799
+want to take that away you know make it
+
+75
+00:03:51,599 --> 00:03:55,239
+to the center of the player we would add
+
+76
+00:03:53,799 --> 00:03:58,599
+plus
+
+77
+00:03:55,239 --> 00:04:00,159
+1.5 and plus 1.5 after them I'm not sure
+
+78
+00:03:58,599 --> 00:04:03,560
+if this is exactly the center but it's
+
+79
+00:04:00,159 --> 00:04:05,959
+about so you'll see that nowhere we walk
+
+80
+00:04:03,560 --> 00:04:08,079
+around it because the center of the
+
+81
+00:04:05,959 --> 00:04:11,640
+player isn't touching it but now if we
+
+82
+00:04:08,079 --> 00:04:11,640
+move ourselves
+
+83
+00:04:11,799 --> 00:04:15,319
+like if we do
+
+84
+00:04:15,799 --> 00:04:21,560
+this it'll see that we're on a blocking
+
+85
+00:04:18,040 --> 00:04:23,479
+tile well anyway that's it for this
+
+86
+00:04:21,560 --> 00:04:25,919
+tutorial actually no I'm going to teach
+
+87
+00:04:23,479 --> 00:04:28,000
+you one more thing it's called how to
+
+88
+00:04:25,919 --> 00:04:30,440
+make it's called random and it makes
+
+89
+00:04:28,000 --> 00:04:33,400
+things random
+
+90
+00:04:30,440 --> 00:04:36,360
+let's just change the NPC to be like
+
+91
+00:04:33,400 --> 00:04:40,600
+this
+
+92
+00:04:36,360 --> 00:04:40,600
+random and then in the NPC let's
+
+93
+00:04:41,320 --> 00:04:46,600
+add actually why am I doing this I don't
+
+94
+00:04:43,280 --> 00:04:46,600
+even need the on timeout this
+
+95
+00:04:48,440 --> 00:04:56,960
+time let's add this dot is random a new
+
+96
+00:04:53,960 --> 00:04:56,960
+MP a new
+
+97
+00:04:57,199 --> 00:05:06,560
+variable is equal to
+
+98
+00:05:01,520 --> 00:05:06,560
+int random 0 comma
+
+99
+00:05:07,680 --> 00:05:15,880
+9 so then player. chat is equal to this
+
+100
+00:05:13,520 --> 00:05:18,479
+uh Is
+
+101
+00:05:15,880 --> 00:05:21,039
+Random so what this is going to do is
+
+102
+00:05:18,479 --> 00:05:24,759
+when you say the word random it's going
+
+103
+00:05:21,039 --> 00:05:28,280
+to make this do random a new variable
+
+104
+00:05:24,759 --> 00:05:31,080
+equal to any number between 0 and
+
+105
+00:05:28,280 --> 00:05:33,720
+9 and after this you can do things like
+
+106
+00:05:31,080 --> 00:05:35,800
+if this. random is equal to one then
+
+107
+00:05:33,720 --> 00:05:39,639
+make it say this or whatever but we're
+
+108
+00:05:35,800 --> 00:05:43,280
+going to do this so when we cck apply it
+
+109
+00:05:39,639 --> 00:05:44,360
+says random we get zero let's say random
+
+110
+00:05:43,280 --> 00:05:48,639
+again we
+
+111
+00:05:44,360 --> 00:05:50,960
+get we get five again we get one again
+
+112
+00:05:48,639 --> 00:05:53,160
+we get nine so any number between zero
+
+113
+00:05:50,960 --> 00:05:55,120
+and N is going to get a random number
+
+114
+00:05:53,160 --> 00:05:57,080
+from those anyway that concludes this
+
+115
+00:05:55,120 --> 00:06:00,240
+tutorial and I hope you have a better
+
+116
+00:05:57,080 --> 00:06:03,080
+understanding on on wall and understand
+
+117
+00:06:00,240 --> 00:06:04,680
+what how to make things random anyway
+
+118
+00:06:03,080 --> 00:06:07,639
+that's it for this tutorial and I'll see
+
+119
+00:06:04,680 --> 00:06:07,639
+you later
+

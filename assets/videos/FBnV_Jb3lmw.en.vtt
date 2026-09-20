@@ -1,0 +1,706 @@
+WEBVTT
+
+00:00.399 --> 00:05.040
+hello and welcome to the 25th tutorial
+
+00:02.800 --> 00:06.640
+on how to program a g-script 2.
+
+00:05.040 --> 00:09.760
+so in this tutorial i'm going to show
+
+00:06.640 --> 00:11.519
+you a new command call called
+
+00:09.760 --> 00:13.840
+trigger server
+
+00:11.519 --> 00:15.120
+if you remember in the 23rd tutorial i
+
+00:13.840 --> 00:17.600
+explained
+
+00:15.120 --> 00:19.520
+sort of how to use trigger action and
+
+00:17.600 --> 00:21.039
+how it only how it works for
+
+00:19.520 --> 00:22.720
+level npcs
+
+00:21.039 --> 00:24.480
+and what it does is it makes it so you
+
+00:22.720 --> 00:27.519
+can go from client side to server side
+
+00:24.480 --> 00:29.519
+in the same and be in the same script
+
+00:27.519 --> 00:32.000
+well trigger server does the same thing
+
+00:29.519 --> 00:34.320
+except you use it for things like
+
+00:32.000 --> 00:35.200
+database npcs which are like npcs that
+
+00:34.320 --> 00:37.200
+are
+
+00:35.200 --> 00:38.399
+permanently on the server not like level
+
+00:37.200 --> 00:40.960
+npcs
+
+00:38.399 --> 00:41.920
+and or weapons or classes which i
+
+00:40.960 --> 00:44.879
+haven't
+
+00:41.920 --> 00:46.480
+which i don't use but here's a weapon
+
+00:44.879 --> 00:47.600
+it's called
+
+00:46.480 --> 00:49.440
+trigger
+
+00:47.600 --> 00:51.920
+and i already added it to myself and
+
+00:49.440 --> 00:51.920
+let's start it
+
+00:55.280 --> 00:59.760
+on
+
+00:56.879 --> 01:01.760
+weapon fired
+
+00:59.760 --> 01:03.039
+what if you remember what on weapon fire
+
+01:01.760 --> 01:05.119
+does is
+
+01:03.039 --> 01:06.080
+if you press d with the weapon selected
+
+01:05.119 --> 01:07.360
+from your
+
+01:06.080 --> 01:08.799
+inventory
+
+01:07.360 --> 01:10.080
+then it'll run whatever is in these
+
+01:08.799 --> 01:13.360
+brackets
+
+01:10.080 --> 01:16.080
+okay let's add the code trigger
+
+01:13.360 --> 01:17.439
+server this is the command that will
+
+01:16.080 --> 01:20.439
+do what i said
+
+01:17.439 --> 01:20.439
+guist.name
+
+01:23.520 --> 01:28.240
+no
+
+01:25.200 --> 01:30.799
+okay so here is the command
+
+01:28.240 --> 01:32.560
+trigger server
+
+01:30.799 --> 01:33.280
+the first parameter
+
+01:32.560 --> 01:35.920
+is
+
+01:33.280 --> 01:38.320
+i put quotes gui
+
+01:35.920 --> 01:40.560
+what this does is i'm not entirely sure
+
+01:38.320 --> 01:42.560
+actually
+
+01:40.560 --> 01:44.720
+when you take it out then it doesn't
+
+01:42.560 --> 01:46.159
+work and what i don't know what else you
+
+01:44.720 --> 01:48.000
+could replace it with
+
+01:46.159 --> 01:49.200
+but anyway you can just leave it as gui
+
+01:48.000 --> 01:50.640
+i don't even know if you can change
+
+01:49.200 --> 01:53.439
+anything
+
+01:50.640 --> 01:56.479
+the second parameter i put this.name
+
+01:53.439 --> 01:58.960
+this.name is the variable of the
+
+01:56.479 --> 02:02.159
+weapon's name you can replace this with
+
+01:58.960 --> 02:04.320
+any weapon name you want and it'll
+
+02:02.159 --> 02:06.399
+trigger server to that weapon like if
+
+02:04.320 --> 02:09.920
+any other weapon has
+
+02:06.399 --> 02:12.080
+a function on
+
+02:09.920 --> 02:14.319
+actually i'll explain that in a second
+
+02:12.080 --> 02:17.200
+the third parameter is null you can
+
+02:14.319 --> 02:19.120
+replace it with just nothing but null
+
+02:17.200 --> 02:20.879
+what after here what happens is if you
+
+02:19.120 --> 02:23.599
+want to have any variables that can send
+
+02:20.879 --> 02:25.920
+over then you can do that
+
+02:23.599 --> 02:27.520
+okay let's go back to server side and
+
+02:25.920 --> 02:29.680
+put function
+
+02:27.520 --> 02:31.680
+on action
+
+02:29.680 --> 02:33.920
+server side
+
+02:31.680 --> 02:36.080
+okay what this command does is if you
+
+02:33.920 --> 02:37.519
+have a trigger server in client side
+
+02:36.080 --> 02:39.280
+it's going to make it go to this
+
+02:37.519 --> 02:41.680
+function
+
+02:39.280 --> 02:44.480
+and it runs right over in these brackets
+
+02:41.680 --> 02:44.480
+okay let's put
+
+02:44.720 --> 02:47.200
+for
+
+02:45.760 --> 02:48.840
+temp dot
+
+02:47.200 --> 02:52.160
+dot
+
+02:48.840 --> 02:54.720
+pl and all players so it's going to loop
+
+02:52.160 --> 02:56.400
+through all the players using the pl
+
+02:54.720 --> 02:58.560
+variable
+
+02:56.400 --> 03:00.879
+then we can do something like pl dot
+
+02:58.560 --> 03:02.159
+hearts is equal to zero
+
+03:00.879 --> 03:04.480
+so it's going to loop through everyone
+
+03:02.159 --> 03:06.400
+on the server and it's going to make
+
+03:04.480 --> 03:07.760
+their hearts which is their health equal
+
+03:06.400 --> 03:10.400
+to zero
+
+03:07.760 --> 03:11.680
+and that's going to kill them instantly
+
+03:10.400 --> 03:13.280
+so if you ever wanted a weapon that
+
+03:11.680 --> 03:14.560
+kills everyone on the server which i
+
+03:13.280 --> 03:19.519
+don't know why you would
+
+03:14.560 --> 03:21.840
+it would do that okay let's save this
+
+03:19.519 --> 03:22.959
+i'm going to select it i already have it
+
+03:21.840 --> 03:26.000
+press d
+
+03:22.959 --> 03:29.760
+and it kills me including and
+
+03:26.000 --> 03:29.760
+my test player
+
+03:30.159 --> 03:32.560
+okay
+
+03:31.200 --> 03:34.080
+so if we go back to the script we'll see
+
+03:32.560 --> 03:37.040
+that it worked
+
+03:34.080 --> 03:39.440
+and yeah if let's say we want to
+
+03:37.040 --> 03:41.599
+avoid us killing ourselves but kill
+
+03:39.440 --> 03:43.840
+everyone else
+
+03:41.599 --> 03:45.519
+then what we want to do
+
+03:43.840 --> 03:47.599
+is
+
+03:45.519 --> 03:49.200
+put if
+
+03:47.599 --> 03:52.560
+player dot
+
+03:49.200 --> 03:57.159
+no if pl dot account is equal to my
+
+03:52.560 --> 03:57.159
+account name which is brawl 755284
+
+03:58.879 --> 04:02.720
+then it's going to make
+
+04:00.400 --> 04:04.959
+the hearts equal to zero
+
+04:02.720 --> 04:06.159
+i mean everyone except me
+
+04:04.959 --> 04:07.519
+oh wait
+
+04:06.159 --> 04:10.159
+that's just going to make me i want to
+
+04:07.519 --> 04:12.319
+put not equal to i'm sorry
+
+04:10.159 --> 04:16.480
+okay apply
+
+04:12.319 --> 04:16.480
+press d and it kills everyone but me
+
+04:17.040 --> 04:20.799
+we can do some other things too
+
+04:19.759 --> 04:22.720
+with this
+
+04:20.799 --> 04:24.720
+let's say we want to make everybody say
+
+04:22.720 --> 04:27.720
+something on the server
+
+04:24.720 --> 04:27.720
+oh
+
+04:29.840 --> 04:34.560
+i mess that up a bit
+
+04:32.639 --> 04:36.960
+okay what we would do
+
+04:34.560 --> 04:39.360
+is put pl dot
+
+04:36.960 --> 04:39.360
+um
+
+04:41.520 --> 04:44.400
+chat is equal to
+
+04:45.120 --> 04:47.440
+hi
+
+04:46.080 --> 04:48.720
+so now everyone on the server is going
+
+04:47.440 --> 04:51.120
+to say hi
+
+04:48.720 --> 04:51.120
+oops
+
+04:51.360 --> 04:55.120
+hi
+
+04:53.040 --> 04:57.199
+we can also i can show you how to send
+
+04:55.120 --> 04:59.600
+variables over what we do is go here to
+
+04:57.199 --> 05:02.639
+null and we'll put a variable that we
+
+04:59.600 --> 05:04.000
+want like temp dot
+
+05:02.639 --> 05:05.120
+let's put
+
+05:04.000 --> 05:07.840
+no
+
+05:05.120 --> 05:07.840
+okay let's do this
+
+05:08.240 --> 05:11.240
+player
+
+05:13.120 --> 05:17.199
+actually i'm going to change the
+
+05:14.320 --> 05:17.199
+function to on
+
+05:17.440 --> 05:20.880
+player chats
+
+05:19.440 --> 05:23.120
+so as soon as i say something it's going
+
+05:20.880 --> 05:26.800
+to go to server side
+
+05:23.120 --> 05:26.800
+okay i'm going to put
+
+05:29.360 --> 05:35.919
+temp dot pl no not pl p
+
+05:32.639 --> 05:38.400
+is equal to player dot chat
+
+05:35.919 --> 05:40.160
+that would go here is go here
+
+05:38.400 --> 05:42.240
+and put temp dot
+
+05:40.160 --> 05:44.960
+p
+
+05:42.240 --> 05:46.720
+then here on server side we put uh what
+
+05:44.960 --> 05:48.639
+we want to change the name to just keep
+
+05:46.720 --> 05:50.080
+sp
+
+05:48.639 --> 05:51.600
+temp dot p
+
+05:50.080 --> 05:53.039
+and here
+
+05:51.600 --> 05:54.400
+instead of saying hi we're going to say
+
+05:53.039 --> 05:56.319
+temp dot p
+
+05:54.400 --> 05:59.039
+so we're saying something temp.p is
+
+05:56.319 --> 06:02.240
+getting set as our chat then it's going
+
+05:59.039 --> 06:04.319
+to send that variable over to here
+
+06:02.240 --> 06:05.520
+and it's going to
+
+06:04.319 --> 06:06.560
+everyone on the server is going to say
+
+06:05.520 --> 06:08.800
+that
+
+06:06.560 --> 06:10.960
+everything i say so i'm going to say
+
+06:08.800 --> 06:11.840
+hi
+
+06:10.960 --> 06:15.280
+hi
+
+06:11.840 --> 06:16.639
+and the test person says it say q
+
+06:15.280 --> 06:18.000
+so anyway everyone's just going to say
+
+06:16.639 --> 06:19.680
+what you say
+
+06:18.000 --> 06:21.520
+so let's say we want to make a summoning
+
+06:19.680 --> 06:24.639
+script we can do that with this let's
+
+06:21.520 --> 06:24.639
+change this back to null
+
+06:25.919 --> 06:30.720
+and get rid of this code here
+
+06:28.479 --> 06:32.639
+and then we're going to put if
+
+06:30.720 --> 06:35.120
+player dot
+
+06:32.639 --> 06:36.319
+chat is equal to
+
+06:35.120 --> 06:38.880
+uh
+
+06:36.319 --> 06:38.880
+summon all
+
+06:42.240 --> 06:46.240
+so if we're going to say something and
+
+06:43.840 --> 06:49.440
+then our chat is equal to the exact
+
+06:46.240 --> 06:51.919
+words seminal it's going to run trigger
+
+06:49.440 --> 06:54.000
+server and go to server side
+
+06:51.919 --> 06:55.840
+so now what we want to do is here we're
+
+06:54.000 --> 06:57.759
+looping through everyone i'm going to
+
+06:55.840 --> 06:58.960
+put a command
+
+06:57.759 --> 07:00.080
+called
+
+06:58.960 --> 07:02.560
+uh
+
+07:00.080 --> 07:05.599
+set level 2 so we're going to put pl dot
+
+07:02.560 --> 07:07.440
+set level two here we're specifying
+
+07:05.599 --> 07:09.599
+who the set level is going to happen to
+
+07:07.440 --> 07:11.440
+it's going to happen to the
+
+07:09.599 --> 07:12.800
+all the players
+
+07:11.440 --> 07:14.560
+and then we're going to put
+
+07:12.800 --> 07:16.160
+parentheses
+
+07:14.560 --> 07:17.120
+player player.name
+
+07:16.160 --> 07:20.319
+comma
+
+07:17.120 --> 07:21.919
+player.x comma player.y
+
+07:20.319 --> 07:23.759
+the first parameter is the level we want
+
+07:21.919 --> 07:25.840
+them to warp to we can replace it with
+
+07:23.759 --> 07:26.960
+anything like
+
+07:25.840 --> 07:28.000
+new
+
+07:26.960 --> 07:29.840
+9
+
+07:28.000 --> 07:31.599
+or new seven dot
+
+07:29.840 --> 07:33.120
+i think this is our current level i mean
+
+07:31.599 --> 07:34.720
+new nine is our current level
+
+07:33.120 --> 07:37.199
+and then we can make it so they warp to
+
+07:34.720 --> 07:39.039
+our player x and player y we can also
+
+07:37.199 --> 07:40.160
+make them warp to anything else like
+
+07:39.039 --> 07:42.400
+let's say
+
+07:40.160 --> 07:42.400
+ten
+
+07:43.680 --> 07:48.720
+10. and if we run this
+
+07:46.400 --> 07:50.240
+and i say summon all
+
+07:48.720 --> 07:52.800
+everyone's going to be warped to this
+
+07:50.240 --> 07:54.080
+level and at 10 coordinates
+
+07:52.800 --> 07:58.520
+but we don't want that we want them to
+
+07:54.080 --> 07:58.520
+warp to us so we're going to put
+
+07:58.800 --> 08:04.000
+which is our level
+
+08:01.360 --> 08:05.840
+player.x which is our x-axis coordinate
+
+08:04.000 --> 08:06.960
+and player.y which is our y-axis
+
+08:05.840 --> 08:08.560
+coordinate
+
+08:06.960 --> 08:11.199
+we save this
+
+08:08.560 --> 08:13.759
+i want to say sum and all
+
+08:11.199 --> 08:15.680
+everybody on the server warps to me
+
+08:13.759 --> 08:17.919
+which can be pretty useful as a staff
+
+08:15.680 --> 08:19.599
+tool in case you want to warp everyone
+
+08:17.919 --> 08:20.639
+and show someone something or just for
+
+08:19.599 --> 08:22.400
+testing
+
+08:20.639 --> 08:25.039
+so anyway that's the
+
+08:22.400 --> 08:27.039
+end of this tutorial and i'm glad and i
+
+08:25.039 --> 08:29.039
+hope you understand how to use
+
+08:27.039 --> 08:32.000
+trigger server now
+
+08:29.039 --> 08:32.959
+and how to use set level 2.
+
+08:32.000 --> 08:35.959
+anyway
+
+08:32.959 --> 08:35.959
+bye

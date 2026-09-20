@@ -1,0 +1,568 @@
+WEBVTT
+
+00:00.320 --> 00:05.120
+hello and welcome to the 20th tutorial
+
+00:02.240 --> 00:06.000
+on how to program in g-script 2.
+
+00:05.120 --> 00:08.080
+so
+
+00:06.000 --> 00:10.000
+i deleted all this code we did in the
+
+00:08.080 --> 00:10.960
+last tutorial and i replaced it with two
+
+00:10.000 --> 00:14.080
+arrays
+
+00:10.960 --> 00:15.679
+xx and yy both with 100 variables in
+
+00:14.080 --> 00:19.199
+them
+
+00:15.679 --> 00:21.039
+now when we're calling arrays
+
+00:19.199 --> 00:22.560
+we can put we can just put the name of
+
+00:21.039 --> 00:25.600
+the array
+
+00:22.560 --> 00:27.279
+or xx and put a number like n
+
+00:25.600 --> 00:29.840
+which would be the 11th variable
+
+00:27.279 --> 00:32.079
+remember because the variable start at
+
+00:29.840 --> 00:33.520
+zero and go to whatever this is minus
+
+00:32.079 --> 00:34.399
+one
+
+00:33.520 --> 00:35.600
+so
+
+00:34.399 --> 00:36.960
+equals
+
+00:35.600 --> 00:37.920
+like
+
+00:36.960 --> 00:39.520
+five
+
+00:37.920 --> 00:40.800
+but there's another way to do it let's
+
+00:39.520 --> 00:44.399
+make a
+
+00:40.800 --> 00:47.360
+let's make a variable temp dot
+
+00:44.399 --> 00:48.640
+sum bar is equal to one
+
+00:47.360 --> 00:50.079
+or ten
+
+00:48.640 --> 00:53.440
+we can replace
+
+00:50.079 --> 00:55.680
+ten in the variable brackets with
+
+00:53.440 --> 00:58.399
+temp dot sum
+
+00:55.680 --> 00:59.920
+bar or just sum sumbar because
+
+00:58.399 --> 01:01.680
+temp variables don't require the
+
+00:59.920 --> 01:04.239
+beginning to be specified after they've
+
+01:01.680 --> 01:04.239
+been created
+
+01:04.720 --> 01:11.000
+so anyway
+
+01:07.119 --> 01:11.000
+let's create a for loop
+
+01:21.280 --> 01:24.320
+now this loop is going to create a
+
+01:22.799 --> 01:27.200
+variable called n
+
+01:24.320 --> 01:28.640
+loop until it reaches 100 or something
+
+01:27.200 --> 01:32.400
+greater than 99
+
+01:28.640 --> 01:34.880
+which is 100 and then it's gonna break
+
+01:32.400 --> 01:37.840
+now because we're working with
+
+01:34.880 --> 01:39.200
+arrays we can't go to 100
+
+01:37.840 --> 01:41.759
+because remember
+
+01:39.200 --> 01:44.240
+the variables start at one
+
+01:41.759 --> 01:46.720
+i mean the variable started
+
+01:44.240 --> 01:48.880
+the value of like zero
+
+01:46.720 --> 01:49.920
+i don't know if this is i'm confusing
+
+01:48.880 --> 01:51.840
+you
+
+01:49.920 --> 01:56.399
+but the highest
+
+01:51.840 --> 01:58.399
+variable to like specify would be 99
+
+01:56.399 --> 02:00.719
+because it starts at zero it doesn't
+
+01:58.399 --> 02:02.719
+start at one starts at zero it creates
+
+02:00.719 --> 02:04.000
+100 variables but when you're calling
+
+02:02.719 --> 02:05.520
+them
+
+02:04.000 --> 02:06.399
+you have to do whatever you want minus
+
+02:05.520 --> 02:08.560
+one
+
+02:06.399 --> 02:10.399
+well that's kind of confusing but i
+
+02:08.560 --> 02:11.599
+think you'll get it
+
+02:10.399 --> 02:14.160
+anyway
+
+02:11.599 --> 02:14.160
+let's add
+
+02:16.239 --> 02:18.560
+xx
+
+02:17.599 --> 02:19.920
+and
+
+02:18.560 --> 02:21.200
+we're taking this
+
+02:19.920 --> 02:23.520
+variable and putting it inside the
+
+02:21.200 --> 02:26.160
+brackets of the array to specify which
+
+02:23.520 --> 02:29.440
+variable in the array we want to change
+
+02:26.160 --> 02:29.440
+let's make them all equal to
+
+02:30.160 --> 02:32.480
+int
+
+02:31.120 --> 02:35.200
+random
+
+02:32.480 --> 02:35.200
+0 comma
+
+02:35.519 --> 02:38.160
+64.
+
+02:39.760 --> 02:44.480
+so we're going to make xx
+
+02:41.840 --> 02:46.239
+each each of the xx variables because
+
+02:44.480 --> 02:48.000
+we're looping through all of them we're
+
+02:46.239 --> 02:50.640
+going to make each of them equal to a
+
+02:48.000 --> 02:53.280
+value between 0 and 64.
+
+02:50.640 --> 02:53.280
+same with y
+
+02:58.959 --> 03:04.640
+remember that every level has 64 tiles
+
+03:02.239 --> 03:06.400
+to the right and 64 tiles
+
+03:04.640 --> 03:07.680
+down
+
+03:06.400 --> 03:09.440
+if we're
+
+03:07.680 --> 03:12.000
+taking it as the origin being the top
+
+03:09.440 --> 03:13.760
+left corner which it is
+
+03:12.000 --> 03:18.680
+now let's create
+
+03:13.760 --> 03:18.680
+let's call a function on timeout
+
+03:20.400 --> 03:24.879
+i'm gonna make it so that it
+
+03:22.959 --> 03:27.360
+loops through this
+
+03:24.879 --> 03:27.360
+function
+
+03:30.480 --> 03:34.159
+and let's add another for loop
+
+03:38.799 --> 03:41.680
+so every you know let's add some things
+
+03:40.640 --> 03:43.760
+first
+
+03:41.680 --> 03:46.640
+x x
+
+03:43.760 --> 03:48.560
+n equals x x n
+
+03:46.640 --> 03:51.360
+minus
+
+03:48.560 --> 03:52.959
+you know plus 0.2
+
+03:51.360 --> 03:53.680
+and then yy
+
+03:52.959 --> 03:55.280
+n
+
+03:53.680 --> 03:57.440
+equals yy
+
+03:55.280 --> 03:57.440
+n
+
+03:57.599 --> 04:02.000
+minus
+
+03:59.040 --> 04:02.000
+no plus one
+
+04:02.720 --> 04:06.799
+so we're going to go into this for loop
+
+04:05.360 --> 04:09.599
+and it's going to go it's going to loop
+
+04:06.799 --> 04:11.200
+through all the variables in the array
+
+04:09.599 --> 04:12.879
+and change them all
+
+04:11.200 --> 04:15.040
+by 0.1
+
+04:12.879 --> 04:17.280
+change all the
+
+04:15.040 --> 04:18.720
+variables anyway by whatever
+
+04:17.280 --> 04:20.400
+is here
+
+04:18.720 --> 04:21.440
+so once that's changed it's going to
+
+04:20.400 --> 04:23.840
+loop
+
+04:21.440 --> 04:25.440
+back to the beginning of the function
+
+04:23.840 --> 04:28.479
+and change them again and again and
+
+04:25.440 --> 04:30.080
+again and this will happen every 0.05
+
+04:28.479 --> 04:32.639
+seconds which is
+
+04:30.080 --> 04:32.639
+pretty quick
+
+04:32.880 --> 04:37.280
+so let's add some more stuff
+
+04:35.600 --> 04:40.560
+right here
+
+04:37.280 --> 04:43.360
+let's show an image show image
+
+04:40.560 --> 04:45.360
+200 plus n we don't want to we don't
+
+04:43.360 --> 04:47.120
+want it to be under 200 because that'll
+
+04:45.360 --> 04:48.960
+be shown for everyone and it'll be laggy
+
+04:47.120 --> 04:51.680
+that way
+
+04:48.960 --> 04:51.680
+then let's go
+
+04:52.880 --> 04:55.280
+let's
+
+04:53.759 --> 04:56.720
+pick and
+
+04:55.280 --> 04:59.960
+pick an image you want to use let's just
+
+04:56.720 --> 04:59.960
+use block.png
+
+05:00.080 --> 05:04.400
+because i don't think i have a rain
+
+05:02.240 --> 05:06.639
+image well i do i just remember the name
+
+05:04.400 --> 05:09.759
+but then let's add
+
+05:06.639 --> 05:13.759
+x x n as the x coordinate and
+
+05:09.759 --> 05:15.199
+y-y and has the y-coordinate
+
+05:13.759 --> 05:16.479
+just watch what no wait we want to add
+
+05:15.199 --> 05:19.759
+one more thing
+
+05:16.479 --> 05:19.759
+i want to add if
+
+05:21.120 --> 05:25.680
+xx actually i'm going to add that after
+
+05:23.360 --> 05:27.120
+this we're going to run as you can see
+
+05:25.680 --> 05:30.000
+all of them just
+
+05:27.120 --> 05:31.840
+keep going down
+
+05:30.000 --> 05:33.759
+each of these blocks is a different
+
+05:31.840 --> 05:35.280
+variable with two variables in the
+
+05:33.759 --> 05:38.560
+arrays
+
+05:35.280 --> 05:40.160
+each with an x x and a y y coordinate
+
+05:38.560 --> 05:42.560
+and each of them is different but
+
+05:40.160 --> 05:45.360
+they're all changing
+
+05:42.560 --> 05:45.360
+at the same rate
+
+05:45.520 --> 05:49.120
+let's add it so that they go back to the
+
+05:46.880 --> 05:49.919
+top after they reach the bottom
+
+05:49.120 --> 05:51.199
+if
+
+05:49.919 --> 05:52.400
+x x
+
+05:51.199 --> 05:53.680
+n
+
+05:52.400 --> 05:55.600
+is
+
+05:53.680 --> 05:59.280
+less than
+
+05:55.600 --> 06:00.479
+no we want y y n x x y y n
+
+05:59.280 --> 06:01.759
+is
+
+06:00.479 --> 06:04.840
+greater than
+
+06:01.759 --> 06:08.479
+64 which is the very bottom of the
+
+06:04.840 --> 06:08.479
+level then
+
+06:11.440 --> 06:18.400
+we want it yy to reset so let's add yy
+
+06:16.080 --> 06:21.199
+actually we can just copy this here
+
+06:18.400 --> 06:24.720
+we want the variable or both variables
+
+06:21.199 --> 06:26.720
+to be set and go back to a random point
+
+06:24.720 --> 06:28.479
+actually we don't want y to be anywhere
+
+06:26.720 --> 06:30.880
+i wanted to be at the very top
+
+06:28.479 --> 06:32.560
+so let's add
+
+06:30.880 --> 06:34.960
+zero
+
+06:32.560 --> 06:36.880
+and watch what happens
+
+06:34.960 --> 06:39.280
+they keep coming down and then going
+
+06:36.880 --> 06:39.280
+back up
+
+06:41.680 --> 06:46.160
+so that's pretty useful and you can do a
+
+06:44.080 --> 06:50.319
+lot of things with arrays such as
+
+06:46.160 --> 06:51.919
+particle effects and among other things
+
+06:50.319 --> 06:53.360
+well that concludes this tutorial and i
+
+06:51.919 --> 06:55.280
+hope you have a better understanding of
+
+06:53.360 --> 06:57.120
+arrays and we'll be sure to use them
+
+06:55.280 --> 06:59.599
+more later so if you don't understand
+
+06:57.120 --> 07:01.440
+them you can either
+
+06:59.599 --> 07:03.599
+go to
+
+07:01.440 --> 07:06.720
+the graw forums and look for some
+
+07:03.599 --> 07:09.039
+examples or go to the girl wiki and
+
+07:06.720 --> 07:11.199
+grow gscript wiki and
+
+07:09.039 --> 07:12.240
+look at some things i don't know
+
+07:11.199 --> 07:14.000
+whatever
+
+07:12.240 --> 07:15.520
+that can whatever can help you
+
+07:14.000 --> 07:17.520
+but i'm probably gonna i'm gonna be
+
+07:15.520 --> 07:19.039
+using them more in the future so
+
+07:17.520 --> 07:20.720
+you can wait for a tutorial like that to
+
+07:19.039 --> 07:24.840
+come out but anyway that's the end of
+
+07:20.720 --> 07:24.840
+this tutorial and i'll see you later

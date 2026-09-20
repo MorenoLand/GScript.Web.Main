@@ -1,0 +1,216 @@
+1
+00:00:00,440 --> 00:00:05,920
+hello and welcome to the 10th tutorial
+
+2
+00:00:02,560 --> 00:00:08,320
+on how to program in gript 2 now in in
+
+3
+00:00:05,920 --> 00:00:10,679
+this tutorial I'm going to show you a
+
+4
+00:00:08,320 --> 00:00:13,880
+new type of variable called a server R
+
+5
+00:00:10,679 --> 00:00:15,920
+type a server R variable now let's open
+
+6
+00:00:13,880 --> 00:00:17,640
+level editor and double
+
+7
+00:00:15,920 --> 00:00:24,720
+click the
+
+8
+00:00:17,640 --> 00:00:31,880
+NPC and on server side type server
+
+9
+00:00:24,720 --> 00:00:34,920
+R.T um boat is equal to six
+
+10
+00:00:31,880 --> 00:00:37,640
+this is a server R variable server R
+
+11
+00:00:34,920 --> 00:00:39,879
+variables I'll explain in a second let's
+
+12
+00:00:37,640 --> 00:00:43,160
+close this and
+
+13
+00:00:39,879 --> 00:00:43,160
+save then
+
+14
+00:00:43,239 --> 00:00:49,079
+upload if we go to our RC and click the
+
+15
+00:00:46,760 --> 00:00:51,320
+little flag on the planet icon in the
+
+16
+00:00:49,079 --> 00:00:53,600
+top right corner you can see all the
+
+17
+00:00:51,320 --> 00:00:57,120
+server Flags there is a new variable
+
+18
+00:00:53,600 --> 00:01:01,160
+called server R
+
+19
+00:00:57,120 --> 00:01:03,719
+dobo server R variables
+
+20
+00:01:01,160 --> 00:01:05,560
+will work for any NPC and any weapon
+
+21
+00:01:03,719 --> 00:01:09,439
+throughout the entire
+
+22
+00:01:05,560 --> 00:01:11,040
+server and well that's about it the
+
+23
+00:01:09,439 --> 00:01:13,960
+thing is with server R variables is
+
+24
+00:01:11,040 --> 00:01:16,920
+they're they're a bit messy they
+
+25
+00:01:13,960 --> 00:01:20,280
+can well it's just it's just if you if
+
+26
+00:01:16,920 --> 00:01:23,200
+you can it's better off to use client
+
+27
+00:01:20,280 --> 00:01:27,479
+variables or this do variables but if
+
+28
+00:01:23,200 --> 00:01:32,520
+you have to you know use a server r.
+
+29
+00:01:27,479 --> 00:01:34,799
+variable there's also server. variables
+
+30
+00:01:32,520 --> 00:01:36,240
+but server R variables are sort of like
+
+31
+00:01:34,799 --> 00:01:38,280
+downgraded
+
+32
+00:01:36,240 --> 00:01:40,159
+versions sort of like sort of like a
+
+33
+00:01:38,280 --> 00:01:42,320
+downgraded version of the server R
+
+34
+00:01:40,159 --> 00:01:44,840
+variable so it's just best off if you're
+
+35
+00:01:42,320 --> 00:01:47,479
+going to use server R server variables
+
+36
+00:01:44,840 --> 00:01:50,719
+just use a server R
+
+37
+00:01:47,479 --> 00:01:53,320
+variable anyway server R variables
+
+38
+00:01:50,719 --> 00:01:56,320
+cannot be created on client side only on
+
+39
+00:01:53,320 --> 00:02:00,320
+server side and they cannot
+
+40
+00:01:56,320 --> 00:02:00,320
+be edited
+
+41
+00:02:00,399 --> 00:02:05,640
+on client side either you can only edit
+
+42
+00:02:03,719 --> 00:02:08,640
+and create them on server
+
+43
+00:02:05,640 --> 00:02:08,640
+side
+
+44
+00:02:09,200 --> 00:02:15,400
+however you
+
+45
+00:02:11,520 --> 00:02:17,640
+can use them on on client side as I'll
+
+46
+00:02:15,400 --> 00:02:17,640
+show
+
+47
+00:02:20,760 --> 00:02:27,080
+you so I'm going to say hi and it says
+
+48
+00:02:24,319 --> 00:02:28,560
+six remember these variables are used
+
+49
+00:02:27,080 --> 00:02:30,920
+throughout the server you can use them
+
+50
+00:02:28,560 --> 00:02:32,640
+on any NPC you want any weapon you want
+
+51
+00:02:30,920 --> 00:02:35,640
+it'll always be the same until you
+
+52
+00:02:32,640 --> 00:02:38,040
+change it or another player changes it
+
+53
+00:02:35,640 --> 00:02:44,319
+so anyway that's about it for this to
+
+54
+00:02:38,040 --> 00:02:44,319
+short tutorial and so see you next time
+

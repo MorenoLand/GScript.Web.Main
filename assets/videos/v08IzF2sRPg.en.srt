@@ -1,0 +1,368 @@
+1
+00:00:00,179 --> 00:00:04,920
+hello and welcome to the 14th tutorial
+
+2
+00:00:02,639 --> 00:00:06,740
+on how to program a g-script 2. so let's
+
+3
+00:00:04,920 --> 00:00:10,740
+double click our NPC and as you can see
+
+4
+00:00:06,740 --> 00:00:13,320
+I added a bunch new lines of code in the
+
+5
+00:00:10,740 --> 00:00:17,400
+uncreated function this is pretty much
+
+6
+00:00:13,320 --> 00:00:20,880
+the gscript 2 counterpart of
+
+7
+00:00:17,400 --> 00:00:23,520
+what we saw in the
+
+8
+00:00:20,880 --> 00:00:25,080
+way that the NPCs created in g-script
+
+9
+00:00:23,520 --> 00:00:26,519
+one
+
+10
+00:00:25,080 --> 00:00:28,800
+cycle look
+
+11
+00:00:26,519 --> 00:00:31,160
+and just script one this is what it
+
+12
+00:00:28,800 --> 00:00:31,160
+would look like
+
+13
+00:00:32,220 --> 00:00:35,520
+now in g-script 2. this is what it would
+
+14
+00:00:34,620 --> 00:00:37,739
+look like
+
+15
+00:00:35,520 --> 00:00:39,360
+these comments are here so you can see
+
+16
+00:00:37,739 --> 00:00:41,640
+what they would look like before I can
+
+17
+00:00:39,360 --> 00:00:45,540
+get rid of them if I wanted to this is
+
+18
+00:00:41,640 --> 00:00:48,000
+required to tell it that we're going to
+
+19
+00:00:45,540 --> 00:00:50,460
+make it look like a player
+
+20
+00:00:48,000 --> 00:00:52,440
+make the NPCs look like a player this is
+
+21
+00:00:50,460 --> 00:00:56,280
+the hand image
+
+22
+00:00:52,440 --> 00:01:00,600
+this these five lines are the colors
+
+23
+00:00:56,280 --> 00:01:02,160
+that the NPC has like shoes and sleeves
+
+24
+00:01:00,600 --> 00:01:06,299
+the first one
+
+25
+00:01:02,160 --> 00:01:09,659
+is the skin the second one is the coat
+
+26
+00:01:06,299 --> 00:01:11,540
+the third is the
+
+27
+00:01:09,659 --> 00:01:16,619
+sleeves
+
+28
+00:01:11,540 --> 00:01:19,320
+the fourth is the shoes and the fifth is
+
+29
+00:01:16,619 --> 00:01:21,780
+the belt it says zero one two three four
+
+30
+00:01:19,320 --> 00:01:23,820
+five I mean one two three four even
+
+31
+00:01:21,780 --> 00:01:26,220
+though I'm saying one two three four
+
+32
+00:01:23,820 --> 00:01:28,680
+five but these are arrays and we're not
+
+33
+00:01:26,220 --> 00:01:31,460
+gonna get into them right now
+
+34
+00:01:28,680 --> 00:01:31,460
+but just know
+
+35
+00:01:31,680 --> 00:01:35,759
+that yeah these make the colors of the
+
+36
+00:01:34,740 --> 00:01:37,860
+NPC
+
+37
+00:01:35,759 --> 00:01:38,700
+this is The Shield image that the NPC
+
+38
+00:01:37,860 --> 00:01:42,960
+has
+
+39
+00:01:38,700 --> 00:01:44,939
+and this is required so for the image of
+
+40
+00:01:42,960 --> 00:01:47,340
+the shield to appear you're not ever
+
+41
+00:01:44,939 --> 00:01:49,380
+going to use this outside of making the
+
+42
+00:01:47,340 --> 00:01:52,680
+shield appear unless you're going for
+
+43
+00:01:49,380 --> 00:01:53,939
+the default growl systems but we're not
+
+44
+00:01:52,680 --> 00:01:56,460
+gonna do that
+
+45
+00:01:53,939 --> 00:01:58,680
+and this is the NPC's Direction that's
+
+46
+00:01:56,460 --> 00:02:01,560
+the way it's facing
+
+47
+00:01:58,680 --> 00:02:04,740
+currently it's facing two
+
+48
+00:02:01,560 --> 00:02:07,500
+this makes the MPC face downwards
+
+49
+00:02:04,740 --> 00:02:10,319
+if we made it to zero it would face
+
+50
+00:02:07,500 --> 00:02:12,480
+upwards who made it one it would face
+
+51
+00:02:10,319 --> 00:02:13,560
+left and three would make its face to
+
+52
+00:02:12,480 --> 00:02:15,000
+right
+
+53
+00:02:13,560 --> 00:02:16,920
+now let's add a new line of code here
+
+54
+00:02:15,000 --> 00:02:18,140
+make it
+
+55
+00:02:16,920 --> 00:02:22,140
+this
+
+56
+00:02:18,140 --> 00:02:24,180
+changes the animation of the NPC or it's
+
+57
+00:02:22,140 --> 00:02:26,160
+ghani
+
+58
+00:02:24,180 --> 00:02:27,720
+we can actually take out this because
+
+59
+00:02:26,160 --> 00:02:30,420
+it's not like server side or anything
+
+60
+00:02:27,720 --> 00:02:32,940
+but we'll just add that
+
+61
+00:02:30,420 --> 00:02:35,760
+this first parameter is the name of the
+
+62
+00:02:32,940 --> 00:02:38,520
+ghani which is walk which is default the
+
+63
+00:02:35,760 --> 00:02:40,140
+second one isn't very important and
+
+64
+00:02:38,520 --> 00:02:42,480
+you can usually Skip and I'm not sure
+
+65
+00:02:40,140 --> 00:02:45,300
+what it really does but nothing has ever
+
+66
+00:02:42,480 --> 00:02:47,640
+changed when I've changed it
+
+67
+00:02:45,300 --> 00:02:50,280
+adding null is the same as adding
+
+68
+00:02:47,640 --> 00:02:52,739
+nothing but we're just gonna add note to
+
+69
+00:02:50,280 --> 00:02:55,800
+show to show that there's nothing there
+
+70
+00:02:52,739 --> 00:02:58,440
+if you want to change the players gone
+
+71
+00:02:55,800 --> 00:03:00,360
+and we put set
+
+72
+00:02:58,440 --> 00:03:02,700
+Ani
+
+73
+00:03:00,360 --> 00:03:04,200
+walk
+
+74
+00:03:02,700 --> 00:03:09,120
+no
+
+75
+00:03:04,200 --> 00:03:09,120
+this changes the players animation
+
+76
+00:03:09,959 --> 00:03:14,459
+so anyway we don't need this here
+
+77
+00:03:12,599 --> 00:03:17,220
+let's just save it
+
+78
+00:03:14,459 --> 00:03:18,780
+and see what happens
+
+79
+00:03:17,220 --> 00:03:21,480
+well you kind of know all we've changed
+
+80
+00:03:18,780 --> 00:03:24,800
+is the animation oh we've forgot we
+
+81
+00:03:21,480 --> 00:03:24,800
+forgot to take out the second NPC
+
+82
+00:03:26,280 --> 00:03:29,640
+there
+
+83
+00:03:27,720 --> 00:03:31,200
+it's running downwards at the same time
+
+84
+00:03:29,640 --> 00:03:33,000
+while running to the right
+
+85
+00:03:31,200 --> 00:03:35,159
+well that concludes this tutorial we
+
+86
+00:03:33,000 --> 00:03:37,680
+learned about the gscript 2 version of
+
+87
+00:03:35,159 --> 00:03:39,000
+creating the actual NPC and making it
+
+88
+00:03:37,680 --> 00:03:41,760
+look like a player
+
+89
+00:03:39,000 --> 00:03:43,980
+and we learned how to change the
+
+90
+00:03:41,760 --> 00:03:45,659
+animation next tutorial I'm going to
+
+91
+00:03:43,980 --> 00:03:49,700
+show a bit we're going to continue on
+
+92
+00:03:45,659 --> 00:03:49,700
+our little moving NPC so bye
+

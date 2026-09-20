@@ -1,0 +1,589 @@
+WEBVTT
+
+00:00.400 --> 00:05.759
+Hello and welcome to the 27th tutorial
+
+00:02.800 --> 00:08.480
+on how to program in Gcript 2. In the
+
+00:05.759 --> 00:09.920
+last tutorial, I created an NPC that was
+
+00:08.480 --> 00:13.360
+a button and when you clicked it, it
+
+00:09.920 --> 00:15.200
+would say uh quest completed and then
+
+00:13.360 --> 00:18.720
+that would go away. It would also be
+
+00:15.200 --> 00:20.560
+pressed down. What I overlooked is that
+
+00:18.720 --> 00:22.439
+when I press it, it doesn't get pressed
+
+00:20.560 --> 00:26.800
+down, but after the text disappears, it
+
+00:22.439 --> 00:31.279
+does. Well, the reason for this is in my
+
+00:26.800 --> 00:32.040
+NPC script, I have it find the weapon
+
+00:31.279 --> 00:35.440
+um
+
+00:32.040 --> 00:37.239
+function from this weapon here. It's
+
+00:35.440 --> 00:39.760
+running what's in these
+
+00:37.239 --> 00:42.040
+brackets. Then it's coming back here and
+
+00:39.760 --> 00:44.559
+running the rest of the script. It's not
+
+00:42.040 --> 00:46.160
+going on it's not going through the
+
+00:44.559 --> 00:48.079
+script
+
+00:46.160 --> 00:50.960
+um as it's doing the weapon. It's sort
+
+00:48.079 --> 00:53.039
+of pausing it. So, what I mean is it's
+
+00:50.960 --> 00:56.719
+going here, pausing the script until
+
+00:53.039 --> 00:59.600
+this entire uh function has run, then
+
+00:56.719 --> 01:02.000
+it's going back to the script and
+
+00:59.600 --> 01:05.519
+running the rest. Well, to fix this, I
+
+01:02.000 --> 01:08.799
+could just copy the button down here,
+
+01:05.519 --> 01:11.720
+place it on top, and as soon as I click
+
+01:08.799 --> 01:15.360
+the MPC, it'll change the
+
+01:11.720 --> 01:17.400
+image. Run the text.
+
+01:15.360 --> 01:21.280
+Wait two
+
+01:17.400 --> 01:24.000
+seconds, then push the button up again.
+
+01:21.280 --> 01:24.000
+I'll show that in
+
+01:26.200 --> 01:31.119
+action. As you can see, I press it, and
+
+01:28.640 --> 01:34.320
+now it's getting pressed down, pressed
+
+01:31.119 --> 01:36.479
+up, and it works. Well, that's not what
+
+01:34.320 --> 01:39.040
+I wanted to
+
+01:36.479 --> 01:42.640
+um explain in this tutorial. In this
+
+01:39.040 --> 01:46.280
+tutorial, I want to start explaining
+
+01:42.640 --> 01:50.240
+classes. Now, classes are the third type
+
+01:46.280 --> 01:51.640
+of script in your script 2. From weapons
+
+01:50.240 --> 01:55.520
+to
+
+01:51.640 --> 01:57.840
+NPCs to classes, well, there are two
+
+01:55.520 --> 02:00.000
+types of NPCs, level NPCs and NPCs on
+
+01:57.840 --> 02:01.680
+the server, but that doesn't matter. In
+
+02:00.000 --> 02:04.159
+the classes,
+
+02:01.680 --> 02:06.159
+uh we have some scripts, too. Now, what
+
+02:04.159 --> 02:10.959
+classes are are scripts that can be
+
+02:06.159 --> 02:14.319
+accessed from any other NPC or any other
+
+02:10.959 --> 02:16.560
+uh weapon. And I'll show you how that
+
+02:14.319 --> 02:19.480
+works in a second. First, let's close
+
+02:16.560 --> 02:25.360
+this old script and we'll create a new
+
+02:19.480 --> 02:25.360
+weapon and call it rock
+
+02:27.319 --> 02:37.080
+place. Okay. Now here let's
+
+02:32.200 --> 02:39.879
+add client side function on key
+
+02:37.080 --> 02:42.120
+pressed code,
+
+02:39.879 --> 02:47.480
+key
+
+02:42.120 --> 02:51.400
+and then let's put if key is equal to
+
+02:47.480 --> 02:55.760
+F, then we're going to trigger
+
+02:51.400 --> 02:57.120
+server on this weapon this name and
+
+02:55.760 --> 02:59.440
+we're not going to send any variables
+
+02:57.120 --> 03:01.040
+over. So what this is doing on key
+
+02:59.440 --> 03:03.120
+pressed is as soon as I press a key on
+
+03:01.040 --> 03:05.840
+the keyboard, it's going to run what's
+
+03:03.120 --> 03:07.800
+in these brackets. Now what the code is
+
+03:05.840 --> 03:12.239
+is it's the code of the key you're
+
+03:07.800 --> 03:13.080
+pressing. So if I would put code is
+
+03:12.239 --> 03:16.239
+equal
+
+03:13.080 --> 03:19.599
+to 102 that would be the same as if I
+
+03:16.239 --> 03:20.920
+pressed F. And what key is doing is it's
+
+03:19.599 --> 03:22.519
+the
+
+03:20.920 --> 03:26.000
+actual
+
+03:22.519 --> 03:28.879
+ASKI image of the key. So if I put key
+
+03:26.000 --> 03:30.159
+equals to F, it will do the same thing.
+
+03:28.879 --> 03:32.720
+But because I don't want it to be too
+
+03:30.159 --> 03:34.720
+confusing, I'll just put key equals F.
+
+03:32.720 --> 03:37.760
+Okay. So it's going to run this trigger
+
+03:34.720 --> 03:40.440
+server and go to server side. Here let's
+
+03:37.760 --> 03:42.680
+put function on
+
+03:40.440 --> 03:45.120
+action server
+
+03:42.680 --> 03:46.280
+side. And let's end that for now. Let's
+
+03:45.120 --> 03:49.440
+apply
+
+03:46.280 --> 03:51.239
+this. Then let's go to classes and
+
+03:49.440 --> 03:55.400
+create a new
+
+03:51.239 --> 04:02.400
+class. Let's call it rock.
+
+03:55.400 --> 04:02.400
+Okay. Now here let's add function on
+
+04:03.159 --> 04:09.519
+created set image. Then let's put block
+
+04:07.920 --> 04:14.480
+dot well I'm going to use rock image
+
+04:09.519 --> 04:14.480
+that I have orbital
+
+04:14.920 --> 04:20.160
+rock.png. Then let's just save this. Now
+
+04:18.079 --> 04:23.759
+this is the entire script for now of
+
+04:20.160 --> 04:26.440
+rock. This is a class keep in mind. and
+
+04:23.759 --> 04:29.440
+it can be used in any other NPC or
+
+04:26.440 --> 04:33.919
+weapon. Now, in this weapon to call that
+
+04:29.440 --> 04:36.199
+class and run it, we're going to put put
+
+04:33.919 --> 04:40.520
+NPC
+
+04:36.199 --> 04:44.560
+to xcoordinate player.x y-coordinate
+
+04:40.520 --> 04:47.120
+player.y. Then we're going to put some
+
+04:44.560 --> 04:49.840
+crazy text right now. Um, let's just
+
+04:47.120 --> 04:53.440
+close that.
+
+04:49.840 --> 04:53.440
+We're going to put
+
+04:53.800 --> 04:59.880
+join
+
+04:56.360 --> 05:03.880
+slash rock
+
+04:59.880 --> 05:03.880
+slash quote
+
+05:03.960 --> 05:09.919
+uh all of this stuff.
+
+05:07.199 --> 05:13.840
+Now, what this is going to do is it's
+
+05:09.919 --> 05:15.320
+going to call this class and drop it as
+
+05:13.840 --> 05:18.960
+an
+
+05:15.320 --> 05:20.880
+NPC at these coordinates, which is
+
+05:18.960 --> 05:22.560
+pretty good, pretty useful. You can make
+
+05:20.880 --> 05:24.000
+bombs, you can make items that you can
+
+05:22.560 --> 05:25.400
+drop on the ground that other players
+
+05:24.000 --> 05:29.400
+can interact
+
+05:25.400 --> 05:31.680
+with. So, let's just apply
+
+05:29.400 --> 05:33.720
+this and let's add the weapon to
+
+05:31.680 --> 05:37.199
+ourselves.
+
+05:33.720 --> 05:37.199
+function on
+
+05:37.240 --> 05:42.080
+created find player
+
+05:42.280 --> 05:50.759
+myself and add
+
+05:45.080 --> 05:55.160
+weapon rock place or just this
+
+05:50.759 --> 05:58.759
+name. Uh this is finding us as a
+
+05:55.160 --> 06:02.080
+prefix and then running the command add
+
+05:58.759 --> 06:03.360
+weapon for this weapon name and adding
+
+06:02.080 --> 06:06.000
+it to ourselves. This is going to add
+
+06:03.360 --> 06:08.560
+the weapon to ourselves and so we don't
+
+06:06.000 --> 06:09.919
+have to go to RC and you know mess
+
+06:08.560 --> 06:12.000
+around with that. You can also use this
+
+06:09.919 --> 06:14.400
+to add weapons to players as soon as
+
+06:12.000 --> 06:17.199
+they enter the server or enter a level
+
+06:14.400 --> 06:20.400
+or maybe buy an item from item shop. We
+
+06:17.199 --> 06:24.680
+can also put remove weapon in case you
+
+06:20.400 --> 06:28.240
+want to do that. Okay, so let's put add
+
+06:24.680 --> 06:31.080
+weapon. Then we can just close this.
+
+06:28.240 --> 06:33.600
+Apply again.
+
+06:31.080 --> 06:36.000
+and let's try it out. So, when I press
+
+06:33.600 --> 06:38.400
+F, it should drop a rock. And there's
+
+06:36.000 --> 06:40.720
+the rock. You can see it can't be
+
+06:38.400 --> 06:42.160
+deleted or anything, which is not a good
+
+06:40.720 --> 06:47.039
+thing. You should always want to be able
+
+06:42.160 --> 06:48.000
+to delete uh NPCs, I mean classes, cuz
+
+06:47.039 --> 06:51.000
+they're going to stay there forever
+
+06:48.000 --> 06:53.880
+unless you do don't. Now, the way to
+
+06:51.000 --> 06:56.319
+delete unneeded
+
+06:53.880 --> 06:59.199
+um classes that have been have been
+
+06:56.319 --> 07:02.639
+dropped or glitched out is to go into RC
+
+06:59.199 --> 07:05.599
+and put clear NPCs and whatever level
+
+07:02.639 --> 07:08.000
+you're in. Testing NW and that should
+
+07:05.599 --> 07:10.560
+delete it. Now, we should be more
+
+07:08.000 --> 07:13.360
+careful next time. We don't want to put
+
+07:10.560 --> 07:15.199
+add down classes that
+
+07:13.360 --> 07:17.599
+um can't be deleted. So let's put
+
+07:15.199 --> 07:21.160
+function
+
+07:17.599 --> 07:23.919
+uh on was
+
+07:21.160 --> 07:26.880
+hit. This is a function that will run as
+
+07:23.919 --> 07:29.680
+soon as I slash the NPC with my sword.
+
+07:26.880 --> 07:29.680
+And let's put
+
+07:30.280 --> 07:34.280
+this.destroy. So this as in the current
+
+07:33.599 --> 07:37.440
+uh
+
+07:34.280 --> 07:39.639
+NPC and destroy as in destroying it.
+
+07:37.440 --> 07:42.160
+This will remove the
+
+07:39.639 --> 07:43.840
+NPC and which is pretty good. We need to
+
+07:42.160 --> 07:46.840
+do that if we don't want the NPC to be
+
+07:43.840 --> 07:49.639
+there forever. Keep in mind if this is
+
+07:46.840 --> 07:52.639
+under client
+
+07:49.639 --> 07:56.240
+side and we do it, it will actually not
+
+07:52.639 --> 07:57.759
+be deleted. The player won't see it, but
+
+07:56.240 --> 08:00.240
+on the server it will not have been
+
+07:57.759 --> 08:02.160
+deleted. We do not want to have this
+
+08:00.240 --> 08:04.879
+destroy on client side unless we just
+
+08:02.160 --> 08:07.080
+want the player to for the moment see it
+
+08:04.879 --> 08:09.560
+be deleted. Anyway, let's take that
+
+08:07.080 --> 08:13.120
+out. Hit
+
+08:09.560 --> 08:16.879
+apply. Minimize this and press F. We can
+
+08:13.120 --> 08:18.879
+see an NPC has been dropped with the
+
+08:16.879 --> 08:21.199
+script from the class we just made. We
+
+08:18.879 --> 08:24.639
+can hit it and it'll disappear. We can
+
+08:21.199 --> 08:27.120
+drop a ton more by pressing F and then
+
+08:24.639 --> 08:28.680
+destroy them by hitting them. We can
+
+08:27.120 --> 08:32.159
+make it do a lot more
+
+08:28.680 --> 08:33.919
+things with this. We can have it maybe
+
+08:32.159 --> 08:37.000
+say stuff.
+
+08:33.919 --> 08:40.000
+this. Chad is equal
+
+08:37.000 --> 08:40.000
+to
+
+08:40.200 --> 08:45.240
+hello. Uh we like it's it's pretty much
+
+08:43.360 --> 08:49.200
+like a normal
+
+08:45.240 --> 08:51.600
+NPC and we can treat it as such. Anyway,
+
+08:49.200 --> 08:54.760
+that concludes this tutorial and I hope
+
+08:51.600 --> 08:57.200
+you understand how to
+
+08:54.760 --> 08:59.519
+uh you have a bit of an understanding on
+
+08:57.200 --> 09:00.600
+how to how to use classes and how to
+
+08:59.519 --> 09:03.640
+call them
+
+09:00.600 --> 09:06.480
+from other NPCs or
+
+09:03.640 --> 09:09.120
+weapons. Keep in mind this is only
+
+09:06.480 --> 09:11.839
+dropping the classes as NPCs. You can
+
+09:09.120 --> 09:13.519
+use classes for a lot more things which
+
+09:11.839 --> 09:15.120
+we'll get into later. Anyway, that
+
+09:13.519 --> 09:17.920
+concludes this tutorial and I'll see you
+
+09:15.120 --> 09:17.920
+later.

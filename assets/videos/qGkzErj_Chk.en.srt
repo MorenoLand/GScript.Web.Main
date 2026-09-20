@@ -1,0 +1,292 @@
+1
+00:00:00,320 --> 00:00:06,480
+Hello and welcome to the sixth tutorial
+
+2
+00:00:03,120 --> 00:00:10,360
+on how to program in Gcript 2. Let's
+
+3
+00:00:06,480 --> 00:00:13,040
+open our MPC in our level
+
+4
+00:00:10,360 --> 00:00:16,600
+editor. And you can see I changed a bit
+
+5
+00:00:13,040 --> 00:00:19,439
+of the code, but not really by a
+
+6
+00:00:16,600 --> 00:00:22,160
+lot. It says as soon as the player says
+
+7
+00:00:19,439 --> 00:00:25,039
+something, it will run this. Now, let's
+
+8
+00:00:22,160 --> 00:00:29,679
+do talk about variables. Variables are
+
+9
+00:00:25,039 --> 00:00:32,000
+like boxes. Boxes that do things. Okay,
+
+10
+00:00:29,679 --> 00:00:35,840
+let's name make our own variable now.
+
+11
+00:00:32,000 --> 00:00:38,320
+Bob is equal to one semicolon. What we
+
+12
+00:00:35,840 --> 00:00:41,200
+just did is we created a variable called
+
+13
+00:00:38,320 --> 00:00:43,160
+Bob and we made it equal to one. It's
+
+14
+00:00:41,200 --> 00:00:47,680
+sort of like in
+
+15
+00:00:43,160 --> 00:00:50,800
+algebra when you make x= to 1 or x= to 5
+
+16
+00:00:47,680 --> 00:00:53,440
+or y equal to whatever. It's essentially
+
+17
+00:00:50,800 --> 00:00:55,760
+like that except where you can name the
+
+18
+00:00:53,440 --> 00:00:59,920
+variable anything you want. Well, the
+
+19
+00:00:55,760 --> 00:01:03,920
+same algebra, but you know, now let's do
+
+20
+00:00:59,920 --> 00:01:07,600
+this. This chat is equal to Bob. We're
+
+21
+00:01:03,920 --> 00:01:09,640
+making it it's chat equal to Bob. If you
+
+22
+00:01:07,600 --> 00:01:13,360
+add semicolon, I
+
+23
+00:01:09,640 --> 00:01:15,280
+mean not semicolon, quotes, then it's
+
+24
+00:01:13,360 --> 00:01:18,000
+going to say Bob. But if we take out the
+
+25
+00:01:15,280 --> 00:01:19,759
+quotes, it's going to say what's in Bob.
+
+26
+00:01:18,000 --> 00:01:21,400
+So, it's going to say one. So, let's
+
+27
+00:01:19,759 --> 00:01:26,560
+test
+
+28
+00:01:21,400 --> 00:01:26,560
+that. We say hi. It says one.
+
+29
+00:01:26,880 --> 00:01:34,079
+Now
+
+30
+00:01:28,200 --> 00:01:34,079
+let's do something else. Let's make it
+
+31
+00:01:34,520 --> 00:01:40,479
+if. If statements are like functions
+
+32
+00:01:37,920 --> 00:01:42,720
+sort of except they check what if
+
+33
+00:01:40,479 --> 00:01:44,960
+whatever is equal in these parenthesis
+
+34
+00:01:42,720 --> 00:01:47,240
+is true. It's going to run these quotes
+
+35
+00:01:44,960 --> 00:01:52,439
+then just continue on and do whatever
+
+36
+00:01:47,240 --> 00:01:54,960
+else. Let's do this. If Bob is equal to
+
+37
+00:01:52,439 --> 00:01:56,240
+one, you have to add two equal signs
+
+38
+00:01:54,960 --> 00:01:58,479
+because you're checking to see if it's
+
+39
+00:01:56,240 --> 00:02:01,520
+equal to one. You're not making equal.
+
+40
+00:01:58,479 --> 00:02:04,600
+If Bob is equal to one, then make it say
+
+41
+00:02:01,520 --> 00:02:07,600
+this. Equals Bob is
+
+42
+00:02:04,600 --> 00:02:07,600
+one
+
+43
+00:02:07,800 --> 00:02:15,200
+there. Save it and run. Hi, Bob is one.
+
+44
+00:02:12,959 --> 00:02:17,280
+We can also make it do if Bob is less
+
+45
+00:02:15,200 --> 00:02:20,640
+than or equal to, it's greater than or
+
+46
+00:02:17,280 --> 00:02:22,319
+equal to. if it's not equal to one or
+
+47
+00:02:20,640 --> 00:02:23,680
+you can just do less than or greater
+
+48
+00:02:22,319 --> 00:02:26,160
+than. There's a lot of different
+
+49
+00:02:23,680 --> 00:02:29,400
+commands you can do, but those are like
+
+50
+00:02:26,160 --> 00:02:31,720
+the most basic ones.
+
+51
+00:02:29,400 --> 00:02:34,200
+Now, let's
+
+52
+00:02:31,720 --> 00:02:38,959
+say Bob is equal to
+
+53
+00:02:34,200 --> 00:02:38,959
+two. Well, then what
+
+54
+00:02:39,640 --> 00:02:45,599
+happens? We save and
+
+55
+00:02:42,200 --> 00:02:48,239
+upload. Nothing happens cuz it checks to
+
+56
+00:02:45,599 --> 00:02:50,239
+see if this is true, but it's not. So it
+
+57
+00:02:48,239 --> 00:02:53,160
+completely skips everything in the
+
+58
+00:02:50,239 --> 00:02:56,319
+brackets and goes onto here which is
+
+59
+00:02:53,160 --> 00:02:57,920
+nothing. But let's say we want to do if
+
+60
+00:02:56,319 --> 00:03:01,720
+it's not equal to one, we want to do
+
+61
+00:02:57,920 --> 00:03:05,120
+something else. For that we would do
+
+62
+00:03:01,720 --> 00:03:07,280
+else like this. If Bob is not equal to
+
+63
+00:03:05,120 --> 00:03:08,959
+one, which it currently isn't, it's
+
+64
+00:03:07,280 --> 00:03:13,280
+going to run whatever is in here. Pass
+
+65
+00:03:08,959 --> 00:03:18,800
+the else in the brackets. But this chat
+
+66
+00:03:13,280 --> 00:03:21,080
+is equal to Bob is not one.
+
+67
+00:03:18,800 --> 00:03:25,159
+semicolon. We save
+
+68
+00:03:21,080 --> 00:03:27,760
+it and upload. Say, "Hi, Bob is not
+
+69
+00:03:25,159 --> 00:03:29,760
+one." Well, anyway, that concludes this
+
+70
+00:03:27,760 --> 00:03:32,599
+tutorial. You learned about a little bit
+
+71
+00:03:29,760 --> 00:03:35,840
+about if statements. You learned
+
+72
+00:03:32,599 --> 00:03:40,560
+about variables a bit. We'll learn about
+
+73
+00:03:35,840 --> 00:03:40,560
+more later. So anyway, bye.
+

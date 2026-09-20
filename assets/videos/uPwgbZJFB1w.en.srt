@@ -1,0 +1,1184 @@
+1
+00:00:00,320 --> 00:00:04,480
+Hello and welcome to the 31st tutorial
+
+2
+00:00:02,560 --> 00:00:05,680
+on how to program in Gcript 2. So in
+
+3
+00:00:04,480 --> 00:00:07,839
+this tutorial I'm going to show you
+
+4
+00:00:05,680 --> 00:00:09,920
+something called trigger client and for
+
+5
+00:00:07,839 --> 00:00:12,960
+that I created a new weapon called
+
+6
+00:00:09,920 --> 00:00:16,320
+action client and added it to myself
+
+7
+00:00:12,960 --> 00:00:19,560
+already. So let's put client side
+
+8
+00:00:16,320 --> 00:00:22,840
+function on uh what do we
+
+9
+00:00:19,560 --> 00:00:25,880
+want on player
+
+10
+00:00:22,840 --> 00:00:28,080
+chats we're going to put if
+
+11
+00:00:25,880 --> 00:00:29,519
+player.hat.st starts. So if you're just
+
+12
+00:00:28,080 --> 00:00:33,199
+if what you're saying whatever you're
+
+13
+00:00:29,519 --> 00:00:33,199
+saying if it starts with the text
+
+14
+00:00:33,320 --> 00:00:39,239
+slashfind then oh two two parenthesis
+
+15
+00:00:36,960 --> 00:00:42,239
+then we're going to
+
+16
+00:00:39,239 --> 00:00:42,239
+put
+
+17
+00:00:42,360 --> 00:00:47,960
+temp.pame and so this is a new variable
+
+18
+00:00:44,760 --> 00:00:50,239
+and make it player
+
+19
+00:00:47,960 --> 00:00:51,920
+chat. We could replace this with any
+
+20
+00:00:50,239 --> 00:00:55,280
+variable actually along with here. We
+
+21
+00:00:51,920 --> 00:00:58,160
+could actually put this dot some text
+
+22
+00:00:55,280 --> 00:01:00,480
+and it'll take this text variable and
+
+23
+00:00:58,160 --> 00:01:02,520
+whatever it starts with. And yeah, but
+
+24
+00:01:00,480 --> 00:01:04,320
+we're going to put
+
+25
+00:01:02,520 --> 00:01:06,520
+player. And then over here we're going
+
+26
+00:01:04,320 --> 00:01:08,880
+to put
+
+27
+00:01:06,520 --> 00:01:11,600
+player.string. Now substring is going to
+
+28
+00:01:08,880 --> 00:01:13,360
+take out a part of the text. And we're
+
+29
+00:01:11,600 --> 00:01:14,920
+going to take out that part and put it
+
+30
+00:01:13,360 --> 00:01:17,119
+into this new
+
+31
+00:01:14,920 --> 00:01:20,000
+variable. So we're going to take out
+
+32
+00:01:17,119 --> 00:01:21,360
+five. Now, five doesn't take out the
+
+33
+00:01:20,000 --> 00:01:23,680
+first five letters. It's going to take
+
+34
+00:01:21,360 --> 00:01:25,439
+out all the letters past the letter, the
+
+35
+00:01:23,680 --> 00:01:28,640
+fifth letter. So, we're going to take
+
+36
+00:01:25,439 --> 00:01:29,680
+this, this, this, this, this. Those
+
+37
+00:01:28,640 --> 00:01:31,880
+aren't going to be taken. Then
+
+38
+00:01:29,680 --> 00:01:33,720
+everything past that is going to be
+
+39
+00:01:31,880 --> 00:01:38,200
+taken.
+
+40
+00:01:33,720 --> 00:01:40,320
+So, now we may want a space here as
+
+41
+00:01:38,200 --> 00:01:41,720
+well. Yeah, that'll be a good idea to
+
+42
+00:01:40,320 --> 00:01:43,799
+have a space. Then, we'll put a six
+
+43
+00:01:41,720 --> 00:01:46,960
+here.
+
+44
+00:01:43,799 --> 00:01:50,880
+Okay. Then, let's go here and put
+
+45
+00:01:46,960 --> 00:01:54,920
+player. chat is equal to temp.pame just
+
+46
+00:01:50,880 --> 00:01:58,320
+to test. All right. Now, if I
+
+47
+00:01:54,920 --> 00:01:59,320
+say hind, as you can see over here, I'm
+
+48
+00:01:58,320 --> 00:02:01,799
+saying
+
+49
+00:01:59,320 --> 00:02:07,319
+/find. Oh, with a
+
+50
+00:02:01,799 --> 00:02:10,160
+space. Oh, wait. So, we may want to
+
+51
+00:02:07,319 --> 00:02:12,319
+um edit this a bit. So, let's say we
+
+52
+00:02:10,160 --> 00:02:15,200
+don't want to count any of these spaces
+
+53
+00:02:12,319 --> 00:02:17,120
+here. Well, we could do this, but then
+
+54
+00:02:15,200 --> 00:02:19,280
+everything we say is not going to be
+
+55
+00:02:17,120 --> 00:02:23,920
+able to have a space. Well, if we go
+
+56
+00:02:19,280 --> 00:02:25,760
+here after substring and puttrim
+
+57
+00:02:23,920 --> 00:02:28,640
+um then parenthesis, this is going to
+
+58
+00:02:25,760 --> 00:02:30,560
+make it so that it cuts out all the um
+
+59
+00:02:28,640 --> 00:02:32,560
+spaces there. So, we can change this
+
+60
+00:02:30,560 --> 00:02:36,160
+back to five. So, even if we put
+
+61
+00:02:32,560 --> 00:02:38,400
+something like slashfind space la, it's
+
+62
+00:02:36,160 --> 00:02:40,120
+just going to take up the la include the
+
+63
+00:02:38,400 --> 00:02:43,239
+space. So
+
+64
+00:02:40,120 --> 00:02:45,519
+there now we type
+
+65
+00:02:43,239 --> 00:02:46,800
+slashfind and nothing. It's g not not
+
+66
+00:02:45,519 --> 00:02:49,360
+going to say anything because we didn't
+
+67
+00:02:46,800 --> 00:02:53,840
+put anything after the slashfind. Now if
+
+68
+00:02:49,360 --> 00:02:53,840
+we put you can kind of hard to see
+
+69
+00:02:54,360 --> 00:02:59,319
+but nah whatever. Now if we put
+
+70
+00:02:57,720 --> 00:03:04,400
+slashfind
+
+71
+00:02:59,319 --> 00:03:06,640
+space what do we want? Some words. It's
+
+72
+00:03:04,400 --> 00:03:09,000
+going to say some words. Now, if we to
+
+73
+00:03:06,640 --> 00:03:11,440
+if we didn't put a space there, just
+
+74
+00:03:09,000 --> 00:03:13,519
+slashfind some words. You can see I took
+
+75
+00:03:11,440 --> 00:03:15,840
+out that space. It's still going to say
+
+76
+00:03:13,519 --> 00:03:18,599
+some words. Reason being because we have
+
+77
+00:03:15,840 --> 00:03:20,200
+dot trim here, which is taking out the
+
+78
+00:03:18,599 --> 00:03:22,480
+spaces.
+
+79
+00:03:20,200 --> 00:03:24,239
+Okay. So, after this, we're going to
+
+80
+00:03:22,480 --> 00:03:26,159
+take out we don't want it to say
+
+81
+00:03:24,239 --> 00:03:29,799
+ourselves to say it anymore. We're going
+
+82
+00:03:26,159 --> 00:03:32,599
+to put trigger
+
+83
+00:03:29,799 --> 00:03:35,000
+server
+
+84
+00:03:32,599 --> 00:03:37,599
+gui
+
+85
+00:03:35,000 --> 00:03:40,319
+name, temp.pn name because we want to
+
+86
+00:03:37,599 --> 00:03:42,840
+send over that variable we just made.
+
+87
+00:03:40,319 --> 00:03:45,480
+Then here we're going to put function
+
+88
+00:03:42,840 --> 00:03:48,480
+onaction server
+
+89
+00:03:45,480 --> 00:03:51,000
+side and rename this variable we just
+
+90
+00:03:48,480 --> 00:03:54,239
+sent to let's just not rename it
+
+91
+00:03:51,000 --> 00:03:57,720
+temp.pame. Keep it the same. All right.
+
+92
+00:03:54,239 --> 00:04:03,000
+Now we're over on server
+
+93
+00:03:57,720 --> 00:04:05,360
+side. Now let's put a for loop and put
+
+94
+00:04:03,000 --> 00:04:06,879
+temp.pl there. And we're going to loop
+
+95
+00:04:05,360 --> 00:04:08,680
+through all the players on the server
+
+96
+00:04:06,879 --> 00:04:12,799
+using the variable
+
+97
+00:04:08,680 --> 00:04:16,720
+temp.pl. Then if pl which is the account
+
+98
+00:04:12,799 --> 00:04:19,519
+of all the players if any of them nick.
+
+99
+00:04:16,720 --> 00:04:21,600
+So if the nick the the account of okay
+
+100
+00:04:19,519 --> 00:04:24,080
+let me explain that. So we're this is
+
+101
+00:04:21,600 --> 00:04:26,080
+the account of all the players pretty
+
+102
+00:04:24,080 --> 00:04:28,000
+much. If one of those players as it's
+
+103
+00:04:26,080 --> 00:04:30,960
+looping through if one of those players
+
+104
+00:04:28,000 --> 00:04:34,040
+nick which is their nickname is equal to
+
+105
+00:04:30,960 --> 00:04:36,360
+the text we just said
+
+106
+00:04:34,040 --> 00:04:38,600
+temp.pame if it's equal to
+
+107
+00:04:36,360 --> 00:04:41,120
+that then we're going to
+
+108
+00:04:38,600 --> 00:04:45,720
+put pl which is the player that's
+
+109
+00:04:41,120 --> 00:04:50,800
+already at chat is equal to that's
+
+110
+00:04:45,720 --> 00:04:52,720
+me. Okay. So I'm saying slashfind then
+
+111
+00:04:50,800 --> 00:04:54,720
+some words. It's looping through
+
+112
+00:04:52,720 --> 00:04:56,720
+everyone on the server. If anyone's name
+
+113
+00:04:54,720 --> 00:04:57,880
+is equal to those words, they're going
+
+114
+00:04:56,720 --> 00:05:02,160
+to say
+
+115
+00:04:57,880 --> 00:05:04,000
+this. Okay. Now, if we type /find test,
+
+116
+00:05:02,160 --> 00:05:06,560
+which is the name of this test person
+
+117
+00:05:04,000 --> 00:05:09,199
+right here, they're going to say that's
+
+118
+00:05:06,560 --> 00:05:11,520
+me. If we put someone that doesn't exist
+
+119
+00:05:09,199 --> 00:05:14,320
+here, like let's say Bob, Bob is not on
+
+120
+00:05:11,520 --> 00:05:16,720
+the server, but if we put it well, no
+
+121
+00:05:14,320 --> 00:05:20,320
+one's going to say anything. If we put
+
+122
+00:05:16,720 --> 00:05:21,160
+zero g, which is me, I'm gonna say
+
+123
+00:05:20,320 --> 00:05:24,440
+that's
+
+124
+00:05:21,160 --> 00:05:28,520
+me. All right.
+
+125
+00:05:24,440 --> 00:05:31,680
+Now, let's use trigger
+
+126
+00:05:28,520 --> 00:05:34,400
+client. Okay. Trigger client is a thing
+
+127
+00:05:31,680 --> 00:05:37,280
+that's going to go from server side to
+
+128
+00:05:34,400 --> 00:05:39,680
+client side. So, it's the opposite of
+
+129
+00:05:37,280 --> 00:05:42,560
+trigger server. So, let's have that
+
+130
+00:05:39,680 --> 00:05:45,840
+here. After that person says it, we're
+
+131
+00:05:42,560 --> 00:05:51,240
+going to put player. It's not them, but
+
+132
+00:05:45,840 --> 00:05:54,000
+us. Player trigger
+
+133
+00:05:51,240 --> 00:05:56,639
+client.Goy because it's in a weapon,
+
+134
+00:05:54,000 --> 00:05:59,120
+comma, this name. Specify what weapon we
+
+135
+00:05:56,639 --> 00:06:01,880
+want to use this in. Then we don't want
+
+136
+00:05:59,120 --> 00:06:04,319
+to send any variables over.
+
+137
+00:06:01,880 --> 00:06:05,960
+Now, let's make it bigger. Now, over
+
+138
+00:06:04,319 --> 00:06:10,680
+here under client
+
+139
+00:06:05,960 --> 00:06:14,400
+side, we're going to put function on
+
+140
+00:06:10,680 --> 00:06:17,080
+action client side.
+
+141
+00:06:14,400 --> 00:06:21,400
+All right. Now, let's put show
+
+142
+00:06:17,080 --> 00:06:24,720
+image. It's 300. Then whatever image
+
+143
+00:06:21,400 --> 00:06:24,720
+block.png, then
+
+144
+00:06:24,759 --> 00:06:28,720
+player.x,
+
+145
+00:06:26,600 --> 00:06:30,880
+player.y. Actually, no, we're not going
+
+146
+00:06:28,720 --> 00:06:32,319
+to do that. We're not going to put it on
+
+147
+00:06:30,880 --> 00:06:36,240
+ourselves. We're going to put it on the
+
+148
+00:06:32,319 --> 00:06:39,280
+other person. So,
+
+149
+00:06:36,240 --> 00:06:42,160
+uh, let's change the image first. Let's
+
+150
+00:06:39,280 --> 00:06:43,720
+change the image. Something a bit more
+
+151
+00:06:42,160 --> 00:06:46,240
+fancy.
+
+152
+00:06:43,720 --> 00:06:48,960
+blue_rupy. That's something I have. You
+
+153
+00:06:46,240 --> 00:06:51,280
+probably don't have it. So, you can put
+
+154
+00:06:48,960 --> 00:06:53,360
+something else. Now, over here, I'm
+
+155
+00:06:51,280 --> 00:06:56,400
+going to put
+
+156
+00:06:53,360 --> 00:06:58,160
+uh the name of the Well, actually, I
+
+157
+00:06:56,400 --> 00:07:01,919
+want to send over those variables first.
+
+158
+00:06:58,160 --> 00:07:03,720
+Over here on player.triggerclient, we're
+
+159
+00:07:01,919 --> 00:07:08,520
+going to send over the
+
+160
+00:07:03,720 --> 00:07:11,080
+variable. Um, we're going to send over
+
+161
+00:07:08,520 --> 00:07:13,120
+pl.x and send
+
+162
+00:07:11,080 --> 00:07:16,039
+overpl.y. So, it's going to send over
+
+163
+00:07:13,120 --> 00:07:17,919
+this player's accounts x value and their
+
+164
+00:07:16,039 --> 00:07:19,360
+y-value. Then over here in the
+
+165
+00:07:17,919 --> 00:07:22,199
+parenthesis, we're just going to keep it
+
+166
+00:07:19,360 --> 00:07:25,240
+like this. plx comm,
+
+167
+00:07:22,199 --> 00:07:28,759
+ply. Then over here, we're going to put
+
+168
+00:07:25,240 --> 00:07:31,599
+plx. And over here,
+
+169
+00:07:28,759 --> 00:07:34,319
+ply. The x1 is going to be applied to
+
+170
+00:07:31,599 --> 00:07:35,080
+the plx. The y1's going to be applied to
+
+171
+00:07:34,319 --> 00:07:38,039
+the
+
+172
+00:07:35,080 --> 00:07:40,639
+ply. All right. If we try
+
+173
+00:07:38,039 --> 00:07:42,080
+that. Um, there he's in observer mode.
+
+174
+00:07:40,639 --> 00:07:44,240
+One second.
+
+175
+00:07:42,080 --> 00:07:47,360
+Okay, now these back. I'm going to show
+
+176
+00:07:44,240 --> 00:07:50,199
+you what it does. Okay, so actually I'm
+
+177
+00:07:47,360 --> 00:07:54,000
+going to test it. So I was going to
+
+178
+00:07:50,199 --> 00:07:57,280
+find test. Now he's going to say that's
+
+179
+00:07:54,000 --> 00:08:00,240
+me. And then this rupee is going or this
+
+180
+00:07:57,280 --> 00:08:03,599
+image is going to appear on his X and Y.
+
+181
+00:08:00,240 --> 00:08:06,160
+Now if we look at this player's account,
+
+182
+00:08:03,599 --> 00:08:08,639
+this player's window, you can see the
+
+183
+00:08:06,160 --> 00:08:12,560
+rupee is not there.
+
+184
+00:08:08,639 --> 00:08:14,560
+I did only I can see it the per since I
+
+185
+00:08:12,560 --> 00:08:18,160
+typed in slashfind and then his name.
+
+186
+00:08:14,560 --> 00:08:18,160
+Now that's because this is on client
+
+187
+00:08:18,840 --> 00:08:24,000
+side. So that's pretty useful actually.
+
+188
+00:08:22,560 --> 00:08:26,080
+Uh you can make things that only the
+
+189
+00:08:24,000 --> 00:08:28,639
+player can see after going from server
+
+190
+00:08:26,080 --> 00:08:33,360
+side to client side. Now, trigger client
+
+191
+00:08:28,639 --> 00:08:35,200
+will only work if you have first gone to
+
+192
+00:08:33,360 --> 00:08:38,640
+server side and you're going back to
+
+193
+00:08:35,200 --> 00:08:42,159
+client side, which is pretty lame, but
+
+194
+00:08:38,640 --> 00:08:43,919
+you know, whatever. Um, so you can only
+
+195
+00:08:42,159 --> 00:08:45,839
+use trigger client if you've already
+
+196
+00:08:43,919 --> 00:08:47,120
+used trigger server, gone server side,
+
+197
+00:08:45,839 --> 00:08:51,279
+you trigger client, and gone back to
+
+198
+00:08:47,120 --> 00:08:53,519
+client side. Well, anyway, uh, let's try
+
+199
+00:08:51,279 --> 00:08:56,480
+that again. We could also make the rupee
+
+200
+00:08:53,519 --> 00:08:58,200
+disappear after a while. So let's put
+
+201
+00:08:56,480 --> 00:09:02,040
+sleep
+
+202
+00:08:58,200 --> 00:09:04,760
+two. Then we're going to put the image
+
+203
+00:09:02,040 --> 00:09:06,800
+again, but just take out
+
+204
+00:09:04,760 --> 00:09:10,240
+this. So it's not going to be it's going
+
+205
+00:09:06,800 --> 00:09:14,160
+to be a blank image. All right. Now, if
+
+206
+00:09:10,240 --> 00:09:16,240
+I type in um slashfind test, it's going
+
+207
+00:09:14,160 --> 00:09:17,600
+to loop through everyone. Find the
+
+208
+00:09:16,240 --> 00:09:20,880
+person named test. He's going to have
+
+209
+00:09:17,600 --> 00:09:25,000
+the image appear next to him and the
+
+210
+00:09:20,880 --> 00:09:27,279
+chat. So it shows me okay that's that
+
+211
+00:09:25,000 --> 00:09:29,600
+guy. Now there's a lot more you can do
+
+212
+00:09:27,279 --> 00:09:32,040
+with church client. You can also go to
+
+213
+00:09:29,600 --> 00:09:34,640
+client side on other
+
+214
+00:09:32,040 --> 00:09:37,440
+people. So let's show how that works.
+
+215
+00:09:34,640 --> 00:09:39,360
+Instead of putting playerclient side
+
+216
+00:09:37,440 --> 00:09:40,480
+we're going to put pl.client side cuz
+
+217
+00:09:39,360 --> 00:09:42,040
+that's the current player that we're
+
+218
+00:09:40,480 --> 00:09:43,560
+looping
+
+219
+00:09:42,040 --> 00:09:46,640
+through.
+
+220
+00:09:43,560 --> 00:09:48,399
+Now we're doing client side to them on
+
+221
+00:09:46,640 --> 00:09:50,640
+this current weapon as well. So they
+
+222
+00:09:48,399 --> 00:09:52,800
+have to have this weapon as well cuz
+
+223
+00:09:50,640 --> 00:09:56,080
+we're putting this name. Okay, let me
+
+224
+00:09:52,800 --> 00:09:59,440
+explain this again. On client side, I am
+
+225
+00:09:56,080 --> 00:10:01,279
+going to say /find and then some words.
+
+226
+00:09:59,440 --> 00:10:03,000
+It's going to go to server side. It's
+
+227
+00:10:01,279 --> 00:10:04,880
+going to loop through everyone on the
+
+228
+00:10:03,000 --> 00:10:07,440
+server. Loop through everyone on the
+
+229
+00:10:04,880 --> 00:10:09,959
+server. And if somebody's nickname is
+
+230
+00:10:07,440 --> 00:10:12,399
+equal to the text I just said after
+
+231
+00:10:09,959 --> 00:10:14,959
+slashfind, they are going to say that's
+
+232
+00:10:12,399 --> 00:10:18,240
+me. And then this trigger client's going
+
+233
+00:10:14,959 --> 00:10:20,480
+to happen to them, not me anymore. I'm
+
+234
+00:10:18,240 --> 00:10:22,560
+changing that. And it's going to happen
+
+235
+00:10:20,480 --> 00:10:23,760
+to them on this weapon, assuming they
+
+236
+00:10:22,560 --> 00:10:25,040
+have it. If they don't have it, then
+
+237
+00:10:23,760 --> 00:10:26,680
+it's not going to work. But if they do
+
+238
+00:10:25,040 --> 00:10:31,200
+have it, it is going to
+
+239
+00:10:26,680 --> 00:10:32,800
+work. So, it's going to run this here.
+
+240
+00:10:31,200 --> 00:10:35,040
+It's going to run this code, line of
+
+241
+00:10:32,800 --> 00:10:37,399
+code, this block of code over here for
+
+242
+00:10:35,040 --> 00:10:40,480
+them. Not for me, but for
+
+243
+00:10:37,399 --> 00:10:42,640
+them. All right, let's apply that and
+
+244
+00:10:40,480 --> 00:10:45,760
+see how it works. I'm going to hold this
+
+245
+00:10:42,640 --> 00:10:47,560
+over here. This test player over here.
+
+246
+00:10:45,760 --> 00:10:50,880
+Actually over
+
+247
+00:10:47,560 --> 00:10:53,839
+here. I'll show them in a second. So,
+
+248
+00:10:50,880 --> 00:10:53,839
+first I'm going to say
+
+249
+00:10:54,040 --> 00:11:01,440
+slash find then
+
+250
+00:10:57,959 --> 00:11:02,720
+test. So, he's going to say that's me.
+
+251
+00:11:01,440 --> 00:11:03,920
+Oh, probably didn't catch that. Here.
+
+252
+00:11:02,720 --> 00:11:08,320
+I'll I'll do it on the other player
+
+253
+00:11:03,920 --> 00:11:10,399
+instead. Find zerog.
+
+254
+00:11:08,320 --> 00:11:12,120
+So, it's going to I'm going to say find
+
+255
+00:11:10,399 --> 00:11:15,000
+zero
+
+256
+00:11:12,120 --> 00:11:19,320
+g, which is pretty
+
+257
+00:11:15,000 --> 00:11:21,880
+useful. Let's type that again. Find
+
+258
+00:11:19,320 --> 00:11:25,360
+zero
+
+259
+00:11:21,880 --> 00:11:27,600
+g. Oh, wait. Why is the rupy appearing
+
+260
+00:11:25,360 --> 00:11:27,600
+on
+
+261
+00:11:27,720 --> 00:11:32,320
+me? Well, oh, yeah, that's that's cuz I
+
+262
+00:11:30,079 --> 00:11:34,720
+made it that way. See, the rupee appear
+
+263
+00:11:32,320 --> 00:11:37,800
+now appears on the opposite person, not
+
+264
+00:11:34,720 --> 00:11:41,120
+on myself. So I'm going to type
+
+265
+00:11:37,800 --> 00:11:43,519
+slashfind zero g on this test account
+
+266
+00:11:41,120 --> 00:11:46,320
+and only the rupee is going to appear on
+
+267
+00:11:43,519 --> 00:11:48,160
+me only. Now we could have other things
+
+268
+00:11:46,320 --> 00:11:51,040
+happen. Instead of the rupee appearing
+
+269
+00:11:48,160 --> 00:11:52,800
+we could have maybe an image appear that
+
+270
+00:11:51,040 --> 00:11:54,480
+says do you want to join this guild and
+
+271
+00:11:52,800 --> 00:11:56,959
+they could say yes or no and then it'll
+
+272
+00:11:54,480 --> 00:11:58,959
+send it'll go back to server side but do
+
+273
+00:11:56,959 --> 00:12:01,160
+it for me instead or something like
+
+274
+00:11:58,959 --> 00:12:03,680
+that. We could do a lot of things with
+
+275
+00:12:01,160 --> 00:12:06,800
+this. Uh you can do whatever you want on
+
+276
+00:12:03,680 --> 00:12:08,160
+client side here. Um, and I guess that
+
+277
+00:12:06,800 --> 00:12:11,320
+concludes this tutorial. Let me explain
+
+278
+00:12:08,160 --> 00:12:14,240
+that one more time. So here I'm going to
+
+279
+00:12:11,320 --> 00:12:16,320
+say slashfind. It's going to take that
+
+280
+00:12:14,240 --> 00:12:17,680
+variable I said after slashfind to
+
+281
+00:12:16,320 --> 00:12:19,680
+everyone on a server if their nickname
+
+282
+00:12:17,680 --> 00:12:21,680
+is equal to that variable. It's going to
+
+283
+00:12:19,680 --> 00:12:23,680
+go to them and make the rupee appear for
+
+284
+00:12:21,680 --> 00:12:26,560
+them. It's also going to make them say
+
+285
+00:12:23,680 --> 00:12:28,920
+this say this say that's me. But
+
+286
+00:12:26,560 --> 00:12:32,320
+everyone can see that because it's
+
+287
+00:12:28,920 --> 00:12:33,680
+chat. So that con this tutorial and I'll
+
+288
+00:12:32,320 --> 00:12:37,160
+see you next time. Here let me show you
+
+289
+00:12:33,680 --> 00:12:40,480
+one more. Let me show you the example
+
+290
+00:12:37,160 --> 00:12:42,200
+again. Over here on this test person,
+
+291
+00:12:40,480 --> 00:12:45,360
+I'm going to say
+
+292
+00:12:42,200 --> 00:12:46,480
+slashfind zero G. And when I say it,
+
+293
+00:12:45,360 --> 00:12:49,279
+it's going to say that's me. And the
+
+294
+00:12:46,480 --> 00:12:51,519
+rupee is going to appear on that
+
+295
+00:12:49,279 --> 00:12:56,160
+player's window. Not on mine, but just
+
+296
+00:12:51,519 --> 00:12:56,160
+on that players. That concludes his
+

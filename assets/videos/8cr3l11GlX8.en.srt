@@ -1,0 +1,304 @@
+1
+00:00:00,160 --> 00:00:06,600
+hello and welcome to the seventh
+
+2
+00:00:02,320 --> 00:00:09,599
+tutorial on how to program in gript 2 so
+
+3
+00:00:06,600 --> 00:00:14,240
+let's open our NPC in the level editor
+
+4
+00:00:09,599 --> 00:00:14,240
+and make it say yellow is equal
+
+5
+00:00:15,560 --> 00:00:19,480
+to
+
+6
+00:00:17,199 --> 00:00:21,560
+stuff what we're doing is instead of
+
+7
+00:00:19,480 --> 00:00:25,560
+making yellow equal to a number we're
+
+8
+00:00:21,560 --> 00:00:25,560
+making it equal to the text
+
+9
+00:00:25,720 --> 00:00:33,800
+stuff now we can make if player. chat is
+
+10
+00:00:30,960 --> 00:00:38,160
+equal to
+
+11
+00:00:33,800 --> 00:00:43,160
+Yellow then this. chat is equal
+
+12
+00:00:38,160 --> 00:00:46,840
+to you said yellow I mean
+
+13
+00:00:43,160 --> 00:00:50,280
+stuff capital S also I want to change it
+
+14
+00:00:46,840 --> 00:00:52,879
+from on created to on player
+
+15
+00:00:50,280 --> 00:00:57,199
+chats so what it's doing it's making
+
+16
+00:00:52,879 --> 00:01:00,680
+yellow equal to the string value of
+
+17
+00:00:57,199 --> 00:01:03,280
+stuff or just stuff and we're checking
+
+18
+00:01:00,680 --> 00:01:05,760
+to see if your your chat is equal to
+
+19
+00:01:03,280 --> 00:01:08,439
+Yellow which is stuff so if you say
+
+20
+00:01:05,760 --> 00:01:10,799
+stuff with capital S then everything in
+
+21
+00:01:08,439 --> 00:01:10,799
+here will
+
+22
+00:01:14,000 --> 00:01:19,119
+happen hi nothing
+
+23
+00:01:16,479 --> 00:01:21,479
+happens
+
+24
+00:01:19,119 --> 00:01:24,840
+stuff nothing
+
+25
+00:01:21,479 --> 00:01:28,079
+happens oh there's no semicolon there I
+
+26
+00:01:24,840 --> 00:01:32,720
+feel stupid now yeah you got to try to
+
+27
+00:01:28,079 --> 00:01:35,280
+watch out for that you said stuff now
+
+28
+00:01:32,720 --> 00:01:36,040
+you can also just change this to change
+
+29
+00:01:35,280 --> 00:01:39,159
+here
+
+30
+00:01:36,040 --> 00:01:42,520
+to stuff if you wanted to but for the
+
+31
+00:01:39,159 --> 00:01:46,600
+sake of tutorial I made yellow now let's
+
+32
+00:01:42,520 --> 00:01:46,600
+make yellow equal to
+
+33
+00:01:48,960 --> 00:01:55,240
+two it will say yellow but let's say I
+
+34
+00:01:52,719 --> 00:01:57,960
+want to say three I can either make it
+
+35
+00:01:55,240 --> 00:02:01,280
+say three or for the sake of the
+
+36
+00:01:57,960 --> 00:02:03,280
+tutorial make yellow
+
+37
+00:02:01,280 --> 00:02:08,119
+increase by one there's two ways to do
+
+38
+00:02:03,280 --> 00:02:11,239
+that yellow equals yellow + 1 this takes
+
+39
+00:02:08,119 --> 00:02:12,640
+this overrides yellow it it sort of it
+
+40
+00:02:11,239 --> 00:02:14,440
+sort of deletes the old yellow and
+
+41
+00:02:12,640 --> 00:02:17,920
+creates a new
+
+42
+00:02:14,440 --> 00:02:20,640
+yellow yellow's equal to the old yellow
+
+43
+00:02:17,920 --> 00:02:21,560
+plus one so the old yellow is two as you
+
+44
+00:02:20,640 --> 00:02:26,239
+can see
+
+45
+00:02:21,560 --> 00:02:28,840
+here and it's 2 + 1 so yellow will be
+
+46
+00:02:26,239 --> 00:02:30,400
+three now
+
+47
+00:02:28,840 --> 00:02:33,760
+watch
+
+48
+00:02:30,400 --> 00:02:35,879
+I'm going to say high it'll say
+
+49
+00:02:33,760 --> 00:02:40,680
+three I can also
+
+50
+00:02:35,879 --> 00:02:44,640
+do plus plus as simple as that and it'll
+
+51
+00:02:40,680 --> 00:02:46,760
+automatically increase by one by
+
+52
+00:02:44,640 --> 00:02:50,480
+itself
+
+53
+00:02:46,760 --> 00:02:53,760
+high now let's you can also do minus
+
+54
+00:02:50,480 --> 00:02:56,000
+minus to make it decrease by one you can
+
+55
+00:02:53,760 --> 00:02:58,840
+also now let's make a new variable
+
+56
+00:02:56,000 --> 00:03:02,879
+purple is equal to
+
+57
+00:02:58,840 --> 00:03:04,280
+five let's make yellow equal to yellow
+
+58
+00:03:02,879 --> 00:03:07,680
+plus
+
+59
+00:03:04,280 --> 00:03:10,720
+purple and change this to created
+
+60
+00:03:07,680 --> 00:03:13,440
+oncreated so yellow is equal to Yellow
+
+61
+00:03:10,720 --> 00:03:16,080
+which is 2 plus purple which is five so
+
+62
+00:03:13,440 --> 00:03:19,319
+it should say
+
+63
+00:03:16,080 --> 00:03:23,159
+seven just say seven we can also make it
+
+64
+00:03:19,319 --> 00:03:23,159
+multiply by doing a little
+
+65
+00:03:24,120 --> 00:03:31,760
+star so it's 10 now we can divide
+
+66
+00:03:28,760 --> 00:03:31,760
+it
+
+67
+00:03:34,159 --> 00:03:39,200
+0.4 we can also uh there's there's a lot
+
+68
+00:03:37,560 --> 00:03:41,360
+of things we could do we could do to the
+
+69
+00:03:39,200 --> 00:03:43,760
+power of we
+
+70
+00:03:41,360 --> 00:03:46,560
+could yeah there's just a
+
+71
+00:03:43,760 --> 00:03:49,040
+lot and so I think that concludes this
+
+72
+00:03:46,560 --> 00:03:52,239
+tutorial we learned a bit more about
+
+73
+00:03:49,040 --> 00:03:55,720
+variables how they can equal letters we
+
+74
+00:03:52,239 --> 00:03:59,959
+learned how we could manipulate them and
+
+75
+00:03:55,720 --> 00:04:03,120
+change them around so yeah that's it for
+
+76
+00:03:59,959 --> 00:04:03,120
+this tutorial and bye
+

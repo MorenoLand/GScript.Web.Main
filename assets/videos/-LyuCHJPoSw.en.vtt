@@ -1,0 +1,1261 @@
+WEBVTT
+
+00:00.599 --> 00:06.839
+hello and welcome to the 29th tutorial
+
+00:03.800 --> 00:08.559
+on how to program in gript 2 so in the
+
+00:06.839 --> 00:11.080
+last few tutorials I've been explaining
+
+00:08.559 --> 00:13.759
+how to use class scripts and things like
+
+00:11.080 --> 00:16.920
+that well in this tutorial I want to
+
+00:13.759 --> 00:20.519
+finish teaching classes and how to use
+
+00:16.920 --> 00:22.279
+them okay so let's make a mining script
+
+00:20.519 --> 00:24.880
+in this tutorial first let's go to
+
+00:22.279 --> 00:28.920
+classes and create a new class and call
+
+00:24.880 --> 00:34.719
+it gem okay then here let's just put
+
+00:28.920 --> 00:34.719
+something simple for testing function on
+
+00:34.879 --> 00:40.800
+created set
+
+00:36.960 --> 00:43.079
+image what do I want green rupe so it
+
+00:40.800 --> 00:44.399
+looks like a gem PNG this is an image I
+
+00:43.079 --> 00:46.120
+have by the way it might not work for
+
+00:44.399 --> 00:49.640
+you so you want to use something
+
+00:46.120 --> 00:53.239
+else then to delete it function
+
+00:49.640 --> 00:57.079
+on player touches
+
+00:53.239 --> 01:00.879
+me then let's put this do
+
+00:57.079 --> 01:03.359
+destroy okay let's apply this
+
+01:00.879 --> 01:05.199
+now let's minimize this and open our
+
+01:03.359 --> 01:09.560
+level editor you can ignore these two
+
+01:05.199 --> 01:11.840
+NPCs right here so let's put down a new
+
+01:09.560 --> 01:14.360
+MPC and add some
+
+01:11.840 --> 01:18.560
+code what do we
+
+01:14.360 --> 01:21.439
+want client side function
+
+01:18.560 --> 01:26.200
+oncreated for an image we're going to
+
+01:21.439 --> 01:27.920
+put set image orbital Rock another image
+
+01:26.200 --> 01:32.600
+that I
+
+01:27.920 --> 01:35.799
+have and here function on was
+
+01:32.600 --> 01:37.040
+hit okay this is important now we're
+
+01:35.799 --> 01:42.159
+going to
+
+01:37.040 --> 01:43.680
+put a command called Trigger action now
+
+01:42.159 --> 01:46.600
+I've explained this in the past but I've
+
+01:43.680 --> 01:49.520
+never been able to show an actual
+
+01:46.600 --> 01:53.240
+playable example now what Trigger action
+
+01:49.520 --> 01:54.799
+does what Trigger action is
+
+01:53.240 --> 01:59.079
+is
+
+01:54.799 --> 02:01.240
+and is trigger server for level NPCs now
+
+01:59.079 --> 02:03.640
+trigger server trigger server will not
+
+02:01.240 --> 02:04.880
+work for level NPCs and I'm not sure why
+
+02:03.640 --> 02:07.880
+I think it has to do something with
+
+02:04.880 --> 02:09.319
+level NPCs technically not having an ID
+
+02:07.880 --> 02:11.000
+so the server can't reach them or
+
+02:09.319 --> 02:12.840
+something like that so we have to put
+
+02:11.000 --> 02:15.480
+Tri Trigger
+
+02:12.840 --> 02:18.239
+action now the first parameter we're
+
+02:15.480 --> 02:20.840
+going to put this.x second
+
+02:18.239 --> 02:23.319
+this.y now this is the location of the
+
+02:20.840 --> 02:26.720
+actual action and we want it to be on
+
+02:23.319 --> 02:28.959
+the NPC I'm not sure what changing is
+
+02:26.720 --> 02:30.480
+even does putting them to zero and zero
+
+02:28.959 --> 02:32.800
+makes it not even work and the only way
+
+02:30.480 --> 02:35.040
+I've been able to make it even be used
+
+02:32.800 --> 02:37.040
+is to put this.x and this.y or just X
+
+02:35.040 --> 02:41.280
+and Y and that just it just
+
+02:37.040 --> 02:44.920
+automatically gets it okay anyway let's
+
+02:41.280 --> 02:46.080
+put some quotes here and then put n
+
+02:44.920 --> 02:48.720
+because we don't want to send any
+
+02:46.080 --> 02:53.400
+variables over now over here on server
+
+02:48.720 --> 02:56.080
+side we're going to put function on
+
+02:53.400 --> 02:58.920
+action and leave it like that for
+
+02:56.080 --> 03:01.400
+now okay so over here in the quotes the
+
+02:58.920 --> 03:03.920
+third parameter of trigger Trigger
+
+03:01.400 --> 03:07.239
+action is pretty important this
+
+03:03.920 --> 03:09.360
+specifies which trigger I mean which fun
+
+03:07.239 --> 03:12.159
+what what which onaction function we
+
+03:09.360 --> 03:16.440
+want to go to so if we put something
+
+03:12.159 --> 03:19.720
+like make gem and over here on function
+
+03:16.440 --> 03:22.080
+on action we put make gem then this
+
+03:19.720 --> 03:24.760
+Trigger action would know to go to this
+
+03:22.080 --> 03:28.239
+function over here now if we change this
+
+03:24.760 --> 03:31.319
+to maybe put gem instead of make gem it
+
+03:28.239 --> 03:34.040
+would go hey where is make gem I only
+
+03:31.319 --> 03:36.239
+see put Gem and it won't even work so we
+
+03:34.040 --> 03:38.040
+need to make these equal let's just
+
+03:36.239 --> 03:42.519
+replace this
+
+03:38.040 --> 03:44.560
+with put gem okay so here's our function
+
+03:42.519 --> 03:47.920
+in the function we're going to put put
+
+03:44.560 --> 03:49.720
+npc2 and drop down the class as an NPC
+
+03:47.920 --> 03:54.519
+which I've showed you
+
+03:49.720 --> 03:57.280
+previously X well we want to put this.x
+
+03:54.519 --> 04:02.040
+this.y this is where the NPC is going to
+
+03:57.280 --> 04:05.159
+go and then all this all these crazy
+
+04:02.040 --> 04:05.159
+letters and
+
+04:07.000 --> 04:10.439
+symbols is that
+
+04:10.799 --> 04:15.480
+right possibly okay so here's our here's
+
+04:13.920 --> 04:20.000
+the name of our class that we're going
+
+04:15.480 --> 04:20.000
+to put down as an NPC let's close
+
+04:22.120 --> 04:27.120
+this now oh we don't want
+
+04:28.600 --> 04:33.199
+that let's clear the level
+
+04:35.800 --> 04:41.840
+first
+
+04:38.000 --> 04:44.120
+there now I'm going to save it
+
+04:41.840 --> 04:48.080
+again now I'm going to hit
+
+04:44.120 --> 04:50.440
+it oh why isn't anything happening well
+
+04:48.080 --> 04:51.720
+there's a reason for that if we go to
+
+04:50.440 --> 04:54.360
+our level
+
+04:51.720 --> 04:56.639
+editor and we go here we can see
+
+04:54.360 --> 05:00.199
+everything looks right Trigger action
+
+04:56.639 --> 05:02.400
+and put npc2 well here's a problem with
+
+05:00.199 --> 05:07.720
+triger action you can't use it unless
+
+05:02.400 --> 05:10.280
+you specify the set shape of the um NPC
+
+05:07.720 --> 05:12.960
+on server side so let's just do that
+
+05:10.280 --> 05:15.520
+function on created so as soon as the
+
+05:12.960 --> 05:19.639
+NPC is created it's going to have a set
+
+05:15.520 --> 05:21.919
+shape set shape 1 comma 32 comma 32 now
+
+05:19.639 --> 05:23.840
+don't ask why you need this to use
+
+05:21.919 --> 05:26.960
+Trigger action but you need to have set
+
+05:23.840 --> 05:30.160
+shape somewhere in server side before
+
+05:26.960 --> 05:35.360
+you are able to use Trigger action
+
+05:30.160 --> 05:35.360
+so now that we got that let's save it
+
+05:36.280 --> 05:45.680
+again and hit it nothing's happening
+
+05:41.919 --> 05:48.400
+again let's clear the NPCs one more
+
+05:45.680 --> 05:51.880
+time
+
+05:48.400 --> 05:51.880
+nope here's our
+
+05:53.600 --> 05:57.080
+class here is our
+
+05:58.479 --> 06:01.479
+NPC
+
+06:04.800 --> 06:10.680
+um it's probably something really simple
+
+06:07.000 --> 06:10.680
+that I I'm totally
+
+06:17.479 --> 06:23.120
+missing okay I think I figured it out
+
+06:20.360 --> 06:26.280
+when I open this I'm putting
+
+06:23.120 --> 06:28.599
+the uh class onto the
+
+06:26.280 --> 06:30.680
+NPC which is blocking it so if I put
+
+06:28.599 --> 06:32.319
+something like Plus one for the X I'll
+
+06:30.680 --> 06:36.960
+be able to see it
+
+06:32.319 --> 06:36.960
+now wasn't really a programming eror
+
+06:37.560 --> 06:42.520
+just I couldn't see the image
+
+06:40.360 --> 06:43.960
+anyway as you can see there's some of
+
+06:42.520 --> 06:47.199
+the image let me just change that a bit
+
+06:43.960 --> 06:48.560
+and make it a bit more so there this is
+
+06:47.199 --> 06:50.759
+xals
+
+06:48.560 --> 06:53.960
+2
+
+06:50.759 --> 06:56.720
+okay I hit it there it is and if I hit
+
+06:53.960 --> 07:00.400
+the uh rupe it'll be
+
+06:56.720 --> 07:03.639
+destroyed okay well we have that now
+
+07:00.400 --> 07:06.520
+let's open our NPC again and put hide so
+
+07:03.639 --> 07:08.680
+it hides The Rock once the and you can't
+
+07:06.520 --> 07:11.639
+even use the rock anymore once the uh
+
+07:08.680 --> 07:13.919
+NPC is placed okay let's save that one
+
+07:11.639 --> 07:17.039
+more time and
+
+07:13.919 --> 07:19.120
+upload there there's the rupe and we can
+
+07:17.039 --> 07:21.360
+hit it it'll disappear now let's open
+
+07:19.120 --> 07:24.280
+our class
+
+07:21.360 --> 07:29.479
+again let's delete this function
+
+07:24.280 --> 07:33.199
+here and add a client side client side
+
+07:29.479 --> 07:38.240
+then let's put function no no
+
+07:33.199 --> 07:38.240
+functions yeah yes function function on
+
+07:39.840 --> 07:45.159
+created and then
+
+07:42.360 --> 07:48.039
+put we'll just leave that for now then
+
+07:45.159 --> 07:51.680
+over here we're going to put function
+
+07:48.039 --> 07:53.680
+on player touches
+
+07:51.680 --> 07:55.840
+me and we're going to make it so that if
+
+07:53.680 --> 07:58.240
+a player touches it on client side it's
+
+07:55.840 --> 08:01.240
+going to be destroyed so let's put
+
+07:58.240 --> 08:04.759
+something uh
+
+08:01.240 --> 08:08.080
+if we're going to put trigger server and
+
+08:04.759 --> 08:11.039
+instead ofgi we're going to put NPC
+
+08:08.080 --> 08:13.159
+since this is technically an NPC then
+
+08:11.039 --> 08:16.720
+we're going to put uh what we want to
+
+08:13.159 --> 08:21.680
+destroy this. name then
+
+08:16.720 --> 08:25.159
+null up here we're going to put function
+
+08:21.680 --> 08:29.599
+on action server
+
+08:25.159 --> 08:31.240
+side I'm going to put this dot destroy
+
+08:29.599 --> 08:33.399
+so seeing this right now actually I'm
+
+08:31.240 --> 08:36.200
+going to take out the on created since
+
+08:33.399 --> 08:39.120
+it's taking up room so when you look at
+
+08:36.200 --> 08:40.839
+this it should work right on client side
+
+08:39.120 --> 08:42.719
+if any player touches it it's going to
+
+08:40.839 --> 08:45.080
+go to server side and Destroy for
+
+08:42.719 --> 08:46.519
+everyone well that's actually not the
+
+08:45.080 --> 08:48.880
+case this will not work and I'll show
+
+08:46.519 --> 08:48.880
+you right
+
+08:49.160 --> 08:56.040
+now let me just upload a level again I
+
+08:52.880 --> 08:57.800
+create this hery and I hit it and hey
+
+08:56.040 --> 09:01.720
+it's not working well there's a reason
+
+08:57.800 --> 09:04.000
+for that If This Were instead of client
+
+09:01.720 --> 09:07.160
+side on server side then it would
+
+09:04.000 --> 09:10.120
+actually work well if this destroy was
+
+09:07.160 --> 09:12.480
+under uh on play touches me but since
+
+09:10.120 --> 09:14.120
+under client side it's not working and
+
+09:12.480 --> 09:17.240
+there's a reason for that for some
+
+09:14.120 --> 09:20.000
+reason classes if you try to try to use
+
+09:17.240 --> 09:21.760
+try to destroy them by using trigger
+
+09:20.000 --> 09:23.920
+server I mean using trigger server it's
+
+09:21.760 --> 09:25.800
+not going to work this.name it doesn't
+
+09:23.920 --> 09:28.120
+know what this.name is of course we know
+
+09:25.800 --> 09:31.320
+we're trying to specify the this current
+
+09:28.120 --> 09:33.560
+class but it doesn't know well to
+
+09:31.320 --> 09:36.600
+counter that over here on oncreated
+
+09:33.560 --> 09:38.160
+we're going to put
+
+09:36.600 --> 09:40.200
+this.at
+
+09:38.160 --> 09:43.200
+attribute and in the attribute we're
+
+09:40.200 --> 09:45.720
+going to put a number three so it's in
+
+09:43.200 --> 09:48.519
+Array really then we're going to put
+
+09:45.720 --> 09:53.160
+this.name then down here instead of
+
+09:48.519 --> 09:57.079
+this.name going to put this. ATR at then
+
+09:53.160 --> 09:59.839
+two now ATR is like a special array or
+
+09:57.079 --> 10:02.320
+whatever that has these variables and
+
+09:59.839 --> 10:04.839
+they apparently can get held for
+
+10:02.320 --> 10:06.839
+different classes I'm not very sure but
+
+10:04.839 --> 10:10.880
+whatever the case you have to have this
+
+10:06.839 --> 10:11.920
+on oncreated on server side to be able
+
+10:10.880 --> 10:16.760
+to
+
+10:11.920 --> 10:20.040
+call uh this exact NPC and make it be
+
+10:16.760 --> 10:24.560
+destroyed okay let's reply
+
+10:20.040 --> 10:24.560
+that and let's clear the
+
+10:25.399 --> 10:31.040
+area next let's update the level again
+
+10:31.120 --> 10:34.399
+and it's I touched it and it disappeared
+
+10:33.160 --> 10:37.959
+so we know it's
+
+10:34.399 --> 10:40.200
+working so we have some uh of our mining
+
+10:37.959 --> 10:42.560
+script done but there's more we can do
+
+10:40.200 --> 10:44.600
+let's open our level editor again and
+
+10:42.560 --> 10:48.560
+here right before put NPC 2 we're going
+
+10:44.600 --> 10:51.480
+to put temp.
+
+10:48.560 --> 10:53.360
+obj equals I'll space it out so it's
+
+10:51.480 --> 10:55.920
+easier to
+
+10:53.360 --> 10:58.760
+read then over here we're going to put
+
+10:55.920 --> 11:00.399
+temp do actually I'm going to explain
+
+10:58.760 --> 11:02.320
+that first first what we're doing is
+
+11:00.399 --> 11:05.720
+we're making the
+
+11:02.320 --> 11:08.839
+NPC that we just placed down as a class
+
+11:05.720 --> 11:13.000
+equal to this temp
+
+11:08.839 --> 11:16.880
+variable now if we take this and put
+
+11:13.000 --> 11:19.519
+temp. obj which is the NPC that we just
+
+11:16.880 --> 11:22.519
+Place input
+
+11:19.519 --> 11:24.680
+a and some a number other than two since
+
+11:22.519 --> 11:27.320
+we're already using that we can put
+
+11:24.680 --> 11:29.959
+equals whatever variable we want since
+
+11:27.320 --> 11:32.920
+we can put um
+
+11:29.959 --> 11:34.480
+hello or something like that well let's
+
+11:32.920 --> 11:37.519
+put something more practical like let's
+
+11:34.480 --> 11:40.240
+put the player. account so the player
+
+11:37.519 --> 11:43.360
+that just hit the
+
+11:40.240 --> 11:47.399
+rock and placed the NPC down we're going
+
+11:43.360 --> 11:50.000
+to have a variable in that specific NPC
+
+11:47.399 --> 11:51.320
+equal to the player's account name and
+
+11:50.000 --> 11:55.120
+I'll see you show you what that does in
+
+11:51.320 --> 11:58.639
+a second let's close this save it and
+
+11:55.120 --> 12:00.959
+over here in the NPC let's put function
+
+11:58.639 --> 12:00.959
+on
+
+12:01.519 --> 12:10.600
+created and then put under client side
+
+12:04.959 --> 12:15.040
+and put this. chat is equal to ATR and
+
+12:10.600 --> 12:17.920
+three I mean this do ATR that I put this
+
+12:15.040 --> 12:19.040
+dot here oh doesn't need there but here
+
+12:17.920 --> 12:22.040
+you need it
+
+12:19.040 --> 12:22.040
+apparently
+
+12:22.160 --> 12:27.560
+okay let's upload
+
+12:24.560 --> 12:29.639
+it I'm going to hit it and just it's
+
+12:27.560 --> 12:32.680
+saying my account
+
+12:29.639 --> 12:35.760
+that's great so we can take it now and
+
+12:32.680 --> 12:38.480
+that's good but for our mining script we
+
+12:35.760 --> 12:41.519
+can see that this player right
+
+12:38.480 --> 12:43.000
+here we're going to update the level if
+
+12:41.519 --> 12:47.959
+they hit
+
+12:43.000 --> 12:50.839
+it and drop down the uh oh I'm making
+
+12:47.959 --> 12:55.199
+the rock hide on client side I should
+
+12:50.839 --> 12:58.399
+change that they're making the class
+
+12:55.199 --> 13:01.959
+appear with their uh account on it but I
+
+12:58.399 --> 13:03.360
+can still take it well let's change that
+
+13:01.959 --> 13:06.720
+first let's go into levelator and make
+
+13:03.360 --> 13:10.440
+it so it hides on server side let's put
+
+13:06.720 --> 13:13.760
+that here on server side okay that's
+
+13:10.440 --> 13:16.600
+good then we're going to hide that we
+
+13:13.760 --> 13:16.600
+going to test
+
+13:17.240 --> 13:23.399
+it yeah it works okay now here in the
+
+13:23.519 --> 13:30.160
+class let's put something useful for
+
+13:27.760 --> 13:34.880
+this variable we have here that is
+
+13:30.160 --> 13:34.880
+holding the player's account we can
+
+13:36.040 --> 13:41.160
+put this do no let's not put that yet
+
+13:39.480 --> 13:43.160
+let's
+
+13:41.160 --> 13:47.519
+put over
+
+13:43.160 --> 13:49.839
+here if player. account so if the
+
+13:47.519 --> 13:53.880
+player's touching it if their account is
+
+13:49.839 --> 13:58.800
+equal to this do a
+
+13:53.880 --> 14:00.639
+ATR so if it's equal to the account then
+
+13:58.800 --> 14:04.279
+that pressed it
+
+14:00.639 --> 14:09.000
+earlier then we're going to drop
+
+14:04.279 --> 14:12.560
+it I'm back now where was I oh yeah if
+
+14:09.000 --> 14:18.040
+player. account is equal to the account
+
+14:12.560 --> 14:18.040
+of the player who first made the NPC
+
+14:18.399 --> 14:22.360
+appear then we're going to have this
+
+14:24.519 --> 14:29.279
+happen Okay let's apply
+
+14:27.680 --> 14:30.839
+that
+
+14:29.279 --> 14:34.040
+then we're going to upload this
+
+14:30.839 --> 14:35.639
+again now if I hit it and select the
+
+14:34.040 --> 14:38.040
+other
+
+14:35.639 --> 14:41.399
+player well who's in trial right now so
+
+14:38.040 --> 14:44.440
+I'll show you in a second but I can take
+
+14:41.399 --> 14:49.079
+it but now if I update the
+
+14:44.440 --> 14:53.279
+level hit it it has my account now on it
+
+14:49.079 --> 14:54.480
+but but if I let the other player take
+
+14:53.279 --> 14:56.839
+it he's not going to be able to which
+
+14:54.480 --> 14:59.639
+I'll show you in a second with the trial
+
+14:56.839 --> 15:03.399
+Observer mode is out one
+
+14:59.639 --> 15:05.920
+second okay I'm back now
+
+15:03.399 --> 15:08.600
+look as you can see I'm moving around
+
+15:05.920 --> 15:10.639
+this test account right now and if he
+
+15:08.600 --> 15:13.800
+tries to take it he's not going to be
+
+15:10.639 --> 15:17.000
+able to because his count isn't equal to
+
+15:13.800 --> 15:20.320
+AT3 which is the account that was set
+
+15:17.000 --> 15:23.120
+when I hit the rock here but if I try to
+
+15:20.320 --> 15:24.120
+take it it will work now in terms of a
+
+15:23.120 --> 15:27.920
+mining
+
+15:24.120 --> 15:30.319
+script this is pretty good but let's say
+
+15:27.920 --> 15:34.720
+the player goes off line now it's going
+
+15:30.319 --> 15:36.000
+to have a um rupee right here that no
+
+15:34.720 --> 15:37.480
+one be able to take because it's going
+
+15:36.000 --> 15:39.759
+to have my account on it and no one can
+
+15:37.480 --> 15:42.240
+take it well let's just straighten that
+
+15:39.759 --> 15:47.240
+out right here let's go here and on Crea
+
+15:42.240 --> 15:51.639
+let's put this dot timer equals whatever
+
+15:47.240 --> 15:55.680
+you want 20 then we're going to put on
+
+15:51.639 --> 15:57.600
+timeout here we're going to put function
+
+15:55.680 --> 15:59.440
+on
+
+15:57.600 --> 16:01.440
+timeout
+
+15:59.440 --> 16:03.199
+here we're going to put set timer which
+
+16:01.440 --> 16:07.480
+is going to take one
+
+16:03.199 --> 16:10.839
+second um here let's put this
+
+16:07.480 --> 16:14.000
+dot timer minus minus so it's going to
+
+16:10.839 --> 16:17.279
+subtract one every second then here
+
+16:14.000 --> 16:21.000
+let's copy this chat and here is it's
+
+16:17.279 --> 16:23.360
+looping it's going to say our account
+
+16:21.000 --> 16:25.839
+then at
+
+16:23.360 --> 16:30.680
+sign some
+
+16:25.839 --> 16:33.680
+a dash or minus sign then another at
+
+16:30.680 --> 16:36.600
+sign to split up the variables and
+
+16:33.680 --> 16:41.199
+strings and we're going to
+
+16:36.600 --> 16:43.600
+put the time this do timer so it's SPL
+
+16:41.199 --> 16:45.560
+it's saying all the things at once and
+
+16:43.600 --> 16:46.480
+those things are being split up between
+
+16:45.560 --> 16:48.560
+these at
+
+16:46.480 --> 16:51.120
+signs and I'll show you what that looks
+
+16:48.560 --> 16:54.079
+like I'm going to apply
+
+16:51.120 --> 16:56.920
+this I'll update the
+
+16:54.079 --> 17:01.720
+level now if I hit this you can see it
+
+16:56.920 --> 17:04.000
+says 18 17 16 15 it's going to go all
+
+17:01.720 --> 17:07.640
+the way to well negative
+
+17:04.000 --> 17:10.480
+Infinity let's just change
+
+17:07.640 --> 17:17.439
+that
+
+17:10.480 --> 17:21.799
+if um if this do timer is greater than
+
+17:17.439 --> 17:24.720
+zero then it's going to go
+
+17:21.799 --> 17:26.199
+down now once it reaches zero we want
+
+17:24.720 --> 17:28.000
+everyone to be able to take it so over
+
+17:26.199 --> 17:30.240
+here where it says if play. account is
+
+17:28.000 --> 17:32.559
+equal to you know the account then it's
+
+17:30.240 --> 17:35.360
+going to be able to be deleted we're
+
+17:32.559 --> 17:38.280
+going to put an or and then or
+
+17:35.360 --> 17:41.240
+this.timer is less than or equal to zero
+
+17:38.280 --> 17:42.559
+so once the timer is zero then anyone
+
+17:41.240 --> 17:44.919
+would be able to take
+
+17:42.559 --> 17:48.880
+it and over
+
+17:44.919 --> 17:51.120
+here let's put another
+
+17:48.880 --> 17:54.320
+statement we're going to take this copy
+
+17:51.120 --> 17:55.760
+this text first and put it over here so
+
+17:54.320 --> 17:58.720
+if the timer is greater than zero then
+
+17:55.760 --> 18:01.200
+it's going to do all this but else so if
+
+17:58.720 --> 18:05.720
+the timer is less than or equal to zero
+
+18:01.200 --> 18:07.760
+then this. chat is equal to free to take
+
+18:05.720 --> 18:11.240
+also just for testing let's lower the
+
+18:07.760 --> 18:11.240
+limit to
+
+18:11.679 --> 18:19.200
+uh 6
+
+18:13.520 --> 18:19.200
+seconds okay let's update that save the
+
+18:20.760 --> 18:26.799
+NPC now let's do this I hit the rock and
+
+18:25.000 --> 18:29.679
+it creates a
+
+18:26.799 --> 18:31.919
+NPC it's going to go to
+
+18:29.679 --> 18:33.280
+zero then it's going to say free to take
+
+18:31.919 --> 18:34.799
+and anyone will be able to take it so
+
+18:33.280 --> 18:37.480
+even though I was the one that hit the
+
+18:34.799 --> 18:39.840
+rock and placed the NPC this test player
+
+18:37.480 --> 18:43.960
+is going to be able to take it now let's
+
+18:39.840 --> 18:49.200
+try this again before it reaches
+
+18:43.960 --> 18:50.840
+zero oh I hit the rock now as the player
+
+18:49.200 --> 18:54.840
+I can't take it
+
+18:50.840 --> 18:56.200
+see but once it's zero I can't take it
+
+18:54.840 --> 18:58.120
+which is great if you're doing a mining
+
+18:56.200 --> 18:59.559
+script if you were doing a Min script
+
+18:58.120 --> 19:02.919
+you want want it to add up so you would
+
+18:59.559 --> 19:06.000
+want to put player. client. gems is
+
+19:02.919 --> 19:08.520
+equal to whatever plus one but we're not
+
+19:06.000 --> 19:10.480
+going to do that anyway I guess this
+
+19:08.520 --> 19:14.280
+tutorial is over I hope you understand
+
+19:10.480 --> 19:18.240
+how to place NPCs better how to send
+
+19:14.280 --> 19:22.960
+over variables to NPCs as you can see
+
+19:18.240 --> 19:26.159
+here in the uh level NPC I'm setting o
+
+19:22.960 --> 19:28.640
+I'm I'm making attribute 3 equal to
+
+19:26.159 --> 19:32.480
+whatever variable I want and then using
+
+19:28.640 --> 19:35.840
+those in the actual uh
+
+19:32.480 --> 19:37.400
+NPC also I explain how to delete them if
+
+19:35.840 --> 19:41.760
+you're going
+
+19:37.400 --> 19:44.840
+from client side in the class and I also
+
+19:41.760 --> 19:47.240
+showed you how to use trigger server in
+
+19:44.840 --> 19:49.400
+classes anyway that concludes the
+
+19:47.240 --> 19:52.039
+tutorial and I want to show you one more
+
+19:49.400 --> 19:53.080
+thing before I go so let's go to this
+
+19:52.039 --> 19:57.240
+level
+
+19:53.080 --> 19:59.200
+editor over here and let's make it
+
+19:57.240 --> 20:04.000
+um
+
+19:59.200 --> 20:06.919
+sleep five then put show again so it's
+
+20:04.000 --> 20:09.400
+going to sleep for 5 seconds then what
+
+20:06.919 --> 20:12.520
+show appears again it you'll be able to
+
+20:09.400 --> 20:14.320
+hit the rock again and create more uh
+
+20:12.520 --> 20:17.919
+rupes and
+
+20:14.320 --> 20:17.919
+gems let's save
+
+20:22.679 --> 20:29.360
+that so we wait for it to reach zero or
+
+20:26.520 --> 20:30.960
+5 seconds and appears again I can hit it
+
+20:29.360 --> 20:32.039
+and there are two now there but I'll
+
+20:30.960 --> 20:34.360
+just take
+
+20:32.039 --> 20:39.120
+both and now if we go to level Eder we
+
+20:34.360 --> 20:39.120
+can copy paste the script a bunch of
+
+20:41.039 --> 20:45.240
+times and we have a bunch of rocks that
+
+20:44.200 --> 20:50.760
+will
+
+20:45.240 --> 20:50.760
+place these gems which you can
+
+20:51.400 --> 20:56.400
+take and that's a pretty basic mining
+
+20:54.440 --> 20:58.720
+script if you wanted to you could add
+
+20:56.400 --> 21:01.480
+animations like a gani or if you
+
+20:58.720 --> 21:02.880
+pronounce it Gan like that so there's
+
+21:01.480 --> 21:05.679
+like a pickaxe and maybe I have health
+
+21:02.880 --> 21:08.159
+through the Rocks but that's another
+
+21:05.679 --> 21:11.600
+day I hope you enjoyed this tutorial and
+
+21:08.159 --> 21:11.600
+I will see you next time

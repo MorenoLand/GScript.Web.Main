@@ -1,0 +1,277 @@
+WEBVTT
+
+00:00.179 --> 00:04.920
+hello and welcome to the 14th tutorial
+
+00:02.639 --> 00:06.740
+on how to program a g-script 2. so let's
+
+00:04.920 --> 00:10.740
+double click our NPC and as you can see
+
+00:06.740 --> 00:13.320
+I added a bunch new lines of code in the
+
+00:10.740 --> 00:17.400
+uncreated function this is pretty much
+
+00:13.320 --> 00:20.880
+the gscript 2 counterpart of
+
+00:17.400 --> 00:23.520
+what we saw in the
+
+00:20.880 --> 00:25.080
+way that the NPCs created in g-script
+
+00:23.520 --> 00:26.519
+one
+
+00:25.080 --> 00:28.800
+cycle look
+
+00:26.519 --> 00:31.160
+and just script one this is what it
+
+00:28.800 --> 00:31.160
+would look like
+
+00:32.220 --> 00:35.520
+now in g-script 2. this is what it would
+
+00:34.620 --> 00:37.739
+look like
+
+00:35.520 --> 00:39.360
+these comments are here so you can see
+
+00:37.739 --> 00:41.640
+what they would look like before I can
+
+00:39.360 --> 00:45.540
+get rid of them if I wanted to this is
+
+00:41.640 --> 00:48.000
+required to tell it that we're going to
+
+00:45.540 --> 00:50.460
+make it look like a player
+
+00:48.000 --> 00:52.440
+make the NPCs look like a player this is
+
+00:50.460 --> 00:56.280
+the hand image
+
+00:52.440 --> 01:00.600
+this these five lines are the colors
+
+00:56.280 --> 01:02.160
+that the NPC has like shoes and sleeves
+
+01:00.600 --> 01:06.299
+the first one
+
+01:02.160 --> 01:09.659
+is the skin the second one is the coat
+
+01:06.299 --> 01:11.540
+the third is the
+
+01:09.659 --> 01:16.619
+sleeves
+
+01:11.540 --> 01:19.320
+the fourth is the shoes and the fifth is
+
+01:16.619 --> 01:21.780
+the belt it says zero one two three four
+
+01:19.320 --> 01:23.820
+five I mean one two three four even
+
+01:21.780 --> 01:26.220
+though I'm saying one two three four
+
+01:23.820 --> 01:28.680
+five but these are arrays and we're not
+
+01:26.220 --> 01:31.460
+gonna get into them right now
+
+01:28.680 --> 01:31.460
+but just know
+
+01:31.680 --> 01:35.759
+that yeah these make the colors of the
+
+01:34.740 --> 01:37.860
+NPC
+
+01:35.759 --> 01:38.700
+this is The Shield image that the NPC
+
+01:37.860 --> 01:42.960
+has
+
+01:38.700 --> 01:44.939
+and this is required so for the image of
+
+01:42.960 --> 01:47.340
+the shield to appear you're not ever
+
+01:44.939 --> 01:49.380
+going to use this outside of making the
+
+01:47.340 --> 01:52.680
+shield appear unless you're going for
+
+01:49.380 --> 01:53.939
+the default growl systems but we're not
+
+01:52.680 --> 01:56.460
+gonna do that
+
+01:53.939 --> 01:58.680
+and this is the NPC's Direction that's
+
+01:56.460 --> 02:01.560
+the way it's facing
+
+01:58.680 --> 02:04.740
+currently it's facing two
+
+02:01.560 --> 02:07.500
+this makes the MPC face downwards
+
+02:04.740 --> 02:10.319
+if we made it to zero it would face
+
+02:07.500 --> 02:12.480
+upwards who made it one it would face
+
+02:10.319 --> 02:13.560
+left and three would make its face to
+
+02:12.480 --> 02:15.000
+right
+
+02:13.560 --> 02:16.920
+now let's add a new line of code here
+
+02:15.000 --> 02:18.140
+make it
+
+02:16.920 --> 02:22.140
+this
+
+02:18.140 --> 02:24.180
+changes the animation of the NPC or it's
+
+02:22.140 --> 02:26.160
+ghani
+
+02:24.180 --> 02:27.720
+we can actually take out this because
+
+02:26.160 --> 02:30.420
+it's not like server side or anything
+
+02:27.720 --> 02:32.940
+but we'll just add that
+
+02:30.420 --> 02:35.760
+this first parameter is the name of the
+
+02:32.940 --> 02:38.520
+ghani which is walk which is default the
+
+02:35.760 --> 02:40.140
+second one isn't very important and
+
+02:38.520 --> 02:42.480
+you can usually Skip and I'm not sure
+
+02:40.140 --> 02:45.300
+what it really does but nothing has ever
+
+02:42.480 --> 02:47.640
+changed when I've changed it
+
+02:45.300 --> 02:50.280
+adding null is the same as adding
+
+02:47.640 --> 02:52.739
+nothing but we're just gonna add note to
+
+02:50.280 --> 02:55.800
+show to show that there's nothing there
+
+02:52.739 --> 02:58.440
+if you want to change the players gone
+
+02:55.800 --> 03:00.360
+and we put set
+
+02:58.440 --> 03:02.700
+Ani
+
+03:00.360 --> 03:04.200
+walk
+
+03:02.700 --> 03:09.120
+no
+
+03:04.200 --> 03:09.120
+this changes the players animation
+
+03:09.959 --> 03:14.459
+so anyway we don't need this here
+
+03:12.599 --> 03:17.220
+let's just save it
+
+03:14.459 --> 03:18.780
+and see what happens
+
+03:17.220 --> 03:21.480
+well you kind of know all we've changed
+
+03:18.780 --> 03:24.800
+is the animation oh we've forgot we
+
+03:21.480 --> 03:24.800
+forgot to take out the second NPC
+
+03:26.280 --> 03:29.640
+there
+
+03:27.720 --> 03:31.200
+it's running downwards at the same time
+
+03:29.640 --> 03:33.000
+while running to the right
+
+03:31.200 --> 03:35.159
+well that concludes this tutorial we
+
+03:33.000 --> 03:37.680
+learned about the gscript 2 version of
+
+03:35.159 --> 03:39.000
+creating the actual NPC and making it
+
+03:37.680 --> 03:41.760
+look like a player
+
+03:39.000 --> 03:43.980
+and we learned how to change the
+
+03:41.760 --> 03:45.659
+animation next tutorial I'm going to
+
+03:43.980 --> 03:49.700
+show a bit we're going to continue on
+
+03:45.659 --> 03:49.700
+our little moving NPC so bye

@@ -1,0 +1,340 @@
+WEBVTT
+
+00:00.120 --> 00:05.839
+hello and welcome to the TR tutorial on
+
+00:02.800 --> 00:09.279
+how to program a gript 2 so in our level
+
+00:05.839 --> 00:09.279
+editor let's drag an NPC
+
+00:09.920 --> 00:13.480
+down and make a
+
+00:15.359 --> 00:20.720
+function on
+
+00:18.279 --> 00:22.880
+created and in this tutorial I'm going
+
+00:20.720 --> 00:25.920
+to teach you one of the single most
+
+00:22.880 --> 00:28.760
+important things of all programming ever
+
+00:25.920 --> 00:30.480
+and that's the loop and specifically a
+
+00:28.760 --> 00:32.040
+for Loop
+
+00:30.480 --> 00:34.160
+there's a lot of different kinds of
+
+00:32.040 --> 00:37.520
+Loops but I'm going to be teaching you
+
+00:34.160 --> 00:40.480
+the for Loop this time so type four
+
+00:37.520 --> 00:43.719
+parentheses semicolon semicolon and
+
+00:40.480 --> 00:43.719
+parenthesis then
+
+00:44.480 --> 00:50.199
+brackets before the for Loop let's add
+
+00:47.239 --> 00:52.320
+this. yellow is equal to
+
+00:50.199 --> 00:55.120
+zero now what the for Loop is going to
+
+00:52.320 --> 00:58.280
+do is that everything these brackets is
+
+00:55.120 --> 01:01.399
+going to run over and over and over
+
+00:58.280 --> 01:02.760
+Forever Until We Tell stop there's a few
+
+01:01.399 --> 01:04.920
+ways to tell it the stop but we're not
+
+01:02.760 --> 01:08.759
+going to do that this time so let's just
+
+01:04.920 --> 01:11.600
+add this. yellow or plus plus it's going
+
+01:08.759 --> 01:13.960
+to add it by one so every time it Loops
+
+01:11.600 --> 01:15.680
+it's going to add Yellow by one so the
+
+01:13.960 --> 01:18.080
+first Loop is going to add it by one
+
+01:15.680 --> 01:20.720
+then it's going to go back up and go
+
+01:18.080 --> 01:23.799
+back down and add another it's going to
+
+01:20.720 --> 01:28.119
+go back up add another then go up
+
+01:23.799 --> 01:30.520
+again so and then let's add a this. chat
+
+01:28.119 --> 01:33.640
+is equal to
+
+01:30.520 --> 01:35.640
+this. yellow the NPC is going to say the
+
+01:33.640 --> 01:36.920
+value of yellow so we'll see it be we'll
+
+01:35.640 --> 01:40.920
+see it as it
+
+01:36.920 --> 01:41.880
+increases then let's add a sleep 0.5 so
+
+01:40.920 --> 01:45.280
+it doesn't
+
+01:41.880 --> 01:46.840
+increase too fast so that we won't even
+
+01:45.280 --> 01:49.560
+be able to
+
+01:46.840 --> 01:52.640
+see what the value is it's just going to
+
+01:49.560 --> 01:55.040
+go up infinitely so let's
+
+01:52.640 --> 01:57.759
+upload and as you can see it's looping
+
+01:55.040 --> 02:00.079
+over and over and adding Yellow by one
+
+01:57.759 --> 02:02.479
+and it's going to do that forever the
+
+02:00.079 --> 02:04.880
+thing is about for Loops is that for
+
+02:02.479 --> 02:07.959
+Loops have a limit to how many times
+
+02:04.880 --> 02:10.319
+they can be looped other Loops don't
+
+02:07.959 --> 02:11.879
+have some other Loops don't have this
+
+02:10.319 --> 02:15.080
+limit but we're not going to into that
+
+02:11.879 --> 02:17.959
+yet so the way to stop it from
+
+02:15.080 --> 02:22.959
+looping is we can do it in two different
+
+02:17.959 --> 02:27.720
+ways for one in the for Loop we can add
+
+02:22.959 --> 02:31.720
+if this do yellow is greater
+
+02:27.720 --> 02:31.720
+than 50
+
+02:32.800 --> 02:39.840
+then in in
+
+02:35.879 --> 02:42.280
+Brackets break so what break does is it
+
+02:39.840 --> 02:44.000
+breaks the for Loop and just skips past
+
+02:42.280 --> 02:47.400
+it and does whatever else is past the
+
+02:44.000 --> 02:49.200
+for Loop we can also if we wanted to
+
+02:47.400 --> 02:52.400
+have four Loops inside of other four
+
+02:49.200 --> 02:53.840
+Loops or whatever other loop we want but
+
+02:52.400 --> 02:56.239
+we're not going to do
+
+02:53.840 --> 02:58.360
+that so it's going to Loop over and over
+
+02:56.239 --> 03:00.959
+and over until yellows is greater than
+
+02:58.360 --> 03:03.840
+50 or it's going to break
+
+03:00.959 --> 03:06.120
+so once it's 51 it's going to break
+
+03:03.840 --> 03:06.120
+let's
+
+03:06.879 --> 03:11.400
+save and we'll wait for it to get
+
+03:11.440 --> 03:15.080
+51 and now it just stops because it
+
+03:13.640 --> 03:16.319
+broke the loop and it's not increasing
+
+03:15.080 --> 03:18.599
+yellow
+
+03:16.319 --> 03:20.200
+anymore so there's another way to make
+
+03:18.599 --> 03:24.640
+it exit the
+
+03:20.200 --> 03:28.319
+loop and that is by adding it into the
+
+03:24.640 --> 03:30.640
+semicolons so let's take out yellow
+
+03:28.319 --> 03:34.239
+here and here
+
+03:30.640 --> 03:35.439
+and here and before the first semicolon
+
+03:34.239 --> 03:39.720
+add
+
+03:35.439 --> 03:42.480
+temp. n is equal to Zer this is creating
+
+03:39.720 --> 03:44.879
+a new variable called n and making it
+
+03:42.480 --> 03:46.519
+equal to zero and this is this variable
+
+03:44.879 --> 03:50.120
+is going to break is going
+
+03:46.519 --> 03:52.480
+to be destroyed once the function is
+
+03:50.120 --> 03:55.400
+done but we won we won't need it then
+
+03:52.480 --> 03:59.480
+and between the semicolons add temp. n
+
+03:55.400 --> 04:03.480
+is greater than or equal to 30 and after
+
+03:59.480 --> 04:03.480
+the last semicolon add temp.
+
+04:03.560 --> 04:09.799
+n++ so the first parameter which is the
+
+04:06.720 --> 04:13.000
+one before the first semicolon creates
+
+04:09.799 --> 04:15.760
+the variable the one in the middle tells
+
+04:13.000 --> 04:18.479
+it what must be true for the for the
+
+04:15.760 --> 04:20.359
+loop to run and the last one increases
+
+04:18.479 --> 04:24.440
+it or decre increases it by whatever you
+
+04:20.359 --> 04:27.040
+want we can also just do equals temp. n
+
+04:24.440 --> 04:30.080
++ one we're just going to do
+
+04:27.040 --> 04:34.960
+Plus+ so once it's equal to or greater
+
+04:30.080 --> 04:37.400
+than 30 it's going to
+
+04:34.960 --> 04:40.400
+break and here let's add this do chat
+
+04:37.400 --> 04:42.759
+equals to n so every time it Loops n is
+
+04:40.400 --> 04:44.759
+going to increase by one and once n is
+
+04:42.759 --> 04:47.639
+greater than 30 it's going to it's going
+
+04:44.759 --> 04:50.080
+to end the loop because because this
+
+04:47.639 --> 04:52.400
+Loop only runs if n is less than or
+
+04:50.080 --> 04:52.400
+equal to
+
+04:55.000 --> 05:01.199
+30 so it's going to keep
+
+04:57.400 --> 05:04.000
+increasing then it gets a 30 and just
+
+05:01.199 --> 05:06.600
+breaks it breaks the
+
+05:04.000 --> 05:08.960
+loop so I guess that's it for this
+
+05:06.600 --> 05:10.639
+tutorial uh you have a faint
+
+05:08.960 --> 05:14.000
+understanding of how to use the for Loop
+
+05:10.639 --> 05:15.560
+now and you can do well I'll show you
+
+05:14.000 --> 05:20.600
+more examples of what you can do next
+
+05:15.560 --> 05:20.600
+tutorial so anyway bye

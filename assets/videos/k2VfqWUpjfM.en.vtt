@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.080 --> 00:05.200
+hello and welcome to the third tutorial
+
+00:02.760 --> 00:06.560
+on how to program a gript 2 this
+
+00:05.200 --> 00:10.759
+tutorial I'm going to show you more
+
+00:06.560 --> 00:12.960
+about RC so RC has a lot of buttons okay
+
+00:10.759 --> 00:16.119
+this one here let's upload files which I
+
+00:12.960 --> 00:18.000
+went over in the last tutorial this is
+
+00:16.119 --> 00:20.600
+the player list which I also went over
+
+00:18.000 --> 00:22.760
+in the last tutorial this one is the
+
+00:20.600 --> 00:24.800
+accounts List It has nothing to do with
+
+00:22.760 --> 00:27.199
+programming you could just ignore it
+
+00:24.800 --> 00:29.679
+I've never found a use for it the same
+
+00:27.199 --> 00:30.920
+with this I've never found a use for it
+
+00:29.679 --> 00:33.000
+it just
+
+00:30.920 --> 00:34.040
+you can ignore these if you're like me
+
+00:33.000 --> 00:35.879
+and just
+
+00:34.040 --> 00:38.600
+program
+
+00:35.879 --> 00:40.800
+so here is the
+
+00:38.600 --> 00:44.360
+options this also is pretty much the
+
+00:40.800 --> 00:46.680
+same thing you know it's nothing to do
+
+00:44.360 --> 00:49.000
+with programming next to that is server
+
+00:46.680 --> 00:51.680
+flx this is very important with
+
+00:49.000 --> 00:54.320
+programming this is like data that's on
+
+00:51.680 --> 00:57.399
+the server itself we'll go over this
+
+00:54.320 --> 01:01.920
+later this is the folder configuration
+
+00:57.399 --> 01:03.879
+right there it's like what files hold
+
+01:01.920 --> 01:05.680
+what kind of what folders hold what kind
+
+01:03.879 --> 01:07.040
+of files you don't really want to mess
+
+01:05.680 --> 01:09.640
+with it unless you know what you're
+
+01:07.040 --> 01:12.479
+doing this is the server options it's
+
+01:09.640 --> 01:16.439
+things like start level uh unstick me
+
+01:12.479 --> 01:18.400
+level like what levels they start with
+
+01:16.439 --> 01:21.560
+the player starts on when they first
+
+01:18.400 --> 01:24.960
+enter like Bush items Badd items things
+
+01:21.560 --> 01:26.360
+like that below is the local NPCs you
+
+01:24.960 --> 01:28.439
+can just ignore this
+
+01:26.360 --> 01:30.240
+one it's same thing like the other
+
+01:28.439 --> 01:32.520
+buttons that don't have anything can do
+
+01:30.240 --> 01:35.360
+with programming below that is the level
+
+01:32.520 --> 01:37.600
+list it does nothing and to the left of
+
+01:35.360 --> 01:41.479
+that is these three buttons these are
+
+01:37.600 --> 01:43.920
+very important this is the NPCs button
+
+01:41.479 --> 01:46.479
+this holds all the scripts for NPCs like
+
+01:43.920 --> 01:48.719
+NPCs that are online which is this are
+
+01:46.479 --> 01:51.479
+different than the ones that are online
+
+01:48.719 --> 01:53.280
+like the one on the level editor and we
+
+01:51.479 --> 01:55.799
+upload you know when you uploaded a noob
+
+01:53.280 --> 01:58.920
+that's a level NPC this is like an
+
+01:55.799 --> 02:01.280
+online NPC online NPCs work a bit
+
+01:58.920 --> 02:04.159
+differently they're a lot harder to
+
+02:01.280 --> 02:06.119
+manage but they can do things a they do
+
+02:04.159 --> 02:08.319
+things a bit differently we'll go over
+
+02:06.119 --> 02:11.400
+that later this is the
+
+02:08.319 --> 02:14.640
+weapons button it holds all the weapons
+
+02:11.400 --> 02:17.440
+like TNT like I mean like this is a
+
+02:14.640 --> 02:22.040
+script that I made these kind of
+
+02:17.440 --> 02:24.239
+scripts are on the player them like
+
+02:22.040 --> 02:26.360
+himself like they could be a HUD in a
+
+02:24.239 --> 02:28.360
+corner or they could be the player's
+
+02:26.360 --> 02:30.879
+movement like how they
+
+02:28.360 --> 02:34.200
+run it's very important this is the
+
+02:30.879 --> 02:36.400
+classes button the last button on the RC
+
+02:34.200 --> 02:38.519
+this holds things like let's it's really
+
+02:36.400 --> 02:41.800
+hard to explain let's say you have a
+
+02:38.519 --> 02:45.800
+let's say you have an NPC and you want
+
+02:41.800 --> 02:48.560
+it to call and you want it to run this
+
+02:45.800 --> 02:50.319
+rock script you want it to run it well
+
+02:48.560 --> 02:52.400
+to do that you would just call the Rock
+
+02:50.319 --> 02:55.360
+script which is a class you call it and
+
+02:52.400 --> 02:58.920
+then this script gets sent over to the
+
+02:55.360 --> 03:00.400
+MPC or or a weapon if you want to do it
+
+02:58.920 --> 03:03.440
+like that
+
+03:00.400 --> 03:05.040
+and that's it for this RC also you if
+
+03:03.440 --> 03:08.480
+you press in the bottom left corner
+
+03:05.040 --> 03:11.680
+start and click RC or remote control
+
+03:08.480 --> 03:14.319
+it'll show you an in-game RC it has
+
+03:11.680 --> 03:17.640
+about the same features as the out of
+
+03:14.319 --> 03:19.000
+game client or for RC except player list
+
+03:17.640 --> 03:22.280
+doesn't
+
+03:19.000 --> 03:25.400
+work the scripts buttons are put into
+
+03:22.280 --> 03:28.200
+just one big button I mean one big
+
+03:25.400 --> 03:31.080
+button and there are two extra buttons
+
+03:28.200 --> 03:33.640
+here this you can turn you can type in
+
+03:31.080 --> 03:36.200
+like a command line or something it'll
+
+03:33.640 --> 03:39.000
+give you help but it's not very helpful
+
+03:36.200 --> 03:42.080
+and here's just GUI control you don't
+
+03:39.000 --> 03:45.319
+really need to do it or use these two
+
+03:42.080 --> 03:47.959
+buttons at least right now so anyway
+
+03:45.319 --> 03:51.239
+that's it for this episode uh now you
+
+03:47.959 --> 03:57.439
+know how to use RC more and the in-game
+
+03:51.239 --> 03:57.439
+RC so uh by bye

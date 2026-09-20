@@ -1,0 +1,967 @@
+WEBVTT
+
+00:00.480 --> 00:04.640
+hello and welcome to the 26 tutorial on
+
+00:02.639 --> 00:06.640
+how to break image script 2.
+
+00:04.640 --> 00:08.639
+and in this tutorial i want to show you
+
+00:06.640 --> 00:10.240
+how to use a
+
+00:08.639 --> 00:11.920
+pretty important thing in gscript 2
+
+00:10.240 --> 00:13.679
+called public
+
+00:11.920 --> 00:14.799
+and i'll explain how what that does when
+
+00:13.679 --> 00:17.119
+we get to it
+
+00:14.799 --> 00:20.240
+the first thing i want to do is
+
+00:17.119 --> 00:22.240
+create an npc
+
+00:20.240 --> 00:25.359
+let's open up this npc here you can just
+
+00:22.240 --> 00:25.359
+ignore these two at the bottom
+
+00:25.760 --> 00:30.080
+okay
+
+00:26.880 --> 00:31.599
+first let's add
+
+00:30.080 --> 00:33.760
+client side
+
+00:31.599 --> 00:36.559
+and add function
+
+00:33.760 --> 00:40.480
+on created
+
+00:36.559 --> 00:43.040
+as soon as the npc is created let's
+
+00:40.480 --> 00:43.040
+set image
+
+00:43.760 --> 00:48.719
+button
+
+00:45.600 --> 00:48.719
+up dot png
+
+00:49.360 --> 00:52.239
+uh
+
+00:50.160 --> 00:54.719
+let's make a new function called
+
+00:52.239 --> 00:56.800
+function on action
+
+00:54.719 --> 00:58.719
+left mouse
+
+00:56.800 --> 00:59.840
+now what on function on function left
+
+00:58.719 --> 01:03.280
+mouse does
+
+00:59.840 --> 01:05.920
+is if you left click the npc then
+
+01:03.280 --> 01:07.920
+whatever is in these brackets will run
+
+01:05.920 --> 01:10.159
+you can also replace this with
+
+01:07.920 --> 01:12.240
+on action right mouse
+
+01:10.159 --> 01:14.159
+and it'll do the same thing but with the
+
+01:12.240 --> 01:16.799
+right mouse button
+
+01:14.159 --> 01:20.479
+let's keep it at left
+
+01:16.799 --> 01:20.479
+and in here let's add
+
+01:20.960 --> 01:23.439
+show
+
+01:21.680 --> 01:25.119
+text
+
+01:23.439 --> 01:26.640
+which is the same which is very similar
+
+01:25.119 --> 01:28.720
+to show image
+
+01:26.640 --> 01:30.400
+and we'll put 200 which is the index
+
+01:28.720 --> 01:32.880
+same thing as show image if it's under
+
+01:30.400 --> 01:34.799
+200 it appears for everyone if it's over
+
+01:32.880 --> 01:37.520
+it appears for just you
+
+01:34.799 --> 01:37.520
+and we'll put
+
+01:39.280 --> 01:44.159
+we'll put this
+
+01:40.720 --> 01:46.799
+dot x comma this dot y
+
+01:44.159 --> 01:49.200
+next what we have to put is
+
+01:46.799 --> 01:51.360
+the uh
+
+01:49.200 --> 01:54.640
+the font we want to use
+
+01:51.360 --> 01:56.000
+let's just put in
+
+01:54.640 --> 01:56.880
+times
+
+01:56.000 --> 01:59.920
+new
+
+01:56.880 --> 02:02.880
+roman baltic you can look at all of your
+
+01:59.920 --> 02:05.360
+fonts that girl has if you go to
+
+02:02.880 --> 02:05.360
+options
+
+02:05.600 --> 02:10.080
+going to
+
+02:07.280 --> 02:10.080
+general i think
+
+02:10.640 --> 02:13.200
+one of these
+
+02:13.599 --> 02:16.400
+and one of them oh
+
+02:17.280 --> 02:21.280
+oh here it is font here you can see all
+
+02:19.200 --> 02:24.560
+the fonts that girl has i'm using
+
+02:21.280 --> 02:26.800
+times new roman baltic anyway
+
+02:24.560 --> 02:28.720
+i just close that
+
+02:26.800 --> 02:30.800
+and
+
+02:28.720 --> 02:32.319
+open up this again
+
+02:30.800 --> 02:36.560
+oops
+
+02:32.319 --> 02:38.160
+okay so what we want to do is
+
+02:36.560 --> 02:40.319
+put this font here
+
+02:38.160 --> 02:43.040
+put comma then null
+
+02:40.319 --> 02:45.840
+this part is very important right now
+
+02:43.040 --> 02:45.840
+now this little
+
+02:47.519 --> 02:51.120
+parameter it's not very important then
+
+02:49.360 --> 02:52.879
+what we're going to put is some text
+
+02:51.120 --> 02:54.640
+that we want like
+
+02:52.879 --> 02:57.280
+hi
+
+02:54.640 --> 03:01.040
+then end the brackets put dot
+
+02:57.280 --> 03:01.040
+layer is equal to 4.
+
+03:01.360 --> 03:06.879
+yeah showing text in jscript2 isn't very
+
+03:05.120 --> 03:09.680
+easy
+
+03:06.879 --> 03:12.800
+showing text anywhere you want i mean
+
+03:09.680 --> 03:14.400
+the index the x the y
+
+03:12.800 --> 03:16.000
+the font
+
+03:14.400 --> 03:17.440
+this part is not very important but you
+
+03:16.000 --> 03:21.040
+can i'm not sure what it does when i
+
+03:17.440 --> 03:22.959
+replace it with something like
+
+03:21.040 --> 03:24.560
+cb i've saw i've seen this on the forums
+
+03:22.959 --> 03:26.720
+before i'm not sure what it does but we
+
+03:24.560 --> 03:28.799
+can just put null here and the font and
+
+03:26.720 --> 03:30.560
+then layer is equal to four what this
+
+03:28.799 --> 03:32.239
+dot layer equals before does is it makes
+
+03:30.560 --> 03:33.760
+it so that you can actually see the show
+
+03:32.239 --> 03:35.680
+text
+
+03:33.760 --> 03:38.239
+um i'm pretty sure the layer has to do
+
+03:35.680 --> 03:40.480
+with what is above what like
+
+03:38.239 --> 03:41.760
+what images are above other images and
+
+03:40.480 --> 03:43.840
+something like that
+
+03:41.760 --> 03:45.360
+but we'll just put it leave it at four
+
+03:43.840 --> 03:47.519
+that's what i recommend
+
+03:45.360 --> 03:51.440
+anyway let's close this
+
+03:47.519 --> 03:51.440
+save it and i'll up the level
+
+03:51.680 --> 03:56.000
+i'm just going to straighten that out
+
+03:53.680 --> 03:58.959
+upload testing and we can see a button
+
+03:56.000 --> 04:01.360
+here it was made by david k by the way
+
+03:58.959 --> 04:04.159
+and if we click it with the left mouse
+
+04:01.360 --> 04:05.439
+it'll say hi here at the top
+
+04:04.159 --> 04:06.560
+left of the screen
+
+04:05.439 --> 04:08.000
+of the
+
+04:06.560 --> 04:10.159
+screen
+
+04:08.000 --> 04:13.280
+you may be wondering we put this dot x
+
+04:10.159 --> 04:15.360
+and this dot y why is it not
+
+04:13.280 --> 04:16.639
+showing the text over the npc
+
+04:15.360 --> 04:17.440
+well
+
+04:16.639 --> 04:20.560
+show
+
+04:17.440 --> 04:24.400
+text is a special little function where
+
+04:20.560 --> 04:24.400
+any kind of x coordinate or y coordinate
+
+04:25.199 --> 04:28.880
+is
+
+04:26.160 --> 04:30.479
+has to do with pixels for example this
+
+04:28.880 --> 04:32.880
+dot x and this dot y
+
+04:30.479 --> 04:33.840
+what tile is this on maybe
+
+04:32.880 --> 04:36.240
+uh
+
+04:33.840 --> 04:39.199
+8 comma 10 well it'll put it at the
+
+04:36.240 --> 04:42.160
+eighth pixel and down 8 pixels
+
+04:39.199 --> 04:44.960
+so what you want to do is put times 16
+
+04:42.160 --> 04:46.400
+which is how many pixels are in a title
+
+04:44.960 --> 04:48.479
+time 16
+
+04:46.400 --> 04:51.040
+and that will make the
+
+04:48.479 --> 04:53.040
+show text appear over the mp over the
+
+04:51.040 --> 04:54.800
+mpc
+
+04:53.040 --> 04:56.479
+save that
+
+04:54.800 --> 04:58.880
+and i'll upload
+
+04:56.479 --> 05:01.199
+i click it and it will appear over
+
+04:58.880 --> 05:03.039
+npc
+
+05:01.199 --> 05:04.720
+uh
+
+05:03.039 --> 05:08.320
+there is a way to make it so that it
+
+05:04.720 --> 05:09.680
+appears based on the tile number but
+
+05:08.320 --> 05:11.520
+let's not get into that now because it
+
+05:09.680 --> 05:13.520
+has to do with image manipulation
+
+05:11.520 --> 05:15.120
+because show text is technically an
+
+05:13.520 --> 05:16.000
+image
+
+05:15.120 --> 05:17.759
+anyway
+
+05:16.000 --> 05:20.320
+after this
+
+05:17.759 --> 05:20.320
+let's add
+
+05:21.360 --> 05:26.080
+set image
+
+05:24.560 --> 05:27.520
+button down
+
+05:26.080 --> 05:29.520
+dot png
+
+05:27.520 --> 05:33.680
+so it'll change the image as soon as we
+
+05:29.520 --> 05:33.680
+click it then it'll sleep two seconds
+
+05:35.120 --> 05:39.400
+then we'll just copy paste this here
+
+05:40.320 --> 05:44.639
+and over here where it says stuff we'll
+
+05:42.320 --> 05:46.400
+just put blanket out so
+
+05:44.639 --> 05:48.280
+the text will just disappear
+
+05:46.400 --> 05:50.000
+and here we'll put it back to
+
+05:48.280 --> 05:54.479
+buttonup.png
+
+05:50.000 --> 05:56.400
+so if we close this save then i upload
+
+05:54.479 --> 05:58.000
+when we click the mpc
+
+05:56.400 --> 05:59.280
+as you can see the npc image changes
+
+05:58.000 --> 06:00.880
+then it
+
+05:59.280 --> 06:04.000
+pops back up
+
+06:00.880 --> 06:06.080
+we click it it says hi pops down pops up
+
+06:04.000 --> 06:08.080
+both of the images were made by david k
+
+06:06.080 --> 06:10.400
+like i said
+
+06:08.080 --> 06:13.280
+now let's say we want
+
+06:10.400 --> 06:14.880
+to not have to put show text whenever we
+
+06:13.280 --> 06:16.400
+want to say
+
+06:14.880 --> 06:17.919
+i mean should we ever want to say hi or
+
+06:16.400 --> 06:19.600
+something we want it to be in a
+
+06:17.919 --> 06:21.199
+different you know
+
+06:19.600 --> 06:23.039
+we just want to put a little command and
+
+06:21.199 --> 06:25.600
+it'll do it for us
+
+06:23.039 --> 06:27.120
+well there's a way to do that
+
+06:25.600 --> 06:27.840
+first let's change this to something
+
+06:27.120 --> 06:29.919
+like
+
+06:27.840 --> 06:31.440
+quest completed so as soon as you click
+
+06:29.919 --> 06:34.720
+the button it'll complete your certain
+
+06:31.440 --> 06:36.800
+quest or whatever you're wanting to do
+
+06:34.720 --> 06:39.520
+then i'll close this
+
+06:36.800 --> 06:42.240
+bring this down and i'll open up
+
+06:39.520 --> 06:42.240
+some weapons
+
+06:43.600 --> 06:46.319
+straighten this out
+
+06:46.960 --> 06:51.039
+now both of these weapons i already have
+
+06:49.039 --> 06:52.639
+added to myself
+
+06:51.039 --> 06:54.000
+and we're going to use
+
+06:52.639 --> 06:57.120
+well we don't need both of them let's
+
+06:54.000 --> 06:58.800
+just use this one and we're going to use
+
+06:57.120 --> 07:00.479
+uh this weapon
+
+06:58.800 --> 07:02.319
+to show
+
+07:00.479 --> 07:05.039
+quest completed whenever we run a
+
+07:02.319 --> 07:09.360
+certain command in any npc or
+
+07:05.039 --> 07:11.199
+any weapon to do this let's put client
+
+07:09.360 --> 07:13.039
+side then put
+
+07:11.199 --> 07:15.120
+public which is a new command i was
+
+07:13.039 --> 07:17.039
+talking about
+
+07:15.120 --> 07:19.759
+public uh
+
+07:17.039 --> 07:19.759
+what should we put
+
+07:20.479 --> 07:24.240
+on
+
+07:22.080 --> 07:24.240
+no
+
+07:24.319 --> 07:27.520
+let's put let's make up our own function
+
+07:26.240 --> 07:28.840
+function
+
+07:27.520 --> 07:32.840
+on
+
+07:28.840 --> 07:32.840
+quest completed
+
+07:34.000 --> 07:38.479
+brackets parentheses now this function
+
+07:37.199 --> 07:40.400
+doesn't really do anything because it's
+
+07:38.479 --> 07:42.240
+not a function that's built in it's our
+
+07:40.400 --> 07:43.120
+own function
+
+07:42.240 --> 07:45.199
+and
+
+07:43.120 --> 07:47.440
+what public does is it allows this
+
+07:45.199 --> 07:50.080
+function to be accessed by any other
+
+07:47.440 --> 07:52.240
+weapon and any npc
+
+07:50.080 --> 07:53.599
+that we want and to do that is i'll show
+
+07:52.240 --> 07:56.879
+you in a second
+
+07:53.599 --> 07:56.879
+let's put in something like
+
+07:57.280 --> 08:02.560
+i'll just copy the
+
+07:59.199 --> 08:02.560
+show text from the npc
+
+08:04.160 --> 08:08.080
+and put it here
+
+08:06.160 --> 08:09.599
+so that as soon as i
+
+08:08.080 --> 08:12.639
+i can call this
+
+08:09.599 --> 08:14.800
+function and it'll say this also let's
+
+08:12.639 --> 08:16.479
+replace this.x because you know weapons
+
+08:14.800 --> 08:19.919
+don't have this.x
+
+08:16.479 --> 08:23.520
+we'll place it with mouse.x
+
+08:19.919 --> 08:25.440
+and then mouse.y
+
+08:23.520 --> 08:26.879
+so whenever we click the npc it'll just
+
+08:25.440 --> 08:28.319
+you know the text will appear on our
+
+08:26.879 --> 08:29.280
+mouse
+
+08:28.319 --> 08:30.560
+now
+
+08:29.280 --> 08:31.759
+alone this weapon isn't going to do
+
+08:30.560 --> 08:34.159
+anything
+
+08:31.759 --> 08:36.959
+but if we want to access this function
+
+08:34.159 --> 08:36.959
+here's what we have to do
+
+08:38.240 --> 08:42.880
+we have to go into the mpc or whatever
+
+08:40.320 --> 08:46.399
+weapon we want to use
+
+08:42.880 --> 08:46.399
+and we have to add
+
+08:46.480 --> 08:49.360
+um
+
+08:47.519 --> 08:51.839
+well first i want to take out this
+
+08:49.360 --> 08:55.480
+show text we don't need that here
+
+08:51.839 --> 08:55.480
+and we'll add um
+
+08:56.640 --> 09:00.399
+find
+
+08:58.080 --> 09:02.720
+weapon
+
+09:00.399 --> 09:04.720
+brackets the name of the weapon and my
+
+09:02.720 --> 09:07.279
+name on my weapon is uh
+
+09:04.720 --> 09:07.279
+one second
+
+09:07.360 --> 09:11.279
+zm underscore test one
+
+09:12.880 --> 09:17.040
+zm
+
+09:14.640 --> 09:19.680
+underscore test one
+
+09:17.040 --> 09:22.880
+next we end the bracket then put dot
+
+09:19.680 --> 09:25.519
+because we're gonna input uh
+
+09:22.880 --> 09:26.640
+the name of the function which is on
+
+09:25.519 --> 09:29.519
+quest
+
+09:26.640 --> 09:32.240
+completed
+
+09:29.519 --> 09:34.720
+yes i think it is
+
+09:32.240 --> 09:34.720
+yeah it is
+
+09:35.600 --> 09:39.040
+next
+
+09:36.560 --> 09:40.880
+we're going to end it with some brackets
+
+09:39.040 --> 09:42.080
+here
+
+09:40.880 --> 09:43.839
+and that's it
+
+09:42.080 --> 09:46.320
+this is going to
+
+09:43.839 --> 09:49.040
+be used to enter a function from a
+
+09:46.320 --> 09:50.399
+different weapon
+
+09:49.040 --> 09:52.720
+keep in mind that
+
+09:50.399 --> 09:55.360
+public needs to be here or else this
+
+09:52.720 --> 09:56.560
+function will not be found because
+
+09:55.360 --> 09:58.320
+you know
+
+09:56.560 --> 10:01.120
+it isn't being it's not able to be
+
+09:58.320 --> 10:04.079
+accessed by other weapons
+
+10:01.120 --> 10:06.480
+so we put this here
+
+10:04.079 --> 10:08.800
+we close it oh we only want to get this
+
+10:06.480 --> 10:08.800
+out too
+
+10:11.519 --> 10:14.240
+close this
+
+10:13.200 --> 10:16.720
+and here
+
+10:14.240 --> 10:17.760
+let's put
+
+10:16.720 --> 10:19.600
+sleep
+
+10:17.760 --> 10:21.279
+two
+
+10:19.600 --> 10:25.040
+and then put show image again so we can
+
+10:21.279 --> 10:25.040
+you know erase the old show image
+
+10:28.079 --> 10:33.920
+and we'll just blank this out right
+
+10:30.839 --> 10:36.399
+here we click apply
+
+10:33.920 --> 10:37.920
+and i'll just lower this here
+
+10:36.399 --> 10:38.880
+i'm going to save this
+
+10:37.920 --> 10:40.480
+level
+
+10:38.880 --> 10:42.720
+and upload it
+
+10:40.480 --> 10:45.200
+so let's see if that works
+
+10:42.720 --> 10:47.839
+it says quest completed but not on our
+
+10:45.200 --> 10:50.560
+mouse
+
+10:47.839 --> 10:50.560
+i wonder why
+
+10:52.079 --> 10:57.440
+let's replace this with
+
+10:54.399 --> 10:57.440
+take out the dot maybe
+
+10:59.120 --> 11:04.079
+yeah there we don't need the dot with
+
+11:00.560 --> 11:06.240
+mouse x so yeah as you can see
+
+11:04.079 --> 11:08.640
+in this npc there is no
+
+11:06.240 --> 11:10.800
+command called show text
+
+11:08.640 --> 11:13.279
+there's nothing there's only find weapon
+
+11:10.800 --> 11:15.200
+and then on quest completed show that is
+
+11:13.279 --> 11:17.920
+a function
+
+11:15.200 --> 11:20.079
+then in the weapon
+
+11:17.920 --> 11:22.320
+zm test one let's just close this gm
+
+11:20.079 --> 11:24.240
+test one we have a public function under
+
+11:22.320 --> 11:26.880
+the name of on quest completed which
+
+11:24.240 --> 11:29.120
+we're going toward and in this function
+
+11:26.880 --> 11:31.279
+we're putting show text which is making
+
+11:29.120 --> 11:33.120
+the text appear waiting two seconds and
+
+11:31.279 --> 11:34.959
+putting show text again to make it
+
+11:33.120 --> 11:36.800
+disappear
+
+11:34.959 --> 11:39.839
+so this is how you use function you can
+
+11:36.800 --> 11:41.279
+use function to call
+
+11:39.839 --> 11:43.360
+any kind of weapon
+
+11:41.279 --> 11:45.519
+from any other weapon or any other npc
+
+11:43.360 --> 11:46.240
+you know it's pretty flexible this way
+
+11:45.519 --> 11:48.880
+you
+
+11:46.240 --> 11:51.360
+keep in mind that the player must have
+
+11:48.880 --> 11:53.839
+this weapon attached to them
+
+11:51.360 --> 11:55.680
+if it's going to be used if this weapon
+
+11:53.839 --> 11:56.959
+were not attached to me like it was off
+
+11:55.680 --> 12:00.079
+of me
+
+11:56.959 --> 12:02.560
+then you know you could not use this
+
+12:00.079 --> 12:03.760
+special little
+
+12:02.560 --> 12:05.040
+fine weapon
+
+12:03.760 --> 12:07.040
+thing here
+
+12:05.040 --> 12:08.399
+anyway that's the end of this tutorial
+
+12:07.040 --> 12:10.399
+and i hope you understand how to use
+
+12:08.399 --> 12:13.519
+public along with this new function
+
+12:10.399 --> 12:17.360
+called on action left mouse
+
+12:13.519 --> 12:17.360
+and i'll see you next time

@@ -1,0 +1,1680 @@
+1
+00:00:00,599 --> 00:00:06,839
+hello and welcome to the 29th tutorial
+
+2
+00:00:03,800 --> 00:00:08,559
+on how to program in gript 2 so in the
+
+3
+00:00:06,839 --> 00:00:11,080
+last few tutorials I've been explaining
+
+4
+00:00:08,559 --> 00:00:13,759
+how to use class scripts and things like
+
+5
+00:00:11,080 --> 00:00:16,920
+that well in this tutorial I want to
+
+6
+00:00:13,759 --> 00:00:20,519
+finish teaching classes and how to use
+
+7
+00:00:16,920 --> 00:00:22,279
+them okay so let's make a mining script
+
+8
+00:00:20,519 --> 00:00:24,880
+in this tutorial first let's go to
+
+9
+00:00:22,279 --> 00:00:28,920
+classes and create a new class and call
+
+10
+00:00:24,880 --> 00:00:34,719
+it gem okay then here let's just put
+
+11
+00:00:28,920 --> 00:00:34,719
+something simple for testing function on
+
+12
+00:00:34,879 --> 00:00:40,800
+created set
+
+13
+00:00:36,960 --> 00:00:43,079
+image what do I want green rupe so it
+
+14
+00:00:40,800 --> 00:00:44,399
+looks like a gem PNG this is an image I
+
+15
+00:00:43,079 --> 00:00:46,120
+have by the way it might not work for
+
+16
+00:00:44,399 --> 00:00:49,640
+you so you want to use something
+
+17
+00:00:46,120 --> 00:00:53,239
+else then to delete it function
+
+18
+00:00:49,640 --> 00:00:57,079
+on player touches
+
+19
+00:00:53,239 --> 00:01:00,879
+me then let's put this do
+
+20
+00:00:57,079 --> 00:01:03,359
+destroy okay let's apply this
+
+21
+00:01:00,879 --> 00:01:05,199
+now let's minimize this and open our
+
+22
+00:01:03,359 --> 00:01:09,560
+level editor you can ignore these two
+
+23
+00:01:05,199 --> 00:01:11,840
+NPCs right here so let's put down a new
+
+24
+00:01:09,560 --> 00:01:14,360
+MPC and add some
+
+25
+00:01:11,840 --> 00:01:18,560
+code what do we
+
+26
+00:01:14,360 --> 00:01:21,439
+want client side function
+
+27
+00:01:18,560 --> 00:01:26,200
+oncreated for an image we're going to
+
+28
+00:01:21,439 --> 00:01:27,920
+put set image orbital Rock another image
+
+29
+00:01:26,200 --> 00:01:32,600
+that I
+
+30
+00:01:27,920 --> 00:01:35,799
+have and here function on was
+
+31
+00:01:32,600 --> 00:01:37,040
+hit okay this is important now we're
+
+32
+00:01:35,799 --> 00:01:42,159
+going to
+
+33
+00:01:37,040 --> 00:01:43,680
+put a command called Trigger action now
+
+34
+00:01:42,159 --> 00:01:46,600
+I've explained this in the past but I've
+
+35
+00:01:43,680 --> 00:01:49,520
+never been able to show an actual
+
+36
+00:01:46,600 --> 00:01:53,240
+playable example now what Trigger action
+
+37
+00:01:49,520 --> 00:01:54,799
+does what Trigger action is
+
+38
+00:01:53,240 --> 00:01:59,079
+is
+
+39
+00:01:54,799 --> 00:02:01,240
+and is trigger server for level NPCs now
+
+40
+00:01:59,079 --> 00:02:03,640
+trigger server trigger server will not
+
+41
+00:02:01,240 --> 00:02:04,880
+work for level NPCs and I'm not sure why
+
+42
+00:02:03,640 --> 00:02:07,880
+I think it has to do something with
+
+43
+00:02:04,880 --> 00:02:09,319
+level NPCs technically not having an ID
+
+44
+00:02:07,880 --> 00:02:11,000
+so the server can't reach them or
+
+45
+00:02:09,319 --> 00:02:12,840
+something like that so we have to put
+
+46
+00:02:11,000 --> 00:02:15,480
+Tri Trigger
+
+47
+00:02:12,840 --> 00:02:18,239
+action now the first parameter we're
+
+48
+00:02:15,480 --> 00:02:20,840
+going to put this.x second
+
+49
+00:02:18,239 --> 00:02:23,319
+this.y now this is the location of the
+
+50
+00:02:20,840 --> 00:02:26,720
+actual action and we want it to be on
+
+51
+00:02:23,319 --> 00:02:28,959
+the NPC I'm not sure what changing is
+
+52
+00:02:26,720 --> 00:02:30,480
+even does putting them to zero and zero
+
+53
+00:02:28,959 --> 00:02:32,800
+makes it not even work and the only way
+
+54
+00:02:30,480 --> 00:02:35,040
+I've been able to make it even be used
+
+55
+00:02:32,800 --> 00:02:37,040
+is to put this.x and this.y or just X
+
+56
+00:02:35,040 --> 00:02:41,280
+and Y and that just it just
+
+57
+00:02:37,040 --> 00:02:44,920
+automatically gets it okay anyway let's
+
+58
+00:02:41,280 --> 00:02:46,080
+put some quotes here and then put n
+
+59
+00:02:44,920 --> 00:02:48,720
+because we don't want to send any
+
+60
+00:02:46,080 --> 00:02:53,400
+variables over now over here on server
+
+61
+00:02:48,720 --> 00:02:56,080
+side we're going to put function on
+
+62
+00:02:53,400 --> 00:02:58,920
+action and leave it like that for
+
+63
+00:02:56,080 --> 00:03:01,400
+now okay so over here in the quotes the
+
+64
+00:02:58,920 --> 00:03:03,920
+third parameter of trigger Trigger
+
+65
+00:03:01,400 --> 00:03:07,239
+action is pretty important this
+
+66
+00:03:03,920 --> 00:03:09,360
+specifies which trigger I mean which fun
+
+67
+00:03:07,239 --> 00:03:12,159
+what what which onaction function we
+
+68
+00:03:09,360 --> 00:03:16,440
+want to go to so if we put something
+
+69
+00:03:12,159 --> 00:03:19,720
+like make gem and over here on function
+
+70
+00:03:16,440 --> 00:03:22,080
+on action we put make gem then this
+
+71
+00:03:19,720 --> 00:03:24,760
+Trigger action would know to go to this
+
+72
+00:03:22,080 --> 00:03:28,239
+function over here now if we change this
+
+73
+00:03:24,760 --> 00:03:31,319
+to maybe put gem instead of make gem it
+
+74
+00:03:28,239 --> 00:03:34,040
+would go hey where is make gem I only
+
+75
+00:03:31,319 --> 00:03:36,239
+see put Gem and it won't even work so we
+
+76
+00:03:34,040 --> 00:03:38,040
+need to make these equal let's just
+
+77
+00:03:36,239 --> 00:03:42,519
+replace this
+
+78
+00:03:38,040 --> 00:03:44,560
+with put gem okay so here's our function
+
+79
+00:03:42,519 --> 00:03:47,920
+in the function we're going to put put
+
+80
+00:03:44,560 --> 00:03:49,720
+npc2 and drop down the class as an NPC
+
+81
+00:03:47,920 --> 00:03:54,519
+which I've showed you
+
+82
+00:03:49,720 --> 00:03:57,280
+previously X well we want to put this.x
+
+83
+00:03:54,519 --> 00:04:02,040
+this.y this is where the NPC is going to
+
+84
+00:03:57,280 --> 00:04:05,159
+go and then all this all these crazy
+
+85
+00:04:02,040 --> 00:04:05,159
+letters and
+
+86
+00:04:07,000 --> 00:04:10,439
+symbols is that
+
+87
+00:04:10,799 --> 00:04:15,480
+right possibly okay so here's our here's
+
+88
+00:04:13,920 --> 00:04:20,000
+the name of our class that we're going
+
+89
+00:04:15,480 --> 00:04:20,000
+to put down as an NPC let's close
+
+90
+00:04:22,120 --> 00:04:27,120
+this now oh we don't want
+
+91
+00:04:28,600 --> 00:04:33,199
+that let's clear the level
+
+92
+00:04:35,800 --> 00:04:41,840
+first
+
+93
+00:04:38,000 --> 00:04:44,120
+there now I'm going to save it
+
+94
+00:04:41,840 --> 00:04:48,080
+again now I'm going to hit
+
+95
+00:04:44,120 --> 00:04:50,440
+it oh why isn't anything happening well
+
+96
+00:04:48,080 --> 00:04:51,720
+there's a reason for that if we go to
+
+97
+00:04:50,440 --> 00:04:54,360
+our level
+
+98
+00:04:51,720 --> 00:04:56,639
+editor and we go here we can see
+
+99
+00:04:54,360 --> 00:05:00,199
+everything looks right Trigger action
+
+100
+00:04:56,639 --> 00:05:02,400
+and put npc2 well here's a problem with
+
+101
+00:05:00,199 --> 00:05:07,720
+triger action you can't use it unless
+
+102
+00:05:02,400 --> 00:05:10,280
+you specify the set shape of the um NPC
+
+103
+00:05:07,720 --> 00:05:12,960
+on server side so let's just do that
+
+104
+00:05:10,280 --> 00:05:15,520
+function on created so as soon as the
+
+105
+00:05:12,960 --> 00:05:19,639
+NPC is created it's going to have a set
+
+106
+00:05:15,520 --> 00:05:21,919
+shape set shape 1 comma 32 comma 32 now
+
+107
+00:05:19,639 --> 00:05:23,840
+don't ask why you need this to use
+
+108
+00:05:21,919 --> 00:05:26,960
+Trigger action but you need to have set
+
+109
+00:05:23,840 --> 00:05:30,160
+shape somewhere in server side before
+
+110
+00:05:26,960 --> 00:05:35,360
+you are able to use Trigger action
+
+111
+00:05:30,160 --> 00:05:35,360
+so now that we got that let's save it
+
+112
+00:05:36,280 --> 00:05:45,680
+again and hit it nothing's happening
+
+113
+00:05:41,919 --> 00:05:48,400
+again let's clear the NPCs one more
+
+114
+00:05:45,680 --> 00:05:51,880
+time
+
+115
+00:05:48,400 --> 00:05:51,880
+nope here's our
+
+116
+00:05:53,600 --> 00:05:57,080
+class here is our
+
+117
+00:05:58,479 --> 00:06:01,479
+NPC
+
+118
+00:06:04,800 --> 00:06:10,680
+um it's probably something really simple
+
+119
+00:06:07,000 --> 00:06:10,680
+that I I'm totally
+
+120
+00:06:17,479 --> 00:06:23,120
+missing okay I think I figured it out
+
+121
+00:06:20,360 --> 00:06:26,280
+when I open this I'm putting
+
+122
+00:06:23,120 --> 00:06:28,599
+the uh class onto the
+
+123
+00:06:26,280 --> 00:06:30,680
+NPC which is blocking it so if I put
+
+124
+00:06:28,599 --> 00:06:32,319
+something like Plus one for the X I'll
+
+125
+00:06:30,680 --> 00:06:36,960
+be able to see it
+
+126
+00:06:32,319 --> 00:06:36,960
+now wasn't really a programming eror
+
+127
+00:06:37,560 --> 00:06:42,520
+just I couldn't see the image
+
+128
+00:06:40,360 --> 00:06:43,960
+anyway as you can see there's some of
+
+129
+00:06:42,520 --> 00:06:47,199
+the image let me just change that a bit
+
+130
+00:06:43,960 --> 00:06:48,560
+and make it a bit more so there this is
+
+131
+00:06:47,199 --> 00:06:50,759
+xals
+
+132
+00:06:48,560 --> 00:06:53,960
+2
+
+133
+00:06:50,759 --> 00:06:56,720
+okay I hit it there it is and if I hit
+
+134
+00:06:53,960 --> 00:07:00,400
+the uh rupe it'll be
+
+135
+00:06:56,720 --> 00:07:03,639
+destroyed okay well we have that now
+
+136
+00:07:00,400 --> 00:07:06,520
+let's open our NPC again and put hide so
+
+137
+00:07:03,639 --> 00:07:08,680
+it hides The Rock once the and you can't
+
+138
+00:07:06,520 --> 00:07:11,639
+even use the rock anymore once the uh
+
+139
+00:07:08,680 --> 00:07:13,919
+NPC is placed okay let's save that one
+
+140
+00:07:11,639 --> 00:07:17,039
+more time and
+
+141
+00:07:13,919 --> 00:07:19,120
+upload there there's the rupe and we can
+
+142
+00:07:17,039 --> 00:07:21,360
+hit it it'll disappear now let's open
+
+143
+00:07:19,120 --> 00:07:24,280
+our class
+
+144
+00:07:21,360 --> 00:07:29,479
+again let's delete this function
+
+145
+00:07:24,280 --> 00:07:33,199
+here and add a client side client side
+
+146
+00:07:29,479 --> 00:07:38,240
+then let's put function no no
+
+147
+00:07:33,199 --> 00:07:38,240
+functions yeah yes function function on
+
+148
+00:07:39,840 --> 00:07:45,159
+created and then
+
+149
+00:07:42,360 --> 00:07:48,039
+put we'll just leave that for now then
+
+150
+00:07:45,159 --> 00:07:51,680
+over here we're going to put function
+
+151
+00:07:48,039 --> 00:07:53,680
+on player touches
+
+152
+00:07:51,680 --> 00:07:55,840
+me and we're going to make it so that if
+
+153
+00:07:53,680 --> 00:07:58,240
+a player touches it on client side it's
+
+154
+00:07:55,840 --> 00:08:01,240
+going to be destroyed so let's put
+
+155
+00:07:58,240 --> 00:08:04,759
+something uh
+
+156
+00:08:01,240 --> 00:08:08,080
+if we're going to put trigger server and
+
+157
+00:08:04,759 --> 00:08:11,039
+instead ofgi we're going to put NPC
+
+158
+00:08:08,080 --> 00:08:13,159
+since this is technically an NPC then
+
+159
+00:08:11,039 --> 00:08:16,720
+we're going to put uh what we want to
+
+160
+00:08:13,159 --> 00:08:21,680
+destroy this. name then
+
+161
+00:08:16,720 --> 00:08:25,159
+null up here we're going to put function
+
+162
+00:08:21,680 --> 00:08:29,599
+on action server
+
+163
+00:08:25,159 --> 00:08:31,240
+side I'm going to put this dot destroy
+
+164
+00:08:29,599 --> 00:08:33,399
+so seeing this right now actually I'm
+
+165
+00:08:31,240 --> 00:08:36,200
+going to take out the on created since
+
+166
+00:08:33,399 --> 00:08:39,120
+it's taking up room so when you look at
+
+167
+00:08:36,200 --> 00:08:40,839
+this it should work right on client side
+
+168
+00:08:39,120 --> 00:08:42,719
+if any player touches it it's going to
+
+169
+00:08:40,839 --> 00:08:45,080
+go to server side and Destroy for
+
+170
+00:08:42,719 --> 00:08:46,519
+everyone well that's actually not the
+
+171
+00:08:45,080 --> 00:08:48,880
+case this will not work and I'll show
+
+172
+00:08:46,519 --> 00:08:48,880
+you right
+
+173
+00:08:49,160 --> 00:08:56,040
+now let me just upload a level again I
+
+174
+00:08:52,880 --> 00:08:57,800
+create this hery and I hit it and hey
+
+175
+00:08:56,040 --> 00:09:01,720
+it's not working well there's a reason
+
+176
+00:08:57,800 --> 00:09:04,000
+for that If This Were instead of client
+
+177
+00:09:01,720 --> 00:09:07,160
+side on server side then it would
+
+178
+00:09:04,000 --> 00:09:10,120
+actually work well if this destroy was
+
+179
+00:09:07,160 --> 00:09:12,480
+under uh on play touches me but since
+
+180
+00:09:10,120 --> 00:09:14,120
+under client side it's not working and
+
+181
+00:09:12,480 --> 00:09:17,240
+there's a reason for that for some
+
+182
+00:09:14,120 --> 00:09:20,000
+reason classes if you try to try to use
+
+183
+00:09:17,240 --> 00:09:21,760
+try to destroy them by using trigger
+
+184
+00:09:20,000 --> 00:09:23,920
+server I mean using trigger server it's
+
+185
+00:09:21,760 --> 00:09:25,800
+not going to work this.name it doesn't
+
+186
+00:09:23,920 --> 00:09:28,120
+know what this.name is of course we know
+
+187
+00:09:25,800 --> 00:09:31,320
+we're trying to specify the this current
+
+188
+00:09:28,120 --> 00:09:33,560
+class but it doesn't know well to
+
+189
+00:09:31,320 --> 00:09:36,600
+counter that over here on oncreated
+
+190
+00:09:33,560 --> 00:09:38,160
+we're going to put
+
+191
+00:09:36,600 --> 00:09:40,200
+this.at
+
+192
+00:09:38,160 --> 00:09:43,200
+attribute and in the attribute we're
+
+193
+00:09:40,200 --> 00:09:45,720
+going to put a number three so it's in
+
+194
+00:09:43,200 --> 00:09:48,519
+Array really then we're going to put
+
+195
+00:09:45,720 --> 00:09:53,160
+this.name then down here instead of
+
+196
+00:09:48,519 --> 00:09:57,079
+this.name going to put this. ATR at then
+
+197
+00:09:53,160 --> 00:09:59,839
+two now ATR is like a special array or
+
+198
+00:09:57,079 --> 00:10:02,320
+whatever that has these variables and
+
+199
+00:09:59,839 --> 00:10:04,839
+they apparently can get held for
+
+200
+00:10:02,320 --> 00:10:06,839
+different classes I'm not very sure but
+
+201
+00:10:04,839 --> 00:10:10,880
+whatever the case you have to have this
+
+202
+00:10:06,839 --> 00:10:11,920
+on oncreated on server side to be able
+
+203
+00:10:10,880 --> 00:10:16,760
+to
+
+204
+00:10:11,920 --> 00:10:20,040
+call uh this exact NPC and make it be
+
+205
+00:10:16,760 --> 00:10:24,560
+destroyed okay let's reply
+
+206
+00:10:20,040 --> 00:10:24,560
+that and let's clear the
+
+207
+00:10:25,399 --> 00:10:31,040
+area next let's update the level again
+
+208
+00:10:31,120 --> 00:10:34,399
+and it's I touched it and it disappeared
+
+209
+00:10:33,160 --> 00:10:37,959
+so we know it's
+
+210
+00:10:34,399 --> 00:10:40,200
+working so we have some uh of our mining
+
+211
+00:10:37,959 --> 00:10:42,560
+script done but there's more we can do
+
+212
+00:10:40,200 --> 00:10:44,600
+let's open our level editor again and
+
+213
+00:10:42,560 --> 00:10:48,560
+here right before put NPC 2 we're going
+
+214
+00:10:44,600 --> 00:10:51,480
+to put temp.
+
+215
+00:10:48,560 --> 00:10:53,360
+obj equals I'll space it out so it's
+
+216
+00:10:51,480 --> 00:10:55,920
+easier to
+
+217
+00:10:53,360 --> 00:10:58,760
+read then over here we're going to put
+
+218
+00:10:55,920 --> 00:11:00,399
+temp do actually I'm going to explain
+
+219
+00:10:58,760 --> 00:11:02,320
+that first first what we're doing is
+
+220
+00:11:00,399 --> 00:11:05,720
+we're making the
+
+221
+00:11:02,320 --> 00:11:08,839
+NPC that we just placed down as a class
+
+222
+00:11:05,720 --> 00:11:13,000
+equal to this temp
+
+223
+00:11:08,839 --> 00:11:16,880
+variable now if we take this and put
+
+224
+00:11:13,000 --> 00:11:19,519
+temp. obj which is the NPC that we just
+
+225
+00:11:16,880 --> 00:11:22,519
+Place input
+
+226
+00:11:19,519 --> 00:11:24,680
+a and some a number other than two since
+
+227
+00:11:22,519 --> 00:11:27,320
+we're already using that we can put
+
+228
+00:11:24,680 --> 00:11:29,959
+equals whatever variable we want since
+
+229
+00:11:27,320 --> 00:11:32,920
+we can put um
+
+230
+00:11:29,959 --> 00:11:34,480
+hello or something like that well let's
+
+231
+00:11:32,920 --> 00:11:37,519
+put something more practical like let's
+
+232
+00:11:34,480 --> 00:11:40,240
+put the player. account so the player
+
+233
+00:11:37,519 --> 00:11:43,360
+that just hit the
+
+234
+00:11:40,240 --> 00:11:47,399
+rock and placed the NPC down we're going
+
+235
+00:11:43,360 --> 00:11:50,000
+to have a variable in that specific NPC
+
+236
+00:11:47,399 --> 00:11:51,320
+equal to the player's account name and
+
+237
+00:11:50,000 --> 00:11:55,120
+I'll see you show you what that does in
+
+238
+00:11:51,320 --> 00:11:58,639
+a second let's close this save it and
+
+239
+00:11:55,120 --> 00:12:00,959
+over here in the NPC let's put function
+
+240
+00:11:58,639 --> 00:12:00,959
+on
+
+241
+00:12:01,519 --> 00:12:10,600
+created and then put under client side
+
+242
+00:12:04,959 --> 00:12:15,040
+and put this. chat is equal to ATR and
+
+243
+00:12:10,600 --> 00:12:17,920
+three I mean this do ATR that I put this
+
+244
+00:12:15,040 --> 00:12:19,040
+dot here oh doesn't need there but here
+
+245
+00:12:17,920 --> 00:12:22,040
+you need it
+
+246
+00:12:19,040 --> 00:12:22,040
+apparently
+
+247
+00:12:22,160 --> 00:12:27,560
+okay let's upload
+
+248
+00:12:24,560 --> 00:12:29,639
+it I'm going to hit it and just it's
+
+249
+00:12:27,560 --> 00:12:32,680
+saying my account
+
+250
+00:12:29,639 --> 00:12:35,760
+that's great so we can take it now and
+
+251
+00:12:32,680 --> 00:12:38,480
+that's good but for our mining script we
+
+252
+00:12:35,760 --> 00:12:41,519
+can see that this player right
+
+253
+00:12:38,480 --> 00:12:43,000
+here we're going to update the level if
+
+254
+00:12:41,519 --> 00:12:47,959
+they hit
+
+255
+00:12:43,000 --> 00:12:50,839
+it and drop down the uh oh I'm making
+
+256
+00:12:47,959 --> 00:12:55,199
+the rock hide on client side I should
+
+257
+00:12:50,839 --> 00:12:58,399
+change that they're making the class
+
+258
+00:12:55,199 --> 00:13:01,959
+appear with their uh account on it but I
+
+259
+00:12:58,399 --> 00:13:03,360
+can still take it well let's change that
+
+260
+00:13:01,959 --> 00:13:06,720
+first let's go into levelator and make
+
+261
+00:13:03,360 --> 00:13:10,440
+it so it hides on server side let's put
+
+262
+00:13:06,720 --> 00:13:13,760
+that here on server side okay that's
+
+263
+00:13:10,440 --> 00:13:16,600
+good then we're going to hide that we
+
+264
+00:13:13,760 --> 00:13:16,600
+going to test
+
+265
+00:13:17,240 --> 00:13:23,399
+it yeah it works okay now here in the
+
+266
+00:13:23,519 --> 00:13:30,160
+class let's put something useful for
+
+267
+00:13:27,760 --> 00:13:34,880
+this variable we have here that is
+
+268
+00:13:30,160 --> 00:13:34,880
+holding the player's account we can
+
+269
+00:13:36,040 --> 00:13:41,160
+put this do no let's not put that yet
+
+270
+00:13:39,480 --> 00:13:43,160
+let's
+
+271
+00:13:41,160 --> 00:13:47,519
+put over
+
+272
+00:13:43,160 --> 00:13:49,839
+here if player. account so if the
+
+273
+00:13:47,519 --> 00:13:53,880
+player's touching it if their account is
+
+274
+00:13:49,839 --> 00:13:58,800
+equal to this do a
+
+275
+00:13:53,880 --> 00:14:00,639
+ATR so if it's equal to the account then
+
+276
+00:13:58,800 --> 00:14:04,279
+that pressed it
+
+277
+00:14:00,639 --> 00:14:09,000
+earlier then we're going to drop
+
+278
+00:14:04,279 --> 00:14:12,560
+it I'm back now where was I oh yeah if
+
+279
+00:14:09,000 --> 00:14:18,040
+player. account is equal to the account
+
+280
+00:14:12,560 --> 00:14:18,040
+of the player who first made the NPC
+
+281
+00:14:18,399 --> 00:14:22,360
+appear then we're going to have this
+
+282
+00:14:24,519 --> 00:14:29,279
+happen Okay let's apply
+
+283
+00:14:27,680 --> 00:14:30,839
+that
+
+284
+00:14:29,279 --> 00:14:34,040
+then we're going to upload this
+
+285
+00:14:30,839 --> 00:14:35,639
+again now if I hit it and select the
+
+286
+00:14:34,040 --> 00:14:38,040
+other
+
+287
+00:14:35,639 --> 00:14:41,399
+player well who's in trial right now so
+
+288
+00:14:38,040 --> 00:14:44,440
+I'll show you in a second but I can take
+
+289
+00:14:41,399 --> 00:14:49,079
+it but now if I update the
+
+290
+00:14:44,440 --> 00:14:53,279
+level hit it it has my account now on it
+
+291
+00:14:49,079 --> 00:14:54,480
+but but if I let the other player take
+
+292
+00:14:53,279 --> 00:14:56,839
+it he's not going to be able to which
+
+293
+00:14:54,480 --> 00:14:59,639
+I'll show you in a second with the trial
+
+294
+00:14:56,839 --> 00:15:03,399
+Observer mode is out one
+
+295
+00:14:59,639 --> 00:15:05,920
+second okay I'm back now
+
+296
+00:15:03,399 --> 00:15:08,600
+look as you can see I'm moving around
+
+297
+00:15:05,920 --> 00:15:10,639
+this test account right now and if he
+
+298
+00:15:08,600 --> 00:15:13,800
+tries to take it he's not going to be
+
+299
+00:15:10,639 --> 00:15:17,000
+able to because his count isn't equal to
+
+300
+00:15:13,800 --> 00:15:20,320
+AT3 which is the account that was set
+
+301
+00:15:17,000 --> 00:15:23,120
+when I hit the rock here but if I try to
+
+302
+00:15:20,320 --> 00:15:24,120
+take it it will work now in terms of a
+
+303
+00:15:23,120 --> 00:15:27,920
+mining
+
+304
+00:15:24,120 --> 00:15:30,319
+script this is pretty good but let's say
+
+305
+00:15:27,920 --> 00:15:34,720
+the player goes off line now it's going
+
+306
+00:15:30,319 --> 00:15:36,000
+to have a um rupee right here that no
+
+307
+00:15:34,720 --> 00:15:37,480
+one be able to take because it's going
+
+308
+00:15:36,000 --> 00:15:39,759
+to have my account on it and no one can
+
+309
+00:15:37,480 --> 00:15:42,240
+take it well let's just straighten that
+
+310
+00:15:39,759 --> 00:15:47,240
+out right here let's go here and on Crea
+
+311
+00:15:42,240 --> 00:15:51,639
+let's put this dot timer equals whatever
+
+312
+00:15:47,240 --> 00:15:55,680
+you want 20 then we're going to put on
+
+313
+00:15:51,639 --> 00:15:57,600
+timeout here we're going to put function
+
+314
+00:15:55,680 --> 00:15:59,440
+on
+
+315
+00:15:57,600 --> 00:16:01,440
+timeout
+
+316
+00:15:59,440 --> 00:16:03,199
+here we're going to put set timer which
+
+317
+00:16:01,440 --> 00:16:07,480
+is going to take one
+
+318
+00:16:03,199 --> 00:16:10,839
+second um here let's put this
+
+319
+00:16:07,480 --> 00:16:14,000
+dot timer minus minus so it's going to
+
+320
+00:16:10,839 --> 00:16:17,279
+subtract one every second then here
+
+321
+00:16:14,000 --> 00:16:21,000
+let's copy this chat and here is it's
+
+322
+00:16:17,279 --> 00:16:23,360
+looping it's going to say our account
+
+323
+00:16:21,000 --> 00:16:25,839
+then at
+
+324
+00:16:23,360 --> 00:16:30,680
+sign some
+
+325
+00:16:25,839 --> 00:16:33,680
+a dash or minus sign then another at
+
+326
+00:16:30,680 --> 00:16:36,600
+sign to split up the variables and
+
+327
+00:16:33,680 --> 00:16:41,199
+strings and we're going to
+
+328
+00:16:36,600 --> 00:16:43,600
+put the time this do timer so it's SPL
+
+329
+00:16:41,199 --> 00:16:45,560
+it's saying all the things at once and
+
+330
+00:16:43,600 --> 00:16:46,480
+those things are being split up between
+
+331
+00:16:45,560 --> 00:16:48,560
+these at
+
+332
+00:16:46,480 --> 00:16:51,120
+signs and I'll show you what that looks
+
+333
+00:16:48,560 --> 00:16:54,079
+like I'm going to apply
+
+334
+00:16:51,120 --> 00:16:56,920
+this I'll update the
+
+335
+00:16:54,079 --> 00:17:01,720
+level now if I hit this you can see it
+
+336
+00:16:56,920 --> 00:17:04,000
+says 18 17 16 15 it's going to go all
+
+337
+00:17:01,720 --> 00:17:07,640
+the way to well negative
+
+338
+00:17:04,000 --> 00:17:10,480
+Infinity let's just change
+
+339
+00:17:07,640 --> 00:17:17,439
+that
+
+340
+00:17:10,480 --> 00:17:21,799
+if um if this do timer is greater than
+
+341
+00:17:17,439 --> 00:17:24,720
+zero then it's going to go
+
+342
+00:17:21,799 --> 00:17:26,199
+down now once it reaches zero we want
+
+343
+00:17:24,720 --> 00:17:28,000
+everyone to be able to take it so over
+
+344
+00:17:26,199 --> 00:17:30,240
+here where it says if play. account is
+
+345
+00:17:28,000 --> 00:17:32,559
+equal to you know the account then it's
+
+346
+00:17:30,240 --> 00:17:35,360
+going to be able to be deleted we're
+
+347
+00:17:32,559 --> 00:17:38,280
+going to put an or and then or
+
+348
+00:17:35,360 --> 00:17:41,240
+this.timer is less than or equal to zero
+
+349
+00:17:38,280 --> 00:17:42,559
+so once the timer is zero then anyone
+
+350
+00:17:41,240 --> 00:17:44,919
+would be able to take
+
+351
+00:17:42,559 --> 00:17:48,880
+it and over
+
+352
+00:17:44,919 --> 00:17:51,120
+here let's put another
+
+353
+00:17:48,880 --> 00:17:54,320
+statement we're going to take this copy
+
+354
+00:17:51,120 --> 00:17:55,760
+this text first and put it over here so
+
+355
+00:17:54,320 --> 00:17:58,720
+if the timer is greater than zero then
+
+356
+00:17:55,760 --> 00:18:01,200
+it's going to do all this but else so if
+
+357
+00:17:58,720 --> 00:18:05,720
+the timer is less than or equal to zero
+
+358
+00:18:01,200 --> 00:18:07,760
+then this. chat is equal to free to take
+
+359
+00:18:05,720 --> 00:18:11,240
+also just for testing let's lower the
+
+360
+00:18:07,760 --> 00:18:11,240
+limit to
+
+361
+00:18:11,679 --> 00:18:19,200
+uh 6
+
+362
+00:18:13,520 --> 00:18:19,200
+seconds okay let's update that save the
+
+363
+00:18:20,760 --> 00:18:26,799
+NPC now let's do this I hit the rock and
+
+364
+00:18:25,000 --> 00:18:29,679
+it creates a
+
+365
+00:18:26,799 --> 00:18:31,919
+NPC it's going to go to
+
+366
+00:18:29,679 --> 00:18:33,280
+zero then it's going to say free to take
+
+367
+00:18:31,919 --> 00:18:34,799
+and anyone will be able to take it so
+
+368
+00:18:33,280 --> 00:18:37,480
+even though I was the one that hit the
+
+369
+00:18:34,799 --> 00:18:39,840
+rock and placed the NPC this test player
+
+370
+00:18:37,480 --> 00:18:43,960
+is going to be able to take it now let's
+
+371
+00:18:39,840 --> 00:18:49,200
+try this again before it reaches
+
+372
+00:18:43,960 --> 00:18:50,840
+zero oh I hit the rock now as the player
+
+373
+00:18:49,200 --> 00:18:54,840
+I can't take it
+
+374
+00:18:50,840 --> 00:18:56,200
+see but once it's zero I can't take it
+
+375
+00:18:54,840 --> 00:18:58,120
+which is great if you're doing a mining
+
+376
+00:18:56,200 --> 00:18:59,559
+script if you were doing a Min script
+
+377
+00:18:58,120 --> 00:19:02,919
+you want want it to add up so you would
+
+378
+00:18:59,559 --> 00:19:06,000
+want to put player. client. gems is
+
+379
+00:19:02,919 --> 00:19:08,520
+equal to whatever plus one but we're not
+
+380
+00:19:06,000 --> 00:19:10,480
+going to do that anyway I guess this
+
+381
+00:19:08,520 --> 00:19:14,280
+tutorial is over I hope you understand
+
+382
+00:19:10,480 --> 00:19:18,240
+how to place NPCs better how to send
+
+383
+00:19:14,280 --> 00:19:22,960
+over variables to NPCs as you can see
+
+384
+00:19:18,240 --> 00:19:26,159
+here in the uh level NPC I'm setting o
+
+385
+00:19:22,960 --> 00:19:28,640
+I'm I'm making attribute 3 equal to
+
+386
+00:19:26,159 --> 00:19:32,480
+whatever variable I want and then using
+
+387
+00:19:28,640 --> 00:19:35,840
+those in the actual uh
+
+388
+00:19:32,480 --> 00:19:37,400
+NPC also I explain how to delete them if
+
+389
+00:19:35,840 --> 00:19:41,760
+you're going
+
+390
+00:19:37,400 --> 00:19:44,840
+from client side in the class and I also
+
+391
+00:19:41,760 --> 00:19:47,240
+showed you how to use trigger server in
+
+392
+00:19:44,840 --> 00:19:49,400
+classes anyway that concludes the
+
+393
+00:19:47,240 --> 00:19:52,039
+tutorial and I want to show you one more
+
+394
+00:19:49,400 --> 00:19:53,080
+thing before I go so let's go to this
+
+395
+00:19:52,039 --> 00:19:57,240
+level
+
+396
+00:19:53,080 --> 00:19:59,200
+editor over here and let's make it
+
+397
+00:19:57,240 --> 00:20:04,000
+um
+
+398
+00:19:59,200 --> 00:20:06,919
+sleep five then put show again so it's
+
+399
+00:20:04,000 --> 00:20:09,400
+going to sleep for 5 seconds then what
+
+400
+00:20:06,919 --> 00:20:12,520
+show appears again it you'll be able to
+
+401
+00:20:09,400 --> 00:20:14,320
+hit the rock again and create more uh
+
+402
+00:20:12,520 --> 00:20:17,919
+rupes and
+
+403
+00:20:14,320 --> 00:20:17,919
+gems let's save
+
+404
+00:20:22,679 --> 00:20:29,360
+that so we wait for it to reach zero or
+
+405
+00:20:26,520 --> 00:20:30,960
+5 seconds and appears again I can hit it
+
+406
+00:20:29,360 --> 00:20:32,039
+and there are two now there but I'll
+
+407
+00:20:30,960 --> 00:20:34,360
+just take
+
+408
+00:20:32,039 --> 00:20:39,120
+both and now if we go to level Eder we
+
+409
+00:20:34,360 --> 00:20:39,120
+can copy paste the script a bunch of
+
+410
+00:20:41,039 --> 00:20:45,240
+times and we have a bunch of rocks that
+
+411
+00:20:44,200 --> 00:20:50,760
+will
+
+412
+00:20:45,240 --> 00:20:50,760
+place these gems which you can
+
+413
+00:20:51,400 --> 00:20:56,400
+take and that's a pretty basic mining
+
+414
+00:20:54,440 --> 00:20:58,720
+script if you wanted to you could add
+
+415
+00:20:56,400 --> 00:21:01,480
+animations like a gani or if you
+
+416
+00:20:58,720 --> 00:21:02,880
+pronounce it Gan like that so there's
+
+417
+00:21:01,480 --> 00:21:05,679
+like a pickaxe and maybe I have health
+
+418
+00:21:02,880 --> 00:21:08,159
+through the Rocks but that's another
+
+419
+00:21:05,679 --> 00:21:11,600
+day I hope you enjoyed this tutorial and
+
+420
+00:21:08,159 --> 00:21:11,600
+I will see you next time
+

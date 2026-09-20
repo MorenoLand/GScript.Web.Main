@@ -1,0 +1,346 @@
+WEBVTT
+
+00:00.120 --> 00:05.100
+hello and welcome to the 21st tutorial
+
+00:02.940 --> 00:06.299
+on how to program in g-script 2. so
+
+00:05.100 --> 00:10.219
+let's add
+
+00:06.299 --> 00:13.639
+client died and let's do function on
+
+00:10.219 --> 00:13.639
+player chats
+
+00:24.539 --> 00:29.760
+I set a function on timeout so assemble
+
+00:27.300 --> 00:32.279
+to go to and remember on timeout can
+
+00:29.760 --> 00:33.899
+also is a special function that can also
+
+00:32.279 --> 00:35.340
+be called with timer
+
+00:33.899 --> 00:38.520
+oops
+
+00:35.340 --> 00:40.200
+that can also be called with set timer
+
+00:38.520 --> 00:42.780
+and how many seconds it takes before it
+
+00:40.200 --> 00:44.280
+goes back to the beginning so here's a
+
+00:42.780 --> 00:46.860
+new thing if
+
+00:44.280 --> 00:49.200
+key down
+
+00:46.860 --> 00:52.800
+a number
+
+00:49.200 --> 00:55.559
+and brackets key down is a check and
+
+00:52.800 --> 00:58.860
+that is used in if statements to see if
+
+00:55.559 --> 01:00.379
+whatever key is down then something's
+
+00:58.860 --> 01:03.359
+going to happen that's in these brackets
+
+01:00.379 --> 01:04.979
+zero all num all these numbers stand for
+
+01:03.359 --> 01:07.619
+a specific key
+
+01:04.979 --> 01:10.500
+zero stands for the up Arrow key one
+
+01:07.619 --> 01:12.659
+stands for the left Arrow key two stands
+
+01:10.500 --> 01:17.580
+for the down arrow key three stands for
+
+01:12.659 --> 01:20.900
+the red arrow key four is s five is a
+
+01:17.580 --> 01:25.020
+six is
+
+01:20.900 --> 01:27.780
+d 7 is M eight is tab
+
+01:25.020 --> 01:29.700
+9 is
+
+01:27.780 --> 01:31.560
+q and
+
+01:29.700 --> 01:32.820
+10 is p
+
+01:31.560 --> 01:34.380
+okay
+
+01:32.820 --> 01:36.240
+we're not going to use anything past
+
+01:34.380 --> 01:37.380
+three since we only want to use the
+
+01:36.240 --> 01:39.960
+arrow keys
+
+01:37.380 --> 01:41.040
+let's add zero so if I'm pressing the
+
+01:39.960 --> 01:43.200
+top Arrow key it's going to run
+
+01:41.040 --> 01:44.640
+whatever's in these parentheses
+
+01:43.200 --> 01:47.400
+I wanna
+
+01:44.640 --> 01:49.200
+mention that not key down does not work
+
+01:47.400 --> 01:51.479
+with all the keys on the keyboard only
+
+01:49.200 --> 01:53.820
+these specific 11 keys
+
+01:51.479 --> 01:57.240
+now if you want to use whatever key you
+
+01:53.820 --> 01:59.159
+want such as maybe Z or maybe J then
+
+01:57.240 --> 02:01.259
+there's a different way to do that oh I
+
+01:59.159 --> 02:02.579
+put a semicolon here there's a different
+
+02:01.259 --> 02:05.700
+way to do that
+
+02:02.579 --> 02:07.740
+with a function and I'm not going to get
+
+02:05.700 --> 02:09.959
+into that in this tutorial
+
+02:07.740 --> 02:11.879
+so let's make it so that if you press
+
+02:09.959 --> 02:13.800
+the top Arrow key it's going to move us
+
+02:11.879 --> 02:20.280
+up one tile
+
+02:13.800 --> 02:23.599
+player y equals player dot y minus one
+
+02:20.280 --> 02:23.599
+and let's add
+
+02:23.819 --> 02:28.500
+let's copy this and place paste it three
+
+02:26.879 --> 02:30.840
+other times
+
+02:28.500 --> 02:33.780
+and change all the keys to the left
+
+02:30.840 --> 02:35.580
+Arrow key to the bottom and to the right
+
+02:33.780 --> 02:36.720
+and let's change it so it moves in
+
+02:35.580 --> 02:38.760
+different moves Us in different
+
+02:36.720 --> 02:41.640
+directions based on which key we press
+
+02:38.760 --> 02:44.760
+if we press the left one it'll move us
+
+02:41.640 --> 02:48.120
+minus one to the left if we press two it
+
+02:44.760 --> 02:51.420
+moves one down if we miss press three
+
+02:48.120 --> 02:55.019
+it'll move this one to the right
+
+02:51.420 --> 02:58.260
+you can guess what this does this is a
+
+02:55.019 --> 03:01.379
+admin boot script admin boots are things
+
+02:58.260 --> 03:03.000
+that people call that allow you to move
+
+03:01.379 --> 03:05.220
+through walls and move around quickly
+
+03:03.000 --> 03:07.500
+around a server usually they're usually
+
+03:05.220 --> 03:10.260
+they're only given to admins to
+
+03:07.500 --> 03:12.420
+get to places quickly because it'd be
+
+03:10.260 --> 03:13.860
+kind of easy to do stuff if you're a
+
+03:12.420 --> 03:16.260
+player and you were able to walk through
+
+03:13.860 --> 03:19.280
+anything and move very quickly then
+
+03:16.260 --> 03:21.840
+let's add a way to exit this let's do if
+
+03:19.280 --> 03:24.319
+player.chat is equal to
+
+03:21.840 --> 03:24.319
+stop
+
+03:24.959 --> 03:28.400
+then what's going to happen is
+
+03:29.580 --> 03:35.879
+it's gonna we're gonna make it return
+
+03:32.220 --> 03:38.760
+is a command that stops the function and
+
+03:35.879 --> 03:40.560
+tracks and nothing happens it's going to
+
+03:38.760 --> 03:42.540
+stop it's going to stop this Loop and
+
+03:40.560 --> 03:44.220
+then we're not going to be able to to
+
+03:42.540 --> 03:45.180
+run any of these things which means
+
+03:44.220 --> 03:48.120
+we're not going to be able to run
+
+03:45.180 --> 03:50.340
+quickly or through things anymore okay
+
+03:48.120 --> 03:52.379
+let's press apply
+
+03:50.340 --> 03:55.920
+and there's some bushes here
+
+03:52.379 --> 03:57.120
+let's type boots
+
+03:55.920 --> 03:59.040
+and you can see that we're running
+
+03:57.120 --> 04:00.180
+faster than before and we are able to
+
+03:59.040 --> 04:02.580
+run through them
+
+04:00.180 --> 04:04.920
+because
+
+04:02.580 --> 04:07.260
+we simply just move our x coordinate
+
+04:04.920 --> 04:10.220
+through them or our y coordinate every
+
+04:07.260 --> 04:10.220
+time we press the arrow key
+
+04:10.260 --> 04:15.420
+we can also make us make ourselves run
+
+04:12.239 --> 04:17.840
+faster we can change this to five
+
+04:15.420 --> 04:17.840
+five
+
+04:18.299 --> 04:20.840
+five
+
+04:20.940 --> 04:24.600
+and let's type boots
+
+04:22.919 --> 04:25.919
+and look how fast we're running now
+
+04:24.600 --> 04:28.080
+we're pretty much running through
+
+04:25.919 --> 04:30.479
+everything
+
+04:28.080 --> 04:31.500
+we don't we don't even touch the bushes
+
+04:30.479 --> 04:33.780
+now
+
+04:31.500 --> 04:36.000
+let's type stop now stop
+
+04:33.780 --> 04:36.960
+we're running normally again
+
+04:36.000 --> 04:39.240
+so
+
+04:36.960 --> 04:41.580
+that's it for this tutorial and I hope
+
+04:39.240 --> 04:43.919
+you understand what return means and
+
+04:41.580 --> 04:44.940
+what key down means and how you can use
+
+04:43.919 --> 04:48.199
+them
+
+04:44.940 --> 04:48.199
+anyway bye

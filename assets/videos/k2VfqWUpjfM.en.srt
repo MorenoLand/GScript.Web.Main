@@ -1,0 +1,360 @@
+1
+00:00:00,080 --> 00:00:05,200
+hello and welcome to the third tutorial
+
+2
+00:00:02,760 --> 00:00:06,560
+on how to program a gript 2 this
+
+3
+00:00:05,200 --> 00:00:10,759
+tutorial I'm going to show you more
+
+4
+00:00:06,560 --> 00:00:12,960
+about RC so RC has a lot of buttons okay
+
+5
+00:00:10,759 --> 00:00:16,119
+this one here let's upload files which I
+
+6
+00:00:12,960 --> 00:00:18,000
+went over in the last tutorial this is
+
+7
+00:00:16,119 --> 00:00:20,600
+the player list which I also went over
+
+8
+00:00:18,000 --> 00:00:22,760
+in the last tutorial this one is the
+
+9
+00:00:20,600 --> 00:00:24,800
+accounts List It has nothing to do with
+
+10
+00:00:22,760 --> 00:00:27,199
+programming you could just ignore it
+
+11
+00:00:24,800 --> 00:00:29,679
+I've never found a use for it the same
+
+12
+00:00:27,199 --> 00:00:30,920
+with this I've never found a use for it
+
+13
+00:00:29,679 --> 00:00:33,000
+it just
+
+14
+00:00:30,920 --> 00:00:34,040
+you can ignore these if you're like me
+
+15
+00:00:33,000 --> 00:00:35,879
+and just
+
+16
+00:00:34,040 --> 00:00:38,600
+program
+
+17
+00:00:35,879 --> 00:00:40,800
+so here is the
+
+18
+00:00:38,600 --> 00:00:44,360
+options this also is pretty much the
+
+19
+00:00:40,800 --> 00:00:46,680
+same thing you know it's nothing to do
+
+20
+00:00:44,360 --> 00:00:49,000
+with programming next to that is server
+
+21
+00:00:46,680 --> 00:00:51,680
+flx this is very important with
+
+22
+00:00:49,000 --> 00:00:54,320
+programming this is like data that's on
+
+23
+00:00:51,680 --> 00:00:57,399
+the server itself we'll go over this
+
+24
+00:00:54,320 --> 00:01:01,920
+later this is the folder configuration
+
+25
+00:00:57,399 --> 00:01:03,879
+right there it's like what files hold
+
+26
+00:01:01,920 --> 00:01:05,680
+what kind of what folders hold what kind
+
+27
+00:01:03,879 --> 00:01:07,040
+of files you don't really want to mess
+
+28
+00:01:05,680 --> 00:01:09,640
+with it unless you know what you're
+
+29
+00:01:07,040 --> 00:01:12,479
+doing this is the server options it's
+
+30
+00:01:09,640 --> 00:01:16,439
+things like start level uh unstick me
+
+31
+00:01:12,479 --> 00:01:18,400
+level like what levels they start with
+
+32
+00:01:16,439 --> 00:01:21,560
+the player starts on when they first
+
+33
+00:01:18,400 --> 00:01:24,960
+enter like Bush items Badd items things
+
+34
+00:01:21,560 --> 00:01:26,360
+like that below is the local NPCs you
+
+35
+00:01:24,960 --> 00:01:28,439
+can just ignore this
+
+36
+00:01:26,360 --> 00:01:30,240
+one it's same thing like the other
+
+37
+00:01:28,439 --> 00:01:32,520
+buttons that don't have anything can do
+
+38
+00:01:30,240 --> 00:01:35,360
+with programming below that is the level
+
+39
+00:01:32,520 --> 00:01:37,600
+list it does nothing and to the left of
+
+40
+00:01:35,360 --> 00:01:41,479
+that is these three buttons these are
+
+41
+00:01:37,600 --> 00:01:43,920
+very important this is the NPCs button
+
+42
+00:01:41,479 --> 00:01:46,479
+this holds all the scripts for NPCs like
+
+43
+00:01:43,920 --> 00:01:48,719
+NPCs that are online which is this are
+
+44
+00:01:46,479 --> 00:01:51,479
+different than the ones that are online
+
+45
+00:01:48,719 --> 00:01:53,280
+like the one on the level editor and we
+
+46
+00:01:51,479 --> 00:01:55,799
+upload you know when you uploaded a noob
+
+47
+00:01:53,280 --> 00:01:58,920
+that's a level NPC this is like an
+
+48
+00:01:55,799 --> 00:02:01,280
+online NPC online NPCs work a bit
+
+49
+00:01:58,920 --> 00:02:04,159
+differently they're a lot harder to
+
+50
+00:02:01,280 --> 00:02:06,119
+manage but they can do things a they do
+
+51
+00:02:04,159 --> 00:02:08,319
+things a bit differently we'll go over
+
+52
+00:02:06,119 --> 00:02:11,400
+that later this is the
+
+53
+00:02:08,319 --> 00:02:14,640
+weapons button it holds all the weapons
+
+54
+00:02:11,400 --> 00:02:17,440
+like TNT like I mean like this is a
+
+55
+00:02:14,640 --> 00:02:22,040
+script that I made these kind of
+
+56
+00:02:17,440 --> 00:02:24,239
+scripts are on the player them like
+
+57
+00:02:22,040 --> 00:02:26,360
+himself like they could be a HUD in a
+
+58
+00:02:24,239 --> 00:02:28,360
+corner or they could be the player's
+
+59
+00:02:26,360 --> 00:02:30,879
+movement like how they
+
+60
+00:02:28,360 --> 00:02:34,200
+run it's very important this is the
+
+61
+00:02:30,879 --> 00:02:36,400
+classes button the last button on the RC
+
+62
+00:02:34,200 --> 00:02:38,519
+this holds things like let's it's really
+
+63
+00:02:36,400 --> 00:02:41,800
+hard to explain let's say you have a
+
+64
+00:02:38,519 --> 00:02:45,800
+let's say you have an NPC and you want
+
+65
+00:02:41,800 --> 00:02:48,560
+it to call and you want it to run this
+
+66
+00:02:45,800 --> 00:02:50,319
+rock script you want it to run it well
+
+67
+00:02:48,560 --> 00:02:52,400
+to do that you would just call the Rock
+
+68
+00:02:50,319 --> 00:02:55,360
+script which is a class you call it and
+
+69
+00:02:52,400 --> 00:02:58,920
+then this script gets sent over to the
+
+70
+00:02:55,360 --> 00:03:00,400
+MPC or or a weapon if you want to do it
+
+71
+00:02:58,920 --> 00:03:03,440
+like that
+
+72
+00:03:00,400 --> 00:03:05,040
+and that's it for this RC also you if
+
+73
+00:03:03,440 --> 00:03:08,480
+you press in the bottom left corner
+
+74
+00:03:05,040 --> 00:03:11,680
+start and click RC or remote control
+
+75
+00:03:08,480 --> 00:03:14,319
+it'll show you an in-game RC it has
+
+76
+00:03:11,680 --> 00:03:17,640
+about the same features as the out of
+
+77
+00:03:14,319 --> 00:03:19,000
+game client or for RC except player list
+
+78
+00:03:17,640 --> 00:03:22,280
+doesn't
+
+79
+00:03:19,000 --> 00:03:25,400
+work the scripts buttons are put into
+
+80
+00:03:22,280 --> 00:03:28,200
+just one big button I mean one big
+
+81
+00:03:25,400 --> 00:03:31,080
+button and there are two extra buttons
+
+82
+00:03:28,200 --> 00:03:33,640
+here this you can turn you can type in
+
+83
+00:03:31,080 --> 00:03:36,200
+like a command line or something it'll
+
+84
+00:03:33,640 --> 00:03:39,000
+give you help but it's not very helpful
+
+85
+00:03:36,200 --> 00:03:42,080
+and here's just GUI control you don't
+
+86
+00:03:39,000 --> 00:03:45,319
+really need to do it or use these two
+
+87
+00:03:42,080 --> 00:03:47,959
+buttons at least right now so anyway
+
+88
+00:03:45,319 --> 00:03:51,239
+that's it for this episode uh now you
+
+89
+00:03:47,959 --> 00:03:57,439
+know how to use RC more and the in-game
+
+90
+00:03:51,239 --> 00:03:57,439
+RC so uh by bye
+

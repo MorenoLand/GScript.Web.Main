@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00.480 --> 00:06.640
+hello and welcome to the ninth tutorial
+
+00:02.760 --> 00:09.760
+on how to program gript 2 and the last
+
+00:06.640 --> 00:12.799
+tutorial I taught you about temp
+
+00:09.760 --> 00:14.240
+variables and this do variables in this
+
+00:12.799 --> 00:17.960
+tutorial I'm going to teach you about
+
+00:14.240 --> 00:20.720
+two two new variables the client
+
+00:17.960 --> 00:24.279
+variable and the client R variable so
+
+00:20.720 --> 00:25.800
+let's open level editor and let's start
+
+00:24.279 --> 00:28.960
+typing
+
+00:25.800 --> 00:34.239
+player. client
+
+00:28.960 --> 00:38.280
+do yellow is equal to
+
+00:34.239 --> 00:38.280
+10 or we can make it equal
+
+00:38.840 --> 00:42.079
+to
+
+00:40.440 --> 00:45.760
+hello
+
+00:42.079 --> 00:48.520
+hello so basically a client variable is
+
+00:45.760 --> 00:50.680
+a variable that I saved on the
+
+00:48.520 --> 00:54.160
+player this
+
+00:50.680 --> 00:57.120
+variable will work it can be created on
+
+00:54.160 --> 01:01.559
+any MPC and can be edited server side or
+
+00:57.120 --> 01:03.800
+client side and any MP PC will be able
+
+01:01.559 --> 01:06.640
+to use it because it's on the player not
+
+01:03.800 --> 01:09.960
+on the NPC but just on the player him or
+
+01:06.640 --> 01:11.400
+herself so let's close this and save it
+
+01:09.960 --> 01:14.799
+and
+
+01:11.400 --> 01:17.360
+run if you go to RC and click the player
+
+01:14.799 --> 01:22.159
+list you can look at the player list and
+
+01:17.360 --> 01:23.520
+rightclick myself and go to script Flags
+
+01:22.159 --> 01:26.439
+there should be a variable called
+
+01:23.520 --> 01:32.320
+client. hello I mean client. yellow is
+
+01:26.439 --> 01:32.320
+equal to hello can close that lower
+
+01:33.640 --> 01:38.280
+this
+
+01:35.799 --> 01:41.840
+if there now there's a next variable
+
+01:38.280 --> 01:44.399
+it's called a client R variable client R
+
+01:41.840 --> 01:47.840
+variables are essentially the same as
+
+01:44.399 --> 01:51.280
+client variables except you cannot
+
+01:47.840 --> 01:53.640
+create them or change them on client
+
+01:51.280 --> 01:55.479
+side they will only they can you can
+
+01:53.640 --> 01:59.439
+only create or change them on server
+
+01:55.479 --> 02:00.759
+side however they can be used on client
+
+01:59.439 --> 02:04.320
+side
+
+02:00.759 --> 02:04.320
+so I'll show you that in a
+
+02:19.760 --> 02:24.040
+second so
+
+02:25.040 --> 02:30.239
+oh the thing is with centar variables is
+
+02:28.760 --> 02:32.800
+that you can't create them with an
+
+02:30.239 --> 02:35.959
+oncreated function you can only create
+
+02:32.800 --> 02:39.640
+them with something else like
+
+02:35.959 --> 02:42.480
+player enters I'm not too sure why but
+
+02:39.640 --> 02:46.239
+just know you can't create them with
+
+02:42.480 --> 02:46.239
+oncreated so let's save
+
+02:47.080 --> 02:54.280
+that and let's say hi I'll say hello now
+
+02:51.200 --> 02:56.040
+I'm typing hi but when I enter it it
+
+02:54.280 --> 02:58.760
+says hello because it's instantly
+
+02:56.040 --> 03:01.440
+changing my chat to say
+
+02:58.760 --> 03:04.799
+hello so that concludes this
+
+03:01.440 --> 03:07.040
+tutorial and oh and I just want to
+
+03:04.799 --> 03:09.519
+mention that whenever you're using these
+
+03:07.040 --> 03:12.440
+kind of variables
+
+03:09.519 --> 03:15.040
+or in when you're using client side you
+
+03:12.440 --> 03:17.799
+can take out the player
+
+03:15.040 --> 03:19.799
+dot but on server side you have to have
+
+03:17.799 --> 03:22.720
+the player dot in the beginning the
+
+03:19.799 --> 03:25.159
+reason of this is because on client side
+
+03:22.720 --> 03:27.879
+it client side only affects you so it
+
+03:25.159 --> 03:29.720
+knows who to whose variable to use but
+
+03:27.879 --> 03:31.879
+on server side it affects all the
+
+03:29.720 --> 03:34.640
+players in the level so it doesn't know
+
+03:31.879 --> 03:38.319
+who client. yellow to find who what
+
+03:34.640 --> 03:41.439
+player to locate and change their or use
+
+03:38.319 --> 03:45.280
+their client r. yellow variable so this
+
+03:41.439 --> 03:47.879
+shows that it's targeting us us as the
+
+03:45.280 --> 03:51.040
+player and changing the client are that
+
+03:47.879 --> 03:52.360
+yellow variable to hello so anyway that
+
+03:51.040 --> 03:55.680
+concludes this
+
+03:52.360 --> 03:58.200
+tutorial and I'll probably be teaching
+
+03:55.680 --> 04:01.680
+another two or one variables in next
+
+03:58.200 --> 04:01.680
+tutorial so

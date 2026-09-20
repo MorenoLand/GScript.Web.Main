@@ -1,0 +1,562 @@
+WEBVTT
+
+00:00.240 --> 00:04.240
+hello and welcome to the 31st tutorial
+
+00:02.080 --> 00:05.520
+on how to program your script 2. so in
+
+00:04.240 --> 00:07.200
+this tutorial i'm going to show you
+
+00:05.520 --> 00:09.280
+something called enable features and
+
+00:07.200 --> 00:11.120
+something called show stats
+
+00:09.280 --> 00:12.719
+so for this i created a new weapon
+
+00:11.120 --> 00:14.240
+called disable
+
+00:12.719 --> 00:15.920
+and i put client side and function
+
+00:14.240 --> 00:18.880
+uncreated and this function on created
+
+00:15.920 --> 00:18.880
+here's what we're going to put
+
+00:21.199 --> 00:24.960
+i'm going to put enable
+
+00:23.119 --> 00:27.199
+features
+
+00:24.960 --> 00:29.119
+and to parenthesis semicolon
+
+00:27.199 --> 00:31.760
+so this is going to do enable features
+
+00:29.119 --> 00:33.920
+it's going to disable things such as
+
+00:31.760 --> 00:35.680
+pressing p to pause
+
+00:33.920 --> 00:37.680
+pressing q to look at your
+
+00:35.680 --> 00:39.520
+weapons pressing m to see the map which
+
+00:37.680 --> 00:40.559
+you can't do because i'm on gmap holding
+
+00:39.520 --> 00:42.640
+r
+
+00:40.559 --> 00:44.160
+um displaying nicknames displaying
+
+00:42.640 --> 00:46.960
+hearts over people's heads displaying
+
+00:44.160 --> 00:48.559
+chat the tab key that lets you chat it's
+
+00:46.960 --> 00:51.280
+going to disable all that
+
+00:48.559 --> 00:52.879
+and here is what's going to disable now
+
+00:51.280 --> 00:54.320
+what these numbers are going to do which
+
+00:52.879 --> 00:55.600
+i'll show in a second
+
+00:54.320 --> 00:57.440
+is
+
+00:55.600 --> 00:59.039
+what your these numbers are going to
+
+00:57.440 --> 01:01.039
+specify what you want to disable or
+
+00:59.039 --> 01:03.120
+enable
+
+01:01.039 --> 01:05.040
+and feed all features is going to enable
+
+01:03.120 --> 01:06.960
+everything
+
+01:05.040 --> 01:08.479
+so let's say we want to disable the
+
+01:06.960 --> 01:10.720
+pause button
+
+01:08.479 --> 01:12.720
+well if you look now i press p it pauses
+
+01:10.720 --> 01:13.600
+and no one can hit me well i don't want
+
+01:12.720 --> 01:16.080
+that
+
+01:13.600 --> 01:17.600
+let's go here and put enable features
+
+01:16.080 --> 01:19.439
+and all features
+
+01:17.600 --> 01:22.720
+because you want to enable everything
+
+01:19.439 --> 01:22.720
+then we're going to put minus
+
+01:23.200 --> 01:26.720
+minus 2
+
+01:25.119 --> 01:30.400
+because if we look here
+
+01:26.720 --> 01:32.799
+the pause button value is two
+
+01:30.400 --> 01:35.119
+right okay we apply this
+
+01:32.799 --> 01:35.119
+and now
+
+01:35.280 --> 01:38.960
+i cannot press pause
+
+01:37.119 --> 01:41.439
+anybody else if they do not have this
+
+01:38.960 --> 01:42.720
+weapon they can do it so you could have
+
+01:41.439 --> 01:44.400
+the weapon
+
+01:42.720 --> 01:46.479
+get put on to anyone once they first
+
+01:44.400 --> 01:48.799
+enter the server and then no one will be
+
+01:46.479 --> 01:50.399
+able to pause
+
+01:48.799 --> 01:52.479
+so that's pretty useful
+
+01:50.399 --> 01:54.079
+now let's open this again
+
+01:52.479 --> 01:55.920
+and let's disable something else let's
+
+01:54.079 --> 01:58.079
+disable
+
+01:55.920 --> 02:00.159
+um
+
+01:58.079 --> 02:01.360
+disable the tab key so we can't chat
+
+02:00.159 --> 02:02.560
+because we want to make our own chat
+
+02:01.360 --> 02:07.200
+system
+
+02:02.560 --> 02:08.720
+and we're going to put minus 0x
+
+02:07.200 --> 02:11.440
+what number was that
+
+02:08.720 --> 02:12.959
+80 no wasn't that
+
+02:11.440 --> 02:15.040
+40.
+
+02:12.959 --> 02:17.360
+so now you're disabling the pause and
+
+02:15.040 --> 02:19.440
+the chat
+
+02:17.360 --> 02:20.800
+do that
+
+02:19.440 --> 02:23.599
+and now i can't
+
+02:20.800 --> 02:28.319
+chat
+
+02:23.599 --> 02:28.319
+and i can't pause or something like that
+
+02:29.280 --> 02:31.520
+okay
+
+02:31.599 --> 02:34.840
+so now
+
+02:37.120 --> 02:40.319
+what we're going to do
+
+02:39.200 --> 02:42.879
+is we're going to put something else
+
+02:40.319 --> 02:42.879
+we're going to put
+
+02:43.840 --> 02:47.840
+something else let's put minus
+
+02:45.920 --> 02:49.360
+actually no let's say we want to disable
+
+02:47.840 --> 02:51.519
+everything well we just take this all
+
+02:49.360 --> 02:55.120
+and put a zero
+
+02:51.519 --> 02:57.440
+now if i do that i can't press pause
+
+02:55.120 --> 02:57.440
+can't
+
+02:58.560 --> 03:01.920
+can't do anything that's
+
+03:00.239 --> 03:03.519
+on this list
+
+03:01.920 --> 03:06.239
+pretty much
+
+03:03.519 --> 03:07.840
+now if we go here and put zero
+
+03:06.239 --> 03:10.879
+or wouldn't that be zero we'll just put
+
+03:07.840 --> 03:10.879
+one thing let's put a
+
+03:11.120 --> 03:14.480
+let's put
+
+03:12.959 --> 03:16.000
+four
+
+03:14.480 --> 03:18.480
+four specifies
+
+03:16.000 --> 03:20.080
+the q key which is weapon select
+
+03:18.480 --> 03:21.920
+so we will we're gonna what this is
+
+03:20.080 --> 03:24.080
+going to do is enable
+
+03:21.920 --> 03:25.599
+the cue select but nothing else
+
+03:24.080 --> 03:27.920
+so we hit that
+
+03:25.599 --> 03:31.519
+we can't pause we can't chat we can't do
+
+03:27.920 --> 03:34.000
+anything like that but we can press q
+
+03:31.519 --> 03:35.440
+so that's enable features
+
+03:34.000 --> 03:38.319
+let's just put
+
+03:35.440 --> 03:39.840
+all features oh
+
+03:38.319 --> 03:41.280
+all features
+
+03:39.840 --> 03:44.000
+minus
+
+03:41.280 --> 03:46.560
+and then p key 2.
+
+03:44.000 --> 03:49.519
+so now we're going to put here is
+
+03:46.560 --> 03:51.440
+show stats show stats this is pretty
+
+03:49.519 --> 03:53.760
+similar to all features except it works
+
+03:51.440 --> 03:56.400
+for a few different things show stats is
+
+03:53.760 --> 03:58.640
+mainly for
+
+03:56.400 --> 03:59.680
+icons these icons appear you can disable
+
+03:58.640 --> 04:02.480
+all of them
+
+03:59.680 --> 04:04.000
+you can disable right-clicking players
+
+04:02.480 --> 04:05.439
+inventorying pcs you can actually
+
+04:04.000 --> 04:07.040
+disable all the players so you can't see
+
+04:05.439 --> 04:08.720
+anyone which is good if you want
+
+04:07.040 --> 04:10.480
+something cinematic
+
+04:08.720 --> 04:12.640
+so let's go here and i'm going to show
+
+04:10.480 --> 04:14.879
+you the text document
+
+04:12.640 --> 04:16.799
+here are all the values
+
+04:14.879 --> 04:19.040
+over here on the left and here on the
+
+04:16.799 --> 04:20.560
+right are what they do
+
+04:19.040 --> 04:24.000
+so if we want to put all stats it's
+
+04:20.560 --> 04:26.240
+going to enable everything let's do that
+
+04:24.000 --> 04:28.160
+all stats now let's say we want to
+
+04:26.240 --> 04:30.320
+disable the hearts and add our own heart
+
+04:28.160 --> 04:31.360
+system which we'll add in another weapon
+
+04:30.320 --> 04:33.120
+well i'm not going to do that but let's
+
+04:31.360 --> 04:35.040
+say you wanted to do that
+
+04:33.120 --> 04:38.000
+well i would put all stats so i wanted
+
+04:35.040 --> 04:41.120
+any everything minus
+
+04:38.000 --> 04:43.840
+what is it 0x20
+
+04:41.120 --> 04:44.960
+oh x not that i don't know why i hit
+
+04:43.840 --> 04:46.400
+that
+
+04:44.960 --> 04:48.080
+or period
+
+04:46.400 --> 04:49.360
+so if we look here
+
+04:48.080 --> 04:51.680
+hearts is
+
+04:49.360 --> 04:54.080
+0x20
+
+04:51.680 --> 04:55.680
+so if we click that apply it the heart's
+
+04:54.080 --> 04:57.199
+now gone
+
+04:55.680 --> 04:58.320
+we can disable pretty much everything
+
+04:57.199 --> 05:00.639
+this way
+
+04:58.320 --> 05:01.840
+and let's see if we want to also disable
+
+05:00.639 --> 05:04.000
+players
+
+05:01.840 --> 05:08.479
+we'll put z minus
+
+05:04.000 --> 05:11.199
+again minus 0x 400.
+
+05:08.479 --> 05:13.919
+we hit that well it disables us too so
+
+05:11.199 --> 05:17.840
+we don't want that
+
+05:13.919 --> 05:17.840
+so let's have it disable the hearts
+
+05:18.320 --> 05:22.000
+how about we also want to disable all
+
+05:20.080 --> 05:24.400
+these icons
+
+05:22.000 --> 05:27.680
+actually let's disable everything
+
+05:24.400 --> 05:30.000
+except for these three things inventory
+
+05:27.680 --> 05:32.320
+mpc's players and right-clicking
+
+05:30.000 --> 05:34.479
+okay what we would do
+
+05:32.320 --> 05:36.160
+is we would go here
+
+05:34.479 --> 05:37.440
+put zero
+
+05:36.160 --> 05:40.880
+or we don't have to put zero we could
+
+05:37.440 --> 05:42.080
+just put anything here let's put um
+
+05:40.880 --> 05:43.520
+what we want
+
+05:42.080 --> 05:45.440
+zero x
+
+05:43.520 --> 05:46.400
+200 plus
+
+05:45.440 --> 05:48.720
+zero
+
+05:46.400 --> 05:51.680
+x four hundred plus
+
+05:48.720 --> 05:53.840
+zero x eight hundred
+
+05:51.680 --> 05:56.880
+which are the values
+
+05:53.840 --> 05:58.960
+for these three things that we want
+
+05:56.880 --> 06:00.000
+okay
+
+05:58.960 --> 06:02.639
+and
+
+06:00.000 --> 06:04.880
+800. so hit that
+
+06:02.639 --> 06:07.120
+it's disabled almost everything all our
+
+06:04.880 --> 06:08.080
+icons here but the players are still
+
+06:07.120 --> 06:11.039
+around
+
+06:08.080 --> 06:12.560
+you can still right click people
+
+06:11.039 --> 06:14.240
+and things like that so this concludes
+
+06:12.560 --> 06:16.160
+this tutorial and now you understand how
+
+06:14.240 --> 06:18.240
+you can disable default features and
+
+06:16.160 --> 06:21.199
+create your own things
+
+06:18.240 --> 06:22.639
+and if you combine this with let's say
+
+06:21.199 --> 06:24.639
+disable
+
+06:22.639 --> 06:26.000
+def movement
+
+06:24.639 --> 06:27.680
+then you can create your own custom
+
+06:26.000 --> 06:30.400
+movement your own custom health your own
+
+06:27.680 --> 06:31.600
+custom anything you want
+
+06:30.400 --> 06:33.280
+and
+
+06:31.600 --> 06:37.759
+that's how you do it that conclusive
+
+06:33.280 --> 06:37.759
+tutorial and i'll see you next time

@@ -1,0 +1,406 @@
+WEBVTT
+
+00:00.080 --> 00:04.799
+yo what's going on guys i'm back and
+
+00:02.879 --> 00:06.640
+literally recording this right after
+
+00:04.799 --> 00:08.240
+that video you might have just seen
+
+00:06.640 --> 00:12.080
+so this is gonna be the second video of
+
+00:08.240 --> 00:14.639
+my gst tutorial gs2 sorry so for this
+
+00:12.080 --> 00:17.199
+video i want to talk about classes and
+
+00:14.639 --> 00:18.640
+using them in npcs so this one's not
+
+00:17.199 --> 00:20.560
+gonna be too much scripting but more of
+
+00:18.640 --> 00:22.400
+an explanation
+
+00:20.560 --> 00:24.000
+so let's say let's look at the classes
+
+00:22.400 --> 00:26.480
+here so you can see i have a couple
+
+00:24.000 --> 00:29.679
+things here think of a class as a
+
+00:26.480 --> 00:32.800
+reusable script something that
+
+00:29.679 --> 00:34.719
+maybe in the overworld multiple times um
+
+00:32.800 --> 00:36.640
+maybe used over and over and over again
+
+00:34.719 --> 00:39.280
+or you know just think about it's like a
+
+00:36.640 --> 00:41.440
+building block for other things
+
+00:39.280 --> 00:43.680
+so like grail it's for example when you
+
+00:41.440 --> 00:45.120
+chop a grass a piece of grass mine's
+
+00:43.680 --> 00:48.000
+kind of glitched right now but when you
+
+00:45.120 --> 00:50.000
+chop a piece of grass it spawns in
+
+00:48.000 --> 00:53.120
+this class because
+
+00:50.000 --> 00:54.320
+we're reusing the code so why not have a
+
+00:53.120 --> 00:56.640
+class
+
+00:54.320 --> 00:58.079
+so we're going to create one today let's
+
+00:56.640 --> 00:59.359
+let's create a class which is this
+
+00:58.079 --> 01:02.320
+button right here
+
+00:59.359 --> 01:04.640
+and let's just call this npc
+
+01:02.320 --> 01:07.280
+underscore block
+
+01:04.640 --> 01:08.799
+so now we have a class here so now
+
+01:07.280 --> 01:10.960
+this class should be
+
+01:08.799 --> 01:12.640
+ax i can access this class anywhere and
+
+01:10.960 --> 01:14.159
+i need my weapon scripts on any of my
+
+01:12.640 --> 01:16.720
+npcs
+
+01:14.159 --> 01:19.360
+so using the npc editor which is a
+
+01:16.720 --> 01:19.360
+script that
+
+01:19.920 --> 01:25.680
+was designed by file play
+
+01:22.640 --> 01:28.320
+it lets us basically look at npc's code
+
+01:25.680 --> 01:29.840
+in-game online on a server so i created
+
+01:28.320 --> 01:32.799
+a basic npc
+
+01:29.840 --> 01:34.799
+and i made it a block image and then i
+
+01:32.799 --> 01:37.119
+did client side on created the sidechat
+
+01:34.799 --> 01:38.960
+equals i am an npc
+
+01:37.119 --> 01:41.759
+so now you can see the code is in this
+
+01:38.960 --> 01:43.040
+exact one but let's say
+
+01:41.759 --> 01:45.280
+see now it's in this one too but let's
+
+01:43.040 --> 01:46.799
+say you want to reuse this without
+
+01:45.280 --> 01:48.320
+actually having to
+
+01:46.799 --> 01:50.960
+have this much code over and over and
+
+01:48.320 --> 01:52.880
+over again so let's delete this
+
+01:50.960 --> 01:54.479
+so let's take this code out of the mpc
+
+01:52.880 --> 01:56.479
+that we created so let's just say you
+
+01:54.479 --> 01:58.000
+created a rock script that spawns a rack
+
+01:56.479 --> 02:00.000
+all around the world
+
+01:58.000 --> 02:01.520
+let's take that and let's paste that in
+
+02:00.000 --> 02:03.439
+this class
+
+02:01.520 --> 02:06.079
+so now we have that class and take a
+
+02:03.439 --> 02:07.680
+note of the name npc underscore block
+
+02:06.079 --> 02:08.959
+so now when i save this and go back
+
+02:07.680 --> 02:10.959
+you'll see that the code's still there
+
+02:08.959 --> 02:14.000
+it's still running but now let's let's
+
+02:10.959 --> 02:16.000
+try something let's edit the code
+
+02:14.000 --> 02:17.920
+but when it's created instead of
+
+02:16.000 --> 02:19.760
+actually writing any code why don't we
+
+02:17.920 --> 02:22.640
+just
+
+02:19.760 --> 02:25.360
+why don't we just do this dot join so
+
+02:22.640 --> 02:27.360
+this npc this current one
+
+02:25.360 --> 02:30.640
+and let's join
+
+02:27.360 --> 02:32.959
+the npc underscore block so basically
+
+02:30.640 --> 02:34.959
+i'm telling this npc to just take the
+
+02:32.959 --> 02:36.560
+code from the mpc block
+
+02:34.959 --> 02:38.239
+so now let's apply that
+
+02:36.560 --> 02:41.680
+and let's press f9
+
+02:38.239 --> 02:41.680
+you'll see it didn't work because
+
+02:42.400 --> 02:50.080
+i should probably do function on created
+
+02:47.599 --> 02:51.440
+so when the npc is created let's do that
+
+02:50.080 --> 02:52.879
+my bed
+
+02:51.440 --> 02:55.120
+so you'll see it's actually taking the
+
+02:52.879 --> 02:57.280
+code from our npc and you want to know
+
+02:55.120 --> 02:59.280
+why it's super nice
+
+02:57.280 --> 03:02.879
+let's duplicate this a couple times
+
+02:59.280 --> 03:02.879
+let's say you have um
+
+03:02.959 --> 03:06.560
+i don't know let's just say you have a
+
+03:04.480 --> 03:08.480
+couple npcs that give you money when you
+
+03:06.560 --> 03:10.000
+touch them let's say you need to update
+
+03:08.480 --> 03:11.599
+the system and you don't want to go
+
+03:10.000 --> 03:13.200
+through every single one and change the
+
+03:11.599 --> 03:15.599
+code itself
+
+03:13.200 --> 03:18.480
+just hop in over to the class
+
+03:15.599 --> 03:20.480
+let's go into our npc block
+
+03:18.480 --> 03:22.159
+and now this is a global script it's
+
+03:20.480 --> 03:23.680
+working on all of them
+
+03:22.159 --> 03:25.840
+so let's just do
+
+03:23.680 --> 03:27.760
+this.chat
+
+03:25.840 --> 03:29.599
+let's just say
+
+03:27.760 --> 03:32.480
+hello
+
+03:29.599 --> 03:34.480
+and then we'll concatenate player
+
+03:32.480 --> 03:36.560
+dot account
+
+03:34.480 --> 03:37.599
+so this is client side so my player
+
+03:36.560 --> 03:40.319
+object
+
+03:37.599 --> 03:42.159
+account attribute should be placed
+
+03:40.319 --> 03:45.440
+so i save that
+
+03:42.159 --> 03:47.680
+update the level quick because it just
+
+03:45.440 --> 03:49.280
+wasn't saved now you see they all update
+
+03:47.680 --> 03:51.599
+and they all changed every single one of
+
+03:49.280 --> 03:53.519
+them so now we have complete control
+
+03:51.599 --> 03:54.879
+over what we want to do here
+
+03:53.519 --> 03:56.879
+there's a lot of things you can do with
+
+03:54.879 --> 03:58.319
+glasses and this is just a basic
+
+03:56.879 --> 04:00.239
+overview
+
+03:58.319 --> 04:01.680
+this really simple just breaking it down
+
+04:00.239 --> 04:03.280
+to the bare bones
+
+04:01.680 --> 04:05.760
+uh you can get as creative as you want
+
+04:03.280 --> 04:08.159
+with objects in the game like uh when
+
+04:05.760 --> 04:10.560
+you're shoveling sand in eye era you get
+
+04:08.159 --> 04:12.959
+a shadow that shell that's on the ground
+
+04:10.560 --> 04:14.720
+is 100 a class
+
+04:12.959 --> 04:16.400
+and it's just taking the code from here
+
+04:14.720 --> 04:18.079
+so you can use this in a lot of
+
+04:16.400 --> 04:19.519
+different ways and i'll make more video
+
+04:18.079 --> 04:21.600
+i'm sure most of my tutorials are going
+
+04:19.519 --> 04:22.960
+to have classes at one point
+
+04:21.600 --> 04:24.639
+before we even get there i thought i'd
+
+04:22.960 --> 04:26.479
+just make a video kind of pointing it
+
+04:24.639 --> 04:28.720
+out and now you have a little bit of an
+
+04:26.479 --> 04:30.479
+understanding a lot of people don't know
+
+04:28.720 --> 04:32.080
+um a lot of people only know what the
+
+04:30.479 --> 04:33.280
+weapons do but not actually what the
+
+04:32.080 --> 04:34.080
+classes do
+
+04:33.280 --> 04:35.600
+so
+
+04:34.080 --> 04:37.120
+thanks for watching make sure to stay
+
+04:35.600 --> 04:38.960
+tuned and check out the playlist that
+
+04:37.120 --> 04:41.040
+this video is in there should be tons of
+
+04:38.960 --> 04:45.520
+videos coming out in the next month so
+
+04:41.040 --> 04:45.520
+thanks for watching and have a good day

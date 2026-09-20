@@ -1,0 +1,358 @@
+WEBVTT
+
+00:00.680 --> 00:05.759
+hello and welcome to the 18th tutorial
+
+00:02.840 --> 00:06.879
+on how to program a gript 2 in this
+
+00:05.759 --> 00:09.480
+tutorial I'm going to show you about a
+
+00:06.879 --> 00:12.120
+new command called on
+
+00:09.480 --> 00:13.599
+wall so in this tutorial I'm going to be
+
+00:12.120 --> 00:16.559
+using a weapon but you can also use this
+
+00:13.599 --> 00:16.559
+command in a
+
+00:17.840 --> 00:22.600
+NPC so let's add client side
+
+00:26.039 --> 00:31.960
+and function on player
+
+00:28.960 --> 00:31.960
+chats
+
+00:34.520 --> 00:40.840
+if the player says the word Mouse then
+
+00:38.160 --> 00:40.840
+this is what's going to
+
+00:41.640 --> 00:45.480
+happen it's going to go to the function
+
+00:43.960 --> 00:47.680
+called on timeouts which we're going to
+
+00:45.480 --> 00:47.680
+add
+
+00:49.719 --> 00:58.719
+here and at the bottom we can add sleep
+
+00:55.079 --> 01:00.160
+0.1 on timeout if we want to Loop it or
+
+00:58.719 --> 01:01.280
+because it's an on timeout function we
+
+01:00.160 --> 01:05.280
+can just
+
+01:01.280 --> 01:07.360
+add set timer 0.1 set timer will always
+
+01:05.280 --> 01:10.000
+go to on time the function on timeout if
+
+01:07.360 --> 01:16.080
+it exists after how many seconds is in
+
+01:10.000 --> 01:19.479
+here okay so in it let's add
+
+01:16.080 --> 01:19.479
+if on
+
+01:19.720 --> 01:25.840
+wall on wall Mouse X Mouse
+
+01:28.320 --> 01:31.920
+y then
+
+01:32.600 --> 01:37.759
+do
+
+01:34.000 --> 01:43.520
+this player. chat is equal
+
+01:37.759 --> 01:43.520
+to on a blocking
+
+01:48.320 --> 01:55.799
+tile
+
+01:51.000 --> 01:58.600
+else player. chat is equal to not on a
+
+01:55.799 --> 01:58.600
+blocking
+
+01:58.680 --> 02:04.320
+tile oh okay so I'm going to save this
+
+02:02.880 --> 02:06.719
+now since I have the weapon already I'm
+
+02:04.320 --> 02:09.160
+just going to type
+
+02:06.719 --> 02:11.400
+Mouse and it's just keep going to say
+
+02:09.160 --> 02:14.480
+not on a blocking tile but I'm going
+
+02:11.400 --> 02:17.680
+to add a title in a
+
+02:14.480 --> 02:20.760
+second like let's say a
+
+02:17.680 --> 02:22.640
+bush bush is block right so when I put
+
+02:20.760 --> 02:25.200
+my mouse on it it's going to say on a
+
+02:22.640 --> 02:27.840
+blocking tile and when I take it off
+
+02:25.200 --> 02:29.239
+it's not on a blocking tile blocking
+
+02:27.840 --> 02:33.440
+tiles are tiles that you can't walk
+
+02:29.239 --> 02:33.440
+through on whatever tille set you're
+
+02:33.920 --> 02:38.720
+using so that's pretty useful because
+
+02:36.120 --> 02:40.400
+you can do things like make NPCs that
+
+02:38.720 --> 02:42.440
+don't walk through walls like let's say
+
+02:40.400 --> 02:45.159
+you want to make an AI that doesn't walk
+
+02:42.440 --> 02:49.239
+through walls you can do that with that
+
+02:45.159 --> 02:52.599
+now the mouse X is the x value that your
+
+02:49.239 --> 02:56.280
+mouse is on this is by tiles and the
+
+02:52.599 --> 03:00.760
+mouse Y is going down the Y AIS that
+
+02:56.280 --> 03:02.680
+your mouse is on so Mouse X which is the
+
+03:00.760 --> 03:03.560
+first parameter is the X and the second
+
+03:02.680 --> 03:06.200
+is the
+
+03:03.560 --> 03:09.120
+Y so we can put any variable here like
+
+03:06.200 --> 03:11.400
+we could put one if we wanted to that's
+
+03:09.120 --> 03:16.040
+not a variable but it's a number so now
+
+03:11.400 --> 03:18.920
+if if the tiles um 5 comma 5 are
+
+03:16.040 --> 03:20.519
+blocking then it's going to say that or
+
+03:18.920 --> 03:22.599
+if it's not then it's going to say this
+
+03:20.519 --> 03:25.080
+but since we know that it's not blocking
+
+03:22.599 --> 03:26.840
+it's just going to say that anyway we're
+
+03:25.080 --> 03:28.159
+just going to put Mouse we can oh yeah
+
+03:26.840 --> 03:31.439
+we can also put something like this
+
+03:28.159 --> 03:34.879
+player X comma player
+
+03:31.439 --> 03:37.720
+doy that'll work we can put this.x
+
+03:34.879 --> 03:41.640
+this.y anything like
+
+03:37.720 --> 03:44.840
+that let's have to say mouse first and
+
+03:41.640 --> 03:47.360
+since you know the players X and Y is
+
+03:44.840 --> 03:49.840
+actually at the top left corner of them
+
+03:47.360 --> 03:51.599
+so technically you're on the tile if we
+
+03:49.840 --> 03:53.799
+want to take that away you know make it
+
+03:51.599 --> 03:55.239
+to the center of the player we would add
+
+03:53.799 --> 03:58.599
+plus
+
+03:55.239 --> 04:00.159
+1.5 and plus 1.5 after them I'm not sure
+
+03:58.599 --> 04:03.560
+if this is exactly the center but it's
+
+04:00.159 --> 04:05.959
+about so you'll see that nowhere we walk
+
+04:03.560 --> 04:08.079
+around it because the center of the
+
+04:05.959 --> 04:11.640
+player isn't touching it but now if we
+
+04:08.079 --> 04:11.640
+move ourselves
+
+04:11.799 --> 04:15.319
+like if we do
+
+04:15.799 --> 04:21.560
+this it'll see that we're on a blocking
+
+04:18.040 --> 04:23.479
+tile well anyway that's it for this
+
+04:21.560 --> 04:25.919
+tutorial actually no I'm going to teach
+
+04:23.479 --> 04:28.000
+you one more thing it's called how to
+
+04:25.919 --> 04:30.440
+make it's called random and it makes
+
+04:28.000 --> 04:33.400
+things random
+
+04:30.440 --> 04:36.360
+let's just change the NPC to be like
+
+04:33.400 --> 04:40.600
+this
+
+04:36.360 --> 04:40.600
+random and then in the NPC let's
+
+04:41.320 --> 04:46.600
+add actually why am I doing this I don't
+
+04:43.280 --> 04:46.600
+even need the on timeout this
+
+04:48.440 --> 04:56.960
+time let's add this dot is random a new
+
+04:53.960 --> 04:56.960
+MP a new
+
+04:57.199 --> 05:06.560
+variable is equal to
+
+05:01.520 --> 05:06.560
+int random 0 comma
+
+05:07.680 --> 05:15.880
+9 so then player. chat is equal to this
+
+05:13.520 --> 05:18.479
+uh Is
+
+05:15.880 --> 05:21.039
+Random so what this is going to do is
+
+05:18.479 --> 05:24.759
+when you say the word random it's going
+
+05:21.039 --> 05:28.280
+to make this do random a new variable
+
+05:24.759 --> 05:31.080
+equal to any number between 0 and
+
+05:28.280 --> 05:33.720
+9 and after this you can do things like
+
+05:31.080 --> 05:35.800
+if this. random is equal to one then
+
+05:33.720 --> 05:39.639
+make it say this or whatever but we're
+
+05:35.800 --> 05:43.280
+going to do this so when we cck apply it
+
+05:39.639 --> 05:44.360
+says random we get zero let's say random
+
+05:43.280 --> 05:48.639
+again we
+
+05:44.360 --> 05:50.960
+get we get five again we get one again
+
+05:48.639 --> 05:53.160
+we get nine so any number between zero
+
+05:50.960 --> 05:55.120
+and N is going to get a random number
+
+05:53.160 --> 05:57.080
+from those anyway that concludes this
+
+05:55.120 --> 06:00.240
+tutorial and I hope you have a better
+
+05:57.080 --> 06:03.080
+understanding on on wall and understand
+
+06:00.240 --> 06:04.680
+what how to make things random anyway
+
+06:03.080 --> 06:07.639
+that's it for this tutorial and I'll see
+
+06:04.680 --> 06:07.639
+you later

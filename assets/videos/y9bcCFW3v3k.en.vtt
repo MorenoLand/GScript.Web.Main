@@ -1,0 +1,1048 @@
+WEBVTT
+
+00:00.400 --> 00:05.200
+hello and welcome to the 33rd tutorial
+
+00:02.560 --> 00:06.879
+on how to program eg script 2.
+
+00:05.200 --> 00:08.639
+so in this tutorial i want to show a
+
+00:06.879 --> 00:11.440
+couple of different things
+
+00:08.639 --> 00:14.160
+first let's open our weapons
+
+00:11.440 --> 00:17.359
+and create a new weapon
+
+00:14.160 --> 00:19.520
+let's call it just call it
+
+00:17.359 --> 00:20.720
+stuff
+
+00:19.520 --> 00:22.320
+okay because we're gonna have a lot of
+
+00:20.720 --> 00:26.480
+stuff in it
+
+00:22.320 --> 00:26.480
+then let's add it to ourselves um
+
+00:26.800 --> 00:31.480
+function
+
+00:28.160 --> 00:31.480
+client side
+
+00:32.239 --> 00:36.880
+then we're gonna put
+
+00:34.079 --> 00:39.600
+uh find
+
+00:36.880 --> 00:42.719
+weapon no find player
+
+00:39.600 --> 00:45.200
+then my my name or my account girl
+
+00:42.719 --> 00:46.320
+755284
+
+00:45.200 --> 00:48.640
+then
+
+00:46.320 --> 00:48.640
+dot
+
+00:48.719 --> 00:51.760
+add weapon
+
+00:50.000 --> 00:53.039
+and the name of this weapon this dot
+
+00:51.760 --> 00:55.039
+name
+
+00:53.039 --> 00:56.399
+and i should have that weapon so i apply
+
+00:55.039 --> 00:59.120
+that
+
+00:56.399 --> 01:01.680
+press q and
+
+00:59.120 --> 01:01.680
+it's not there
+
+01:01.760 --> 01:04.760
+75284
+
+01:05.920 --> 01:09.600
+apply that
+
+01:08.159 --> 01:10.560
+stuff there it is
+
+01:09.600 --> 01:12.479
+maybe it was there before i didn't
+
+01:10.560 --> 01:16.000
+notice it oh well
+
+01:12.479 --> 01:18.479
+so next what we want to do is
+
+01:16.000 --> 01:23.439
+put we can delete all this
+
+01:18.479 --> 01:26.560
+let's put client side so client side
+
+01:23.439 --> 01:29.040
+and let's create
+
+01:26.560 --> 01:29.040
+an array
+
+01:32.799 --> 01:37.119
+so previously in previous tutorials i've
+
+01:35.280 --> 01:39.040
+been using
+
+01:37.119 --> 01:42.079
+said array
+
+01:39.040 --> 01:45.759
+then whatever array name i want or
+
+01:42.079 --> 01:48.000
+like asfd then how many i want
+
+01:45.759 --> 01:50.880
+well as you know as you know this is the
+
+01:48.000 --> 01:52.560
+g-script one version of said array
+
+01:50.880 --> 01:54.720
+and what i recently found out is the
+
+01:52.560 --> 01:57.920
+g-skip 2 version
+
+01:54.720 --> 01:59.119
+which took a while to figure out um
+
+01:57.920 --> 02:01.759
+we have to do
+
+01:59.119 --> 02:03.520
+is put parentheses
+
+02:01.759 --> 02:06.079
+and then in it put
+
+02:03.520 --> 02:09.039
+whatever variable you want to be in the
+
+02:06.079 --> 02:10.879
+array like this dot
+
+02:09.039 --> 02:13.440
+hello
+
+02:10.879 --> 02:15.200
+then comma how many you want so let's
+
+02:13.440 --> 02:17.599
+put 10.
+
+02:15.200 --> 02:18.879
+so now we have 10 variables of this dot
+
+02:17.599 --> 02:20.560
+hello
+
+02:18.879 --> 02:23.120
+and you can do any prefix you want you
+
+02:20.560 --> 02:25.280
+can put this dot
+
+02:23.120 --> 02:27.360
+you can put temp dot
+
+02:25.280 --> 02:29.520
+whatever you want let's put this dot
+
+02:27.360 --> 02:31.599
+so this adds a lot more functionality to
+
+02:29.520 --> 02:34.000
+your arrays you can add
+
+02:31.599 --> 02:36.480
+different types of variables now
+
+02:34.000 --> 02:38.720
+so let's just test it out let's put
+
+02:36.480 --> 02:39.680
+this dot hello uh
+
+02:38.720 --> 02:41.440
+five
+
+02:39.680 --> 02:43.519
+is equal to
+
+02:41.440 --> 02:48.319
+hey
+
+02:43.519 --> 02:51.120
+and then let's put this dot hello
+
+02:48.319 --> 02:52.480
+uh four is equal to
+
+02:51.120 --> 02:54.400
+no
+
+02:52.480 --> 02:57.040
+let's just also let's make this less
+
+02:54.400 --> 02:59.760
+let's put just five
+
+02:57.040 --> 03:03.560
+then we'll put zero one
+
+02:59.760 --> 03:03.560
+and we'll just copy this
+
+03:04.560 --> 03:09.120
+so now we have six we want five so there
+
+03:07.120 --> 03:11.360
+then let's increase these differently
+
+03:09.120 --> 03:13.360
+into different numbers three four
+
+03:11.360 --> 03:15.680
+remember it has to go up to four only it
+
+03:13.360 --> 03:18.080
+can't go to five because zero counts as
+
+03:15.680 --> 03:20.000
+one of the numbers
+
+03:18.080 --> 03:23.200
+okay so now we have that we can do a for
+
+03:20.000 --> 03:23.200
+loop or something for
+
+03:23.519 --> 03:29.360
+uh what verb we want
+
+03:26.400 --> 03:30.959
+and template n is equal to
+
+03:29.360 --> 03:33.120
+zero
+
+03:30.959 --> 03:35.040
+and as long as temp dot n
+
+03:33.120 --> 03:37.040
+is less than five the amount of
+
+03:35.040 --> 03:40.239
+variables in this array
+
+03:37.040 --> 03:41.840
+then it's going to keep looping then
+
+03:40.239 --> 03:43.840
+temp dot n
+
+03:41.840 --> 03:46.400
+plus plus
+
+03:43.840 --> 03:48.879
+and over here let's put
+
+03:46.400 --> 03:51.599
+uh player.chat
+
+03:48.879 --> 03:51.599
+is equal to
+
+03:51.680 --> 03:55.519
+this dot hello
+
+03:54.400 --> 03:57.840
+and n
+
+03:55.519 --> 03:59.599
+to show which
+
+03:57.840 --> 04:01.360
+variable in the array we want to specify
+
+03:59.599 --> 04:02.959
+which is all five because we're putting
+
+04:01.360 --> 04:04.720
+n and it's looping through through the
+
+04:02.959 --> 04:06.080
+end
+
+04:04.720 --> 04:09.599
+and
+
+04:06.080 --> 04:09.599
+that's it let's put a sleep here
+
+04:10.239 --> 04:16.320
+one second and run that
+
+04:13.599 --> 04:17.280
+let's just say no hey no
+
+04:16.320 --> 04:18.959
+hey
+
+04:17.280 --> 04:20.079
+and then it just stops because the for
+
+04:18.959 --> 04:23.520
+loop
+
+04:20.079 --> 04:25.919
+is over n is five now and it's broken
+
+04:23.520 --> 04:26.800
+so that's how you use arrays in g script
+
+04:25.919 --> 04:29.600
+two
+
+04:26.800 --> 04:33.600
+now another thing i want to show you
+
+04:29.600 --> 04:34.880
+let's create an image show image
+
+04:33.600 --> 04:36.320
+300
+
+04:34.880 --> 04:38.320
+and we're going to put
+
+04:36.320 --> 04:40.479
+block.png
+
+04:38.320 --> 04:42.720
+you can do whatever image you want
+
+04:40.479 --> 04:46.160
+then let's put
+
+04:42.720 --> 04:48.560
+uh player.x comma player.y so as soon as
+
+04:46.160 --> 04:49.759
+i update the weapon the image is going
+
+04:48.560 --> 04:52.800
+to appear
+
+04:49.759 --> 04:54.479
+on the coordinates of my player
+
+04:52.800 --> 04:56.400
+so let's hit that
+
+04:54.479 --> 04:58.240
+see if it works yep it works there's an
+
+04:56.400 --> 04:59.199
+image here now
+
+04:58.240 --> 05:00.479
+now
+
+04:59.199 --> 05:01.680
+there's something about images you
+
+05:00.479 --> 05:03.600
+probably don't know
+
+05:01.680 --> 05:04.960
+you can do a lot of different
+
+05:03.600 --> 05:06.400
+changes you can change them in a lot of
+
+05:04.960 --> 05:08.840
+different ways
+
+05:06.400 --> 05:11.440
+so let's type
+
+05:08.840 --> 05:14.160
+with find image
+
+05:11.440 --> 05:15.919
+and then put the image we want to find
+
+05:14.160 --> 05:18.160
+300
+
+05:15.919 --> 05:19.600
+parenthesis to end it and brackets now
+
+05:18.160 --> 05:20.960
+what this is going to do
+
+05:19.600 --> 05:22.479
+is find
+
+05:20.960 --> 05:24.000
+this image
+
+05:22.479 --> 05:26.639
+and whatever we're going to put in here
+
+05:24.000 --> 05:28.479
+is going to be applied to this image
+
+05:26.639 --> 05:29.759
+now you must have this after the image
+
+05:28.479 --> 05:31.039
+has already been called you can't have
+
+05:29.759 --> 05:33.759
+it before
+
+05:31.039 --> 05:33.759
+so let's put
+
+05:34.240 --> 05:39.039
+let's put something like
+
+05:37.039 --> 05:40.720
+zoom equals two
+
+05:39.039 --> 05:43.360
+you can do this with any any image
+
+05:40.720 --> 05:45.280
+remember that if we hit apply the image
+
+05:43.360 --> 05:46.880
+is twice as big now
+
+05:45.280 --> 05:48.560
+we can also put
+
+05:46.880 --> 05:50.880
+uh 0.5
+
+05:48.560 --> 05:53.360
+or 0.3 or 0.2
+
+05:50.880 --> 05:55.199
+and it'll be really small you can barely
+
+05:53.360 --> 05:57.600
+see it right there
+
+05:55.199 --> 05:58.880
+let's just make it two to make it bigger
+
+05:57.600 --> 06:01.199
+other than that you can also change the
+
+05:58.880 --> 06:01.199
+colors
+
+06:02.960 --> 06:07.840
+let's do that let's go here
+
+06:04.960 --> 06:09.440
+and let's put
+
+06:07.840 --> 06:10.479
+red
+
+06:09.440 --> 06:12.000
+green
+
+06:10.479 --> 06:14.080
+blue
+
+06:12.000 --> 06:15.199
+okay now these are the three colors you
+
+06:14.080 --> 06:16.880
+can change
+
+06:15.199 --> 06:19.680
+by default
+
+06:16.880 --> 06:21.360
+these are all equal to one by default
+
+06:19.680 --> 06:23.360
+so if you don't specify them they're
+
+06:21.360 --> 06:25.680
+just going to be one
+
+06:23.360 --> 06:26.960
+now if you just have them at one all the
+
+06:25.680 --> 06:28.080
+colors of the image are going to be
+
+06:26.960 --> 06:30.080
+there
+
+06:28.080 --> 06:32.960
+however if we change one of them to
+
+06:30.080 --> 06:35.360
+let's say we'll change the rate to 0.5
+
+06:32.960 --> 06:37.039
+all of the red in that image is going to
+
+06:35.360 --> 06:39.759
+be
+
+06:37.039 --> 06:43.600
+taken away by half so now you get this
+
+06:39.759 --> 06:46.080
+tealish aquaish greenish color here
+
+06:43.600 --> 06:47.120
+now if we took out red completely
+
+06:46.080 --> 06:49.759
+zero
+
+06:47.120 --> 06:52.880
+um took out all green
+
+06:49.759 --> 06:52.880
+it would be blue
+
+06:53.360 --> 06:56.960
+if we took out
+
+06:54.880 --> 06:59.280
+a minimal zero
+
+06:56.960 --> 07:01.039
+it'd be a totally black image
+
+06:59.280 --> 07:03.360
+because there's no color in it
+
+07:01.039 --> 07:05.360
+which is pretty useful you can
+
+07:03.360 --> 07:07.759
+change colors around but for us let's
+
+07:05.360 --> 07:08.560
+just put something at random like 0.8
+
+07:07.759 --> 07:11.599
+uh
+
+07:08.560 --> 07:14.000
+0.2 and 0.5
+
+07:11.599 --> 07:15.199
+it's kind of ugly but whatever
+
+07:14.000 --> 07:17.199
+then over here
+
+07:15.199 --> 07:18.240
+let's put another command let's put
+
+07:17.199 --> 07:20.400
+alpha
+
+07:18.240 --> 07:22.319
+now this is how much
+
+07:20.400 --> 07:26.000
+alpha you want the image to have like
+
+07:22.319 --> 07:28.880
+invisibility if you put it at one
+
+07:26.000 --> 07:30.479
+it's going to be totally visible
+
+07:28.880 --> 07:32.639
+if we put it at
+
+07:30.479 --> 07:34.240
+0.6
+
+07:32.639 --> 07:35.919
+it's going to be
+
+07:34.240 --> 07:38.319
+sort of invisible
+
+07:35.919 --> 07:40.160
+if you put it at zero
+
+07:38.319 --> 07:42.160
+it's going to be totally invisible
+
+07:40.160 --> 07:45.199
+now here's the thing with alpha
+
+07:42.160 --> 07:47.440
+point let's put it at 0.9 it doesn't
+
+07:45.199 --> 07:49.199
+look very good kind of
+
+07:47.440 --> 07:50.560
+if we want it to look like a better
+
+07:49.199 --> 07:53.280
+transparency
+
+07:50.560 --> 07:55.280
+right before the alpha add mode equals
+
+07:53.280 --> 07:56.479
+one
+
+07:55.280 --> 08:01.280
+as you can see
+
+07:56.479 --> 08:01.280
+it it's it's better looking transparency
+
+08:01.520 --> 08:04.800
+let's put this alpha point five and i'll
+
+08:03.360 --> 08:07.440
+show you the difference again this is
+
+08:04.800 --> 08:08.879
+with mode equals one
+
+08:07.440 --> 08:09.919
+and let's take that out
+
+08:08.879 --> 08:11.599
+and this is
+
+08:09.919 --> 08:12.960
+without mode equals one
+
+08:11.599 --> 08:14.560
+see the difference
+
+08:12.960 --> 08:16.560
+so i usually put mode equals one because
+
+08:14.560 --> 08:18.160
+it looks better i'm not sure why this
+
+08:16.560 --> 08:22.000
+does it but if you want it to look
+
+08:18.160 --> 08:22.000
+better then just put more equals one
+
+08:22.479 --> 08:26.319
+all right so some more things you can do
+
+08:24.720 --> 08:28.240
+is
+
+08:26.319 --> 08:30.960
+go in here and put
+
+08:28.240 --> 08:30.960
+stretch
+
+08:31.360 --> 08:34.880
+x and we're going to put another one
+
+08:33.279 --> 08:35.760
+stretch
+
+08:34.880 --> 08:37.680
+y
+
+08:35.760 --> 08:39.200
+now what you're going to do is stretch
+
+08:37.680 --> 08:42.240
+the image
+
+08:39.200 --> 08:43.760
+on these two axises
+
+08:42.240 --> 08:47.120
+by whatever number you put if you just
+
+08:43.760 --> 08:49.200
+put one and then put a one here
+
+08:47.120 --> 08:51.360
+it's not gonna do anything as you can
+
+08:49.200 --> 08:54.480
+see by default is one
+
+08:51.360 --> 08:57.040
+now if we go here and put x as point
+
+08:54.480 --> 08:59.200
+i don't know point point five and put y
+
+08:57.040 --> 09:00.160
+is
+
+08:59.200 --> 09:01.760
+ten
+
+09:00.160 --> 09:02.640
+watch what happens
+
+09:01.760 --> 09:04.240
+whoa
+
+09:02.640 --> 09:05.519
+that's pretty
+
+09:04.240 --> 09:08.800
+stretched
+
+09:05.519 --> 09:10.080
+uh let's make it a bit less just two
+
+09:08.800 --> 09:12.399
+let's continue you can stretch the
+
+09:10.080 --> 09:13.839
+images too now you can combine all these
+
+09:12.399 --> 09:16.000
+things zoom
+
+09:13.839 --> 09:20.640
+stretch
+
+09:16.000 --> 09:20.640
+colors alpha you can combine them all
+
+09:21.040 --> 09:24.480
+another thing you can do is
+
+09:22.720 --> 09:26.000
+let's just delete all this with find
+
+09:24.480 --> 09:28.320
+image here
+
+09:26.000 --> 09:30.480
+and go here and instead of player x
+
+09:28.320 --> 09:33.440
+player y just put
+
+09:30.480 --> 09:34.839
+10 comma 10. so if we update this it
+
+09:33.440 --> 09:37.360
+should appear
+
+09:34.839 --> 09:39.920
+coordinates 10 comma 10.
+
+09:37.360 --> 09:41.519
+now if you look here 10 comma 10 puts it
+
+09:39.920 --> 09:44.399
+into the level so it's at the
+
+09:41.519 --> 09:46.080
+coordinates 10 comma 10 on the level
+
+09:44.399 --> 09:47.600
+now let's say that we don't want it to
+
+09:46.080 --> 09:49.680
+be on the level we want it to be on the
+
+09:47.600 --> 09:51.760
+screen for example we could have our own
+
+09:49.680 --> 09:55.200
+little heart system here that shows
+
+09:51.760 --> 09:58.160
+heart images and it moves as we move
+
+09:55.200 --> 10:00.000
+and uh goes to every other level
+
+09:58.160 --> 10:03.120
+well as long as weapon
+
+10:00.000 --> 10:05.519
+well what we could do is go here and put
+
+10:03.120 --> 10:09.120
+change
+
+10:05.519 --> 10:11.040
+img for image then vis
+
+10:09.120 --> 10:12.160
+then parentheses
+
+10:11.040 --> 10:14.240
+so
+
+10:12.160 --> 10:17.120
+in the parenthesis put the id of the
+
+10:14.240 --> 10:19.120
+image hours is 300
+
+10:17.120 --> 10:21.200
+and then put a number
+
+10:19.120 --> 10:23.680
+and the number we're looking for is 9.
+
+10:21.200 --> 10:25.120
+so put that there
+
+10:23.680 --> 10:27.279
+now if you look here well you can't
+
+10:25.120 --> 10:29.200
+actually see it i'm going to put
+
+10:27.279 --> 10:31.600
+100
+
+10:29.200 --> 10:32.720
+100 instead
+
+10:31.600 --> 10:35.360
+as you can see
+
+10:32.720 --> 10:37.279
+it appears at the coordinates 100 comma
+
+10:35.360 --> 10:39.440
+100 kind of hard to you to tell because
+
+10:37.279 --> 10:42.880
+you can't really see the very top left
+
+10:39.440 --> 10:45.040
+of my game screen but this will put it
+
+10:42.880 --> 10:48.000
+at the coordinates 100 comma 100 by
+
+10:45.040 --> 10:50.399
+pixel so now if we move around
+
+10:48.000 --> 10:53.440
+it you can see the levels moving
+
+10:50.399 --> 10:53.440
+it's kind of hard to tell but
+
+10:53.600 --> 10:58.480
+look at this npc here for an example you
+
+10:56.240 --> 11:00.399
+can see i'm moving but the npc i mean
+
+10:58.480 --> 11:04.720
+the image isn't moving because it's on
+
+11:00.399 --> 11:07.120
+my screen at the coordinates 10 100 100
+
+11:04.720 --> 11:09.279
+this is by pixel now you can do the same
+
+11:07.120 --> 11:11.360
+thing with anything that has an id with
+
+11:09.279 --> 11:11.360
+it
+
+11:11.519 --> 11:16.079
+now if we put another number like i
+
+11:13.519 --> 11:17.519
+don't know zero
+
+11:16.079 --> 11:20.640
+hit that well i don't know what that
+
+11:17.519 --> 11:20.640
+does but if we put one
+
+11:20.880 --> 11:23.120
+uh
+
+11:22.240 --> 11:24.720
+wait
+
+11:23.120 --> 11:27.360
+i don't want
+
+11:24.720 --> 11:29.120
+a hundred hundred i want ten ten
+
+11:27.360 --> 11:31.600
+well the image
+
+11:29.120 --> 11:33.279
+again appears at coordinates 10 comma 10
+
+11:31.600 --> 11:34.800
+on the level
+
+11:33.279 --> 11:37.760
+now all of these numbers do something
+
+11:34.800 --> 11:39.440
+else do something different i believe
+
+11:37.760 --> 11:41.279
+i only know one
+
+11:39.440 --> 11:43.120
+and nine
+
+11:41.279 --> 11:45.360
+one for level
+
+11:43.120 --> 11:47.200
+and nine for pixels you can try out some
+
+11:45.360 --> 11:49.279
+other things but i don't know if someone
+
+11:47.200 --> 11:52.079
+won't even do anything
+
+11:49.279 --> 11:54.839
+well anyway that's change image biz
+
+11:52.079 --> 11:56.800
+so now you know more about editing the
+
+11:54.839 --> 12:00.000
+uh
+
+11:56.800 --> 12:00.959
+images and other things that have
+
+12:00.000 --> 12:03.040
+these
+
+12:00.959 --> 12:04.560
+id's
+
+12:03.040 --> 12:05.760
+so i guess this is that's the end of
+
+12:04.560 --> 12:07.519
+this tutorial
+
+12:05.760 --> 12:09.279
+now this will probably be the last tour
+
+12:07.519 --> 12:11.279
+i'm going to make because my server time
+
+12:09.279 --> 12:13.040
+is almost out
+
+12:11.279 --> 12:14.880
+uh
+
+12:13.040 --> 12:16.880
+i hope you learned
+
+12:14.880 --> 12:18.959
+how to use descript 2
+
+12:16.880 --> 12:21.120
+and can now make
+
+12:18.959 --> 12:22.240
+some actual pretty good things now with
+
+12:21.120 --> 12:24.480
+it
+
+12:22.240 --> 12:26.000
+you can make your own health systems you
+
+12:24.480 --> 12:27.920
+can make
+
+12:26.000 --> 12:29.839
+weapons that you
+
+12:27.920 --> 12:31.920
+press space or something and then it
+
+12:29.839 --> 12:34.560
+hits the other players
+
+12:31.920 --> 12:35.920
+you know things like that
+
+12:34.560 --> 12:38.399
+and
+
+12:35.920 --> 12:40.800
+i hope you make some good things of that
+
+12:38.399 --> 12:43.800
+that concludes this tutorial and
+
+12:40.800 --> 12:43.800
+bye

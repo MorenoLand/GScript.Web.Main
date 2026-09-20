@@ -1,0 +1,430 @@
+WEBVTT
+
+00:00.160 --> 00:04.880
+hello and welcome to the 16th tutorial
+
+00:02.720 --> 00:06.240
+on how to program descriptive
+
+00:04.880 --> 00:08.320
+so in this tutorial i'm going to show
+
+00:06.240 --> 00:11.120
+you about weapons
+
+00:08.320 --> 00:13.280
+so let's open the
+
+00:11.120 --> 00:15.120
+rc i'm going to use the out game rc
+
+00:13.280 --> 00:16.640
+because i can add my the weapons to
+
+00:15.120 --> 00:18.240
+myself with the player list
+
+00:16.640 --> 00:20.720
+so let's click the stored icon and we
+
+00:18.240 --> 00:21.840
+can see all our weapons let's click add
+
+00:20.720 --> 00:24.400
+weapon
+
+00:21.840 --> 00:25.519
+and add it and call it
+
+00:24.400 --> 00:26.800
+awesome
+
+00:25.519 --> 00:29.279
+sit
+
+00:26.800 --> 00:29.279
+script
+
+00:29.519 --> 00:34.800
+and we can see an icon for it and let's
+
+00:32.239 --> 00:34.800
+add some code
+
+00:38.960 --> 00:42.800
+function on weapon fired
+
+00:41.280 --> 00:44.879
+this is a new function i'm going to show
+
+00:42.800 --> 00:47.280
+you what it does is as soon as you
+
+00:44.879 --> 00:49.600
+select the weapon
+
+00:47.280 --> 00:51.280
+in your inventory script it's not here
+
+00:49.600 --> 00:52.719
+right now but as soon as you select it
+
+00:51.280 --> 00:54.000
+then press d it's going to run the
+
+00:52.719 --> 00:55.680
+script
+
+00:54.000 --> 00:58.079
+not all weapons are going to have this
+
+00:55.680 --> 00:59.199
+so you can't activate them by pressing d
+
+00:58.079 --> 01:01.199
+after selecting them you're going to
+
+00:59.199 --> 01:03.359
+have to activate them in some other way
+
+01:01.199 --> 01:05.360
+if you even do activate them some
+
+01:03.359 --> 01:08.159
+weapons are running constantly like the
+
+01:05.360 --> 01:09.520
+movement script or a chat system like
+
+01:08.159 --> 01:11.040
+those weapons are running constantly
+
+01:09.520 --> 01:12.560
+with loops
+
+01:11.040 --> 01:15.760
+so anyway
+
+01:12.560 --> 01:17.439
+let's add some code set any
+
+01:15.760 --> 01:19.119
+sit
+
+01:17.439 --> 01:22.000
+no
+
+01:19.119 --> 01:22.720
+set any is a client side command
+
+01:22.000 --> 01:24.560
+but
+
+01:22.720 --> 01:26.400
+everybody in the
+
+01:24.560 --> 01:27.360
+entire server can't see you as you sit
+
+01:26.400 --> 01:28.960
+down
+
+01:27.360 --> 01:32.720
+but only you sit down like no one else
+
+01:28.960 --> 01:32.720
+sits down so anyway i'm going to apply
+
+01:33.759 --> 01:37.280
+and we're going to go to
+
+01:35.439 --> 01:39.680
+player list
+
+01:37.280 --> 01:41.280
+right click myself press edit attributes
+
+01:39.680 --> 01:42.479
+then go to weapons
+
+01:41.280 --> 01:45.200
+then add it
+
+01:42.479 --> 01:46.079
+they add the script awesome
+
+01:45.200 --> 01:47.280
+sit
+
+01:46.079 --> 01:49.200
+script
+
+01:47.280 --> 01:51.280
+click apply
+
+01:49.200 --> 01:52.880
+now if i press q you'll see the weapon
+
+01:51.280 --> 01:54.880
+right there
+
+01:52.880 --> 01:57.680
+this is the icon for the weapon
+
+01:54.880 --> 01:59.360
+it defaults to bc alarm clock
+
+01:57.680 --> 02:01.119
+if you do if you create the weapon with
+
+01:59.360 --> 02:02.719
+in-game rc
+
+02:01.119 --> 02:04.240
+you're gonna have to add the icon
+
+02:02.719 --> 02:08.080
+through
+
+02:04.240 --> 02:10.000
+the outgame mercy so if i take this out
+
+02:08.080 --> 02:12.239
+it's not going to show an icon
+
+02:10.000 --> 02:15.440
+you can also add your own icons through
+
+02:12.239 --> 02:17.920
+from the images folder in rc
+
+02:15.440 --> 02:19.360
+like go here
+
+02:17.920 --> 02:22.400
+then press the little plus next to the
+
+02:19.360 --> 02:26.160
+levels folder and you can see all your
+
+02:22.400 --> 02:26.160
+images you can add whatever you want
+
+02:26.480 --> 02:29.520
+so anyway
+
+02:28.000 --> 02:31.120
+let's see i want to change the script
+
+02:29.520 --> 02:32.160
+and make it go
+
+02:31.120 --> 02:34.640
+on
+
+02:32.160 --> 02:34.640
+created
+
+02:34.800 --> 02:40.239
+now what's going to happen
+
+02:36.879 --> 02:42.560
+oh i forgot the parentheses
+
+02:40.239 --> 02:44.720
+as soon as i press apply
+
+02:42.560 --> 02:47.120
+i'm going to automatically sit down
+
+02:44.720 --> 02:48.800
+because in a weapon on created means as
+
+02:47.120 --> 02:51.120
+soon as the player enters the level
+
+02:48.800 --> 02:54.879
+enters the server or as soon as the
+
+02:51.120 --> 02:56.160
+weapon is updated or added to the player
+
+02:54.879 --> 02:58.800
+so if i
+
+02:56.160 --> 03:00.720
+go out i can move around
+
+02:58.800 --> 03:03.440
+then i press apply
+
+03:00.720 --> 03:03.440
+i'm going to sit down
+
+03:03.760 --> 03:08.239
+we can also do on
+
+03:06.480 --> 03:09.920
+player chats
+
+03:08.239 --> 03:12.319
+and go if
+
+03:09.920 --> 03:14.720
+player.chat is equal to
+
+03:12.319 --> 03:14.720
+sit
+
+03:16.239 --> 03:21.840
+and click apply now as soon as i say sit
+
+03:20.159 --> 03:23.920
+i'm going to sit down
+
+03:21.840 --> 03:25.440
+if i press q the script will be there
+
+03:23.920 --> 03:27.519
+but if i press d nothing's going to
+
+03:25.440 --> 03:29.040
+happen so you may wondering it's pretty
+
+03:27.519 --> 03:30.480
+useless to even have this here because
+
+03:29.040 --> 03:31.760
+if you click it and press d nothing's
+
+03:30.480 --> 03:33.440
+going to happen
+
+03:31.760 --> 03:35.280
+well we can also we can make it so it's
+
+03:33.440 --> 03:36.239
+not shown here but it'll still be on the
+
+03:35.280 --> 03:39.680
+player
+
+03:36.239 --> 03:39.680
+to do that let's make a new weapon
+
+03:41.599 --> 03:45.680
+and call it
+
+03:43.519 --> 03:48.239
+sit two
+
+03:45.680 --> 03:50.879
+oh i forgot one thing daryl knife that's
+
+03:48.239 --> 03:52.159
+lame at minus sign
+
+03:50.879 --> 03:54.640
+sit two
+
+03:52.159 --> 03:56.319
+you have to have the minus sign there
+
+03:54.640 --> 04:00.080
+okay
+
+03:56.319 --> 04:02.720
+then we're going to copy the code
+
+04:00.080 --> 04:02.720
+click apply
+
+04:03.280 --> 04:07.159
+then i'm going to add it to myself
+
+04:21.359 --> 04:25.520
+oh yeah and for this awesome script i'm
+
+04:23.840 --> 04:27.600
+just gonna take away
+
+04:25.520 --> 04:30.320
+i'm just gonna delete it
+
+04:27.600 --> 04:30.320
+no there
+
+04:32.639 --> 04:36.080
+so now
+
+04:34.479 --> 04:40.440
+uh
+
+04:36.080 --> 04:40.440
+i'm going to delete it from here
+
+04:42.080 --> 04:45.680
+now the weapon the original weapon is
+
+04:43.680 --> 04:46.880
+gone as you can see we don't have any
+
+04:45.680 --> 04:47.759
+weapon here that's gonna make us sit
+
+04:46.880 --> 04:50.479
+down
+
+04:47.759 --> 04:52.800
+but when we press when we type sit
+
+04:50.479 --> 04:54.400
+we're gonna sit down wanna know because
+
+04:52.800 --> 04:55.680
+the weapon
+
+04:54.400 --> 04:57.520
+sit two
+
+04:55.680 --> 04:59.199
+has the minus sign in front that means
+
+04:57.520 --> 05:00.479
+the weapon is added to us you know if
+
+04:59.199 --> 05:02.639
+it's even added
+
+05:00.479 --> 05:05.440
+but we won't see it here
+
+05:02.639 --> 05:06.880
+so it's a great way to make like huds or
+
+05:05.440 --> 05:09.120
+inventory scripts where you don't want
+
+05:06.880 --> 05:11.199
+it to be shown here
+
+05:09.120 --> 05:14.479
+so if i do something if i change on
+
+05:11.199 --> 05:16.400
+player chats to on weapon fired
+
+05:14.479 --> 05:17.199
+there will be no way to even activate
+
+05:16.400 --> 05:19.680
+the
+
+05:17.199 --> 05:21.919
+script because there's no way to select
+
+05:19.680 --> 05:25.479
+it and then press d
+
+05:21.919 --> 05:25.479
+so anyway that can

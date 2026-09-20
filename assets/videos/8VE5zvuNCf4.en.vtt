@@ -1,0 +1,979 @@
+WEBVTT
+
+00:00.560 --> 00:05.279
+hello and welcome to the 30th tutorial
+
+00:02.879 --> 00:07.279
+on how to program g-script 2.
+
+00:05.279 --> 00:08.400
+so in this tutorial i want to show you
+
+00:07.279 --> 00:12.080
+how to make
+
+00:08.400 --> 00:15.280
+ghani's or if you print out some candies
+
+00:12.080 --> 00:17.440
+and first thing i want to do is open rc
+
+00:15.280 --> 00:19.119
+go to
+
+00:17.440 --> 00:23.279
+rc options
+
+00:19.119 --> 00:25.279
+i think no we go to folder options
+
+00:23.279 --> 00:27.680
+then we go to the bottom
+
+00:25.279 --> 00:28.640
+and we need to put this line
+
+00:27.680 --> 00:30.320
+right here
+
+00:28.640 --> 00:31.599
+file
+
+00:30.320 --> 00:34.000
+ghani's
+
+00:31.599 --> 00:36.079
+slash star dot gani i already have it
+
+00:34.000 --> 00:38.079
+here but you probably won't have it
+
+00:36.079 --> 00:40.239
+unless you know your server already has
+
+00:38.079 --> 00:40.239
+it
+
+00:40.879 --> 00:44.160
+but if you got your server you probably
+
+00:42.320 --> 00:47.039
+wouldn't so once we have that here we're
+
+00:44.160 --> 00:48.320
+going to click apply
+
+00:47.039 --> 00:52.800
+then what we're going to do is we're
+
+00:48.320 --> 00:56.000
+going to open the out game rc
+
+00:52.800 --> 00:56.000
+so i'm going to do that right now
+
+00:56.800 --> 00:59.840
+in a second
+
+01:02.640 --> 01:07.439
+then
+
+01:04.640 --> 01:07.439
+we want to click
+
+01:10.880 --> 01:15.439
+what we want to do
+
+01:13.439 --> 01:18.080
+is click player
+
+01:15.439 --> 01:20.240
+is this button here for the players
+
+01:18.080 --> 01:22.159
+gonna go here click
+
+01:20.240 --> 01:24.960
+edit rights
+
+01:22.159 --> 01:26.960
+then once you do that
+
+01:24.960 --> 01:29.040
+this should open up and you click this
+
+01:26.960 --> 01:30.720
+tab here it says folder rights
+
+01:29.040 --> 01:34.079
+then what you want to do
+
+01:30.720 --> 01:36.720
+is you want to go here and put
+
+01:34.079 --> 01:36.720
+where is it
+
+01:37.439 --> 01:41.680
+read
+
+01:39.439 --> 01:43.360
+level slash ganis
+
+01:41.680 --> 01:44.240
+and then slash
+
+01:43.360 --> 01:45.920
+star
+
+01:44.240 --> 01:49.439
+this means that you can
+
+01:45.920 --> 01:51.920
+edit the folder of levels
+
+01:49.439 --> 01:52.880
+ganis and then whatever files in that
+
+01:51.920 --> 01:54.320
+folder
+
+01:52.880 --> 01:56.159
+read means that you can view them and
+
+01:54.320 --> 01:57.439
+write means that you can save them there
+
+01:56.159 --> 01:58.240
+so we're going to have this line of code
+
+01:57.439 --> 01:59.840
+somewhere here we're going to click
+
+01:58.240 --> 02:01.600
+apply
+
+01:59.840 --> 02:03.680
+and close the rc
+
+02:01.600 --> 02:05.680
+now in the in-game rc
+
+02:03.680 --> 02:07.439
+if we click this button here for the
+
+02:05.680 --> 02:10.000
+folders and things and we'll click this
+
+02:07.439 --> 02:11.840
+plus sign we could see a new folder here
+
+02:10.000 --> 02:13.840
+ganes
+
+02:11.840 --> 02:15.599
+and with all the guns we have on the
+
+02:13.840 --> 02:16.560
+server and i'm going to show you how to
+
+02:15.599 --> 02:19.440
+make one
+
+02:16.560 --> 02:20.640
+so the first thing we're going to do
+
+02:19.440 --> 02:23.520
+is
+
+02:20.640 --> 02:26.319
+close all this
+
+02:23.520 --> 02:27.440
+go out of here
+
+02:26.319 --> 02:28.959
+uh
+
+02:27.440 --> 02:31.840
+and for the server name i'm going to
+
+02:28.959 --> 02:33.440
+type login
+
+02:31.840 --> 02:35.519
+okay now that we're here we're going to
+
+02:33.440 --> 02:37.280
+play press start
+
+02:35.519 --> 02:39.200
+click install packages
+
+02:37.280 --> 02:41.040
+then click
+
+02:39.200 --> 02:42.080
+developer tools i already have it
+
+02:41.040 --> 02:43.680
+installed
+
+02:42.080 --> 02:46.879
+but you will want to install this if you
+
+02:43.680 --> 02:48.400
+want to make ghani's so you install it
+
+02:46.879 --> 02:51.599
+you close this i'm going to enter my
+
+02:48.400 --> 02:53.920
+server again
+
+02:51.599 --> 02:56.239
+and what you want to do
+
+02:53.920 --> 02:59.040
+is
+
+02:56.239 --> 03:02.400
+open up your grawl folder now
+
+02:59.040 --> 03:04.400
+so it should be in your c drive users
+
+03:02.400 --> 03:06.720
+your name and then grow
+
+03:04.400 --> 03:09.120
+at least that's what should be if you
+
+03:06.720 --> 03:10.720
+install it in the default directory so
+
+03:09.120 --> 03:12.720
+now we're going to do is since we
+
+03:10.720 --> 03:15.440
+installed grawl
+
+03:12.720 --> 03:19.200
+shop and all those other developer tools
+
+03:15.440 --> 03:20.720
+we should find graw shop right here
+
+03:19.200 --> 03:24.560
+and we're going to click it
+
+03:20.720 --> 03:26.720
+to run it so this is girl shop
+
+03:24.560 --> 03:27.760
+and with it you can create guns and edit
+
+03:26.720 --> 03:30.080
+them
+
+03:27.760 --> 03:32.239
+first what we're going to do
+
+03:30.080 --> 03:33.120
+is make an image that we can add into
+
+03:32.239 --> 03:35.680
+here
+
+03:33.120 --> 03:39.200
+so to do that
+
+03:35.680 --> 03:39.200
+what we want to do is
+
+03:39.840 --> 03:46.400
+create an image first so let's open
+
+03:44.080 --> 03:48.000
+our girl folder again
+
+03:46.400 --> 03:49.519
+go to the bottom or something and right
+
+03:48.000 --> 03:53.599
+click
+
+03:49.519 --> 03:56.319
+click or click here right click new
+
+03:53.599 --> 04:00.480
+then we're gonna click bitmap image
+
+03:56.319 --> 04:01.599
+kinda hard to see one second
+
+04:00.480 --> 04:04.159
+you can hear
+
+04:01.599 --> 04:06.879
+new oh you can't see it there there
+
+04:04.159 --> 04:08.319
+new bitmap image
+
+04:06.879 --> 04:10.159
+i'm gonna click that and we should see
+
+04:08.319 --> 04:11.840
+this here we're gonna name it or we're
+
+04:10.159 --> 04:13.360
+not gonna name it yet we're gonna open
+
+04:11.840 --> 04:15.840
+it now
+
+04:13.360 --> 04:18.880
+click open paint
+
+04:15.840 --> 04:18.880
+and we're going to edit it
+
+04:19.040 --> 04:22.560
+so let's just make something really fast
+
+04:22.639 --> 04:25.440
+let's call it
+
+04:26.639 --> 04:29.639
+apple
+
+04:40.560 --> 04:46.080
+there we have an apple now what we're
+
+04:42.080 --> 04:46.080
+going to do is go to save as
+
+04:46.400 --> 04:49.759
+and we're not going to put
+
+04:48.639 --> 04:51.840
+we're not just going to save it like
+
+04:49.759 --> 04:54.320
+this what we want to do
+
+04:51.840 --> 04:56.720
+is first we're going to put the name
+
+04:54.320 --> 04:59.280
+let's just name dm apple
+
+04:56.720 --> 05:00.880
+and then here save as type we want to
+
+04:59.280 --> 05:02.720
+save it as
+
+05:00.880 --> 05:05.840
+i'll make it higher again
+
+05:02.720 --> 05:07.759
+save it as a gif image what this is
+
+05:05.840 --> 05:10.720
+going to do is automatically convert the
+
+05:07.759 --> 05:13.360
+image to a 16
+
+05:10.720 --> 05:15.280
+bit type image and we want that because
+
+05:13.360 --> 05:17.919
+you can't add any other
+
+05:15.280 --> 05:19.280
+bits or whatever anything higher than 16
+
+05:17.919 --> 05:20.720
+into the
+
+05:19.280 --> 05:21.759
+graph shop
+
+05:20.720 --> 05:24.960
+so
+
+05:21.759 --> 05:27.039
+we're going to click this save
+
+05:24.960 --> 05:29.360
+says color quality might be reduced we
+
+05:27.039 --> 05:31.440
+don't want that but we have to click ok
+
+05:29.360 --> 05:33.919
+you can edit the edit a bit to make it
+
+05:31.440 --> 05:35.280
+look nicer later on
+
+05:33.919 --> 05:38.400
+so now
+
+05:35.280 --> 05:40.080
+i should have two of them here
+
+05:38.400 --> 05:42.000
+apple.js and the old one that doesn't
+
+05:40.080 --> 05:44.160
+have anything to do with the old one
+
+05:42.000 --> 05:45.680
+so now that we have this here we want to
+
+05:44.160 --> 05:47.759
+upload it to the server
+
+05:45.680 --> 05:49.440
+well not yet but we will
+
+05:47.759 --> 05:50.880
+so here in girlshop what we're going to
+
+05:49.440 --> 05:54.479
+do
+
+05:50.880 --> 05:56.880
+is click this button right here
+
+05:54.479 --> 05:58.880
+once we click that
+
+05:56.880 --> 06:00.320
+this is going to pop up
+
+05:58.880 --> 06:01.919
+asking us for the name of the image
+
+06:00.320 --> 06:03.360
+we're going to put gm
+
+06:01.919 --> 06:05.680
+dot
+
+06:03.360 --> 06:07.039
+museumapple.gif
+
+06:05.680 --> 06:09.600
+here's description doesn't really matter
+
+06:07.039 --> 06:10.960
+what you put we'll just put apple
+
+06:09.600 --> 06:12.800
+here you want to make sure you're not
+
+06:10.960 --> 06:14.240
+putting an index number that already has
+
+06:12.800 --> 06:16.080
+an image to it
+
+06:14.240 --> 06:18.400
+if you go here and highlight over these
+
+06:16.080 --> 06:21.600
+you'll see their index number this is 0
+
+06:18.400 --> 06:23.919
+this is 10 11 12 13 this is 40. as you
+
+06:21.600 --> 06:26.880
+can see there's no 20 it goes from 13 to
+
+06:23.919 --> 06:28.639
+40 so we can put 20.
+
+06:26.880 --> 06:30.880
+any other images we want to add we
+
+06:28.639 --> 06:32.240
+should put 21 22 and
+
+06:30.880 --> 06:34.080
+make sure we don't override any other
+
+06:32.240 --> 06:36.080
+images then we're going to put the width
+
+06:34.080 --> 06:38.000
+and the height of the image
+
+06:36.080 --> 06:39.919
+and the starting point and the y point
+
+06:38.000 --> 06:42.400
+now what this means is if we go to open
+
+06:39.919 --> 06:42.400
+the image
+
+06:44.319 --> 06:49.120
+open
+
+06:45.919 --> 06:50.880
+with paint
+
+06:49.120 --> 06:52.400
+the x and the y here
+
+06:50.880 --> 06:54.479
+x and y
+
+06:52.400 --> 06:56.160
+is where it's going to start so if we
+
+06:54.479 --> 06:58.400
+put 0 it's going to start at the very
+
+06:56.160 --> 07:00.240
+top left corner if we put maybe 10 10
+
+06:58.400 --> 07:01.039
+it's going to start right here
+
+07:00.240 --> 07:02.880
+then
+
+07:01.039 --> 07:05.280
+this is the width and the height so it's
+
+07:02.880 --> 07:07.680
+going to go start at 10
+
+07:05.280 --> 07:09.039
+go 32 this way 30 to down it's going to
+
+07:07.680 --> 07:10.960
+cut out that
+
+07:09.039 --> 07:12.080
+piece and put it there but we want to
+
+07:10.960 --> 07:13.360
+put the entire image so we're going to
+
+07:12.080 --> 07:14.720
+put 0
+
+07:13.360 --> 07:16.560
+and it doesn't really matter what else
+
+07:14.720 --> 07:17.440
+we put because just something higher
+
+07:16.560 --> 07:18.800
+than
+
+07:17.440 --> 07:21.199
+18.
+
+07:18.800 --> 07:22.960
+i'm just going to put 18
+
+07:21.199 --> 07:25.360
+and 18.
+
+07:22.960 --> 07:26.800
+now this part doesn't really matter you
+
+07:25.360 --> 07:28.000
+can play with it play around with it if
+
+07:26.800 --> 07:29.759
+you want but i'm not going to we're
+
+07:28.000 --> 07:32.160
+going to add it now
+
+07:29.759 --> 07:34.639
+and you can see our apple here
+
+07:32.160 --> 07:36.720
+got added we can add transparency to it
+
+07:34.639 --> 07:39.360
+later but right now let's
+
+07:36.720 --> 07:41.599
+zoom in here
+
+07:39.360 --> 07:42.960
+and add the apple down
+
+07:41.599 --> 07:44.800
+so what we're going to do
+
+07:42.960 --> 07:46.800
+is you can oh you can also change the
+
+07:44.800 --> 07:48.000
+direction here
+
+07:46.800 --> 07:49.599
+if you put
+
+07:48.000 --> 07:51.680
+up you're going to have to add the apple
+
+07:49.599 --> 07:53.360
+to all the different directions but
+
+07:51.680 --> 07:54.560
+we're just going to use the down if
+
+07:53.360 --> 07:56.160
+you're going to have a gun that has all
+
+07:54.560 --> 07:57.840
+four directions yeah you have to go
+
+07:56.160 --> 07:59.440
+through each and every direction make it
+
+07:57.840 --> 08:00.479
+which is really boring but you know
+
+07:59.440 --> 08:01.199
+whatever
+
+08:00.479 --> 08:02.720
+so
+
+08:01.199 --> 08:04.160
+now we have this here we're going to
+
+08:02.720 --> 08:06.000
+delete shield
+
+08:04.160 --> 08:07.680
+click the body and look for a new body
+
+08:06.000 --> 08:10.000
+that looks better for what we're going
+
+08:07.680 --> 08:10.000
+to use
+
+08:10.160 --> 08:13.360
+here's a good one
+
+08:11.680 --> 08:15.360
+next we're going to click it
+
+08:13.360 --> 08:18.720
+press minus minus minus until it's under
+
+08:15.360 --> 08:18.720
+the head but over the shadow
+
+08:20.400 --> 08:25.120
+next what we're going to do is
+
+08:22.319 --> 08:26.639
+find the arm
+
+08:25.120 --> 08:28.639
+here's an arm
+
+08:26.639 --> 08:30.400
+i'm going to take this
+
+08:28.639 --> 08:32.240
+put it right there
+
+08:30.400 --> 08:34.080
+take this apple and have it so you're
+
+08:32.240 --> 08:37.120
+holding the apple
+
+08:34.080 --> 08:37.120
+next we're going to take this
+
+08:37.200 --> 08:39.440
+segment
+
+08:38.320 --> 08:41.039
+copy it
+
+08:39.440 --> 08:43.039
+and paste it
+
+08:41.039 --> 08:45.360
+so we have this new segment
+
+08:43.039 --> 08:46.880
+in this segment we're going to make it a
+
+08:45.360 --> 08:48.320
+bit higher
+
+08:46.880 --> 08:52.320
+bit higher
+
+08:48.320 --> 08:52.320
+click it copy paste
+
+08:54.880 --> 09:00.880
+and here we're going to put
+
+08:56.800 --> 09:03.440
+a bit higher again a bit higher again
+
+09:00.880 --> 09:06.800
+copy paste
+
+09:03.440 --> 09:08.800
+and a bit higher again and one more time
+
+09:06.800 --> 09:11.920
+so now we have this
+
+09:08.800 --> 09:11.920
+we can try to run it
+
+09:12.480 --> 09:16.480
+that looks pretty good
+
+09:14.320 --> 09:17.600
+you're lifting up the apple you can also
+
+09:16.480 --> 09:19.839
+go into them
+
+09:17.600 --> 09:22.000
+click them and change the length of them
+
+09:19.839 --> 09:24.240
+so they last longer so we put 0.5
+
+09:22.000 --> 09:25.120
+instead of 0.05 you can see it increases
+
+09:24.240 --> 09:26.320
+it
+
+09:25.120 --> 09:27.600
+and
+
+09:26.320 --> 09:30.240
+doesn't look that good so we're just
+
+09:27.600 --> 09:33.120
+going to put back the .05
+
+09:30.240 --> 09:37.200
+if you want to you can also go to loop
+
+09:33.120 --> 09:40.000
+so that the ghani loops back and forth
+
+09:37.200 --> 09:40.000
+which is pretty good
+
+09:41.360 --> 09:44.800
+we don't want that
+
+09:42.720 --> 09:47.680
+so yeah
+
+09:44.800 --> 09:47.680
+let's add one more
+
+09:48.839 --> 09:54.640
+segment and make it one more time higher
+
+09:53.200 --> 09:56.240
+and make it so it doesn't loop i don't
+
+09:54.640 --> 09:57.519
+want it to loop
+
+09:56.240 --> 09:59.360
+okay there
+
+09:57.519 --> 10:01.120
+now we have it we're going to put
+
+09:59.360 --> 10:02.959
+save as we don't want to save because
+
+10:01.120 --> 10:05.440
+it's going to go over our id gani we
+
+10:02.959 --> 10:07.600
+don't want that save as
+
+10:05.440 --> 10:10.399
+and save it in any folder we want i want
+
+10:07.600 --> 10:13.279
+to save it into where i put my own ganis
+
+10:10.399 --> 10:13.279
+and i'm going to put
+
+10:13.680 --> 10:16.959
+apple
+
+10:15.920 --> 10:19.839
+apple
+
+10:16.959 --> 10:21.839
+hold dot
+
+10:19.839 --> 10:23.279
+gani you have to put dot ghani or
+
+10:21.839 --> 10:25.680
+because it doesn't automatically save it
+
+10:23.279 --> 10:27.040
+as dakani which is weird but anyway we
+
+10:25.680 --> 10:28.800
+save it
+
+10:27.040 --> 10:31.680
+we can just put that over here then
+
+10:28.800 --> 10:33.440
+let's open rc again
+
+10:31.680 --> 10:35.279
+we have levels here
+
+10:33.440 --> 10:37.279
+i'm going to press plus
+
+10:35.279 --> 10:38.880
+go to ghani's
+
+10:37.279 --> 10:40.560
+right click anywhere
+
+10:38.880 --> 10:43.680
+upload
+
+10:40.560 --> 10:43.680
+let's go find the image
+
+10:43.920 --> 10:48.959
+there apple hold we also want to upload
+
+10:46.880 --> 10:50.800
+the apple image don't forget that so
+
+10:48.959 --> 10:54.399
+let's go to the images
+
+10:50.800 --> 10:56.720
+and upload the apple image separately
+
+10:54.399 --> 10:58.560
+let's go to images
+
+10:56.720 --> 11:02.000
+oh wait that's not where i had it i had
+
+10:58.560 --> 11:03.200
+it over here we can upload that
+
+11:02.000 --> 11:05.760
+and it's there
+
+11:03.200 --> 11:09.600
+now to test it out let's open some
+
+11:05.760 --> 11:11.120
+weapon that we have attached to us like
+
+11:09.600 --> 11:13.440
+zm test
+
+11:11.120 --> 11:15.680
+and we're going to comment all this out
+
+11:13.440 --> 11:16.399
+so it doesn't affect
+
+11:15.680 --> 11:19.120
+us
+
+11:16.399 --> 11:20.399
+then right over here we're going to put
+
+11:19.120 --> 11:21.440
+function
+
+11:20.399 --> 11:23.519
+on
+
+11:21.440 --> 11:25.120
+weapon fired
+
+11:23.519 --> 11:28.320
+so we select and press d and we're going
+
+11:25.120 --> 11:31.440
+to put set any
+
+11:28.320 --> 11:31.440
+apple hold
+
+11:32.079 --> 11:35.360
+comma
+
+11:33.920 --> 11:39.560
+no
+
+11:35.360 --> 11:39.560
+let's try that out and see if it works
+
+11:42.800 --> 11:48.399
+so i select zm test and press d and
+
+11:46.160 --> 11:50.720
+there's argani
+
+11:48.399 --> 11:52.959
+you can press d again and try it out you
+
+11:50.720 --> 11:55.279
+can put it anywhere else you want
+
+11:52.959 --> 11:57.120
+it it's your gandhi to keep
+
+11:55.279 --> 11:59.279
+we may want to change the image so as
+
+11:57.120 --> 12:01.600
+transparency but that's another day
+
+11:59.279 --> 12:03.600
+anyway that concludes this tutorial and
+
+12:01.600 --> 12:05.200
+i hope you understand how to add ghani's
+
+12:03.600 --> 12:08.560
+and use them
+
+12:05.200 --> 12:08.560
+and i'll see you next time

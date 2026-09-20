@@ -1,0 +1,367 @@
+WEBVTT
+
+00:00.560 --> 00:05.680
+hello you're probably here to learn how
+
+00:02.800 --> 00:07.359
+to program a g script too
+
+00:05.680 --> 00:09.920
+and by at least i'm just going to try to
+
+00:07.359 --> 00:11.440
+teach you at least the basics of it
+
+00:09.920 --> 00:14.000
+and by the way you need to have a gold
+
+00:11.440 --> 00:16.560
+dev or gold to program into script 2.
+
+00:14.000 --> 00:18.240
+those are the subscription plans for
+
+00:16.560 --> 00:21.199
+g-script
+
+00:18.240 --> 00:22.240
+or we can grow online now first of all
+
+00:21.199 --> 00:24.880
+you'll need to know how to
+
+00:22.240 --> 00:25.279
+gain access to g-script too it's really
+
+00:24.880 --> 00:27.920
+not
+
+00:25.279 --> 00:29.279
+that easy you need pro server to program
+
+00:27.920 --> 00:31.039
+on first
+
+00:29.279 --> 00:32.640
+you need to look around for some servers
+
+00:31.039 --> 00:34.239
+and have them hire you
+
+00:32.640 --> 00:35.680
+or something or give you the rights to
+
+00:34.239 --> 00:38.719
+enter it
+
+00:35.680 --> 00:41.120
+so most of the servers listed here
+
+00:38.719 --> 00:43.440
+won't let you work there unless you're
+
+00:41.120 --> 00:45.360
+totally amazing at your script too
+
+00:43.440 --> 00:47.280
+and that's not going to happen unless
+
+00:45.360 --> 00:48.960
+you have practice which you need a
+
+00:47.280 --> 00:50.960
+server to do
+
+00:48.960 --> 00:52.480
+so you'll want to search for some
+
+00:50.960 --> 00:53.280
+servers that are currently in
+
+00:52.480 --> 00:57.520
+development
+
+00:53.280 --> 01:00.000
+they'll at least some will hire you
+
+00:57.520 --> 01:01.760
+i'll show you how to find all the
+
+01:00.000 --> 01:05.439
+servers later
+
+01:01.760 --> 01:08.880
+so we need two programs to
+
+01:05.439 --> 01:12.720
+program in g-script two to do that go to
+
+01:08.880 --> 01:16.400
+press start go to install packages
+
+01:12.720 --> 01:20.080
+and download two things level editor
+
+01:16.400 --> 01:22.240
+and remote control or this one
+
+01:20.080 --> 01:23.200
+so level editing remote control a level
+
+01:22.240 --> 01:26.000
+editor
+
+01:23.200 --> 01:27.200
+is like a it's like an editor that lets
+
+01:26.000 --> 01:29.439
+you create levels
+
+01:27.200 --> 01:30.640
+and program in gscript one the thing is
+
+01:29.439 --> 01:32.799
+about just
+
+01:30.640 --> 01:34.000
+i'll go down to that later but you also
+
+01:32.799 --> 01:36.320
+need remote control
+
+01:34.000 --> 01:37.680
+so after downloading them you'll have to
+
+01:36.320 --> 01:41.119
+go find them
+
+01:37.680 --> 01:45.119
+so enter your graph folder which i'll
+
+01:41.119 --> 01:45.119
+try to find in a second um
+
+01:46.240 --> 01:53.360
+here it is find your graph folder
+
+01:49.920 --> 01:56.479
+which is usually the c drive slash users
+
+01:53.360 --> 01:59.680
+slash your name slash girl and
+
+01:56.479 --> 02:00.560
+find and look around and you'll see girl
+
+01:59.680 --> 02:04.079
+editor
+
+02:00.560 --> 02:08.560
+and remote control 2 exe
+
+02:04.079 --> 02:11.680
+so let's open girl editor
+
+02:08.560 --> 02:12.800
+and you'll see some tiles some tiles at
+
+02:11.680 --> 02:17.040
+the side you can put in
+
+02:12.800 --> 02:20.480
+put on and all these buttons and whatnot
+
+02:17.040 --> 02:24.319
+you can add the tiles if you want
+
+02:20.480 --> 02:24.319
+and save the level and play it
+
+02:24.800 --> 02:29.599
+or you can add npcs and program with
+
+02:28.560 --> 02:32.800
+them
+
+02:29.599 --> 02:36.239
+or program them to do whatever you want
+
+02:32.800 --> 02:39.840
+so as i said earlier thing about
+
+02:36.239 --> 02:42.560
+level editor compared to online
+
+02:39.840 --> 02:43.920
+programming in growl is that the level
+
+02:42.560 --> 02:48.160
+editor is in gscript
+
+02:43.920 --> 02:50.959
+one the thing is about g skipped one
+
+02:48.160 --> 02:52.080
+is that it's not nearly as flexible as
+
+02:50.959 --> 02:54.400
+g-script 2.
+
+02:52.080 --> 02:55.599
+you can't really do as much and all the
+
+02:54.400 --> 02:58.080
+servers on girl
+
+02:55.599 --> 02:59.599
+are going to be in gscript one if you if
+
+02:58.080 --> 03:02.159
+they're not going to really hire you
+
+02:59.599 --> 03:03.840
+unless you know just two because
+
+03:02.159 --> 03:05.280
+g-script one is like a completely
+
+03:03.840 --> 03:08.640
+different language
+
+03:05.280 --> 03:10.959
+in their styles and syntax and
+
+03:08.640 --> 03:12.800
+it's just useless to know if you're
+
+03:10.959 --> 03:15.840
+trying to get hired on
+
+03:12.800 --> 03:17.200
+a high class server so now
+
+03:15.840 --> 03:20.560
+i'm gonna explain how to do this use
+
+03:17.200 --> 03:23.360
+this later but i'm not going to save and
+
+03:20.560 --> 03:24.159
+open remote control 2 or just remote
+
+03:23.360 --> 03:26.959
+control
+
+03:24.159 --> 03:27.280
+you'll see a login menu and you have to
+
+03:26.959 --> 03:29.920
+log
+
+03:27.280 --> 03:30.959
+in then you'll see all the servers on
+
+03:29.920 --> 03:34.000
+girl
+
+03:30.959 --> 03:34.640
+you'll have to look through them and oh
+
+03:34.000 --> 03:38.000
+yeah
+
+03:34.640 --> 03:39.760
+also if you have this you can type in
+
+03:38.000 --> 03:42.239
+the name of the server here
+
+03:39.760 --> 03:43.360
+and just enter it and see if they'll
+
+03:42.239 --> 03:44.959
+hire you
+
+03:43.360 --> 03:46.560
+usually the ones with large player
+
+03:44.959 --> 03:49.760
+counts won't hire you
+
+03:46.560 --> 03:53.920
+but the ones with lower player counts
+
+03:49.760 --> 03:53.920
+will usually
+
+03:54.239 --> 03:57.840
+now you'll want to find the server that
+
+03:56.480 --> 03:59.920
+you have rights to
+
+03:57.840 --> 04:01.120
+you know the one that you got hired on
+
+03:59.920 --> 04:03.840
+or the one that you own
+
+04:01.120 --> 04:04.879
+i own a server so i'm just gonna double
+
+04:03.840 --> 04:06.080
+click that
+
+04:04.879 --> 04:08.319
+it says i'm already logged in that's
+
+04:06.080 --> 04:11.760
+because i logged in earlier
+
+04:08.319 --> 04:14.319
+and here this is rc i'll show you how to
+
+04:11.760 --> 04:16.639
+use it later
+
+04:14.319 --> 04:17.919
+but yeah that concludes the first
+
+04:16.639 --> 04:20.560
+tutorial
+
+04:17.919 --> 04:21.519
+on how to program gscript 2. i haven't
+
+04:20.560 --> 04:25.520
+really taught you
+
+04:21.519 --> 04:26.960
+how to program yet but that'll be soon
+
+04:25.520 --> 04:29.759
+if you can't understand how to download
+
+04:26.960 --> 04:33.440
+the files or i don't know something
+
+04:29.759 --> 04:34.560
+just comment below and i'll see if i can
+
+04:33.440 --> 04:37.840
+reply
+
+04:34.560 --> 04:38.800
+so anyway check out the next tutorial
+
+04:37.840 --> 04:41.040
+when it's out
+
+04:38.800 --> 04:42.240
+and probably will be by the time you see
+
+04:41.040 --> 04:47.600
+this
+
+04:42.240 --> 04:47.600
+and bye i guess

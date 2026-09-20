@@ -1,0 +1,283 @@
+WEBVTT
+
+00:00.160 --> 00:04.960
+hello and welcome to the 19 tutorial on
+
+00:02.159 --> 00:07.000
+how to program in gript 2 so in this
+
+00:04.960 --> 00:09.759
+tutorial I'm going to go over a very
+
+00:07.000 --> 00:12.320
+important Concept in uscript
+
+00:09.759 --> 00:16.600
+2 and that's an
+
+00:12.320 --> 00:19.840
+array an array is really just a big
+
+00:16.600 --> 00:23.519
+group of variables like any normal
+
+00:19.840 --> 00:25.720
+variable so for example um let's do this
+
+00:23.519 --> 00:26.840
+I'm going to use the onall weapon before
+
+00:25.720 --> 00:30.960
+because I already have it added to
+
+00:26.840 --> 00:32.119
+myself so let me add this
+
+00:30.960 --> 00:33.520
+you can name it whatever you want I'm
+
+00:32.119 --> 00:36.360
+going to just name it
+
+00:33.520 --> 00:40.239
+array I'm just going to name it array
+
+00:36.360 --> 00:41.440
+then let's add these little brackets no
+
+00:40.239 --> 00:45.120
+these
+
+00:41.440 --> 00:48.760
+brackets and
+
+00:45.120 --> 00:52.800
+add a bunch of values for the array so
+
+00:48.760 --> 00:55.640
+let's add one comma one comma one comma
+
+00:52.800 --> 00:57.879
+one no let's add one comma 2 comma 3
+
+00:55.640 --> 01:01.920
+comma four comma
+
+00:57.879 --> 01:04.760
+5 okay and then we just end that array
+
+01:01.920 --> 01:06.400
+and that's an array it's made five
+
+01:04.760 --> 01:09.960
+different
+
+01:06.400 --> 01:11.720
+variables and the first one is one
+
+01:09.960 --> 01:13.520
+second one is two second one third one
+
+01:11.720 --> 01:15.080
+is three fourth one is four and fifth
+
+01:13.520 --> 01:17.840
+one is
+
+01:15.080 --> 01:20.400
+five now if we want to call them this is
+
+01:17.840 --> 01:22.720
+what we do we go here and add let's add
+
+01:20.400 --> 01:25.200
+player. chat is equal
+
+01:22.720 --> 01:30.680
+to this.
+
+01:25.200 --> 01:32.840
+array and then these brackets and
+
+01:30.680 --> 01:34.640
+whatever value we want so let's
+
+01:32.840 --> 01:36.799
+put
+
+01:34.640 --> 01:40.439
+zero now here's where it gets kind of
+
+01:36.799 --> 01:43.720
+confusing whatever value put in here is
+
+01:40.439 --> 01:45.680
+going to be like here but minus one so
+
+01:43.720 --> 01:48.399
+if we put in zero it would be the first
+
+01:45.680 --> 01:51.799
+value even if this is the first value
+
+01:48.399 --> 01:54.600
+it's not the zeroth value but zero is
+
+01:51.799 --> 01:57.920
+the first one if we put one it'd be the
+
+01:54.600 --> 02:01.320
+second one if we put two it'd be the
+
+01:57.920 --> 02:05.399
+third variable if we put three it'd be
+
+02:01.320 --> 02:06.920
+the fourth variable and so on so let's
+
+02:05.399 --> 02:10.480
+add
+
+02:06.920 --> 02:14.120
+zero so when when
+
+02:10.480 --> 02:16.239
+I so whenever I say something like hi
+
+02:14.120 --> 02:19.440
+it's going to say
+
+02:16.239 --> 02:22.400
+one now we have five variables
+
+02:19.440 --> 02:26.040
+here what we can do is change them so
+
+02:22.400 --> 02:30.920
+let's add this this do
+
+02:26.040 --> 02:34.280
+array 0 is equal to 10
+
+02:30.920 --> 02:34.280
+this will change the first value to
+
+02:34.400 --> 02:39.640
+10 so when I say hi I'm going to say
+
+02:42.280 --> 02:47.680
+10 now there's another way to call well
+
+02:45.760 --> 02:50.280
+there's some more ways to call arrays
+
+02:47.680 --> 02:54.560
+and this is another set
+
+02:50.280 --> 02:54.560
+array the name of the array
+
+02:55.200 --> 03:00.599
+um array I'm just going to name it array
+
+02:57.680 --> 03:02.920
+again comma How many array
+
+03:00.599 --> 03:05.599
+variables we want so let's put 100
+
+03:02.920 --> 03:08.599
+variables then end that I'm pretty sure
+
+03:05.599 --> 03:12.120
+this is gript one but I'm not sure how
+
+03:08.599 --> 03:13.840
+to just make a giant group of arrays in
+
+03:12.120 --> 03:18.599
+gript
+
+03:13.840 --> 03:21.000
+2 other than you know this. array equal
+
+03:18.599 --> 03:23.799
+to one and
+
+03:21.000 --> 03:25.280
+just repeating this over and over and
+
+03:23.799 --> 03:26.200
+over and over again until it gets to
+
+03:25.280 --> 03:29.799
+like a
+
+03:26.200 --> 03:32.280
+100 but yeah I'm going to be doing this
+
+03:29.799 --> 03:33.680
+cuz I'm not sure how and no resource has
+
+03:32.280 --> 03:34.920
+been able to tell me I'm not even sure
+
+03:33.680 --> 03:38.439
+if there is a
+
+03:34.920 --> 03:41.360
+way now there is no this is not really a
+
+03:38.439 --> 03:44.360
+type of variable it's just array like
+
+03:41.360 --> 03:46.920
+there's no there's no prefix to the type
+
+03:44.360 --> 03:49.599
+of variable so this is actually a global
+
+03:46.920 --> 03:51.360
+varial and it'll work for all the other
+
+03:49.599 --> 03:55.200
+weapons but we're just going to use it
+
+03:51.360 --> 03:55.200
+in this one let's
+
+03:55.599 --> 04:02.760
+add all of them are currently equal to
+
+03:58.400 --> 04:06.640
+nothing by the way way let's add
+
+04:02.760 --> 04:11.280
+array 10 is equal
+
+04:06.640 --> 04:18.560
+to um five or something now let's here
+
+04:11.280 --> 04:18.560
+add oops player. chat is equal to array
+
+04:19.479 --> 04:26.560
+10 if I want to say hi I'm going to say
+
+04:23.639 --> 04:27.759
+five anyway that concludes this tutorial
+
+04:26.560 --> 04:30.280
+um I hope you have a better
+
+04:27.759 --> 04:32.880
+understanding on arrays
+
+04:30.280 --> 04:35.000
+and we'll be going we'll be making
+
+04:32.880 --> 04:38.479
+something with them in next tutorial so
+
+04:35.000 --> 04:38.479
+anyway um bye

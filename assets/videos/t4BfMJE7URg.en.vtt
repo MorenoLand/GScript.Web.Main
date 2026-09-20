@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.320 --> 00:06.640
+Hello and welcome to the fifth tutorial
+
+00:03.600 --> 00:08.960
+on how to program in Gscript 2. Now in
+
+00:06.640 --> 00:11.200
+this tutorial I'm going to show you more
+
+00:08.960 --> 00:14.080
+about client side and server side and
+
+00:11.200 --> 00:17.160
+how it affects the players and just the
+
+00:14.080 --> 00:20.320
+play and just the player who's playing.
+
+00:17.160 --> 00:22.480
+Now there's an NPC here. Actually no.
+
+00:20.320 --> 00:24.800
+Yeah, there is an NPC here. You just
+
+00:22.480 --> 00:28.000
+can't see it because there's no image
+
+00:24.800 --> 00:32.120
+for it. This screen with the RC is mine.
+
+00:28.000 --> 00:36.320
+That's me. This is the second
+
+00:32.120 --> 00:38.480
+account. So now I'm going to edit this.
+
+00:36.320 --> 00:41.640
+I took out some of the script. Now I'm
+
+00:38.480 --> 00:44.800
+going to change on created to
+
+00:41.640 --> 00:46.879
+onplayer chats. On player chats makes it
+
+00:44.800 --> 00:50.399
+so as soon as the player says something,
+
+00:46.879 --> 00:53.680
+it can be anything. The NPC will also
+
+00:50.399 --> 00:56.680
+say something. Let's have the NPC say
+
+00:53.680 --> 00:56.680
+this.
+
+00:58.440 --> 01:04.360
+Hello
+
+01:00.680 --> 01:08.240
+semicolon. Now I save
+
+01:04.360 --> 01:10.880
+it. Oh, and remember this is under
+
+01:08.240 --> 01:12.400
+client side. I'll show you the
+
+01:10.880 --> 01:16.600
+difference of what happens if I take it
+
+01:12.400 --> 01:21.520
+out in a second. So I upload. Now I
+
+01:16.600 --> 01:22.280
+say hello MPC. It'll say hello. Now, as
+
+01:21.520 --> 01:25.280
+you can
+
+01:22.280 --> 01:27.280
+see, my the second account, the one
+
+01:25.280 --> 01:30.159
+that's not, you know, with the the one
+
+01:27.280 --> 01:33.360
+that's not an admin, does not see the
+
+01:30.159 --> 01:35.520
+NPC saying hello. The reason is because
+
+01:33.360 --> 01:37.960
+this is under client side. Everything
+
+01:35.520 --> 01:41.159
+under client side only happens to the
+
+01:37.960 --> 01:43.920
+player, not anyone else in the in the
+
+01:41.159 --> 01:46.560
+level. Also, you can write script above
+
+01:43.920 --> 01:48.880
+the client side if you want to. It it's
+
+01:46.560 --> 01:51.200
+not just an entire script can be client
+
+01:48.880 --> 01:54.880
+side and server side, not just the one
+
+01:51.200 --> 01:57.000
+or the other. Anyway, if I change take
+
+01:54.880 --> 02:00.320
+out the client
+
+01:57.000 --> 02:00.320
+side, press
+
+02:00.759 --> 02:08.080
+save. Now, I'm going to
+
+02:03.960 --> 02:10.959
+say hi. The NPC will say hi and both
+
+02:08.080 --> 02:15.560
+players will see it because it's it's on
+
+02:10.959 --> 02:15.560
+server side, not client side.
+
+02:16.200 --> 02:22.879
+Now, um I think that's about it for
+
+02:20.080 --> 02:25.080
+client side. And oh yeah, I was going to
+
+02:22.879 --> 02:27.720
+show one more thing. Let's
+
+02:25.080 --> 02:29.560
+say I make it say
+
+02:27.720 --> 02:31.879
+this.
+
+02:29.560 --> 02:35.760
+Player.
+
+02:31.879 --> 02:37.800
+Okay. Now, when we close it and save it
+
+02:35.760 --> 02:41.920
+and upload
+
+02:37.800 --> 02:43.800
+it, I'm going to say hello. The NPC says
+
+02:41.920 --> 02:47.360
+hello. When I
+
+02:43.800 --> 02:49.319
+say fun, the NPC says fun and both
+
+02:47.360 --> 02:53.200
+players see
+
+02:49.319 --> 02:56.920
+it. This is because I'm making the NPC's
+
+02:53.200 --> 02:59.720
+chat equal to the player's
+
+02:56.920 --> 03:03.200
+chat. If I put this in
+
+02:59.720 --> 03:03.200
+quotes, watch what
+
+03:05.640 --> 03:14.239
+happens. I'll say hi. It'll say player.
+
+03:11.519 --> 03:17.120
+This is because it's thinking it as if
+
+03:14.239 --> 03:19.599
+it wants me to say player. If I take out
+
+03:17.120 --> 03:23.599
+the quotes, it knows that I'm trying to
+
+03:19.599 --> 03:26.040
+make it say the players chat. You get
+
+03:23.599 --> 03:30.080
+it? Well, I'm going to be going over all
+
+03:26.040 --> 03:32.239
+this later in when I get to variables.
+
+03:30.080 --> 03:35.440
+Anyway, that's it for this tutorial and
+
+03:32.239 --> 03:35.440
+I'll see you

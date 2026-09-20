@@ -11,3 +11,4 @@ server.js
 /assets/videos/*.info.json
 /assets/videos/downloaded.txt
 /assets/videos/*.mp4
+/assets/videos/*.en-orig.srt

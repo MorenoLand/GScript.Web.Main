@@ -1,0 +1,452 @@
+1
+00:00:00,120 --> 00:00:05,839
+hello and welcome to the TR tutorial on
+
+2
+00:00:02,800 --> 00:00:09,279
+how to program a gript 2 so in our level
+
+3
+00:00:05,839 --> 00:00:09,279
+editor let's drag an NPC
+
+4
+00:00:09,920 --> 00:00:13,480
+down and make a
+
+5
+00:00:15,359 --> 00:00:20,720
+function on
+
+6
+00:00:18,279 --> 00:00:22,880
+created and in this tutorial I'm going
+
+7
+00:00:20,720 --> 00:00:25,920
+to teach you one of the single most
+
+8
+00:00:22,880 --> 00:00:28,760
+important things of all programming ever
+
+9
+00:00:25,920 --> 00:00:30,480
+and that's the loop and specifically a
+
+10
+00:00:28,760 --> 00:00:32,040
+for Loop
+
+11
+00:00:30,480 --> 00:00:34,160
+there's a lot of different kinds of
+
+12
+00:00:32,040 --> 00:00:37,520
+Loops but I'm going to be teaching you
+
+13
+00:00:34,160 --> 00:00:40,480
+the for Loop this time so type four
+
+14
+00:00:37,520 --> 00:00:43,719
+parentheses semicolon semicolon and
+
+15
+00:00:40,480 --> 00:00:43,719
+parenthesis then
+
+16
+00:00:44,480 --> 00:00:50,199
+brackets before the for Loop let's add
+
+17
+00:00:47,239 --> 00:00:52,320
+this. yellow is equal to
+
+18
+00:00:50,199 --> 00:00:55,120
+zero now what the for Loop is going to
+
+19
+00:00:52,320 --> 00:00:58,280
+do is that everything these brackets is
+
+20
+00:00:55,120 --> 00:01:01,399
+going to run over and over and over
+
+21
+00:00:58,280 --> 00:01:02,760
+Forever Until We Tell stop there's a few
+
+22
+00:01:01,399 --> 00:01:04,920
+ways to tell it the stop but we're not
+
+23
+00:01:02,760 --> 00:01:08,759
+going to do that this time so let's just
+
+24
+00:01:04,920 --> 00:01:11,600
+add this. yellow or plus plus it's going
+
+25
+00:01:08,759 --> 00:01:13,960
+to add it by one so every time it Loops
+
+26
+00:01:11,600 --> 00:01:15,680
+it's going to add Yellow by one so the
+
+27
+00:01:13,960 --> 00:01:18,080
+first Loop is going to add it by one
+
+28
+00:01:15,680 --> 00:01:20,720
+then it's going to go back up and go
+
+29
+00:01:18,080 --> 00:01:23,799
+back down and add another it's going to
+
+30
+00:01:20,720 --> 00:01:28,119
+go back up add another then go up
+
+31
+00:01:23,799 --> 00:01:30,520
+again so and then let's add a this. chat
+
+32
+00:01:28,119 --> 00:01:33,640
+is equal to
+
+33
+00:01:30,520 --> 00:01:35,640
+this. yellow the NPC is going to say the
+
+34
+00:01:33,640 --> 00:01:36,920
+value of yellow so we'll see it be we'll
+
+35
+00:01:35,640 --> 00:01:40,920
+see it as it
+
+36
+00:01:36,920 --> 00:01:41,880
+increases then let's add a sleep 0.5 so
+
+37
+00:01:40,920 --> 00:01:45,280
+it doesn't
+
+38
+00:01:41,880 --> 00:01:46,840
+increase too fast so that we won't even
+
+39
+00:01:45,280 --> 00:01:49,560
+be able to
+
+40
+00:01:46,840 --> 00:01:52,640
+see what the value is it's just going to
+
+41
+00:01:49,560 --> 00:01:55,040
+go up infinitely so let's
+
+42
+00:01:52,640 --> 00:01:57,759
+upload and as you can see it's looping
+
+43
+00:01:55,040 --> 00:02:00,079
+over and over and adding Yellow by one
+
+44
+00:01:57,759 --> 00:02:02,479
+and it's going to do that forever the
+
+45
+00:02:00,079 --> 00:02:04,880
+thing is about for Loops is that for
+
+46
+00:02:02,479 --> 00:02:07,959
+Loops have a limit to how many times
+
+47
+00:02:04,880 --> 00:02:10,319
+they can be looped other Loops don't
+
+48
+00:02:07,959 --> 00:02:11,879
+have some other Loops don't have this
+
+49
+00:02:10,319 --> 00:02:15,080
+limit but we're not going to into that
+
+50
+00:02:11,879 --> 00:02:17,959
+yet so the way to stop it from
+
+51
+00:02:15,080 --> 00:02:22,959
+looping is we can do it in two different
+
+52
+00:02:17,959 --> 00:02:27,720
+ways for one in the for Loop we can add
+
+53
+00:02:22,959 --> 00:02:31,720
+if this do yellow is greater
+
+54
+00:02:27,720 --> 00:02:31,720
+than 50
+
+55
+00:02:32,800 --> 00:02:39,840
+then in in
+
+56
+00:02:35,879 --> 00:02:42,280
+Brackets break so what break does is it
+
+57
+00:02:39,840 --> 00:02:44,000
+breaks the for Loop and just skips past
+
+58
+00:02:42,280 --> 00:02:47,400
+it and does whatever else is past the
+
+59
+00:02:44,000 --> 00:02:49,200
+for Loop we can also if we wanted to
+
+60
+00:02:47,400 --> 00:02:52,400
+have four Loops inside of other four
+
+61
+00:02:49,200 --> 00:02:53,840
+Loops or whatever other loop we want but
+
+62
+00:02:52,400 --> 00:02:56,239
+we're not going to do
+
+63
+00:02:53,840 --> 00:02:58,360
+that so it's going to Loop over and over
+
+64
+00:02:56,239 --> 00:03:00,959
+and over until yellows is greater than
+
+65
+00:02:58,360 --> 00:03:03,840
+50 or it's going to break
+
+66
+00:03:00,959 --> 00:03:06,120
+so once it's 51 it's going to break
+
+67
+00:03:03,840 --> 00:03:06,120
+let's
+
+68
+00:03:06,879 --> 00:03:11,400
+save and we'll wait for it to get
+
+69
+00:03:11,440 --> 00:03:15,080
+51 and now it just stops because it
+
+70
+00:03:13,640 --> 00:03:16,319
+broke the loop and it's not increasing
+
+71
+00:03:15,080 --> 00:03:18,599
+yellow
+
+72
+00:03:16,319 --> 00:03:20,200
+anymore so there's another way to make
+
+73
+00:03:18,599 --> 00:03:24,640
+it exit the
+
+74
+00:03:20,200 --> 00:03:28,319
+loop and that is by adding it into the
+
+75
+00:03:24,640 --> 00:03:30,640
+semicolons so let's take out yellow
+
+76
+00:03:28,319 --> 00:03:34,239
+here and here
+
+77
+00:03:30,640 --> 00:03:35,439
+and here and before the first semicolon
+
+78
+00:03:34,239 --> 00:03:39,720
+add
+
+79
+00:03:35,439 --> 00:03:42,480
+temp. n is equal to Zer this is creating
+
+80
+00:03:39,720 --> 00:03:44,879
+a new variable called n and making it
+
+81
+00:03:42,480 --> 00:03:46,519
+equal to zero and this is this variable
+
+82
+00:03:44,879 --> 00:03:50,120
+is going to break is going
+
+83
+00:03:46,519 --> 00:03:52,480
+to be destroyed once the function is
+
+84
+00:03:50,120 --> 00:03:55,400
+done but we won we won't need it then
+
+85
+00:03:52,480 --> 00:03:59,480
+and between the semicolons add temp. n
+
+86
+00:03:55,400 --> 00:04:03,480
+is greater than or equal to 30 and after
+
+87
+00:03:59,480 --> 00:04:03,480
+the last semicolon add temp.
+
+88
+00:04:03,560 --> 00:04:09,799
+n++ so the first parameter which is the
+
+89
+00:04:06,720 --> 00:04:13,000
+one before the first semicolon creates
+
+90
+00:04:09,799 --> 00:04:15,760
+the variable the one in the middle tells
+
+91
+00:04:13,000 --> 00:04:18,479
+it what must be true for the for the
+
+92
+00:04:15,760 --> 00:04:20,359
+loop to run and the last one increases
+
+93
+00:04:18,479 --> 00:04:24,440
+it or decre increases it by whatever you
+
+94
+00:04:20,359 --> 00:04:27,040
+want we can also just do equals temp. n
+
+95
+00:04:24,440 --> 00:04:30,080
++ one we're just going to do
+
+96
+00:04:27,040 --> 00:04:34,960
+Plus+ so once it's equal to or greater
+
+97
+00:04:30,080 --> 00:04:37,400
+than 30 it's going to
+
+98
+00:04:34,960 --> 00:04:40,400
+break and here let's add this do chat
+
+99
+00:04:37,400 --> 00:04:42,759
+equals to n so every time it Loops n is
+
+100
+00:04:40,400 --> 00:04:44,759
+going to increase by one and once n is
+
+101
+00:04:42,759 --> 00:04:47,639
+greater than 30 it's going to it's going
+
+102
+00:04:44,759 --> 00:04:50,080
+to end the loop because because this
+
+103
+00:04:47,639 --> 00:04:52,400
+Loop only runs if n is less than or
+
+104
+00:04:50,080 --> 00:04:52,400
+equal to
+
+105
+00:04:55,000 --> 00:05:01,199
+30 so it's going to keep
+
+106
+00:04:57,400 --> 00:05:04,000
+increasing then it gets a 30 and just
+
+107
+00:05:01,199 --> 00:05:06,600
+breaks it breaks the
+
+108
+00:05:04,000 --> 00:05:08,960
+loop so I guess that's it for this
+
+109
+00:05:06,600 --> 00:05:10,639
+tutorial uh you have a faint
+
+110
+00:05:08,960 --> 00:05:14,000
+understanding of how to use the for Loop
+
+111
+00:05:10,639 --> 00:05:15,560
+now and you can do well I'll show you
+
+112
+00:05:14,000 --> 00:05:20,600
+more examples of what you can do next
+
+113
+00:05:15,560 --> 00:05:20,600
+tutorial so anyway bye
+

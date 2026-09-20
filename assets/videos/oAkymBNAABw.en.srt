@@ -1,0 +1,1044 @@
+1
+00:00:00,080 --> 00:00:04,480
+yo how's it going everybody
+
+2
+00:00:02,480 --> 00:00:06,399
+welcome back it's been a while since i
+
+3
+00:00:04,480 --> 00:00:09,920
+posted and uh i thought i'd start a new
+
+4
+00:00:06,399 --> 00:00:11,519
+series on uh girl player world scripting
+
+5
+00:00:09,920 --> 00:00:13,040
+so i figured i'd just start making a
+
+6
+00:00:11,519 --> 00:00:15,280
+couple videos because there's not a
+
+7
+00:00:13,040 --> 00:00:16,960
+whole lot you know on them so uh for
+
+8
+00:00:15,280 --> 00:00:18,240
+today's video we're just gonna get right
+
+9
+00:00:16,960 --> 00:00:20,880
+into it and
+
+10
+00:00:18,240 --> 00:00:23,199
+assuming you have access to some sort of
+
+11
+00:00:20,880 --> 00:00:24,160
+uh server to script on whether that's
+
+12
+00:00:23,199 --> 00:00:25,439
+you know
+
+13
+00:00:24,160 --> 00:00:28,800
+let's just say like one of the dev
+
+14
+00:00:25,439 --> 00:00:30,480
+servers or one that you make yourself
+
+15
+00:00:28,800 --> 00:00:32,079
+let's just start off by creating a
+
+16
+00:00:30,480 --> 00:00:34,800
+weapon so
+
+17
+00:00:32,079 --> 00:00:36,960
+when in grail uh you have a weapon which
+
+18
+00:00:34,800 --> 00:00:39,120
+is attached to a player so they'll have
+
+19
+00:00:36,960 --> 00:00:41,040
+access to whatever is on them so let's
+
+20
+00:00:39,120 --> 00:00:43,120
+just create something called
+
+21
+00:00:41,040 --> 00:00:45,840
+player slash
+
+22
+00:00:43,120 --> 00:00:47,360
+bomb so let's make a script that places
+
+23
+00:00:45,840 --> 00:00:48,960
+a bomb
+
+24
+00:00:47,360 --> 00:00:51,199
+so one of the first things you're going
+
+25
+00:00:48,960 --> 00:00:53,520
+to need to understand with gs2 is client
+
+26
+00:00:51,199 --> 00:00:57,520
+side and server side
+
+27
+00:00:53,520 --> 00:00:59,760
+on the outside so whatever is below this
+
+28
+00:00:57,520 --> 00:01:02,480
+exactly like this i know it's commented
+
+29
+00:00:59,760 --> 00:01:04,000
+out but it just works whatever below is
+
+30
+00:01:02,480 --> 00:01:06,080
+happening on the client itself and
+
+31
+00:01:04,000 --> 00:01:06,960
+whatever above is happening on the
+
+32
+00:01:06,080 --> 00:01:08,640
+server
+
+33
+00:01:06,960 --> 00:01:09,760
+so you there's a lot of things you're
+
+34
+00:01:08,640 --> 00:01:11,280
+going to want to do on the server for
+
+35
+00:01:09,760 --> 00:01:12,720
+security reasons so when you're dealing
+
+36
+00:01:11,280 --> 00:01:15,759
+with like health
+
+37
+00:01:12,720 --> 00:01:17,520
+uh maybe custom movements and stuff but
+
+38
+00:01:15,759 --> 00:01:18,799
+um you know money all that all that kind
+
+39
+00:01:17,520 --> 00:01:19,920
+of things that needs to be secured but
+
+40
+00:01:18,799 --> 00:01:22,159
+when you're just doing some basic
+
+41
+00:01:19,920 --> 00:01:23,200
+processing client sides should be pretty
+
+42
+00:01:22,159 --> 00:01:26,080
+good
+
+43
+00:01:23,200 --> 00:01:27,280
+so let's make a bond script that this
+
+44
+00:01:26,080 --> 00:01:28,799
+player is going to have in their
+
+45
+00:01:27,280 --> 00:01:30,479
+inventory here
+
+46
+00:01:28,799 --> 00:01:32,560
+so first off we need to give it to
+
+47
+00:01:30,479 --> 00:01:33,680
+ourselves so let's just do it the lazy
+
+48
+00:01:32,560 --> 00:01:35,360
+way so you're going to want to do
+
+49
+00:01:33,680 --> 00:01:37,040
+something called find player which is a
+
+50
+00:01:35,360 --> 00:01:38,240
+function
+
+51
+00:01:37,040 --> 00:01:39,920
+then
+
+52
+00:01:38,240 --> 00:01:42,560
+this right here is where you're gonna
+
+53
+00:01:39,920 --> 00:01:44,240
+put your uh account id so i have a
+
+54
+00:01:42,560 --> 00:01:46,079
+community name which is chad master so
+
+55
+00:01:44,240 --> 00:01:49,360
+i'll do that and then you're gonna wanna
+
+56
+00:01:46,079 --> 00:01:50,799
+add the weapon
+
+57
+00:01:49,360 --> 00:01:51,920
+and then
+
+58
+00:01:50,799 --> 00:01:53,920
+um
+
+59
+00:01:51,920 --> 00:01:56,159
+so we're gonna be referring to this dot
+
+60
+00:01:53,920 --> 00:01:58,560
+name which is this refers to whatever
+
+61
+00:01:56,159 --> 00:02:00,240
+object it is which is the player bomb
+
+62
+00:01:58,560 --> 00:02:02,560
+and then dot name is one of the
+
+63
+00:02:00,240 --> 00:02:03,920
+attributes so it'll just be the name so
+
+64
+00:02:02,560 --> 00:02:05,840
+it's itself
+
+65
+00:02:03,920 --> 00:02:06,960
+so it should just add it to me right
+
+66
+00:02:05,840 --> 00:02:09,599
+away
+
+67
+00:02:06,960 --> 00:02:11,520
+um something i also wanted to do was
+
+68
+00:02:09,599 --> 00:02:13,920
+let's just use the f key which is a key
+
+69
+00:02:11,520 --> 00:02:16,560
+code 70 which i already know so let's
+
+70
+00:02:13,920 --> 00:02:19,920
+make that a constant key underscore f
+
+71
+00:02:16,560 --> 00:02:21,360
+and let's set that to 70.
+
+72
+00:02:19,920 --> 00:02:23,040
+so i just made a variable that's
+
+73
+00:02:21,360 --> 00:02:25,280
+constant so this will never change never
+
+74
+00:02:23,040 --> 00:02:27,440
+change because it'll always be 70.
+
+75
+00:02:25,280 --> 00:02:29,040
+so now in order to actually get this to
+
+76
+00:02:27,440 --> 00:02:30,959
+work you need to create a function so
+
+77
+00:02:29,040 --> 00:02:33,519
+let's um
+
+78
+00:02:30,959 --> 00:02:37,360
+let's use let's just use the grail
+
+79
+00:02:33,519 --> 00:02:39,200
+control on key down so function
+
+80
+00:02:37,360 --> 00:02:40,800
+and then grail
+
+81
+00:02:39,200 --> 00:02:43,519
+control
+
+82
+00:02:40,800 --> 00:02:44,800
+that on e
+
+83
+00:02:43,519 --> 00:02:47,599
+down
+
+84
+00:02:44,800 --> 00:02:49,760
+and then let's open this up
+
+85
+00:02:47,599 --> 00:02:51,360
+and then as a parameter let's pass the
+
+86
+00:02:49,760 --> 00:02:55,040
+key code since that's what we're
+
+87
+00:02:51,360 --> 00:02:57,519
+actually using so now whenever
+
+88
+00:02:55,040 --> 00:02:58,959
+whenever a button is down we're going to
+
+89
+00:02:57,519 --> 00:03:00,480
+get that key code
+
+90
+00:02:58,959 --> 00:03:02,239
+so now we can do something with that so
+
+91
+00:03:00,480 --> 00:03:04,640
+let's say we want to
+
+92
+00:03:02,239 --> 00:03:06,000
+take this this concept we have which is
+
+93
+00:03:04,640 --> 00:03:07,519
+pressing f
+
+94
+00:03:06,000 --> 00:03:09,440
+so they have that equipped if they press
+
+95
+00:03:07,519 --> 00:03:11,519
+f what are we going to want to do
+
+96
+00:03:09,440 --> 00:03:13,760
+something we need to do is well let's
+
+97
+00:03:11,519 --> 00:03:16,239
+test it out let's do player.chat let's
+
+98
+00:03:13,760 --> 00:03:18,000
+reference the player object
+
+99
+00:03:16,239 --> 00:03:20,000
+in programming this is how it works and
+
+100
+00:03:18,000 --> 00:03:21,040
+then we're going to use a period
+
+101
+00:03:20,000 --> 00:03:23,440
+and then we're going to take the
+
+102
+00:03:21,040 --> 00:03:24,959
+attribute chat which is created which is
+
+103
+00:03:23,440 --> 00:03:26,879
+in the just the client itself so you'll
+
+104
+00:03:24,959 --> 00:03:28,879
+have to learn you know the other ones
+
+105
+00:03:26,879 --> 00:03:30,400
+like their positioning and stuff so
+
+106
+00:03:28,879 --> 00:03:33,519
+let's just say
+
+107
+00:03:30,400 --> 00:03:35,760
+dropping a bomb
+
+108
+00:03:33,519 --> 00:03:38,480
+okay let's save that and let's hope that
+
+109
+00:03:35,760 --> 00:03:41,680
+i added it to myself
+
+110
+00:03:38,480 --> 00:03:45,120
+okay so it didn't so i need to use my
+
+111
+00:03:41,680 --> 00:03:47,519
+community name which is or my id
+
+112
+00:03:45,120 --> 00:03:51,120
+so let's do this
+
+113
+00:03:47,519 --> 00:03:51,120
+there we go so now player
+
+114
+00:03:51,840 --> 00:03:56,959
+okay
+
+115
+00:03:53,439 --> 00:03:58,400
+boy i already have a script but
+
+116
+00:03:56,959 --> 00:04:01,040
+anytime you press a key code it's going
+
+117
+00:03:58,400 --> 00:04:02,640
+to do that so let's do this actually so
+
+118
+00:04:01,040 --> 00:04:06,400
+if
+
+119
+00:04:02,640 --> 00:04:08,879
+and let's create some brackets here
+
+120
+00:04:06,400 --> 00:04:11,040
+let's take a chat
+
+121
+00:04:08,879 --> 00:04:13,120
+paste it in here
+
+122
+00:04:11,040 --> 00:04:15,760
+so now what's your if statement b it
+
+123
+00:04:13,120 --> 00:04:18,079
+should be if the key code
+
+124
+00:04:15,760 --> 00:04:20,000
+equal to
+
+125
+00:04:18,079 --> 00:04:23,600
+e code f
+
+126
+00:04:20,000 --> 00:04:26,400
+save that and actually let me
+
+127
+00:04:23,600 --> 00:04:29,280
+open the weapons let me remove
+
+128
+00:04:26,400 --> 00:04:31,280
+this one right here i already have
+
+129
+00:04:29,280 --> 00:04:34,000
+another script doing that okay so now we
+
+130
+00:04:31,280 --> 00:04:35,360
+have the bomb right so we press f
+
+131
+00:04:34,000 --> 00:04:38,160
+we're dropping a bomb
+
+132
+00:04:35,360 --> 00:04:39,520
+so now that's working so now let's do
+
+133
+00:04:38,160 --> 00:04:41,440
+let's drop a bomb
+
+134
+00:04:39,520 --> 00:04:42,800
+so in grail and player rolls itself
+
+135
+00:04:41,440 --> 00:04:45,680
+there's already a
+
+136
+00:04:42,800 --> 00:04:48,880
+predefined function which is put bomb
+
+137
+00:04:45,680 --> 00:04:48,880
+and then inside of here
+
+138
+00:04:49,040 --> 00:04:53,199
+let's place zero
+
+139
+00:04:51,040 --> 00:04:56,600
+and the player.x
+
+140
+00:04:53,199 --> 00:04:56,600
+and the player
+
+141
+00:04:56,720 --> 00:05:00,960
+so now we're basically dropping a bomb
+
+142
+00:04:59,120 --> 00:05:02,080
+wherever the player x in the player y is
+
+143
+00:05:00,960 --> 00:05:03,360
+so that should place it right on
+
+144
+00:05:02,080 --> 00:05:05,919
+ourselves
+
+145
+00:05:03,360 --> 00:05:08,080
+so let's press f dropping a bomb
+
+146
+00:05:05,919 --> 00:05:09,680
+and now we have a bomb
+
+147
+00:05:08,080 --> 00:05:11,680
+so really easy
+
+148
+00:05:09,680 --> 00:05:13,840
+you know the biggest thing in gs2 is
+
+149
+00:05:11,680 --> 00:05:15,520
+learning you know the built-in functions
+
+150
+00:05:13,840 --> 00:05:17,280
+and all the parameters and the things it
+
+151
+00:05:15,520 --> 00:05:18,560
+takes in and also understanding what
+
+152
+00:05:17,280 --> 00:05:20,320
+should be on client side and what should
+
+153
+00:05:18,560 --> 00:05:21,120
+be on server side
+
+154
+00:05:20,320 --> 00:05:22,639
+so
+
+155
+00:05:21,120 --> 00:05:24,400
+there's a lot of other things you can do
+
+156
+00:05:22,639 --> 00:05:26,720
+so right now it's just placing it in the
+
+157
+00:05:24,400 --> 00:05:28,080
+top left corner because that's x and y
+
+158
+00:05:26,720 --> 00:05:30,080
+zero
+
+159
+00:05:28,080 --> 00:05:31,840
+um so we can change that we can look at
+
+160
+00:05:30,080 --> 00:05:34,240
+the player's direction so we can even
+
+161
+00:05:31,840 --> 00:05:36,960
+just say instead of dropping a bomb
+
+162
+00:05:34,240 --> 00:05:38,639
+let's concatenate with an at sign or a
+
+163
+00:05:36,960 --> 00:05:40,720
+space like this
+
+164
+00:05:38,639 --> 00:05:42,639
+let's concatenate the player dot
+
+165
+00:05:40,720 --> 00:05:45,680
+direction
+
+166
+00:05:42,639 --> 00:05:47,360
+okay so now see how i'm facing two then
+
+167
+00:05:45,680 --> 00:05:48,400
+i'm facing three
+
+168
+00:05:47,360 --> 00:05:50,400
+and one
+
+169
+00:05:48,400 --> 00:05:52,000
+and zero okay so now you can control
+
+170
+00:05:50,400 --> 00:05:54,160
+which you know if they're facing this
+
+171
+00:05:52,000 --> 00:05:57,280
+way place the bomb in front of them
+
+172
+00:05:54,160 --> 00:05:58,880
+so uh we can do that quick but you know
+
+173
+00:05:57,280 --> 00:06:00,400
+i think that you should try and do that
+
+174
+00:05:58,880 --> 00:06:02,080
+try and
+
+175
+00:06:00,400 --> 00:06:04,160
+try and create some more if statements
+
+176
+00:06:02,080 --> 00:06:05,680
+based on the direction so if the
+
+177
+00:06:04,160 --> 00:06:08,080
+direction
+
+178
+00:06:05,680 --> 00:06:10,319
+is right which is three
+
+179
+00:06:08,080 --> 00:06:12,319
+create an if statement just like that
+
+180
+00:06:10,319 --> 00:06:14,960
+i'll give you a little hint
+
+181
+00:06:12,319 --> 00:06:14,960
+so if
+
+182
+00:06:15,360 --> 00:06:22,240
+if player dot direction is equal to
+
+183
+00:06:18,880 --> 00:06:23,840
+three then you're going to want to
+
+184
+00:06:22,240 --> 00:06:26,800
+do this
+
+185
+00:06:23,840 --> 00:06:26,800
+let's take the bomb
+
+186
+00:06:27,280 --> 00:06:30,880
+oh wait you probably want to embed this
+
+187
+00:06:29,440 --> 00:06:33,600
+inside
+
+188
+00:06:30,880 --> 00:06:34,560
+of them pressing f
+
+189
+00:06:33,600 --> 00:06:37,520
+so
+
+190
+00:06:34,560 --> 00:06:39,840
+if the direction is three
+
+191
+00:06:37,520 --> 00:06:39,840
+then
+
+192
+00:06:42,240 --> 00:06:46,800
+we want to foot bomb
+
+193
+00:06:44,940 --> 00:06:49,120
+[Music]
+
+194
+00:06:46,800 --> 00:06:49,120
+room
+
+195
+00:06:51,120 --> 00:06:55,360
+y
+
+196
+00:06:53,280 --> 00:06:58,479
+so now
+
+197
+00:06:55,360 --> 00:06:58,479
+if they're facing three
+
+198
+00:06:59,039 --> 00:07:02,400
+there we go i just had a little error in
+
+199
+00:07:00,400 --> 00:07:04,639
+there so now if they're facing three
+
+200
+00:07:02,400 --> 00:07:07,280
+place a bomb they're facing two one or
+
+201
+00:07:04,639 --> 00:07:09,120
+zero it does not place a bomb so now
+
+202
+00:07:07,280 --> 00:07:11,520
+what i want you guys to do for you to
+
+203
+00:07:09,120 --> 00:07:12,960
+learn is let's say they do point they do
+
+204
+00:07:11,520 --> 00:07:14,960
+face this direction
+
+205
+00:07:12,960 --> 00:07:17,199
+which what should the x and y be should
+
+206
+00:07:14,960 --> 00:07:18,000
+you increase should you increase the x
+
+207
+00:07:17,199 --> 00:07:20,560
+here
+
+208
+00:07:18,000 --> 00:07:22,720
+by let's just say 10
+
+209
+00:07:20,560 --> 00:07:24,160
+um for this direction see how it's
+
+210
+00:07:22,720 --> 00:07:26,319
+placing in front but it should probably
+
+211
+00:07:24,160 --> 00:07:27,840
+be smaller than that
+
+212
+00:07:26,319 --> 00:07:31,919
+now look at this
+
+213
+00:07:27,840 --> 00:07:33,280
+let's just do i don't know maybe three
+
+214
+00:07:31,919 --> 00:07:36,000
+so now if they're facing this direction
+
+215
+00:07:33,280 --> 00:07:38,720
+it places it three and then maybe we
+
+216
+00:07:36,000 --> 00:07:42,880
+subtract a little bit of y
+
+217
+00:07:38,720 --> 00:07:42,880
+that might be too much oh we need to add
+
+218
+00:07:43,120 --> 00:07:45,840
+maybe two
+
+219
+00:07:45,919 --> 00:07:50,080
+okay we want to do one
+
+220
+00:07:48,240 --> 00:07:52,160
+there we go perfect
+
+221
+00:07:50,080 --> 00:07:54,240
+so now this direction no bomb this
+
+222
+00:07:52,160 --> 00:07:55,759
+direction no bomb this direction no bomb
+
+223
+00:07:54,240 --> 00:07:56,960
+and when we press this direction we
+
+224
+00:07:55,759 --> 00:07:59,199
+place a bomb
+
+225
+00:07:56,960 --> 00:08:00,400
+so now how about you guys
+
+226
+00:07:59,199 --> 00:08:02,800
+you know since you're learning how much
+
+227
+00:08:00,400 --> 00:08:03,599
+you guys finish the script up i'll let
+
+228
+00:08:02,800 --> 00:08:04,960
+you
+
+229
+00:08:03,599 --> 00:08:06,240
+copy it here
+
+230
+00:08:04,960 --> 00:08:08,080
+and then what i want you guys to do is
+
+231
+00:08:06,240 --> 00:08:09,199
+finish the directions make sure that
+
+232
+00:08:08,080 --> 00:08:10,160
+they can
+
+233
+00:08:09,199 --> 00:08:11,759
+um
+
+234
+00:08:10,160 --> 00:08:13,680
+place a bomb in every direction so it's
+
+235
+00:08:11,759 --> 00:08:15,120
+not just on the player you should be
+
+236
+00:08:13,680 --> 00:08:16,560
+able to do this by
+
+237
+00:08:15,120 --> 00:08:18,240
+i'll give you a hint all you want to do
+
+238
+00:08:16,560 --> 00:08:19,919
+is change some of the
+
+239
+00:08:18,240 --> 00:08:22,560
+the directions here because you're just
+
+240
+00:08:19,919 --> 00:08:24,080
+adding on to it so it's you know updated
+
+241
+00:08:22,560 --> 00:08:27,120
+but i think that's it for this this
+
+242
+00:08:24,080 --> 00:08:29,280
+video um if you guys want more videos on
+
+243
+00:08:27,120 --> 00:08:32,240
+gs2 there's not a whole lot of them so i
+
+244
+00:08:29,280 --> 00:08:34,800
+i will be willing to go as deep as i can
+
+245
+00:08:32,240 --> 00:08:36,800
+and cover everything um i'll put the
+
+246
+00:08:34,800 --> 00:08:37,839
+wiki docs in the description if you're
+
+247
+00:08:36,800 --> 00:08:38,959
+new and you know you want to look
+
+248
+00:08:37,839 --> 00:08:40,320
+through them
+
+249
+00:08:38,959 --> 00:08:42,800
+other than that i could probably make
+
+250
+00:08:40,320 --> 00:08:44,640
+more videos just comment and let me know
+
+251
+00:08:42,800 --> 00:08:47,040
+so this is just the first one and i
+
+252
+00:08:44,640 --> 00:08:49,760
+think it's pretty solid we can uh talk
+
+253
+00:08:47,040 --> 00:08:52,640
+about other things like flags and
+
+254
+00:08:49,760 --> 00:08:54,800
+server flags and npcs like right now we
+
+255
+00:08:52,640 --> 00:08:56,800
+just created a weapon script here's a
+
+256
+00:08:54,800 --> 00:08:58,480
+class and here's an npc
+
+257
+00:08:56,800 --> 00:09:00,160
+so just let me know in the comments if
+
+258
+00:08:58,480 --> 00:09:02,080
+you guys want to learn more i can try
+
+259
+00:09:00,160 --> 00:09:04,000
+and cover as much as i know so thanks
+
+260
+00:09:02,080 --> 00:09:07,519
+for watching make sure to subscribe and
+
+261
+00:09:04,000 --> 00:09:07,519
+i'll see you next time
+

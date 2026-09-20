@@ -1,0 +1,936 @@
+1
+00:00:00,320 --> 00:00:05,480
+what is going on you crazy little kids
+
+2
+00:00:03,360 --> 00:00:08,639
+so uh today I thought I would start out
+
+3
+00:00:05,480 --> 00:00:10,160
+a new series on gr online player worlds
+
+4
+00:00:08,639 --> 00:00:13,280
+so I thought I would start teaching some
+
+5
+00:00:10,160 --> 00:00:16,160
+people how to um actually use the player
+
+6
+00:00:13,280 --> 00:00:17,720
+worlds um RC correctly since like nobody
+
+7
+00:00:16,160 --> 00:00:19,680
+knows how to use it and I thought i'
+
+8
+00:00:17,720 --> 00:00:21,119
+would teach a bunch of GS2 because
+
+9
+00:00:19,680 --> 00:00:24,920
+there's not many tutorials on YouTube
+
+10
+00:00:21,119 --> 00:00:27,720
+anymore or at all in general So today
+
+11
+00:00:24,920 --> 00:00:28,760
+we're just going to go over RC and I'm
+
+12
+00:00:27,720 --> 00:00:31,880
+probably going to make some more videos
+
+13
+00:00:28,760 --> 00:00:34,000
+today and post some slow for the week so
+
+14
+00:00:31,880 --> 00:00:35,920
+um when you're on a player world there's
+
+15
+00:00:34,000 --> 00:00:37,079
+a thing called remote control well so
+
+16
+00:00:35,920 --> 00:00:38,399
+first off I'm going to be explaining
+
+17
+00:00:37,079 --> 00:00:40,120
+everything as if you know absolutely
+
+18
+00:00:38,399 --> 00:00:42,440
+nothing because everyone I've talked to
+
+19
+00:00:40,120 --> 00:00:43,800
+basically knows nothing so um I'm just
+
+20
+00:00:42,440 --> 00:00:45,280
+going to close this so when when you're
+
+21
+00:00:43,800 --> 00:00:46,879
+on a player world and you get hired on a
+
+22
+00:00:45,280 --> 00:00:48,600
+server you know you want to learn GS2
+
+23
+00:00:46,879 --> 00:00:51,360
+are you going to code for them you want
+
+24
+00:00:48,600 --> 00:00:53,879
+to press F6 and this will bring up the
+
+25
+00:00:51,360 --> 00:00:57,000
+remote control the outer remote control
+
+26
+00:00:53,879 --> 00:00:59,519
+for Grail so um I'm just going to
+
+27
+00:00:57,000 --> 00:01:02,000
+quickly explain all the buttons on the
+
+28
+00:00:59,519 --> 00:01:04,000
+console that we have here so up at the
+
+29
+00:01:02,000 --> 00:01:06,000
+top left this right here it does not
+
+30
+00:01:04,000 --> 00:01:07,799
+work it's the player list it only works
+
+31
+00:01:06,000 --> 00:01:10,159
+on offline RC which is this which I'll
+
+32
+00:01:07,799 --> 00:01:13,240
+explain later basically all it does is
+
+33
+00:01:10,159 --> 00:01:14,799
+gives you a full um like list of Who's
+
+34
+00:01:13,240 --> 00:01:17,119
+online and you can edit their attributes
+
+35
+00:01:14,799 --> 00:01:19,080
+in here like that and so I'm going to
+
+36
+00:01:17,119 --> 00:01:20,360
+close that so right here this is really
+
+37
+00:01:19,080 --> 00:01:22,840
+important this is called the file
+
+38
+00:01:20,360 --> 00:01:25,159
+browser so when we click this so this
+
+39
+00:01:22,840 --> 00:01:27,320
+right here is what people will download
+
+40
+00:01:25,159 --> 00:01:29,439
+when they join the server in in sense
+
+41
+00:01:27,320 --> 00:01:30,880
+anything in levels and under these are
+
+42
+00:01:29,439 --> 00:01:33,920
+folders that hold things like your
+
+43
+00:01:30,880 --> 00:01:37,560
+images your animations for your um
+
+44
+00:01:33,920 --> 00:01:41,159
+player um your bodies your heads um
+
+45
+00:01:37,560 --> 00:01:42,960
+specific levels um uh yeah holds your
+
+46
+00:01:41,159 --> 00:01:45,280
+gmaps and you know all your things like
+
+47
+00:01:42,960 --> 00:01:47,240
+that like scripts as well weapons
+
+48
+00:01:45,280 --> 00:01:49,560
+scripts which I'll be talking about a
+
+49
+00:01:47,240 --> 00:01:52,119
+little later in the video also logs
+
+50
+00:01:49,560 --> 00:01:53,560
+which you can set up a way to um log
+
+51
+00:01:52,119 --> 00:01:55,880
+things in a database which we can
+
+52
+00:01:53,560 --> 00:01:57,719
+explain later that's a little too much
+
+53
+00:01:55,880 --> 00:02:00,039
+but yeah so right here basically is just
+
+54
+00:01:57,719 --> 00:02:00,880
+a quick way to um upload images and all
+
+55
+00:02:00,039 --> 00:02:03,439
+things you're going to need for
+
+56
+00:02:00,880 --> 00:02:04,799
+scripting all right so up here these
+
+57
+00:02:03,439 --> 00:02:06,320
+three things are pretty or four things
+
+58
+00:02:04,799 --> 00:02:08,800
+are pretty important this one is not
+
+59
+00:02:06,320 --> 00:02:10,039
+actually this is just uh some options
+
+60
+00:02:08,800 --> 00:02:12,920
+and you just you should ignore that for
+
+61
+00:02:10,039 --> 00:02:15,239
+now to be honest okay so the globe with
+
+62
+00:02:12,920 --> 00:02:18,319
+the flag these are called server Flags
+
+63
+00:02:15,239 --> 00:02:20,000
+so I'm on a server it's just Dev Prime
+
+64
+00:02:18,319 --> 00:02:22,800
+it's really kind of a random server or
+
+65
+00:02:20,000 --> 00:02:25,200
+whatnot but um yeah so they don't have
+
+66
+00:02:22,800 --> 00:02:27,480
+any server flags at the moment but these
+
+67
+00:02:25,200 --> 00:02:30,480
+are these are variables that can be
+
+68
+00:02:27,480 --> 00:02:33,040
+accessed by any NPC and any script
+
+69
+00:02:30,480 --> 00:02:36,000
+so we can store things like um if you
+
+70
+00:02:33,040 --> 00:02:38,560
+had a bush out here and you slashed it
+
+71
+00:02:36,000 --> 00:02:42,040
+like this we can have it add up and
+
+72
+00:02:38,560 --> 00:02:46,239
+update this this variable so um let's
+
+73
+00:02:42,040 --> 00:02:49,040
+just say this. bush is equal to one if
+
+74
+00:02:46,239 --> 00:02:50,720
+we um if we save that um I'm not
+
+75
+00:02:49,040 --> 00:02:53,400
+authorized to even change that but if we
+
+76
+00:02:50,720 --> 00:02:55,480
+had um this we can actually put this
+
+77
+00:02:53,400 --> 00:02:57,480
+anywhere and affect this number that's
+
+78
+00:02:55,480 --> 00:02:58,840
+really useful for um certain things that
+
+79
+00:02:57,480 --> 00:03:00,879
+we'll go over later but that's just a
+
+80
+00:02:58,840 --> 00:03:03,239
+quick explanation of what a server flag
+
+81
+00:03:00,879 --> 00:03:06,000
+is for right here is the folder
+
+82
+00:03:03,239 --> 00:03:08,799
+configuration this is for um if on your
+
+83
+00:03:06,000 --> 00:03:11,080
+server if you have custom folders so um
+
+84
+00:03:08,799 --> 00:03:13,720
+like a music that's custom that I've
+
+85
+00:03:11,080 --> 00:03:15,400
+added it's basically another folder
+
+86
+00:03:13,720 --> 00:03:16,920
+inside of something and you just give
+
+87
+00:03:15,400 --> 00:03:20,480
+yourself rights to it I'll explain that
+
+88
+00:03:16,920 --> 00:03:22,159
+as well so um basically this is um this
+
+89
+00:03:20,480 --> 00:03:24,200
+the folder configuration allows you to
+
+90
+00:03:22,159 --> 00:03:26,159
+add different file extensions really
+
+91
+00:03:24,200 --> 00:03:30,040
+that's pretty much what you're going for
+
+92
+00:03:26,159 --> 00:03:31,360
+such as newg map for um Grails levels St
+
+93
+00:03:30,040 --> 00:03:33,319
+gril it's really old they don't even use
+
+94
+00:03:31,360 --> 00:03:37,080
+those anymore but things like your GI
+
+95
+00:03:33,319 --> 00:03:39,159
+your gifs images um your sound files
+
+96
+00:03:37,080 --> 00:03:41,080
+gmaps and just more of the same thing
+
+97
+00:03:39,159 --> 00:03:43,200
+over again same with your body's head SE
+
+98
+00:03:41,080 --> 00:03:44,840
+Shields and swords this is what allows
+
+99
+00:03:43,200 --> 00:03:46,959
+players to download files when they join
+
+100
+00:03:44,840 --> 00:03:48,640
+the game so if you add something to the
+
+101
+00:03:46,959 --> 00:03:50,080
+server you want to make sure that this
+
+102
+00:03:48,640 --> 00:03:52,159
+will show because if it doesn't show up
+
+103
+00:03:50,080 --> 00:03:54,680
+in the game it's probably something
+
+104
+00:03:52,159 --> 00:03:54,680
+wrong with
+
+105
+00:03:56,280 --> 00:04:01,159
+this okay so now we're going to go over
+
+106
+00:03:59,040 --> 00:04:03,519
+the server option
+
+107
+00:04:01,159 --> 00:04:06,319
+this is pretty important because um this
+
+108
+00:04:03,519 --> 00:04:07,959
+is like how the server runs like things
+
+109
+00:04:06,319 --> 00:04:10,439
+that go on with it I don't really want
+
+110
+00:04:07,959 --> 00:04:11,879
+to go too in depth with this but um I'll
+
+111
+00:04:10,439 --> 00:04:14,439
+put some links in the description to
+
+112
+00:04:11,879 --> 00:04:16,600
+some tutorials on how this all works but
+
+113
+00:04:14,439 --> 00:04:18,759
+yeah you have like your hack detection
+
+114
+00:04:16,600 --> 00:04:20,160
+we have um some player settings it's
+
+115
+00:04:18,759 --> 00:04:22,919
+kind of hard to explain this really
+
+116
+00:04:20,160 --> 00:04:26,800
+quickly but um basically this is like
+
+117
+00:04:22,919 --> 00:04:28,960
+grail's default script settings so for
+
+118
+00:04:26,800 --> 00:04:31,520
+example the unstick me level um when you
+
+119
+00:04:28,960 --> 00:04:34,039
+say unstick me we have it go here to
+
+120
+00:04:31,520 --> 00:04:35,320
+this X and this Y and this is how long
+
+121
+00:04:34,039 --> 00:04:36,800
+it'll take those are things that are
+
+122
+00:04:35,320 --> 00:04:39,280
+already built into Grail and we're
+
+123
+00:04:36,800 --> 00:04:41,039
+trying to modify them through this also
+
+124
+00:04:39,280 --> 00:04:42,840
+I just put this here it's just a little
+
+125
+00:04:41,039 --> 00:04:45,680
+comments thing so it's just a list of
+
+126
+00:04:42,840 --> 00:04:46,800
+comments I'll show that later too okay
+
+127
+00:04:45,680 --> 00:04:49,919
+so now we're going to come to this
+
+128
+00:04:46,800 --> 00:04:51,919
+button right here this is called um I'm
+
+129
+00:04:49,919 --> 00:04:53,520
+just going to call it the goey Explorer
+
+130
+00:04:51,919 --> 00:04:56,680
+so what this does is allow you make
+
+131
+00:04:53,520 --> 00:04:58,440
+allow you to make really quick um guis
+
+132
+00:04:56,680 --> 00:05:01,039
+so for example if you need a window and
+
+133
+00:04:58,440 --> 00:05:03,800
+you want a button in it we can do this
+
+134
+00:05:01,039 --> 00:05:06,039
+and then what you can do is actually um
+
+135
+00:05:03,800 --> 00:05:07,560
+have it uh export and you can get the
+
+136
+00:05:06,039 --> 00:05:10,479
+code for it so yeah let's say this is
+
+137
+00:05:07,560 --> 00:05:13,199
+what we want and click compile compile
+
+138
+00:05:10,479 --> 00:05:14,600
+and we have the full code just a basic
+
+139
+00:05:13,199 --> 00:05:16,000
+outline of it and we can take it from
+
+140
+00:05:14,600 --> 00:05:17,199
+there I actually do this quite a bit
+
+141
+00:05:16,000 --> 00:05:18,840
+even though a lot of people say not to
+
+142
+00:05:17,199 --> 00:05:20,400
+do this like before you judge me for
+
+143
+00:05:18,840 --> 00:05:22,160
+using this it's you should probably
+
+144
+00:05:20,400 --> 00:05:25,120
+learn how to code it first I know how to
+
+145
+00:05:22,160 --> 00:05:26,440
+code um systems for this but I I'd
+
+146
+00:05:25,120 --> 00:05:28,479
+rather just quickly do this because it's
+
+147
+00:05:26,440 --> 00:05:30,000
+a waste of time so yeah that's just a
+
+148
+00:05:28,479 --> 00:05:31,160
+quick overview but you can do a lot of
+
+149
+00:05:30,000 --> 00:05:33,280
+things in here I'll have specific
+
+150
+00:05:31,160 --> 00:05:35,720
+tutorials on these if you'd like just
+
+151
+00:05:33,280 --> 00:05:37,759
+comment that in all right so next what
+
+152
+00:05:35,720 --> 00:05:39,759
+we're going to do is talk about these
+
+153
+00:05:37,759 --> 00:05:42,440
+three probably most important things in
+
+154
+00:05:39,759 --> 00:05:44,840
+the whole thing so when you're coding in
+
+155
+00:05:42,440 --> 00:05:48,199
+grail online classic or player worlds or
+
+156
+00:05:44,840 --> 00:05:50,520
+ier or any server like that um it's
+
+157
+00:05:48,199 --> 00:05:53,759
+based on two different things really
+
+158
+00:05:50,520 --> 00:05:56,759
+well three is so you have a weapon which
+
+159
+00:05:53,759 --> 00:05:58,520
+is like this so what right here the
+
+160
+00:05:56,759 --> 00:06:00,400
+weapon is attached to the player so I've
+
+161
+00:05:58,520 --> 00:06:02,319
+created a weapon
+
+162
+00:06:00,400 --> 00:06:03,680
+so basically weapons are systems
+
+163
+00:06:02,319 --> 00:06:05,759
+movement scripts things that would
+
+164
+00:06:03,680 --> 00:06:07,599
+affect the player and mostly only the
+
+165
+00:06:05,759 --> 00:06:09,599
+player that's what you want to keep it
+
+166
+00:06:07,599 --> 00:06:13,240
+like towards you know these things are
+
+167
+00:06:09,599 --> 00:06:14,680
+like items or Huds or guis or messages
+
+168
+00:06:13,240 --> 00:06:16,039
+or systems you know things that you
+
+169
+00:06:14,680 --> 00:06:17,479
+would want the player to have
+
+170
+00:06:16,039 --> 00:06:19,440
+specifically you can affect things
+
+171
+00:06:17,479 --> 00:06:21,800
+serers side with these as well but you
+
+172
+00:06:19,440 --> 00:06:24,400
+want to keep it mainly to things that
+
+173
+00:06:21,800 --> 00:06:26,800
+would actually be a weapon okay so
+
+174
+00:06:24,400 --> 00:06:29,400
+there's also these things called classes
+
+175
+00:06:26,800 --> 00:06:32,080
+and right here NPCs so we're just going
+
+176
+00:06:29,400 --> 00:06:33,560
+to ignore this for now but an so it's
+
+177
+00:06:32,080 --> 00:06:36,080
+one of these guys it's a non-playing
+
+178
+00:06:33,560 --> 00:06:38,599
+character and we can modify him through
+
+179
+00:06:36,080 --> 00:06:41,360
+um script you know what an NPC is which
+
+180
+00:06:38,599 --> 00:06:44,639
+is right here non-playing character and
+
+181
+00:06:41,360 --> 00:06:47,720
+now what a class is is um it's an NPC
+
+182
+00:06:44,639 --> 00:06:51,160
+basically that we can access so we can
+
+183
+00:06:47,720 --> 00:06:53,639
+make an NPC script and we can access it
+
+184
+00:06:51,160 --> 00:06:55,360
+we can make a class like this and then
+
+185
+00:06:53,639 --> 00:06:57,800
+we can access it through an NPC so there
+
+186
+00:06:55,360 --> 00:07:00,360
+won't be say now let's say we have three
+
+187
+00:06:57,800 --> 00:07:01,599
+NPCs but we want this code to be on all
+
+188
+00:07:00,360 --> 00:07:04,639
+of them but we don't want to just keep
+
+189
+00:07:01,599 --> 00:07:07,160
+attaching it we can actually just join
+
+190
+00:07:04,639 --> 00:07:09,039
+each individual NPC through like a few
+
+191
+00:07:07,160 --> 00:07:11,000
+lines of code that connect to this
+
+192
+00:07:09,039 --> 00:07:12,680
+script right here and we can use it on
+
+193
+00:07:11,000 --> 00:07:14,319
+anything and when we edit this it'll
+
+194
+00:07:12,680 --> 00:07:16,680
+update in all three of them instead of
+
+195
+00:07:14,319 --> 00:07:18,960
+specifically going into each MPC and
+
+196
+00:07:16,680 --> 00:07:21,080
+fixing the script one by one so that
+
+197
+00:07:18,960 --> 00:07:22,440
+makes these classes very useful same
+
+198
+00:07:21,080 --> 00:07:25,280
+with weapons you can actually attach
+
+199
+00:07:22,440 --> 00:07:27,840
+these to weapon scripts so for example
+
+200
+00:07:25,280 --> 00:07:30,520
+if you have a inventory system and you
+
+201
+00:07:27,840 --> 00:07:33,240
+want something to drop it will create a
+
+202
+00:07:30,520 --> 00:07:35,000
+class which is an NPC of the item and
+
+203
+00:07:33,240 --> 00:07:37,039
+when we touch it we can take that class
+
+204
+00:07:35,000 --> 00:07:39,680
+delete it and add the weapon that that
+
+205
+00:07:37,039 --> 00:07:41,400
+class had on it back to the player it's
+
+206
+00:07:39,680 --> 00:07:44,080
+kind of hard to explain but we can go
+
+207
+00:07:41,400 --> 00:07:46,960
+over it later okay and so now these are
+
+208
+00:07:44,080 --> 00:07:48,800
+what we'd call a database MPC these are
+
+209
+00:07:46,960 --> 00:07:52,159
+what kind of control the game these are
+
+210
+00:07:48,800 --> 00:07:54,319
+serers side NPCs for example on dev
+
+211
+00:07:52,159 --> 00:07:57,039
+Prime what we have it doing at the
+
+212
+00:07:54,319 --> 00:07:59,000
+moment is when the player joins the game
+
+213
+00:07:57,039 --> 00:08:02,039
+we have it add these specific weapons
+
+214
+00:07:59,000 --> 00:08:04,879
+that are like um the HUD here which is
+
+215
+00:08:02,039 --> 00:08:07,280
+cough stolen but um but yeah so like the
+
+216
+00:08:04,879 --> 00:08:09,080
+inventory system I'm working on we have
+
+217
+00:08:07,280 --> 00:08:11,400
+this automatically download to the
+
+218
+00:08:09,080 --> 00:08:14,039
+player so for example yeah you know you
+
+219
+00:08:11,400 --> 00:08:16,080
+can have your things here um yeah so I
+
+220
+00:08:14,039 --> 00:08:17,840
+have some weapons here and it'll
+
+221
+00:08:16,080 --> 00:08:20,199
+automatically download to the player and
+
+222
+00:08:17,840 --> 00:08:24,240
+you can set these NPCs to do anything
+
+223
+00:08:20,199 --> 00:08:26,560
+pretty much anything serers side so
+
+224
+00:08:24,240 --> 00:08:29,159
+that's about it for um the basic
+
+225
+00:08:26,560 --> 00:08:31,639
+overview of um how how online um servers
+
+226
+00:08:29,159 --> 00:08:33,560
+work with graille so the next couple
+
+227
+00:08:31,639 --> 00:08:35,479
+videos I'll be teaching actual code I
+
+228
+00:08:33,560 --> 00:08:36,839
+know you probably want to learn it so
+
+229
+00:08:35,479 --> 00:08:39,839
+thanks for watching let's get right into
+
+230
+00:08:36,839 --> 00:08:39,839
+it
+
+231
+00:08:42,659 --> 00:09:00,080
+[Music]
+
+232
+00:09:00,200 --> 00:09:07,080
+n
+
+233
+00:09:01,830 --> 00:09:07,080
+[Music]
+
+234
+00:09:11,440 --> 00:09:19,140
+[Music]
+

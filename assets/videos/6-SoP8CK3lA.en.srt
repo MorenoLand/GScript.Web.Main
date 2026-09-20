@@ -1,0 +1,388 @@
+1
+00:00:00,320 --> 00:00:04,960
+hello and welcome to the second tutorial
+
+2
+00:00:02,399 --> 00:00:06,960
+on how to program in g-script 2.
+
+3
+00:00:04,960 --> 00:00:08,240
+in the last tutorial i showed you how to
+
+4
+00:00:06,960 --> 00:00:10,080
+download the files
+
+5
+00:00:08,240 --> 00:00:12,320
+remote control and level editor that'll
+
+6
+00:00:10,080 --> 00:00:13,599
+help you with gscript 2.
+
+7
+00:00:12,320 --> 00:00:16,000
+in this tutorial i'm going to show you
+
+8
+00:00:13,599 --> 00:00:17,279
+how to use them or at least upload a
+
+9
+00:00:16,000 --> 00:00:20,640
+level
+
+10
+00:00:17,279 --> 00:00:22,560
+and a bit in rc first let's open the
+
+11
+00:00:20,640 --> 00:00:25,039
+level editor
+
+12
+00:00:22,560 --> 00:00:25,920
+and let's create a new level it's new 9
+
+13
+00:00:25,039 --> 00:00:29,519
+i guess
+
+14
+00:00:25,920 --> 00:00:32,160
+and let's add an npc into it there
+
+15
+00:00:29,519 --> 00:00:33,120
+let's put it anywhere and open the
+
+16
+00:00:32,160 --> 00:00:36,160
+script
+
+17
+00:00:33,120 --> 00:00:36,960
+this script is in juice script one if we
+
+18
+00:00:36,160 --> 00:00:39,360
+pressed run
+
+19
+00:00:36,960 --> 00:00:40,079
+it would work if we made this g script
+
+20
+00:00:39,360 --> 00:00:43,040
+two
+
+21
+00:00:40,079 --> 00:00:44,800
+and press play or run it would not work
+
+22
+00:00:43,040 --> 00:00:48,000
+because level editor does not work
+
+23
+00:00:44,800 --> 00:00:50,640
+with gscript 2. however
+
+24
+00:00:48,000 --> 00:00:51,520
+g-script 1 is 95 backwards compatible
+
+25
+00:00:50,640 --> 00:00:53,440
+online
+
+26
+00:00:51,520 --> 00:00:56,559
+so if this this would actually work
+
+27
+00:00:53,440 --> 00:00:58,640
+online it just wouldn't be very flexible
+
+28
+00:00:56,559 --> 00:00:59,920
+it's just not as good as if we uploaded
+
+29
+00:00:58,640 --> 00:01:02,960
+a g script 2
+
+30
+00:00:59,920 --> 00:01:06,400
+script so anyway let's just save this
+
+31
+00:01:02,960 --> 00:01:08,960
+instead of changing it to script 2
+
+32
+00:01:06,400 --> 00:01:09,840
+and save it into our little tutorials
+
+33
+00:01:08,960 --> 00:01:13,920
+folder
+
+34
+00:01:09,840 --> 00:01:16,960
+save next let's lower this
+
+35
+00:01:13,920 --> 00:01:16,960
+and bring out rc
+
+36
+00:01:17,360 --> 00:01:21,840
+click this button here this shows all
+
+37
+00:01:20,159 --> 00:01:25,200
+the files and folders
+
+38
+00:01:21,840 --> 00:01:26,880
+on your server like images and levels
+
+39
+00:01:25,200 --> 00:01:29,280
+if you own a server you'll usually have
+
+40
+00:01:26,880 --> 00:01:29,680
+the rights for these things unless your
+
+41
+00:01:29,280 --> 00:01:32,159
+ip
+
+42
+00:01:29,680 --> 00:01:34,000
+changes or maybe you take them off
+
+43
+00:01:32,159 --> 00:01:35,200
+yourself for whatever reason
+
+44
+00:01:34,000 --> 00:01:37,119
+if you're working on someone else's
+
+45
+00:01:35,200 --> 00:01:39,759
+server they'll have to give you the
+
+46
+00:01:37,119 --> 00:01:43,280
+rights to these folders
+
+47
+00:01:39,759 --> 00:01:46,079
+anyway to upload a file we click
+
+48
+00:01:43,280 --> 00:01:47,280
+right click and press upload file or do
+
+49
+00:01:46,079 --> 00:01:51,600
+it the easy way
+
+50
+00:01:47,280 --> 00:01:57,040
+we can go find our folder that contains
+
+51
+00:01:51,600 --> 00:02:02,320
+the level here and just
+
+52
+00:01:57,040 --> 00:02:02,320
+drag it in just drag it in
+
+53
+00:02:02,399 --> 00:02:07,439
+it'll create a new level after name of
+
+54
+00:02:04,880 --> 00:02:09,759
+what file you uploaded
+
+55
+00:02:07,439 --> 00:02:11,039
+or if we uploaded a pre-existing one
+
+56
+00:02:09,759 --> 00:02:16,879
+it'll just update the
+
+57
+00:02:11,039 --> 00:02:16,879
+level next we want to warp the level
+
+58
+00:02:17,440 --> 00:02:23,599
+new 9 and w
+
+59
+00:02:20,560 --> 00:02:25,040
+and you can see our little npc here
+
+60
+00:02:23,599 --> 00:02:26,959
+he doesn't do much but we haven't really
+
+61
+00:02:25,040 --> 00:02:29,360
+programmed to do anything
+
+62
+00:02:26,959 --> 00:02:31,599
+now on room control i'm going to explain
+
+63
+00:02:29,360 --> 00:02:34,080
+at least a few of the buttons and save
+
+64
+00:02:31,599 --> 00:02:34,800
+others for the next tutorial this one
+
+65
+00:02:34,080 --> 00:02:37,680
+here
+
+66
+00:02:34,800 --> 00:02:38,080
+at the top left corner lets you change
+
+67
+00:02:37,680 --> 00:02:39,680
+all
+
+68
+00:02:38,080 --> 00:02:41,519
+lets you pretty much configure all the
+
+69
+00:02:39,680 --> 00:02:44,000
+players on your server
+
+70
+00:02:41,519 --> 00:02:46,160
+like this is me i can change my rights i
+
+71
+00:02:44,000 --> 00:02:48,080
+can change my attributes i can change
+
+72
+00:02:46,160 --> 00:02:49,280
+folders i can access i can ban myself
+
+73
+00:02:48,080 --> 00:02:51,200
+which i'm not going to do
+
+74
+00:02:49,280 --> 00:02:52,560
+i can reset myself i can disconnect
+
+75
+00:02:51,200 --> 00:02:55,920
+myself
+
+76
+00:02:52,560 --> 00:02:58,319
+you get it this one at the
+
+77
+00:02:55,920 --> 00:03:00,560
+top right corner but not at the very top
+
+78
+00:02:58,319 --> 00:03:03,200
+right corner
+
+79
+00:03:00,560 --> 00:03:04,400
+is the flags button this one is needed
+
+80
+00:03:03,200 --> 00:03:07,280
+for g-script 2
+
+81
+00:03:04,400 --> 00:03:08,159
+because it lets you it's like data on
+
+82
+00:03:07,280 --> 00:03:10,080
+the server
+
+83
+00:03:08,159 --> 00:03:12,319
+so if we had it actually i'll get into
+
+84
+00:03:10,080 --> 00:03:13,760
+it later but just know this is pretty
+
+85
+00:03:12,319 --> 00:03:16,879
+useful g-script too
+
+86
+00:03:13,760 --> 00:03:18,319
+these three buttons here this one this
+
+87
+00:03:16,879 --> 00:03:20,640
+one
+
+88
+00:03:18,319 --> 00:03:21,360
+and this one are the scripts that are on
+
+89
+00:03:20,640 --> 00:03:22,800
+the server
+
+90
+00:03:21,360 --> 00:03:25,200
+we'll get into them and what they do
+
+91
+00:03:22,800 --> 00:03:27,040
+later but anyway this concludes
+
+92
+00:03:25,200 --> 00:03:29,120
+our second tutorial on how to program a
+
+93
+00:03:27,040 --> 00:03:31,040
+g-script ii
+
+94
+00:03:29,120 --> 00:03:32,560
+i hope you you at least have an idea of
+
+95
+00:03:31,040 --> 00:03:35,840
+how to upload files
+
+96
+00:03:32,560 --> 00:03:41,360
+and at least a fan idea of what g
+
+97
+00:03:35,840 --> 00:03:41,360
+of what rc does so bye
+
