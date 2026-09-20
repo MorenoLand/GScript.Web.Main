@@ -657,6 +657,35 @@ function App() {
   const [videoManifest, setVideoManifest] = React.useState(null);
   const [videoPlayer, setVideoPlayer] = React.useState(null);
   const ytPlayerRef = React.useRef(null);
+  const localVideoRef = React.useRef(null);
+  const localProgressRef = React.useRef({});
+
+  const localProgressKey = (id) => `gscript.video-progress.${id}`;
+  const persistLocalVideoProgress = (video) => {
+    if (!video || !video.dataset.videoId || !video.currentTime) return;
+    try {
+      const key = localProgressKey(video.dataset.videoId);
+      if (Number.isFinite(video.duration) && video.duration > 0 && video.currentTime >= video.duration - 5) localStorage.removeItem(key);
+      else localStorage.setItem(key, String(video.currentTime));
+    } catch {}
+  };
+  const saveLocalVideoProgress = () => persistLocalVideoProgress(localVideoRef.current);
+  const restoreLocalVideoProgress = (event) => {
+    const video = event.currentTarget;
+    try {
+      const saved = Number(localStorage.getItem(localProgressKey(video.dataset.videoId)));
+      if (Number.isFinite(saved) && saved > 0 && (!Number.isFinite(video.duration) || saved < video.duration - 5)) video.currentTime = saved;
+    } catch {}
+  };
+  const handleLocalVideoTimeUpdate = (event) => {
+    const video = event.currentTarget;
+    const id = video.dataset.videoId;
+    const second = Math.floor(video.currentTime);
+    if (second - (localProgressRef.current[id] || -5) < 5) return;
+    localProgressRef.current[id] = second;
+    persistLocalVideoProgress(video);
+  };
+  const closeVideoPlayer = () => { saveLocalVideoProgress(); setVideoPlayer(null); };
 
   const videoLinks = [
     { text: 'GS2 Tutorial', href: 'https://www.youtube.com/playlist?list=PLGCNVthRlw5EHakguzfJe4E2N9HrMhCb4' },
@@ -1020,19 +1049,19 @@ function App() {
         </section>
 
         {videoPlayer && (
-          <div className="video-modal" role="dialog" aria-modal="true" aria-label={videoPlayer.text} onClick={() => setVideoPlayer(null)}>
+          <div className="video-modal" role="dialog" aria-modal="true" aria-label={videoPlayer.text} onClick={closeVideoPlayer}>
             <div className="video-modal-panel" onClick={(e) => e.stopPropagation()}>
               <div className="video-modal-bar">
                 <strong>{videoPlayer.local ? videoPlayer.items[videoPlayer.index].title : videoPlayer.text}</strong>
                 <div>
                   <a href={videoPlayer.href} target="_blank">{videoPlayer.local && videoPlayer.items[videoPlayer.index].uploader ? `@${videoPlayer.items[videoPlayer.index].uploader.replace(/^@/, '')} on YouTube` : 'Open on YouTube'}</a>
-                  <button type="button" onClick={() => setVideoPlayer(null)} aria-label="Close video"><i className="fas fa-times"></i></button>
+                  <button type="button" onClick={closeVideoPlayer} aria-label="Close video"><i className="fas fa-times"></i></button>
                 </div>
               </div>
               <div className={`video-player-layout${videoPlayer.local && videoPlayer.items.length > 1 ? ' has-playlist' : ''}`}>
                 <div className="video-player-shell">
                   {videoPlayer.local ? (
-                    <video key={videoPlayer.items[videoPlayer.index].id} src={videoPlayer.items[videoPlayer.index].path} poster={`https://i.ytimg.com/vi/${videoPlayer.items[videoPlayer.index].id}/hqdefault.jpg`} controls autoPlay playsInline preload="auto">
+                    <video ref={localVideoRef} data-video-id={videoPlayer.items[videoPlayer.index].id} key={videoPlayer.items[videoPlayer.index].id} src={videoPlayer.items[videoPlayer.index].path} poster={`https://i.ytimg.com/vi/${videoPlayer.items[videoPlayer.index].id}/hqdefault.jpg`} controls autoPlay playsInline preload="auto" onLoadedMetadata={restoreLocalVideoProgress} onTimeUpdate={handleLocalVideoTimeUpdate} onPause={(event) => persistLocalVideoProgress(event.currentTarget)} onEnded={(event) => { try { localStorage.removeItem(localProgressKey(event.currentTarget.dataset.videoId)); } catch {} }}>
                       {videoPlayer.items[videoPlayer.index].captions && <track kind="captions" src={videoPlayer.items[videoPlayer.index].captions} srcLang="en" label="English" />}
                     </video>
                   ) : <div id="youtube-player"></div>}
@@ -1041,7 +1070,7 @@ function App() {
                   <aside className="video-playlist" aria-label="Playlist videos">
                     <div className="video-playlist-title">{videoPlayer.text}</div>
                     <div className="video-playlist-items">
-                      {videoPlayer.items.map((item, index) => <button key={item.id} type="button" className={index === videoPlayer.index ? 'active' : ''} onClick={() => setVideoPlayer(current => ({ ...current, index }))}>{index + 1}. {item.title}</button>)}
+                      {videoPlayer.items.map((item, index) => <button key={item.id} type="button" className={index === videoPlayer.index ? 'active' : ''} onClick={() => { saveLocalVideoProgress(); setVideoPlayer(current => ({ ...current, index })); }}>{index + 1}. {item.title}</button>)}
                     </div>
                   </aside>
                 )}
