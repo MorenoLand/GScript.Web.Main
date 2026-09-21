@@ -34,6 +34,22 @@ function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, 
   );
 }
 
+function ServerCard({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition }) {
+  const serverNameUgly = server.server_nameugly || 'N/A', serverName = server.server_name || 'N/A', serverType = server.server_type || 'Classic', imageName = 'gfx/login_icon_' + serverNameUgly + '.png', mapName = 'gfx/login_servermap_' + serverNameUgly + '.png';
+  React.useEffect(() => preloadImage(mapName), [mapName, preloadImage]);
+  const row = (label, value) => React.createElement('div', {className: 'sc-row'}, React.createElement('span', {className: 'sc-label'}, label), React.createElement('span', {className: 'sc-value'}, value));
+  const stacked = (label, value) => React.createElement('div', {className: 'sc-row sc-stacked'}, React.createElement('span', {className: 'sc-label'}, label), React.createElement('div', {className: 'sc-value'}, value));
+  return React.createElement('div', {key: idx, className: 'server-card', 'data-server': serverNameUgly, 'data-map': serverNameUgly, onMouseEnter: (e) => showMapTooltip(e, serverNameUgly), onMouseLeave: hideMapTooltip, onMouseMove: updateTooltipPosition},
+    React.createElement('div', {className: 'sc-name'}, React.createElement('img', {src: imageName, alt: serverName, loading: 'lazy', onError: (e) => { e.target.onerror = null; e.target.src = 'gfx/login_icon_developer4.png'; }, style: {width: 32, height: 32, verticalAlign: 'middle', marginRight: 10}}), serverName),
+    row('Type', serverType),
+    row('Players', server.player_count || '0'),
+    row('Language', server.language || 'N/A'),
+    stacked('Description', server.description || 'No description available.'),
+    stacked('Website', isSafeHttpUrl(server.website) ? React.createElement('a', {href: server.website, target: '_blank', rel: 'noopener noreferrer'}, server.website) : (server.website || 'None.')),
+    row('Game Version', server.graal_version || 'Worlds')
+  );
+}
+
 function ServerListView(props) {
   const {
     servers, allServers, filteredServers,
@@ -49,6 +65,8 @@ function ServerListView(props) {
   } = props;
 
   const { preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition } = useMapTooltip();
+  const [isMobile, setIsMobile] = React.useState(() => window.matchMedia('(max-width: 720px)').matches);
+  React.useEffect(() => { const mq = window.matchMedia('(max-width: 720px)'); const fn = (e) => setIsMobile(e.matches); mq.addEventListener('change', fn); return () => mq.removeEventListener('change', fn); }, []);
   const totalPlayerCount = allServers.reduce((sum, s) => sum + (s.player_count || 0), 0);
 
   const handleSort = (column) => {
@@ -81,7 +99,7 @@ function ServerListView(props) {
       ),
       React.createElement('div', {className: 'resize-guide', style: {position: 'absolute', top: tableWrapperRef.current ? (tableWrapperRef.current.querySelector('table')?.getBoundingClientRect().top - tableWrapperRef.current.getBoundingClientRect().top) + 'px' : '40px', height: tableRef.current ? tableRef.current.offsetHeight + 'px' : 'auto', width: '5px', backgroundColor: 'rgba(255, 255, 255, 0.3)', pointerEvents: 'none', zIndex: 10, display: resizingColumn && guidePosition !== null && tableWrapperRef.current ? 'block' : 'none', left: resizingColumn && guidePosition !== null && tableWrapperRef.current ? (guidePosition - tableWrapperRef.current.getBoundingClientRect().left - 2.5) + 'px' : 'auto'}}),
       React.createElement('div', {style: {backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '8px', overflow: 'hidden'}},
-        React.createElement('table', {ref: tableRef, style: {borderCollapse: 'collapse', margin: '0', width: '100%'}},
+        isMobile ? React.createElement('div', {className: 'mobile-cards'}, servers.map((server, idx) => React.createElement(ServerCard, {key: idx, idx, server, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition}))) : React.createElement('table', {ref: tableRef, style: {borderCollapse: 'collapse', margin: '0', width: '100%'}},
           React.createElement('thead', {style: {textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}},
             React.createElement('tr', null,
               React.createElement('th', {onClick: () => handleSort('server_name'), style: {position: 'relative', paddingLeft: '45px', width: columnWidths.server_name + '%', cursor: 'pointer'}}, React.createElement('button', {onClick: (e) => { e.stopPropagation(); window.location.reload(); }, className: 'rbutton', style: {position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'transparent', border: 'none', cursor: 'pointer'}}, React.createElement('i', {className: 'fas fa-sync-alt fa-lg', style: {color: '#FFFF00'}})), 'Server Name', getSortedIndicator('server_name'), React.createElement('div', {className: 'resizer', onMouseDown: (e) => handleMouseDown('server_name', e)})),
