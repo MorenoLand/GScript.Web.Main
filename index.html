@@ -855,7 +855,7 @@ function App() {
     return () => { clearTimeout(timeoutId); if (intervalId) clearInterval(intervalId); };
   }, []);
 
-  useEffect(() => { setCurrentPage(1); }, [watchFilter]);
+  useEffect(() => { setCurrentPage(1); }, [watchFilter.showAll]);
   useEffect(() => {
     const qs = watchFilter.names.map(normName);
     const isWatched = (s) => qs.includes(normName(s.server_nameugly)) || qs.includes(normName(s.server_name));
