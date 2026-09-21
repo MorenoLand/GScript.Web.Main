@@ -35,18 +35,14 @@ function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, 
 }
 
 function ServerCard({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition }) {
-  const serverNameUgly = server.server_nameugly || 'N/A', serverName = server.server_name || 'N/A', serverType = server.server_type || 'Classic', imageName = 'gfx/login_icon_' + serverNameUgly + '.png', mapName = 'gfx/login_servermap_' + serverNameUgly + '.png';
+  const serverNameUgly = server.server_nameugly || 'N/A', serverName = server.server_name || 'N/A', imageName = 'gfx/login_icon_' + serverNameUgly + '.png', mapName = 'gfx/login_servermap_' + serverNameUgly + '.png';
   React.useEffect(() => preloadImage(mapName), [mapName, preloadImage]);
   const row = (label, value) => React.createElement('div', {className: 'sc-row'}, React.createElement('span', {className: 'sc-label'}, label), React.createElement('span', {className: 'sc-value'}, value));
   const stacked = (label, value) => React.createElement('div', {className: 'sc-row sc-stacked'}, React.createElement('span', {className: 'sc-label'}, label), React.createElement('div', {className: 'sc-value'}, value));
   return React.createElement('div', {key: idx, className: 'server-card', 'data-server': serverNameUgly, 'data-map': serverNameUgly, onMouseEnter: (e) => showMapTooltip(e, serverNameUgly), onMouseLeave: hideMapTooltip, onMouseMove: updateTooltipPosition},
     React.createElement('div', {className: 'sc-name'}, React.createElement('img', {src: imageName, alt: serverName, loading: 'lazy', onError: (e) => { e.target.onerror = null; e.target.src = 'gfx/login_icon_developer4.png'; }, style: {width: 32, height: 32, verticalAlign: 'middle', marginRight: 10}}), serverName),
-    row('Type', serverType),
     row('Players', server.player_count || '0'),
-    row('Language', server.language || 'N/A'),
-    stacked('Description', server.description || 'No description available.'),
-    stacked('Website', isSafeHttpUrl(server.website) ? React.createElement('a', {href: server.website, target: '_blank', rel: 'noopener noreferrer'}, server.website) : (server.website || 'None.')),
-    row('Game Version', server.graal_version || 'Worlds')
+    stacked('Description', server.description || 'No description available.')
   );
 }
 
