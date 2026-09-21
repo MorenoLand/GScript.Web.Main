@@ -1,3 +1,9 @@
+function isSafeHttpUrl(url) {
+  if (typeof url !== 'string') return false;
+  const trimmed = url.trim().toLowerCase();
+  return trimmed.startsWith('http://') || trimmed.startsWith('https://');
+}
+
 function useMapTooltip() {
   const tooltipRef = React.useRef(null), imageCache = React.useRef(new Map()), loadingImages = React.useRef(new Set()), hideTimeoutRef = React.useRef(null), showTimeoutRef = React.useRef(null);
   React.useEffect(() => {
@@ -6,7 +12,7 @@ function useMapTooltip() {
   }, []);
   function preloadImage(src) { if (imageCache.current.has(src) || loadingImages.current.has(src)) return; loadingImages.current.add(src); const img = new Image(); img.onload = () => { imageCache.current.set(src, true); loadingImages.current.delete(src); }; img.onerror = () => { imageCache.current.set(src, false); loadingImages.current.delete(src); }; img.src = src; }
   function positionTooltip(mouseX, mouseY) { if (!tooltipRef.current) return; const buffer = 20, rect = tooltipRef.current.getBoundingClientRect(); let x = mouseX + buffer, y = mouseY + buffer; if (x + rect.width > window.innerWidth) x = mouseX - rect.width - buffer; if (y + rect.height > window.innerHeight) y = mouseY - rect.height - buffer; if (x < 0) x = buffer; if (y < 0) y = buffer; tooltipRef.current.style.left = x + 'px'; tooltipRef.current.style.top = y + 'px'; }
-  function showMapTooltip(event, serverNameUgly) { if (!tooltipRef.current) return; clearTimeout(hideTimeoutRef.current); clearTimeout(showTimeoutRef.current); const mapSrc = 'gfx/login_servermap_' + serverNameUgly + '.png'; if (imageCache.current.has(mapSrc) && !imageCache.current.get(mapSrc)) { if (tooltipRef.current.classList.contains('show')) tooltipRef.current.classList.remove('show'); return; } showTimeoutRef.current = setTimeout(() => { const img = new Image(); img.onload = () => { tooltipRef.current.innerHTML = '<img src="' + mapSrc + '" alt="Server Map">'; positionTooltip(event.clientX + window.scrollX, event.clientY + window.scrollY); tooltipRef.current.classList.add('show'); imageCache.current.set(mapSrc, true); }; img.onerror = () => { imageCache.current.set(mapSrc, false); if (tooltipRef.current.classList.contains('show')) tooltipRef.current.classList.remove('show'); }; img.src = mapSrc; }, 50); }
+  function showMapTooltip(event, serverNameUgly) { if (!tooltipRef.current) return; clearTimeout(hideTimeoutRef.current); clearTimeout(showTimeoutRef.current); const mapSrc = 'gfx/login_servermap_' + serverNameUgly + '.png'; if (imageCache.current.has(mapSrc) && !imageCache.current.get(mapSrc)) { if (tooltipRef.current.classList.contains('show')) tooltipRef.current.classList.remove('show'); return; } showTimeoutRef.current = setTimeout(() => { const img = new Image(); img.onload = () => { tooltipRef.current.textContent = ''; const tooltipImg = document.createElement('img'); tooltipImg.src = mapSrc; tooltipImg.alt = 'Server Map'; tooltipRef.current.appendChild(tooltipImg); positionTooltip(event.clientX + window.scrollX, event.clientY + window.scrollY); tooltipRef.current.classList.add('show'); imageCache.current.set(mapSrc, true); }; img.onerror = () => { imageCache.current.set(mapSrc, false); if (tooltipRef.current.classList.contains('show')) tooltipRef.current.classList.remove('show'); }; img.src = mapSrc; }, 50); }
   function hideMapTooltip() { if (!tooltipRef.current) return; clearTimeout(showTimeoutRef.current); hideTimeoutRef.current = setTimeout(() => { if (tooltipRef.current) tooltipRef.current.classList.remove('show'); }, 50); }
   function updateTooltipPosition(event) { if (tooltipRef.current && tooltipRef.current.classList.contains('show')) positionTooltip(event.clientX + window.scrollX, event.clientY + window.scrollY); }
   return { preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition };
@@ -23,7 +29,7 @@ function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, 
     React.createElement('td', {className: 'playercount'}, server.player_count || '0'),
     React.createElement('td', {className: 'language'}, server.language || 'N/A'),
     React.createElement('td', {className: 'description'}, truncate(server.description || 'No description available.', 30)),
-    React.createElement('td', {className: 'website'}, server.website ? React.createElement('a', {href: server.website}, truncate(server.website, 25)) : 'None.'),
+    React.createElement('td', {className: 'website'}, isSafeHttpUrl(server.website) ? React.createElement('a', {href: server.website, target: '_blank', rel: 'noopener noreferrer'}, truncate(server.website, 25)) : (server.website ? truncate(server.website, 25) : 'None.')),
     React.createElement('td', {className: 'version'}, server.graal_version || 'Worlds')
   );
 }
@@ -43,7 +49,6 @@ function ServerListView(props) {
   } = props;
 
   const { preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition } = useMapTooltip();
-  const totalPages = Math.ceil(filteredServers.length / perPage);
   const totalPlayerCount = allServers.reduce((sum, s) => sum + (s.player_count || 0), 0);
 
   const handleSort = (column) => {
@@ -74,7 +79,7 @@ function ServerListView(props) {
         React.createElement('div'),
         React.createElement('label', {style: {display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '0.875rem', color: '#ffffff'}}, React.createElement('span', {style: {position: 'relative', display: 'inline-block', width: '36px', height: '20px', borderRadius: '20px', backgroundColor: showDevServers ? 'rgba(25, 118, 210, 1)' : 'rgba(255, 255, 255, 0.3)', transition: 'background-color 0.2s', cursor: 'pointer'}}, React.createElement('input', {type: 'checkbox', checked: showDevServers, onChange: (e) => setShowDevServers(e.target.checked), style: {position: 'absolute', opacity: 0, width: 0, height: 0}}), React.createElement('span', {style: {position: 'absolute', content: '""', height: '16px', width: '16px', left: showDevServers ? '18px' : '2px', bottom: '2px', backgroundColor: '#ffffff', transition: 'left 0.2s', borderRadius: '50%'}})), 'Show Hidden servers')
       ),
-      React.createElement('div', {className: 'resize-guide', style: {position: 'absolute', top: tableWrapperRef.current ? (tableWrapperRef.current.querySelector('table')?.getBoundingClientRect().top - tableWrapperRef.current.getBoundingClientRect().top) + 'px' : '40px', height: tableRef.current?.offsetHeight + 'px' || 'auto', width: '5px', backgroundColor: 'rgba(255, 255, 255, 0.3)', pointerEvents: 'none', zIndex: 10, display: resizingColumn && guidePosition !== null && tableWrapperRef.current ? 'block' : 'none', left: resizingColumn && guidePosition !== null && tableWrapperRef.current ? (guidePosition - tableWrapperRef.current.getBoundingClientRect().left - 2.5) + 'px' : 'auto'}}),
+      React.createElement('div', {className: 'resize-guide', style: {position: 'absolute', top: tableWrapperRef.current ? (tableWrapperRef.current.querySelector('table')?.getBoundingClientRect().top - tableWrapperRef.current.getBoundingClientRect().top) + 'px' : '40px', height: tableRef.current ? tableRef.current.offsetHeight + 'px' : 'auto', width: '5px', backgroundColor: 'rgba(255, 255, 255, 0.3)', pointerEvents: 'none', zIndex: 10, display: resizingColumn && guidePosition !== null && tableWrapperRef.current ? 'block' : 'none', left: resizingColumn && guidePosition !== null && tableWrapperRef.current ? (guidePosition - tableWrapperRef.current.getBoundingClientRect().left - 2.5) + 'px' : 'auto'}}),
       React.createElement('div', {style: {backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '8px', overflow: 'hidden'}},
         React.createElement('table', {ref: tableRef, style: {borderCollapse: 'collapse', tableLayout: 'fixed', margin: '0', width: '100%'}},
           React.createElement('thead', {style: {textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}},

@@ -57,18 +57,62 @@ function renderDocText(value) {
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>')
     .replace(/`([^`]+)`/g, '<code style="background: #2a2a3a; color: #ff6b9d; padding: 0.2em 0.4em; border-radius: 3px;">$1</code>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" style="color: #5ba5ff;">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
+      const trimmedUrl = url.trim();
+      const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(trimmedUrl);
+      const safeUrl = (hasScheme && !/^https?:/i.test(trimmedUrl)) ? '#' : trimmedUrl.replace(/"/g, '&quot;');
+      return '<a href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" style="color: #5ba5ff;">' + text + '</a>';
+    })
     .replace(/\n/g, '<br>');
 }
 
 const renderedDocCache = new Map();
+const RENDERED_DOC_CACHE_MAX = 500;
 
 function memoizedRenderDocText(value) {
   if (!value) return '';
   if (renderedDocCache.has(value)) return renderedDocCache.get(value);
   const result = renderDocText(value);
+  if (renderedDocCache.size >= RENDERED_DOC_CACHE_MAX) {
+    const oldestKey = renderedDocCache.keys().next().value;
+    renderedDocCache.delete(oldestKey);
+  }
   renderedDocCache.set(value, result);
   return result;
+}
+
+function safeStorageSet(key, value) {
+  try { localStorage.setItem(key, value); return true; }
+  catch (err) { console.error('localStorage.setItem failed:', err); return false; }
+}
+
+function safeStorageRemove(key) {
+  try { localStorage.removeItem(key); return true; }
+  catch (err) { console.error('localStorage.removeItem failed:', err); return false; }
+}
+
+function copyTextToClipboard(text) {
+  try {
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+      return navigator.clipboard.writeText(text).catch(function(err) { console.error('Clipboard copy failed:', err); });
+    }
+  } catch (err) { console.error('Clipboard copy failed:', err); }
+  try {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  } catch (err) { console.error('Clipboard fallback failed:', err); }
+  return Promise.resolve();
+}
+
+function decodeHashFragment(hash) {
+  try { return decodeURIComponent(hash); }
+  catch (err) { return hash; }
 }
 
 let docsMonacoPromise = null;
@@ -379,7 +423,6 @@ function DocsSection({ sectionKey, item, editingKey, editDraft, editStatus, dele
   const isCodeCopied = copiedCode === key;
   const isEditing = editingKey === key && editDraft;
   const isSaving = isEditing && editStatus === 'Saving...';
-  const editFormRef = React.useRef(null);
   const draftParams = (editDraft && editDraft.params) ? editDraft.params.split(',').map(function(p) { return p.trim(); }).filter(Boolean) : [];
 
   const renderMeta = function(label, field, value) {
@@ -405,7 +448,7 @@ function DocsSection({ sectionKey, item, editingKey, editDraft, editStatus, dele
     );
   };
 
-  return React.createElement('div', { id: key, className: 'section-wrapper' + (isEditing ? ' is-editing' : ''), key: key, ref: isEditing ? editFormRef : null },
+  return React.createElement('div', { id: key, className: 'section-wrapper' + (isEditing ? ' is-editing' : ''), key: key },
     React.createElement('h2', null,
       React.createElement('span', { className: 'docs-section-title' }, name),
       canEditDocs && React.createElement('span', { className: 'docs-edit-strip' },
@@ -427,7 +470,7 @@ function DocsSection({ sectionKey, item, editingKey, editDraft, editStatus, dele
         className: 'share-btn' + (isShareCopied ? ' copied' : ''),
         onClick: function(e) {
           e.stopPropagation();
-          navigator.clipboard.writeText('https://share.gscript.dev/' + key + '?v=' + Date.now());
+          copyTextToClipboard('https://share.gscript.dev/' + encodeURIComponent(key) + '?v=' + Date.now());
           setCopiedShare(key);
           setTimeout(function() { setCopiedShare(null); }, 2000);
         }
@@ -447,7 +490,7 @@ function DocsSection({ sectionKey, item, editingKey, editDraft, editStatus, dele
         className: 'copy-btn' + (isCodeCopied ? ' copied' : ''),
         onClick: function(e) {
           e.stopPropagation();
-          navigator.clipboard.writeText(item.example);
+          copyTextToClipboard(item.example);
           setCopiedCode(key);
           setTimeout(function() { setCopiedCode(null); }, 2000);
         }
@@ -497,10 +540,8 @@ function GSDoc() {
   const [deleteStatus, setDeleteStatus] = React.useState('');
   const [initialLoading, setInitialLoading] = React.useState(true);
   const restoreScrollRef = React.useRef(null);
-  const sidebarRef = React.useRef(null);
   const contentRef = React.useRef(null);
   const docsListRef = React.useRef(null);
-  const editFormRef = React.useRef(null);
   const createFormRef = React.useRef(null);
   const initialHashHandledRef = React.useRef(false);
   const searchTimeoutRef = React.useRef(null);
@@ -519,7 +560,7 @@ function GSDoc() {
   }, []);
 
   const handleDiscordLogout = React.useCallback(function() {
-    localStorage.removeItem(DISCORD_AUTH_STORAGE_KEY);
+    safeStorageRemove(DISCORD_AUTH_STORAGE_KEY);
     setDiscordUser(null);
     setLogoutConfirmOpen(false);
   }, []);
@@ -539,7 +580,7 @@ function GSDoc() {
         botAdmin: params.get('bot_admin') === 'true',
         botEditor: params.get('bot_editor') === 'true'
       });
-      localStorage.setItem(DISCORD_AUTH_STORAGE_KEY, JSON.stringify(user));
+      safeStorageSet(DISCORD_AUTH_STORAGE_KEY, JSON.stringify(user));
       setDiscordUser(user);
       setDiscordAuthError('');
     } else if (params.has('error')) {
@@ -605,7 +646,7 @@ function GSDoc() {
     if (id) setCurrentHash(id);
     const el = document.getElementById(id);
     if (el) {
-      window.history.replaceState(null, '', '#' + id);
+      window.history.replaceState(null, '', '#' + encodeURIComponent(id));
       const scroller = docsListRef.current;
       if (scroller) scroller.scrollTop = el.offsetTop;
       else el.scrollIntoView({ behavior: 'auto', block: 'start' });
@@ -616,7 +657,7 @@ function GSDoc() {
   React.useEffect(function() {
     const handleHashChange = function() {
       if (handleDiscordAuthHash()) return;
-      const hash = window.location.hash.replace('#', '');
+      const hash = decodeHashFragment(window.location.hash.replace('#', ''));
       if (hash) {
         scrollToHash(hash);
       }
@@ -717,13 +758,9 @@ function GSDoc() {
     setDeleteStatus('');
     if (key) {
       restoreScrollRef.current = restoreScrollRef.current || { key: key, top: (docsListRef.current && docsListRef.current.scrollTop) || 0, offset: 0 };
-      window.history.replaceState(null, '', '#' + key);
+      window.history.replaceState(null, '', '#' + encodeURIComponent(key));
     }
   }, [editingKey]);
-
-  const updateEditDraft = React.useCallback(function(field, value) {
-    setEditDraft(function(prev) { return { ...prev, [field]: value }; });
-  }, []);
 
   const saveEdit = React.useCallback(async function(key) {
     if (!editDraft || !discordUser || !discordUser.token) return;
@@ -892,7 +929,7 @@ function GSDoc() {
   }, []);
 
   const refreshEntries = React.useCallback(function() {
-    fetchDocsApi().then(function(data) { setApiData(data); });
+    fetchDocsApi().then(function(data) { setApiData(data); }).catch(function(err) { console.error('Error refreshing docs:', err); });
   }, []);
 
   const renderSection = React.useCallback(function(key) {

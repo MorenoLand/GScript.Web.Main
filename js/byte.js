@@ -1,4 +1,10 @@
 function initBytecodeConverter() {
+  if (window.__bytecodeConverterCleanup) {
+    try { window.__bytecodeConverterCleanup(); } catch (e) { /* ignore */ }
+    window.__bytecodeConverterCleanup = null;
+  }
+
+  if (!window.__bytecodeConverterConsolePatched) {
   (function(){
     const originalError = console.error;
     const originalWarn = console.warn;
@@ -13,6 +19,8 @@ function initBytecodeConverter() {
       originalWarn.apply(console, args);
     };
   })();
+    window.__bytecodeConverterConsolePatched = true;
+  }
 
   let sourceEditor;
   let outputEditor;
@@ -31,6 +39,11 @@ function initBytecodeConverter() {
   const decompileMode = document.getElementById('decompileMode');
   const sourcePanelHeader = document.querySelector('.byte-panel:first-child .byte-panel-header');
   const outputPanelHeader = document.querySelector('.byte-panel:last-child .byte-panel-header');
+  const missingElements = [convertBtn, saveBtn, clearBtn, pythonBtn, statusInfo, saveModal, pythonModal, filenameInput, confirmSaveBtn, cancelBtn, closePythonBtn, copyBtn, decompileMode, sourcePanelHeader, outputPanelHeader].some(el => !el);
+  if (missingElements) {
+    console.error('initBytecodeConverter: required DOM elements are missing; converter not initialized.');
+    return;
+  }
   let currentBytecode = '';
   let isDecompileMode = false;
 
@@ -218,6 +231,9 @@ function initBytecodeConverter() {
 
   function hexToUint8Array(hex) {
     hex = hex.replace(/\s+/g, '');
+    if (!/^(?:[0-9a-fA-F]{2})+$/.test(hex)) {
+      throw new Error('Invalid hex input: expected pairs of hex digits (0-9, a-f).');
+    }
     const bytes = new Uint8Array(hex.length / 2);
     for (let i = 0; i < bytes.length; i++) {
       bytes[i] = parseInt(hex.substr(i * 2, 2), 16);
@@ -295,7 +311,8 @@ function initBytecodeConverter() {
     const a = document.createElement('a');
     a.href = url;
     const ext = isDecompileMode ? '.gs2' : '.txt';
-    a.download = filename.endsWith('.gs2') || filename.endsWith('.txt') ? filename : filename + ext;
+    const lowerName = filename.toLowerCase();
+    a.download = lowerName.endsWith('.gs2') || lowerName.endsWith('.txt') ? filename : filename + ext;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -321,7 +338,8 @@ function initBytecodeConverter() {
     const filename = filenameInput.value.trim() || 'output';
     downloadFile(currentBytecode, filename);
     const ext = isDecompileMode ? '.gs2' : '.txt';
-    updateStatus(`Saved: ${filename.endsWith('.gs2') || filename.endsWith('.txt') ? filename : filename + ext}`);
+    const lowerName = filename.toLowerCase();
+    updateStatus(`Saved: ${lowerName.endsWith('.gs2') || lowerName.endsWith('.txt') ? filename : filename + ext}`);
     hideSaveDialog();
   }
 
@@ -335,9 +353,18 @@ function initBytecodeConverter() {
   decompileMode.addEventListener('change', () => {
     updateUIForMode();
     if (currentBytecode) flipInputOutput();
+    currentBytecode = '';
   });
 
-  const waitForGS2 = () => new Promise(r => { const check = () => window.GS2Compiler ? r() : setTimeout(check, 100); check(); });
+  const waitForGS2 = (timeoutMs = 15000) => new Promise((resolve, reject) => {
+    const start = Date.now();
+    const check = () => {
+      if (window.GS2Compiler) resolve();
+      else if (Date.now() - start > timeoutMs) reject(new Error('GS2 compiler did not load within ' + (timeoutMs / 1000) + 's'));
+      else setTimeout(check, 100);
+    };
+    check();
+  });
 
   convertBtn.addEventListener('click', async () => {
     const code = sourceEditor.getValue().trim();
@@ -624,14 +651,15 @@ if result.Success:
     }
   });
 
-  document.addEventListener('keydown', (e) => {
+  const globalKeydownHandler = (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 's') {
       e.preventDefault();
       showSaveDialog();
     }
-  });
+  };
+  document.addEventListener('keydown', globalKeydownHandler);
 
-  window.addEventListener('monaco-ready', async () => {
+  const monacoReadyHandler = async () => {
     updateUIForMode();
     updateStatus('Loading GS2 compiler...');
     clearBtn.addEventListener('click', () => {
@@ -672,7 +700,12 @@ if result.Success:
         document.body.removeChild(textArea);
       }
     });
-    await waitForGS2();
+    try {
+      await waitForGS2();
+    } catch (e) {
+      updateStatus('Error loading compiler: ' + e.message, true);
+      return;
+    }
     try {
       const compiler = await getCompiler();
       if (compiler) {
@@ -684,5 +717,11 @@ if result.Success:
     } catch (e) {
       updateStatus('Error loading compiler: ' + e.message, true);
     }
-  });
+  };
+  window.addEventListener('monaco-ready', monacoReadyHandler);
+
+  window.__bytecodeConverterCleanup = () => {
+    document.removeEventListener('keydown', globalKeydownHandler);
+    window.removeEventListener('monaco-ready', monacoReadyHandler);
+  };
 }

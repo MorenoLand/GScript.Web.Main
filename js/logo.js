@@ -1,8 +1,24 @@
 async function loadFont() {
   const fontUrl = '../fonts/tempus-sans-itc.ttf';
   const font = new FontFace('Tempus Sans ITC', `url(${fontUrl})`);
-  await font.load();
-  document.fonts.add(font);
+  try {
+    await font.load();
+    document.fonts.add(font);
+  } catch (e) {
+    console.warn('loadFont: custom font failed to load, falling back to system fonts:', e);
+  }
+}
+
+function loadImage(src) {
+  return new Promise(function(resolve) {
+    const img = new Image();
+    img.onload = function() { resolve(img); };
+    img.onerror = function() {
+      console.warn('loadLogo: failed to load image ' + src + '; continuing without it.');
+      resolve(null);
+    };
+    img.src = src;
+  });
 }
 
 async function loadLogo(containerId) {
@@ -12,21 +28,23 @@ async function loadLogo(containerId) {
   canvas.width = 400;
   canvas.height = 70;
   const ctx = canvas.getContext('2d');
+  if (!ctx) {
+    console.error('loadLogo: 2d canvas context unavailable.');
+    return null;
+  }
 
   const text = 'Graal Statistics';
   const fontSize = 34;
   const textColor = '#f3c300';
   const shadowColor = '#000000';
 
-  const icon = new Image();
-  icon.src = '../gfx/login_icon_classic.png';
-  await new Promise(resolve => icon.onload = resolve);
+  const icon = await loadImage('../gfx/login_icon_classic.png');
 
   const iconX = 10;
   const iconY = (canvas.height - 32) / 2;
-  ctx.drawImage(icon, iconX, iconY, 32, 32);
+  if (icon) ctx.drawImage(icon, iconX, iconY, 32, 32);
 
-  ctx.font = `${fontSize}px "Tempus Sans ITC"`;
+  ctx.font = `${fontSize}px "Tempus Sans ITC", "Comic Sans MS", cursive, sans-serif`;
   ctx.textBaseline = 'alphabetic';
 
   const waveRange = 5;
@@ -55,9 +73,10 @@ async function loadLogo(containerId) {
 
   const secondIconX = currentX + 16;
   const secondIconY = (canvas.height - 32) / 2 + 2;
-  ctx.drawImage(icon, secondIconX, secondIconY, 32, 32);
+  if (icon) ctx.drawImage(icon, secondIconX, secondIconY, 32, 32);
 
   const container = document.getElementById(containerId);
   if (container) container.appendChild(canvas);
+  else console.warn('loadLogo: container #' + containerId + ' not found.');
   return canvas;
 }

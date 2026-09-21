@@ -163,8 +163,8 @@ function IndexingTutorial() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [viewAll, setViewAll] = React.useState(false);
   const content = tutorials[tutorial];
-  const htmlContent = marked.parse(content);
-  const sections = htmlContent.split(/(?=<h[234]>)/).filter(s => s.trim());
+  const htmlContent = React.useMemo(() => marked.parse(content), [content]);
+  const sections = React.useMemo(() => htmlContent.split(/(?=<h[234]>)/).filter(s => s.trim()), [htmlContent]);
 
   React.useEffect(() => {
     const psImages = ['/gfx/pstutorial/bodytut1.PNG', '/gfx/pstutorial/bodytut2.PNG', '/gfx/pstutorial/bodytut3.PNG', '/gfx/pstutorial/bodytut4.PNG', '/gfx/pstutorial/bodytut5.PNG'];

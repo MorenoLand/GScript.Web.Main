@@ -1,6 +1,19 @@
 const graphStatsCache = new Map();
 const graphStatsRequests = new Map();
 
+var escapeHtml = typeof escapeHtml === 'function' ? escapeHtml : function(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+};
+
+function escapeCsvField(value) {
+  const str = String(value == null ? '' : value);
+  return /[",\r\n]/.test(str) ? '"' + str.replace(/"/g, '""') + '"' : str;
+}
+
+function safeDownloadFilename(title) {
+  return String(title || 'export').toLowerCase().replace(/[\s]+/g, '_').replace(/[^a-z0-9._-]/g, '');
+}
+
 function requestGraphStats(view, peak = null) {
   const key = view + ':' + (peak ?? '');
   const cached = graphStatsCache.get(key);
@@ -12,6 +25,7 @@ function requestGraphStats(view, peak = null) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', apiUrl, true);
     xhr.responseType = 'json';
+    xhr.timeout = 15000;
     xhr.onload = function() {
       if (xhr.status === 200 && xhr.response && !xhr.response.error) {
         graphStatsCache.set(key, {data: xhr.response, expires: Date.now() + 5 * 60 * 1000});
@@ -19,6 +33,7 @@ function requestGraphStats(view, peak = null) {
       } else reject(new Error('Stats request failed'));
     };
     xhr.onerror = () => reject(new Error('Stats request failed'));
+    xhr.ontimeout = () => reject(new Error('Stats request timed out'));
     xhr.send();
   });
   graphStatsRequests.set(key, request);
@@ -29,7 +44,8 @@ function requestGraphStats(view, peak = null) {
 function GraphApp() {
   const urlParams = new URLSearchParams(window.location.search);
   const initialView = Math.max(0, Math.min(5, parseInt(urlParams.get('view') || '0', 10) || 0));
-  const initialPeak = urlParams.get('peak') ? parseInt(urlParams.get('peak')) : null;
+  const initialPeakParam = urlParams.get('peak');
+  const initialPeak = initialPeakParam !== null && /^\d+$/.test(initialPeakParam) ? parseInt(initialPeakParam, 10) : null;
   const viewLabels = ['1D', '5D', '1M', '1Y', '5Y', 'Max'];
   const viewTitles = ['24 Hours', '5 Days', '1 Month', '1 Year', '5 Years', 'Max'];
   const timeFormats = ['%I:%M %p', '%m/%d', '%m/%d', '%b %Y', '%Y', '%Y'];
@@ -55,7 +71,7 @@ function GraphApp() {
   viewTitleRef.current = viewTitle;
   const seriesData = React.useMemo(() => {
     let colorIndex = 1;
-    const getColor = (index) => `hsl(${(index * 360 / 100) % 260}, 70%, 50%)`;
+    const getColor = (index) => `hsl(${(index * 360 / 100) % 360}, 70%, 50%)`;
     return chartData.map((series, index) => ({name: series.name, data: series.data, color: index === 0 ? '#ffffff' : getColor(colorIndex++), ...(index === 0 ? {lineWidth: 3} : {})}));
   }, [chartData]);
 
@@ -115,7 +131,7 @@ function GraphApp() {
       xAxis: {type: 'datetime', title: { text: 'Timestamp (' + (new Date().getTimezoneOffset() === 240 ? 'EDT' : 'EST') + ')', style: { color: '#ffffff', fontFamily: 'Tempus Sans ITC', fontWeight: 'bold' }}, labels: {style: { color: '#ffffff', fontFamily: 'Tempus Sans ITC', fontWeight: 'bold' }, formatter: function() { return Highcharts.dateFormat(timeFormat, this.value - 5 * 3600 * 1000); }}},
       yAxis: {title: { text: '', style: { color: '#ffffff', fontFamily: 'Tempus Sans ITC', fontWeight: 'bold' }}, min: 0, labels: { style: { color: '#ffffff', fontFamily: 'Tempus Sans ITC', fontWeight: 'bold' }}},
       series: seriesData,
-      tooltip: {shared: false, crosshairs: true, useHTML: true, style: { color: '#ffffff', fontFamily: 'Tempus Sans ITC', fontWeight: 'bold' }, backgroundColor: '#333333', borderColor: '#444444', formatter: function() { return `<b>${Highcharts.dateFormat('%m-%d-%Y at %I:%M %p', this.x - 5 * 3600 * 1000)}</b><br/><span style="display:inline-block;width:10px;height:10px;background-color:${this.series.color};border-radius:50%;margin-right:5px;"></span>${this.series.name}: ${this.y}`; }},
+      tooltip: {shared: false, crosshairs: true, useHTML: true, style: { color: '#ffffff', fontFamily: 'Tempus Sans ITC', fontWeight: 'bold' }, backgroundColor: '#333333', borderColor: '#444444', formatter: function() { return `<b>${Highcharts.dateFormat('%m-%d-%Y at %I:%M %p', this.x - 5 * 3600 * 1000)}</b><br/><span style="display:inline-block;width:10px;height:10px;background-color:${this.series.color};border-radius:50%;margin-right:5px;"></span>${escapeHtml(this.series.name)}: ${this.y}`; }},
       plotOptions: {series: {marker: { enabled: false }, animation: false, events: {legendItemClick: function() { const chart = chartInstanceRef.current, series = chart.series, visibleCount = series.filter(s => s.visible).length; if (visibleCount === 1 && this.visible) { series.forEach(s => s.setVisible(true, false)); chart.setTitle({ text: viewTitleRef.current }); } else { const isVisible = this.visible; if (!isVisible) { series.forEach(s => s.setVisible(false, false)); this.setVisible(true, false); chart.setTitle({ text: this.name }); } else { series.forEach(s => s.setVisible(true, false)); chart.setTitle({ text: viewTitleRef.current }); }} chart.redraw(); return false; }}}},
       credits: { enabled: false },
       legend: { enabled: true, itemStyle: { color: '#ffffff', fontWeight: 'bold', fontFamily: 'Tempus Sans ITC' }},
@@ -131,12 +147,12 @@ function GraphApp() {
               onclick: function() {
                 const headers = ['Timestamp', 'Date', 'Server Name', 'Player Count'];
                 const rows = chartDataRef.current.filter(series => series.name !== 'All Servers').flatMap(series => series.data.map(point => [point[0], new Date(point[0]).toISOString(), series.name, point[1]]));
-                const csvContent = [headers, ...rows].map(row => row.join(',')).join('\n');
+                const csvContent = [headers, ...rows].map(row => row.map(escapeCsvField).join(',')).join('\n');
                 const blob = new Blob([csvContent], { type: 'text/csv' });
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'graal_stats_' + viewTitleRef.current.toLowerCase().replace(/\s+/g, '_') + '.csv';
+                a.download = 'graal_stats_' + safeDownloadFilename(viewTitleRef.current) + '.csv';
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);
@@ -152,7 +168,7 @@ function GraphApp() {
                 const url = URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'graal_stats_' + viewTitle.toLowerCase().replace(/\s+/g, '_') + '.json';
+                a.download = 'graal_stats_' + safeDownloadFilename(viewTitleRef.current) + '.json';
                 document.body.appendChild(a);
                 a.click();
                 document.body.removeChild(a);

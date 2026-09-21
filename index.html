@@ -813,23 +813,21 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, [isStatsDomain]);
 
-  const handleLinkClick = (e) => {
-    const link = e.currentTarget;
-    if (link.hostname !== window.location.hostname) {
-      e.preventDefault();
-      setTimeout(() => (window.location.href = link.href), 400);
-    }
+  const handleExternalLinkClick = (e) => {
+    const link = e.target && e.target.closest ? e.target.closest('a[href^="http"]') : null;
+    if (!link || link.hostname === window.location.hostname) return;
+    e.preventDefault();
+    const href = link.href;
+    const openInNewTab = link.target === '_blank';
+    setTimeout(() => {
+      if (openInNewTab) window.open(href, '_blank', 'noopener');
+      else window.location.href = href;
+    }, 400);
   };
 
   useEffect(() => {
-    document.querySelectorAll('a[href^="http"]').forEach(link => {
-      link.addEventListener('click', handleLinkClick);
-    });
-    return () => {
-      document.querySelectorAll('a[href^="http"]').forEach(link => {
-        link.removeEventListener('click', handleLinkClick);
-      });
-    };
+    document.addEventListener('click', handleExternalLinkClick);
+    return () => document.removeEventListener('click', handleExternalLinkClick);
   }, []);
 
   useEffect(() => {
@@ -845,8 +843,9 @@ function App() {
     fetchServerData();
     const getNextRefreshTime = () => { const now = new Date(), currentMinute = now.getMinutes(), currentSecond = now.getSeconds(); let nextTenMinuteMark = Math.ceil((currentMinute + 1) / 10) * 10; if (nextTenMinuteMark >= 60) nextTenMinuteMark = 0; const nextRefresh = new Date(now); nextRefresh.setMinutes(nextTenMinuteMark, 40, 0); if (nextTenMinuteMark === 0) nextRefresh.setHours(nextRefresh.getHours() + 1); if (currentMinute > nextTenMinuteMark || (currentMinute === nextTenMinuteMark && currentSecond > 45)) { nextRefresh.setMinutes(nextRefresh.getMinutes() + 10); if (nextRefresh.getMinutes() >= 60) { nextRefresh.setHours(nextRefresh.getHours() + 1); nextRefresh.setMinutes(nextRefresh.getMinutes() - 60); }} return nextRefresh.getTime() - now.getTime(); };
     const initialDelay = getNextRefreshTime();
-    const timeoutId = setTimeout(() => { fetchServerData(); const intervalId = setInterval(fetchServerData, 10 * 60 * 1000); return () => clearInterval(intervalId); }, initialDelay);
-    return () => clearTimeout(timeoutId);
+    let intervalId = null;
+    const timeoutId = setTimeout(() => { fetchServerData(); intervalId = setInterval(fetchServerData, 10 * 60 * 1000); }, initialDelay);
+    return () => { clearTimeout(timeoutId); if (intervalId) clearInterval(intervalId); };
   }, []);
 
   useEffect(() => {

@@ -1,24 +1,28 @@
-function loadTimestamps(setTimestamps, setLoading, changesCache) {
+var escapeHtml = typeof escapeHtml === 'function' ? escapeHtml : function(value) {
+  return String(value == null ? '' : value).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+};
+
+function loadTimestamps(setTimestamps, setChangesData, setLoading, changesCache) {
   const cached = Object.keys(changesCache.current).length > 0;
   if (!cached) setLoading(true);
-  fetch('https://api.moreno.land/api/graalstats/changes/timestamps').then(r => r.json()).then(data => { setTimestamps(data.timestamps); loadChangesData(data.timestamps.slice(0, 5), cached, setChangesData, setLoading, changesCache); }).catch(err => { console.error('Error loading timestamps:', err); setLoading(false); });
+  fetch('https://api.moreno.land/api/graalstats/changes/timestamps').then(r => { if (!r.ok) throw new Error('Timestamps request failed: ' + r.status); return r.json(); }).then(data => { setTimestamps(data.timestamps); loadChangesData(data.timestamps.slice(0, 5), cached, setChangesData, setLoading, changesCache); }).catch(err => { console.error('Error loading timestamps:', err); setLoading(false); });
 }
 
 function loadChangesData(pageTimestamps, skipLoading, setChangesData, setLoading, changesCache) {
   const cacheKey = JSON.stringify(pageTimestamps);
   if (changesCache.current[cacheKey]) { setChangesData({entries: changesCache.current[cacheKey]}); if (skipLoading) setLoading(false); return; }
   if (!skipLoading) setLoading(true);
-  fetch('https://api.moreno.land/api/graalstats/changes/data', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({timestamps: pageTimestamps})}).then(r => r.json()).then(result => {
+  fetch('https://api.moreno.land/api/graalstats/changes/data', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({timestamps: pageTimestamps})}).then(r => { if (!r.ok) throw new Error('Changes request failed: ' + r.status); return r.json(); }).then(result => {
     const entries = result.results || [], data = [];
     entries.forEach(entry => {
       const timestamp = entry.timestamp, date = new Date(timestamp * 1000), dateStr = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear().toString().slice(-2) + ' ' + date.toLocaleTimeString();
       const addedArray = [], removedArray = [], renamedArray = [];
       if (entry.changes) {
         entry.changes.forEach(change => {
-          const serverId = change.server_id, changeType = change.change_type;
-          if (changeType === 'Added') { const name = change.server_name || serverId, iconPath = 'gfx/login_icon_' + serverId + '.png', imgTag = '<img src="' + iconPath + '" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 5px;" onerror="this.src=\'gfx/login_icon_developer4.png\'">'; addedArray.push('<a href="#' + serverId + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverId + '" style="color: #40ff40;">' + name + '</a>'); }
-          else if (changeType === 'Removed') { const name = change.old_name, imgTag = '<img src="gfx/login_icon_graal classic.png" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 5px;">'; removedArray.push('<a href="#' + serverId + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverId + '" style="color: #40ff40;">' + name + '</a>'); }
-          else if (changeType === 'Renamed') { const oldName = change.old_name, newName = change.new_name, imgTag = '<img src="gfx/login_icon_login3.png" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 5px;">'; renamedArray.push('<a href="#' + serverId + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverId + '" style="color: #40ff40;">' + oldName + '</a> to <a href="#' + serverId + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverId + '" style="color: #40ff40;">' + newName + '</a>'); }
+          const rawServerId = change.server_id || '', serverIdUrl = escapeHtml(encodeURIComponent(rawServerId)), changeType = change.change_type;
+          if (changeType === 'Added') { const name = escapeHtml(change.server_name || change.server_id), iconPath = escapeHtml('gfx/login_icon_' + encodeURIComponent(rawServerId) + '.png'), imgTag = '<img src="' + iconPath + '" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 5px;" onerror="this.src=\'gfx/login_icon_developer4.png\'">'; addedArray.push('<a href="#' + serverIdUrl + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverIdUrl + '" style="color: #40ff40;">' + name + '</a>'); }
+          else if (changeType === 'Removed') { const name = escapeHtml(change.old_name), imgTag = '<img src="gfx/login_icon_graal classic.png" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 5px;">'; removedArray.push('<a href="#' + serverIdUrl + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverIdUrl + '" style="color: #40ff40;">' + name + '</a>'); }
+          else if (changeType === 'Renamed') { const oldName = escapeHtml(change.old_name), newName = escapeHtml(change.new_name), imgTag = '<img src="gfx/login_icon_login3.png" style="width: 32px; height: 32px; vertical-align: middle; margin-right: 5px;">'; renamedArray.push('<a href="#' + serverIdUrl + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverIdUrl + '" style="color: #40ff40;">' + oldName + '</a> to <a href="#' + serverIdUrl + '" style="color: #40ff40;">' + imgTag + '</a><a href="#' + serverIdUrl + '" style="color: #40ff40;">' + newName + '</a>'); }
         });
       }
       const listings = [];
@@ -30,7 +34,7 @@ function loadChangesData(pageTimestamps, skipLoading, setChangesData, setLoading
     changesCache.current[cacheKey] = data;
     setChangesData({entries: data});
     setLoading(false);
-  });
+  }).catch(err => { console.error('Error loading changes data:', err); setLoading(false); });
 }
 
 function ChangesView(props) {
@@ -44,7 +48,7 @@ function ChangesView(props) {
     changesCache, loading, setLoading
   } = props;
 
-  React.useEffect(() => { if (timestamps.length === 0) loadTimestamps(setTimestamps, setLoading, changesCache); }, []);
+  React.useEffect(() => { if (timestamps.length === 0) loadTimestamps(setTimestamps, setChangesData, setLoading, changesCache); }, []);
 
   React.useEffect(() => { if (timestamps.length > 0) { const currentPageStart = (changesPage - 1) * changesPerPage, currentPageTimestamps = timestamps.slice(currentPageStart, currentPageStart + changesPerPage); loadChangesData(currentPageTimestamps, true, setChangesData, setLoading, changesCache); }}, [changesPerPage, timestamps]);
 
@@ -71,7 +75,7 @@ function ChangesView(props) {
     React.createElement('div', {className: 'table-wrapper', style: {display: 'flex', flexDirection: 'column', gap: '0', width: '100%', maxWidth: '900px', margin: '0 auto'}},
       React.createElement('div', {style: {backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '8px 8px 0 0', overflow: 'hidden'}},
         React.createElement('table', {style: {borderCollapse: 'collapse', tableLayout: 'auto', margin: '0', width: '100%', borderRadius: '0'}},
-          React.createElement('tbody', null, filteredEntries && filteredEntries.length > 0 ? filteredEntries.map((entry, index) => React.createElement('tr', {key: index}, React.createElement('td', {style: {padding: '12px 10px', borderBottom: index < filteredEntries.length - 1 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none', borderLeft: '1px solid rgba(255,255,255,0.1)', borderRight: '1px solid rgba(255,255,255,0.1)', borderRadius: '0 !important'}}, React.createElement('div', {dangerouslySetInnerHTML: {__html: entry.header}, style: {fontSize: '16px', color: 'white', marginBottom: '8px', textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}}), React.createElement('div', {dangerouslySetInnerHTML: {__html: entry.content}, style: {wordWrap: 'break-word', overflowWrap: 'break-word', whiteSpace: 'normal'}, onClick: (e) => { const target = e.target; if (target.tagName === 'A' && target.getAttribute('href').startsWith('#')) { e.preventDefault(); const serverName = target.getAttribute('href').substring(1); setFilteredServer(filteredServer === serverName ? null : serverName); setChangesPage(1); }}})))) : React.createElement('tr', null, React.createElement('td', {style: {textAlign: 'center', padding: '20px'}}, filteredServer ? 'No changes found for this server.' : 'No changes found.'))
+          React.createElement('tbody', null, filteredEntries && filteredEntries.length > 0 ? filteredEntries.map((entry, index) => React.createElement('tr', {key: index}, React.createElement('td', {style: {padding: '12px 10px', borderBottom: index < filteredEntries.length - 1 ? '1px solid rgba(255, 255, 255, 0.1)' : 'none', borderLeft: '1px solid rgba(255,255,255,0.1)', borderRight: '1px solid rgba(255,255,255,0.1)', borderRadius: '0'}}, React.createElement('div', {dangerouslySetInnerHTML: {__html: entry.header}, style: {fontSize: '16px', color: 'white', marginBottom: '8px', textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}}), React.createElement('div', {dangerouslySetInnerHTML: {__html: entry.content}, style: {wordWrap: 'break-word', overflowWrap: 'break-word', whiteSpace: 'normal'}, onClick: (e) => { const target = e.target; const linkHref = target.getAttribute ? target.getAttribute('href') : null; if (target.tagName === 'A' && linkHref && linkHref.startsWith('#')) { e.preventDefault(); const serverName = linkHref.substring(1); setFilteredServer(filteredServer === serverName ? null : serverName); setChangesPage(1); }}})))) : React.createElement('tr', null, React.createElement('td', {style: {textAlign: 'center', padding: '20px'}}, filteredServer ? 'No changes found for this server.' : 'No changes found.'))
           )
         )
       ),

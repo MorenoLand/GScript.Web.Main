@@ -5,7 +5,9 @@ function BeautifyTool() {
   const [beautify, setBeautify] = React.useState(false);
   const [indentSize, setIndentSize] = React.useState('2');
   const [copySuccess, setCopySuccess] = React.useState(false);
+  const [copyError, setCopyError] = React.useState(false);
   const [monacoReady, setMonacoReady] = React.useState(false);
+  const [monacoError, setMonacoError] = React.useState(false);
   const inputEditorRef = React.useRef(null);
   const outputEditorRef = React.useRef(null);
   const inputContainerRef = React.useRef(null);
@@ -117,7 +119,32 @@ function BeautifyTool() {
     if (outputEditorRef.current) outputEditorRef.current.setValue(processedCode);
   };
 
-  const copyToClipboard = () => { if (!outputEditorRef.current) return; navigator.clipboard.writeText(outputEditorRef.current.getValue()).then(() => { setCopySuccess(true); setTimeout(() => setCopySuccess(false), 1500); }); };
+  const copyToClipboard = () => {
+    if (!outputEditorRef.current) return;
+    const text = outputEditorRef.current.getValue();
+    const markCopied = () => { setCopySuccess(true); setCopyError(false); setTimeout(() => setCopySuccess(false), 1500); };
+    const markFailed = () => { setCopyError(true); setTimeout(() => setCopyError(false), 2000); };
+    const fallbackCopy = () => {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        const ok = document.execCommand('copy');
+        document.body.removeChild(textarea);
+        if (ok) markCopied(); else markFailed();
+      } catch (e) { markFailed(); }
+    };
+    try {
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        navigator.clipboard.writeText(text).then(markCopied).catch(fallbackCopy);
+      } else {
+        fallbackCopy();
+      }
+    } catch (e) { fallbackCopy(); }
+  };
   const clearInput = () => { if (inputEditorRef.current) inputEditorRef.current.setValue(''); };
   const clearOutput = () => { if (outputEditorRef.current) outputEditorRef.current.setValue(''); };
   const clearBoth = () => { clearInput(); clearOutput(); };
@@ -269,6 +296,7 @@ function BeautifyTool() {
       const script = document.createElement('script');
       script.src = 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.45.0/min/vs/loader.min.js';
       script.onload = loadMonaco;
+      script.onerror = () => { console.error('BeautifyTool: failed to load Monaco editor from CDN.'); setMonacoError(true); };
       document.head.appendChild(script);
     } else {
       loadMonaco();
@@ -278,13 +306,14 @@ function BeautifyTool() {
   React.useEffect(() => { if (monacoReady && inputEditorRef.current) { monaco.editor.setModelLanguage(inputEditorRef.current.getModel(), language); if (outputEditorRef.current) monaco.editor.setModelLanguage(outputEditorRef.current.getModel(), language); } }, [language, monacoReady]);
 
   return React.createElement('div', { style: { width: '100%', maxWidth: '95%', margin: '40px auto', display: 'flex', flexDirection: 'column', alignItems: 'center' } },
+    monacoError && React.createElement('div', { style: { width: '100%', marginBottom: '12px', padding: '10px 14px', background: 'rgba(255,85,85,0.12)', border: '1px solid rgba(255,85,85,0.4)', borderRadius: '6px', color: '#ff8080', fontSize: '14px' } }, 'Could not load the code editor from the CDN. Check your connection and reload the page.'),
     React.createElement('div', { style: { display: 'flex', gap: '25px', width: '100%', height: '75vh' } },
       React.createElement('div', { style: { flex: 1, background: 'rgba(30, 30, 46, 0.85)', borderRadius: '8px', border: '1px solid #44475a', display: 'flex', flexDirection: 'column', overflow: 'hidden' } },
         React.createElement('div', { style: { position: 'relative', padding: '10px 15px', borderBottom: '1px solid #44475a', color: '#bd93f9', fontSize: '14px' } }, 'Input ', React.createElement('button', { onClick: clearInput, style: { position: 'absolute', right: '10px', top: '7px', fontSize: '14px', padding: '2px 4px', backgroundColor: 'transparent', color: '#ff79c6', border: 'none', cursor: 'pointer' } }, '✕')),
         React.createElement('div', { ref: inputContainerRef, style: { flex: 1, overflow: 'hidden' }, className: 'monaco-editor-container' })
       ),
       React.createElement('div', { style: { flex: 1, background: 'rgba(30, 30, 46, 0.85)', borderRadius: '8px', border: '1px solid #44475a', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative' } },
-        React.createElement('div', { style: { position: 'relative', padding: '10px 15px', borderBottom: '1px solid #44475a', color: '#bd93f9', fontSize: '14px' } }, 'Output ', React.createElement('button', { onClick: clearOutput, style: { position: 'absolute', right: '10px', top: '7px', fontSize: '14px', padding: '2px 4px', backgroundColor: 'transparent', color: '#ff79c6', border: 'none', cursor: 'pointer' } }, '✕'), React.createElement('button', { onClick: copyToClipboard, style: { position: 'absolute', right: '35px', top: '7px', fontSize: '16px', padding: '2px 4px', backgroundColor: 'transparent', color: copySuccess ? '#50fa7b' : '#bd93f9', border: 'none', cursor: 'pointer' } }, copySuccess ? '✓' : '📋')),
+        React.createElement('div', { style: { position: 'relative', padding: '10px 15px', borderBottom: '1px solid #44475a', color: '#bd93f9', fontSize: '14px' } }, 'Output ', React.createElement('button', { onClick: clearOutput, style: { position: 'absolute', right: '10px', top: '7px', fontSize: '14px', padding: '2px 4px', backgroundColor: 'transparent', color: '#ff79c6', border: 'none', cursor: 'pointer' } }, '✕'), React.createElement('button', { onClick: copyToClipboard, title: copyError ? 'Copy failed' : 'Copy output', style: { position: 'absolute', right: '35px', top: '7px', fontSize: '16px', padding: '2px 4px', backgroundColor: 'transparent', color: copySuccess ? '#50fa7b' : (copyError ? '#ff5555' : '#bd93f9'), border: 'none', cursor: 'pointer' } }, copySuccess ? '✓' : (copyError ? '⚠' : '📋'))),
         React.createElement('div', { ref: outputContainerRef, style: { flex: 1, overflow: 'hidden' }, className: 'monaco-editor-container' })
       )
     ),
