@@ -29,7 +29,7 @@ function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, 
     React.createElement('td', {className: 'playercount', 'data-label': 'Players'}, server.player_count || '0'),
     React.createElement('td', {className: 'language', 'data-label': 'Language'}, server.language || 'N/A'),
     React.createElement('td', {className: 'description', 'data-label': 'Description'}, server.description || 'No description available.'),
-    React.createElement('td', {className: 'website', 'data-label': 'Website'}, isSafeHttpUrl(server.website) ? React.createElement('a', {href: server.website, target: '_blank', rel: 'noopener noreferrer'}, truncate(server.website, 25)) : (server.website ? truncate(server.website, 25) : 'None.')),
+    React.createElement('td', {className: 'website', 'data-label': 'Website'}, isSafeHttpUrl(server.website) ? React.createElement('a', {href: server.website, target: '_blank', rel: 'noopener noreferrer'}, server.website) : (server.website || 'None.')),
     React.createElement('td', {className: 'version', 'data-label': 'Game Version'}, server.graal_version || 'Worlds')
   );
 }
