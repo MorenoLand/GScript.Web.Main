@@ -58,7 +58,10 @@ function renderDocText(value) {
     .replace(/\*([^*]+)\*/g, '<em>$1</em>')
     .replace(/`([^`]+)`/g, '<code style="background: #2a2a3a; color: #ff6b9d; padding: 0.2em 0.4em; border-radius: 3px;">$1</code>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
-      const trimmedUrl = url.trim();
+      // Strip tab/newline/CR before the scheme check: browsers remove these
+      // characters from URLs, so `java<TAB>script:...` would otherwise bypass
+      // the scheme test and execute as JavaScript.
+      const trimmedUrl = url.trim().replace(/[\t\n\r]/g, '');
       const hasScheme = /^[a-z][a-z0-9+.-]*:/i.test(trimmedUrl);
       const safeUrl = (hasScheme && !/^https?:/i.test(trimmedUrl)) ? '#' : trimmedUrl.replace(/"/g, '&quot;');
       return '<a href="' + safeUrl + '" target="_blank" rel="noopener noreferrer" style="color: #5ba5ff;">' + text + '</a>';
@@ -408,7 +411,10 @@ function fetchDocsApi() {
     }
   } catch { }
 
-  return fetch('https://api.moreno.land/api/gscript').then(r => r.json()).then(data => {
+  return fetch('https://api.moreno.land/api/gscript').then(r => {
+    if (!r.ok) throw new Error('Docs API request failed with status ' + r.status);
+    return r.json();
+  }).then(data => {
     try {
       localStorage.setItem(DOCS_CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data }));
     } catch { }

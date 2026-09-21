@@ -196,7 +196,7 @@ function IndexingTutorial() {
         React.createElement('button', { className: 'nav-btn view-all-btn', onClick: toggleViewAll }, viewAll ? 'View Paged' : 'View All'),
         !viewAll && React.createElement('button', { className: 'nav-btn', onClick: nextSlide, disabled: currentSlide === sections.length - 1 }, 'Next →')
       ),
-      tutorial === 'gimp' && React.createElement('div', { className: 'credits' }, React.createElement('a', { href: 'https://brydengfx.wordpress.com/how-to-index/', target: '_blank', style: { color: '#40ff40' } }, 'Source: brydengfx.wordpress.com'))
+      tutorial === 'gimp' && React.createElement('div', { className: 'credits' }, React.createElement('a', { href: 'https://brydengfx.wordpress.com/how-to-index/', target: '_blank', rel: 'noopener noreferrer', style: { color: '#40ff40' } }, 'Source: brydengfx.wordpress.com'))
     )
   );
 }
