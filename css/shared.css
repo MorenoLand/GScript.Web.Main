@@ -1,4 +1,5 @@
-body { margin: 0; font-family: "Tempus Sans ITC", "Palatino Linotype", serif !important; font-size: 22px; }
+html { background-color: #000; }
+body { margin: 0; background-color: #000; font-family: "Tempus Sans ITC", "Palatino Linotype", serif !important; font-size: 22px; }
 h1, h2, p, a, td, th, span { user-select: none; text-align: center; text-decoration: none; text-shadow: 1px 1px 1px rgba(0, 0, 255, 1); }
 p { margin: 2px 0; }
 a { color: #40ff40; text-shadow: 1px 1px 1px rgba(0, 0, 255, 1); }
