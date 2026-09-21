@@ -642,3 +642,6 @@ body.docs-active .container{height:100vh;min-height:100vh;padding:0;align-items:
   .sc-row.sc-stacked .sc-label { align-self: flex-start; }
   .table-wrapper .pagination-bar { flex-wrap: wrap; row-gap: 10px; }
 }
+.table-wrapper tr[data-watched="true"] { background: rgba(64, 255, 64, 0.07); box-shadow: inset 3px 0 0 #40ff40; }
+.table-wrapper tr[data-watched="true"]:hover { background: rgba(64, 255, 64, 0.12); }
+.server-card[data-watched="true"] { border-color: rgba(64, 255, 64, 0.55); box-shadow: 0 0 0 1px rgba(64, 255, 64, 0.25); }
