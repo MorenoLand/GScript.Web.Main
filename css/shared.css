@@ -645,3 +645,6 @@ body.docs-active .container{height:100vh;min-height:100vh;padding:0;align-items:
 .table-wrapper tr[data-watched="true"] { background: rgba(64, 255, 64, 0.07); box-shadow: inset 3px 0 0 #40ff40; }
 .table-wrapper tr[data-watched="true"]:hover { background: rgba(64, 255, 64, 0.12); }
 .server-card[data-watched="true"] { border-color: rgba(64, 255, 64, 0.55); box-shadow: 0 0 0 1px rgba(64, 255, 64, 0.25); }
+.watch-btn { background: transparent; border: none; cursor: pointer; font-size: 1.1em; color: rgba(255, 255, 255, 0.35); padding: 2px 6px; margin-right: 4px; vertical-align: middle; line-height: 1; }
+.watch-btn:hover { color: #ffd75b; }
+.watch-btn.on { color: #40ff40; }

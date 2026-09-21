@@ -20,12 +20,13 @@ function useMapTooltip() {
 
 const truncate = (text, limit) => text.length > limit ? text.substring(0, limit) + '..' : text;
 
-function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames }) {
+function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames, toggleWatch }) {
   const serverNameUgly = server.server_nameugly || 'N/A', serverName = server.server_name || 'N/A', serverType = server.server_type || 'Classic', imageName = 'gfx/login_icon_' + serverNameUgly + '.png', mapName = 'gfx/login_servermap_' + serverNameUgly + '.png';
   React.useEffect(() => preloadImage(mapName), [mapName, preloadImage]);
   const watched = (watchedNames || []).includes((serverNameUgly || '').toLowerCase().replace(/_/g, ' ')) || (watchedNames || []).includes((serverName || '').toLowerCase().replace(/_/g, ' '));
+  const watchBtn = toggleWatch ? React.createElement('button', {className: 'watch-btn' + (watched ? ' on' : ''), onClick: (e) => { e.stopPropagation(); toggleWatch(serverNameUgly); }, title: watched ? 'Stop watching' : 'Watch this server'}, watched ? '★' : '☆') : null;
   return React.createElement('tr', {key: idx, 'data-server': serverNameUgly, 'data-map': serverNameUgly, 'data-watched': watched || undefined, onMouseEnter: (e) => showMapTooltip(e, serverNameUgly), onMouseLeave: hideMapTooltip, onMouseMove: updateTooltipPosition},
-    React.createElement('td', {className: 'servername'}, React.createElement('img', {src: imageName, alt: serverName, loading: 'lazy', onError: (e) => { e.target.onerror = null; e.target.src = 'gfx/login_icon_developer4.png'; }, style: {width: 32, height: 32, verticalAlign: 'middle', marginRight: 10}}), serverName),
+    React.createElement('td', {className: 'servername'}, watchBtn, React.createElement('img', {src: imageName, alt: serverName, loading: 'lazy', onError: (e) => { e.target.onerror = null; e.target.src = 'gfx/login_icon_developer4.png'; }, style: {width: 32, height: 32, verticalAlign: 'middle', marginRight: 10}}), serverName),
     React.createElement('td', {className: 'type', 'data-label': 'Type'}, serverType),
     React.createElement('td', {className: 'playercount', 'data-label': 'Players'}, server.player_count || '0'),
     React.createElement('td', {className: 'language', 'data-label': 'Language'}, server.language || 'N/A'),
@@ -35,14 +36,15 @@ function ServerRow({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, 
   );
 }
 
-function ServerCard({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames }) {
+function ServerCard({ server, idx, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames, toggleWatch }) {
   const serverNameUgly = server.server_nameugly || 'N/A', serverName = server.server_name || 'N/A', imageName = 'gfx/login_icon_' + serverNameUgly + '.png', mapName = 'gfx/login_servermap_' + serverNameUgly + '.png';
   React.useEffect(() => preloadImage(mapName), [mapName, preloadImage]);
   const watched = (watchedNames || []).includes((serverNameUgly || '').toLowerCase().replace(/_/g, ' ')) || (watchedNames || []).includes((serverName || '').toLowerCase().replace(/_/g, ' '));
+  const watchBtn = toggleWatch ? React.createElement('button', {className: 'watch-btn' + (watched ? ' on' : ''), onClick: (e) => { e.stopPropagation(); toggleWatch(serverNameUgly); }, title: watched ? 'Stop watching' : 'Watch this server', style: {marginLeft: 'auto'}}, watched ? '★' : '☆') : null;
   const row = (label, value) => React.createElement('div', {className: 'sc-row'}, React.createElement('span', {className: 'sc-label'}, label), React.createElement('span', {className: 'sc-value'}, value));
   const stacked = (label, value) => React.createElement('div', {className: 'sc-row sc-stacked'}, React.createElement('span', {className: 'sc-label'}, label), React.createElement('div', {className: 'sc-value'}, value));
   return React.createElement('div', {key: idx, className: 'server-card', 'data-server': serverNameUgly, 'data-map': serverNameUgly, 'data-watched': watched || undefined, onMouseEnter: (e) => showMapTooltip(e, serverNameUgly), onMouseLeave: hideMapTooltip, onMouseMove: updateTooltipPosition},
-    React.createElement('div', {className: 'sc-name'}, React.createElement('img', {src: imageName, alt: serverName, loading: 'lazy', onError: (e) => { e.target.onerror = null; e.target.src = 'gfx/login_icon_developer4.png'; }, style: {width: 32, height: 32, verticalAlign: 'middle', marginRight: 10}}), serverName),
+    React.createElement('div', {className: 'sc-name'}, React.createElement('img', {src: imageName, alt: serverName, loading: 'lazy', onError: (e) => { e.target.onerror = null; e.target.src = 'gfx/login_icon_developer4.png'; }, style: {width: 32, height: 32, verticalAlign: 'middle', marginRight: 10}}), serverName, watchBtn),
     row('Players', server.player_count || '0'),
     stacked('Description', server.description || 'No description available.')
   );
@@ -50,7 +52,7 @@ function ServerCard({ server, idx, preloadImage, showMapTooltip, hideMapTooltip,
 
 function ServerListView(props) {
   const {
-    servers, allServers, filteredServers, watchedNames,
+    servers, allServers, filteredServers, watchedNames, toggleWatch,
     showDevServers, setShowDevServers,
     sortConfig, setSortConfig,
     columnWidths, setColumnWidths,
@@ -97,7 +99,7 @@ function ServerListView(props) {
       ),
       React.createElement('div', {className: 'resize-guide', style: {position: 'absolute', top: tableWrapperRef.current ? (tableWrapperRef.current.querySelector('table')?.getBoundingClientRect().top - tableWrapperRef.current.getBoundingClientRect().top) + 'px' : '40px', height: tableRef.current ? tableRef.current.offsetHeight + 'px' : 'auto', width: '5px', backgroundColor: 'rgba(255, 255, 255, 0.3)', pointerEvents: 'none', zIndex: 10, display: resizingColumn && guidePosition !== null && tableWrapperRef.current ? 'block' : 'none', left: resizingColumn && guidePosition !== null && tableWrapperRef.current ? (guidePosition - tableWrapperRef.current.getBoundingClientRect().left - 2.5) + 'px' : 'auto'}}),
       React.createElement('div', {style: {backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '8px', overflow: 'hidden'}},
-        isMobile ? React.createElement('div', {className: 'mobile-cards'}, servers.map((server, idx) => React.createElement(ServerCard, {key: idx, idx, server, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames}))) : React.createElement('table', {ref: tableRef, style: {borderCollapse: 'collapse', margin: '0', width: '100%'}},
+        isMobile ? React.createElement('div', {className: 'mobile-cards'}, servers.map((server, idx) => React.createElement(ServerCard, {key: idx, idx, server, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames, toggleWatch}))) : React.createElement('table', {ref: tableRef, style: {borderCollapse: 'collapse', margin: '0', width: '100%'}},
           React.createElement('thead', {style: {textShadow: '2px 2px 4px rgba(0, 0, 0, 1)'}},
             React.createElement('tr', null,
               React.createElement('th', {onClick: () => handleSort('server_name'), style: {position: 'relative', paddingLeft: '45px', width: columnWidths.server_name + '%', cursor: 'pointer'}}, React.createElement('button', {onClick: (e) => { e.stopPropagation(); window.location.reload(); }, className: 'rbutton', style: {position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'transparent', border: 'none', cursor: 'pointer'}}, React.createElement('i', {className: 'fas fa-sync-alt fa-lg', style: {color: '#FFFF00'}})), 'Server Name', getSortedIndicator('server_name'), React.createElement('div', {className: 'resizer', onMouseDown: (e) => handleMouseDown('server_name', e)})),
@@ -109,7 +111,7 @@ function ServerListView(props) {
               React.createElement('th', {onClick: () => handleSort('graal_version'), style: {textAlign: 'center', paddingRight: '20px', width: columnWidths.graal_version + '%', position: 'relative'}}, 'Game Version', getSortedIndicator('graal_version'))
             )
           ),
-          React.createElement('tbody', null, servers.map((server, idx) => React.createElement(ServerRow, {key: idx, idx, server, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames})))
+          React.createElement('tbody', null, servers.map((server, idx) => React.createElement(ServerRow, {key: idx, idx, server, preloadImage, showMapTooltip, hideMapTooltip, updateTooltipPosition, watchedNames, toggleWatch})))
         ),
         React.createElement('div', {className: 'pagination-bar', style: {display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '4px 16px', borderTop: '1px solid rgba(255, 255, 255, 0.12)', backgroundColor: 'rgba(0, 0, 0, 0.5)', gap: '20px', fontSize: '0.875rem', color: '#ffffff'}},
           React.createElement('span', null, 'Page Total: ', servers.reduce((sum, s) => sum + (s.player_count || 0), 0)),
