@@ -629,6 +629,7 @@ body.docs-active .container{height:100vh;min-height:100vh;padding:0;align-items:
 .table-wrapper td.website { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 720px) {
   /* Mobile server list renders as div cards (see ServerCard in js/list.js). */
+  .container { box-sizing: border-box; }
   .mobile-cards { display: flex; flex-direction: column; gap: 10px; }
   .server-card { border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 8px; background: rgba(0, 0, 0, 0.35); overflow: hidden; }
   .sc-name { display: flex; align-items: center; padding: 12px 14px; background: rgba(255, 255, 255, 0.04); }
