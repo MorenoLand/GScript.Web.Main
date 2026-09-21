@@ -855,10 +855,11 @@ function App() {
     return () => { clearTimeout(timeoutId); if (intervalId) clearInterval(intervalId); };
   }, []);
 
+  useEffect(() => { setCurrentPage(1); }, [watchFilter]);
   useEffect(() => {
-    let filtered = showDevServers ? allServers : allServers.filter(s => s.server_type !== 'Hidden');
     const qs = watchFilter.names.map(normName);
     const isWatched = (s) => qs.includes(normName(s.server_nameugly)) || qs.includes(normName(s.server_name));
+    let filtered = showDevServers ? allServers : allServers.filter(s => s.server_type !== 'Hidden' || isWatched(s));
     if (qs.length && !watchFilter.showAll) filtered = filtered.filter(isWatched);
     setFilteredServers(filtered);
     const sorted = [...filtered].sort((a, b) => {
