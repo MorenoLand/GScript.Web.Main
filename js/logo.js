@@ -15,7 +15,7 @@ async function loadLogo(containerId) {
 
   const text = 'Graal Statistics';
   const fontSize = 34;
-  const textColor = '#f3c300';
+  const textColor = '#ffe066';
   const shadowColor = '#000000';
 
   const icon = new Image();

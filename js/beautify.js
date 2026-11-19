@@ -212,14 +212,14 @@ function BeautifyTool() {
           { token: 'variable.parameter', foreground: 'ffb86c' },
         ],
         colors: {
-          'editor.background': '#282a36',
-          'editor.foreground': '#f8f8f2',
+          'editor.background': '#07130c',
+          'editor.foreground': '#e8f3e4',
           'editorLineNumber.foreground': '#6272a4cc',
-          'editorLineNumber.activeForeground': '#f8f8f2',
+          'editorLineNumber.activeForeground': '#e8f3e4',
           'editor.selectionBackground': '#44475a',
-          'editorCursor.foreground': '#f8f8f2',
-          'editor.lineHighlightBorder': '#282a36',
-          'editor.lineHighlightBackground': '#282a3644',
+          'editorCursor.foreground': '#e8f3e4',
+          'editor.lineHighlightBorder': '#07130c',
+          'editor.lineHighlightBackground': '#07130c44',
         }
       });
       if (inputContainerRef.current) {
@@ -277,19 +277,19 @@ function BeautifyTool() {
 
   React.useEffect(() => { if (monacoReady && inputEditorRef.current) { monaco.editor.setModelLanguage(inputEditorRef.current.getModel(), language); if (outputEditorRef.current) monaco.editor.setModelLanguage(outputEditorRef.current.getModel(), language); } }, [language, monacoReady]);
 
-  return React.createElement('div', { style: { width: '100%', maxWidth: '95%', margin: '40px auto', display: 'flex', flexDirection: 'column', alignItems: 'center' } },
+  return React.createElement('div', { className: 'beautify-shell', style: { width: '100%', maxWidth: '95%', margin: '40px auto', display: 'flex', flexDirection: 'column', alignItems: 'center' } },
     React.createElement('div', { style: { display: 'flex', gap: '25px', width: '100%', height: '75vh' } },
-      React.createElement('div', { style: { flex: 1, background: 'rgba(30, 30, 46, 0.85)', borderRadius: '8px', border: '1px solid #44475a', display: 'flex', flexDirection: 'column', overflow: 'hidden' } },
+      React.createElement('div', { className: 'beautify-panel', style: { flex: 1, background: 'rgba(30, 30, 46, 0.85)', borderRadius: '8px', border: '1px solid #44475a', display: 'flex', flexDirection: 'column', overflow: 'hidden' } },
         React.createElement('div', { style: { position: 'relative', padding: '10px 15px', borderBottom: '1px solid #44475a', color: '#bd93f9', fontSize: '14px' } }, 'Input ', React.createElement('button', { onClick: clearInput, style: { position: 'absolute', right: '10px', top: '7px', fontSize: '14px', padding: '2px 4px', backgroundColor: 'transparent', color: '#ff79c6', border: 'none', cursor: 'pointer' } }, '✕')),
         React.createElement('div', { ref: inputContainerRef, style: { flex: 1, overflow: 'hidden' }, className: 'monaco-editor-container' })
       ),
-      React.createElement('div', { style: { flex: 1, background: 'rgba(30, 30, 46, 0.85)', borderRadius: '8px', border: '1px solid #44475a', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative' } },
+      React.createElement('div', { className: 'beautify-panel', style: { flex: 1, background: 'rgba(30, 30, 46, 0.85)', borderRadius: '8px', border: '1px solid #44475a', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative' } },
         React.createElement('div', { style: { position: 'relative', padding: '10px 15px', borderBottom: '1px solid #44475a', color: '#bd93f9', fontSize: '14px' } }, 'Output ', React.createElement('button', { onClick: clearOutput, style: { position: 'absolute', right: '10px', top: '7px', fontSize: '14px', padding: '2px 4px', backgroundColor: 'transparent', color: '#ff79c6', border: 'none', cursor: 'pointer' } }, '✕'), React.createElement('button', { onClick: copyToClipboard, style: { position: 'absolute', right: '35px', top: '7px', fontSize: '16px', padding: '2px 4px', backgroundColor: 'transparent', color: copySuccess ? '#50fa7b' : '#bd93f9', border: 'none', cursor: 'pointer' } }, copySuccess ? '✓' : '📋')),
         React.createElement('div', { ref: outputContainerRef, style: { flex: 1, overflow: 'hidden' }, className: 'monaco-editor-container' })
       )
     ),
-    React.createElement('div', { style: { padding: '20px 0', display: 'flex', justifyContent: 'center', gap: '15px', alignItems: 'center', flexWrap: 'wrap' } },
-      React.createElement('select', { value: language, onChange: (e) => setLanguage(e.target.value), style: { backgroundColor: '#282a36', color: '#f8f8f2', border: '1px solid #44475a', borderRadius: '4px', padding: '8px 12px', outline: 'none', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } },
+    React.createElement('div', { className: 'beautify-controls', style: { padding: '20px 0', display: 'flex', justifyContent: 'center', gap: '15px', alignItems: 'center', flexWrap: 'wrap' } },
+      React.createElement('select', { value: language, onChange: (e) => setLanguage(e.target.value), style: { backgroundColor: '#07130c', color: '#e8f3e4', border: '1px solid #44475a', borderRadius: '4px', padding: '8px 12px', outline: 'none', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } },
         React.createElement('option', { value: 'javascript', style: { fontFamily: '"Tempus Sans ITC", sans-serif' } }, 'JavaScript'),
         React.createElement('option', { value: 'graalscript', style: { fontFamily: '"Tempus Sans ITC", sans-serif' } }, 'Graal Script')
       ),
@@ -297,7 +297,7 @@ function BeautifyTool() {
         React.createElement('label', { style: { display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } }, React.createElement('input', { type: 'checkbox', checked: stripComments, onChange: (e) => setStripComments(e.target.checked), style: { margin: 0, accentColor: '#40ff40' } }), ' Strip Comments'),
         React.createElement('label', { style: { display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } }, React.createElement('input', { type: 'checkbox', checked: stripSpaces, onChange: (e) => setStripSpaces(e.target.checked), style: { margin: 0, accentColor: '#40ff40' } }), ' Strip Spaces'),
         React.createElement('label', { style: { display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } }, React.createElement('input', { type: 'checkbox', checked: beautify, onChange: (e) => setBeautify(e.target.checked), style: { margin: 0, accentColor: '#40ff40' } }), ' Beautify Code'),
-        React.createElement('select', { value: indentSize, onChange: (e) => setIndentSize(e.target.value), style: { marginLeft: '4px', backgroundColor: '#282a36', color: '#f8f8f2', border: '1px solid #44475a', borderRadius: '4px', padding: '8px 12px', outline: 'none', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } },
+        React.createElement('select', { value: indentSize, onChange: (e) => setIndentSize(e.target.value), style: { marginLeft: '4px', backgroundColor: '#07130c', color: '#e8f3e4', border: '1px solid #44475a', borderRadius: '4px', padding: '8px 12px', outline: 'none', fontFamily: '"Tempus Sans ITC", sans-serif', fontSize: '18px', textShadow: '1px 1px 1px rgba(0, 0, 255, 1)' } },
           React.createElement('option', { value: '2', style: { fontFamily: '"Tempus Sans ITC", sans-serif' } }, '2 Spaces'),
           React.createElement('option', { value: '4', style: { fontFamily: '"Tempus Sans ITC", sans-serif' } }, '4 Spaces'),
           React.createElement('option', { value: 'tab', style: { fontFamily: '"Tempus Sans ITC", sans-serif' } }, 'Tab')
