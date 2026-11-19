@@ -1,4 +1,4 @@
-# Web resource hub for Graal scripting, server statistics, level formats, and development tools
+Web resource hub for scripting, server statistics, level formats, and development tools.
 
 Static site served from `index.html`. Run it locally with any HTTP server, for example:
 
